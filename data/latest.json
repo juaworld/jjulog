@@ -1,7 +1,7 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T10:04:16.242578+09:00",
+ "updated_at": "2026-10-23T10:09:52.687055+09:00",
  "search_mode": "web",
  "keyword_tool": true,
  "search_calls": 65,
@@ -23,7 +23,7 @@
   "official": false
  },
  "total_posts": 107,
- "last_post": "2026-10-22T12:04:19.703791+09:00",
+ "last_post": "2026-10-22T12:09:55.507686+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -48,7 +48,7 @@
   }
  ],
  "index": {
-  "score": 42.5,
+  "score": 40.2,
   "grade": "준최2",
   "grade_index": 2,
   "grades": [
@@ -96,7 +96,7 @@
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.211
+    "value": 0.133
    },
    {
     "key": "exposure",
@@ -138,7 +138,7 @@
    "avg_content_score": 94,
    "visitors_avg": 71.5,
    "top10_keywords": 8,
-   "best_top10_volume": 460
+   "best_top10_volume": 10
   },
   "low_quality_risk": false
  },
@@ -174,7 +174,7 @@
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T12:04:19.703791+09:00",
+   "date": "2026-10-22T12:09:55.507686+09:00",
    "comments": 14,
    "category": "결혼 준비",
    "tags": [
@@ -207,9 +207,9 @@
      "rank": 1,
      "of": 32,
      "volume": {
-      "pc": 30,
-      "mobile": 30,
-      "total": 60,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -219,9 +219,9 @@
      "rank": 3,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -231,9 +231,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -293,9 +293,9 @@
      "rank": 14,
      "of": 30,
      "volume": {
-      "pc": 850,
-      "mobile": 7660,
-      "total": 8510,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -305,9 +305,9 @@
      "rank": 7,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "중간"
      },
      "docs": null
@@ -317,9 +317,9 @@
      "rank": 9,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "중간"
      },
      "docs": null
@@ -378,9 +378,9 @@
      "rank": 1,
      "of": 31,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -390,9 +390,9 @@
      "rank": null,
      "of": 33,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -402,9 +402,9 @@
      "rank": 12,
      "of": 31,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -464,9 +464,9 @@
      "rank": null,
      "of": 27,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "낮음"
      },
      "docs": null
@@ -476,9 +476,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -488,9 +488,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -548,9 +548,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 850,
-      "mobile": 2130,
-      "total": 2980,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -560,9 +560,9 @@
      "rank": 17,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "낮음"
      },
      "docs": null
@@ -572,9 +572,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 80,
-      "total": 90,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -643,9 +643,9 @@
      "rank": 10,
      "of": 30,
      "volume": {
-      "pc": 90,
-      "mobile": 370,
-      "total": 460,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "중간"
      },
      "docs": null
@@ -655,9 +655,9 @@
      "rank": 3,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 70,
-      "total": 80,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "중간"
      },
      "docs": null
@@ -667,9 +667,9 @@
      "rank": 12,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 50,
-      "total": 60,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -733,9 +733,9 @@
      "rank": null,
      "of": 31,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -745,9 +745,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -757,9 +757,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -828,9 +828,9 @@
      "rank": 19,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "중간"
      },
      "docs": null
@@ -840,9 +840,9 @@
      "rank": 5,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "낮음"
      },
      "docs": null
@@ -852,9 +852,9 @@
      "rank": 27,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -913,9 +913,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 200,
-      "mobile": 1920,
-      "total": 2120,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "중간"
      },
      "docs": null
@@ -925,9 +925,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 260,
-      "mobile": 1450,
-      "total": 1710,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -989,9 +989,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 190,
-      "total": 200,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -1001,9 +1001,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 30,
-      "mobile": 20,
-      "total": 50,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -1013,9 +1013,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 220,
-      "mobile": 430,
-      "total": 650,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -1069,9 +1069,9 @@
      "rank": 21,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "낮음"
      },
      "docs": null
@@ -1132,9 +1132,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -1196,9 +1196,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -1265,9 +1265,9 @@
      "rank": null,
      "of": 31,
      "volume": {
-      "pc": 90,
-      "mobile": 530,
-      "total": 620,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -1328,9 +1328,9 @@
      "rank": 13,
      "of": 30,
      "volume": {
-      "pc": 10,
-      "mobile": 10,
-      "total": 20,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "낮음"
      },
      "docs": null
