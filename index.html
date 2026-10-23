@@ -161,7 +161,8 @@ const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt = n => n == null ? "—" : n >= 10000 ? (n / 10000).toFixed(1).replace(/\.0$/, "") + "만" : n.toLocaleString("ko-KR");
 const pct = v => v == null ? "—" : Math.round(v * 100) + "%";
-const days = iso => iso ? Math.floor((Date.now() - new Date(iso)) / 864e5) : null;
+// 달력 기준 며칠 전인지 (어제 쓴 글은 1)
+const days = iso => iso ? Math.round((new Date().setHours(0, 0, 0, 0) - new Date(iso).setHours(0, 0, 0, 0)) / 864e5) : null;
 
 function ago(iso) {
   if (!iso) return "—";
