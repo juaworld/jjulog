@@ -2,15 +2,15 @@
  {
   "date": "2026-10-23",
   "blog_id": "hbokey",
-  "score": 41.0,
-  "grade": "준최2",
-  "exposure_rate": 1.0,
-  "total_exposure_rate": 0.636,
-  "visitors_today": 27,
+  "score": 25.2,
+  "grade": "일반",
+  "exposure_rate": null,
+  "total_exposure_rate": null,
+  "visitors_today": 29,
   "subscribers": 305,
   "total_posts": 107,
   "keywords": {},
-  "competitor_rank": 15,
+  "competitor_rank": 16,
   "competitor_count": 21
  }
 ]
