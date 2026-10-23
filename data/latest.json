@@ -1,7 +1,7 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T09:56:46.383478+09:00",
+ "updated_at": "2026-10-23T10:04:16.242578+09:00",
  "search_mode": "web",
  "keyword_tool": true,
  "search_calls": 65,
@@ -23,7 +23,7 @@
   "official": false
  },
  "total_posts": 107,
- "last_post": "2026-10-22T11:56:49.995186+09:00",
+ "last_post": "2026-10-22T12:04:19.703791+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -48,9 +48,9 @@
   }
  ],
  "index": {
-  "score": 61.7,
-  "grade": "최적2",
-  "grade_index": 9,
+  "score": 42.5,
+  "grade": "준최2",
+  "grade_index": 2,
   "grades": [
    "일반",
    "준최1",
@@ -68,11 +68,40 @@
    "최적3+",
    "최적4+"
   ],
+  "grade_at": [
+   0.0,
+   29.2,
+   40.0,
+   48.1,
+   54.8,
+   60.7,
+   65.9,
+   70.7,
+   75.1,
+   79.3,
+   83.2,
+   86.9,
+   90.4,
+   93.7,
+   96.9
+  ],
   "factors": [
+   {
+    "key": "visitors",
+    "label": "방문자 규모",
+    "weight": 30,
+    "value": 0.465
+   },
+   {
+    "key": "keyword",
+    "label": "키워드 경쟁력",
+    "weight": 30,
+    "value": 0.211
+   },
    {
     "key": "exposure",
     "label": "블로그탭 노출",
-    "weight": 30,
+    "weight": 10,
     "value": 1.0
    },
    {
@@ -82,40 +111,22 @@
     "value": 0.6
    },
    {
-    "key": "keyword",
-    "label": "키워드 순위",
-    "weight": 15,
-    "value": 0.32
-   },
-   {
     "key": "pace",
     "label": "발행 페이스",
-    "weight": 15,
+    "weight": 10,
     "value": 0.095
    },
    {
     "key": "consistency",
     "label": "꾸준함",
-    "weight": 10,
+    "weight": 5,
     "value": 0.333
-   },
-   {
-    "key": "content",
-    "label": "글 최적화",
-    "weight": 10,
-    "value": 0.939
    },
    {
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.824
-   },
-   {
-    "key": "visitors",
-    "label": "방문자",
-    "weight": 5,
-    "value": 0.517
+    "value": 0.721
    }
   ],
   "stats": {
@@ -125,8 +136,9 @@
    "total_exposure_rate": 0.6,
    "avg_comments": 15.8,
    "avg_content_score": 94,
-   "visitors_avg": 62.0,
-   "top10_keywords": 8
+   "visitors_avg": 71.5,
+   "top10_keywords": 8,
+   "best_top10_volume": 460
   },
   "low_quality_risk": false
  },
@@ -162,7 +174,7 @@
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T11:56:49.995186+09:00",
+   "date": "2026-10-22T12:04:19.703791+09:00",
    "comments": 14,
    "category": "결혼 준비",
    "tags": [
@@ -219,9 +231,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 290,
-      "mobile": 530,
-      "total": 820,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
@@ -293,9 +305,9 @@
      "rank": 7,
      "of": 30,
      "volume": {
-      "pc": 320,
-      "mobile": 2600,
-      "total": 2920,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "중간"
      },
      "docs": null
@@ -305,9 +317,9 @@
      "rank": 9,
      "of": 30,
      "volume": {
-      "pc": 430,
-      "mobile": 3670,
-      "total": 4100,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "중간"
      },
      "docs": null
@@ -378,9 +390,9 @@
      "rank": null,
      "of": 33,
      "volume": {
-      "pc": 1660,
-      "mobile": 6800,
-      "total": 8460,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
@@ -390,9 +402,9 @@
      "rank": 12,
      "of": 31,
      "volume": {
-      "pc": 560,
-      "mobile": 1200,
-      "total": 1760,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
@@ -464,9 +476,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 3260,
-      "mobile": 14200,
-      "total": 17460,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
@@ -476,9 +488,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 860,
-      "mobile": 1720,
-      "total": 2580,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
@@ -733,9 +745,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 380,
-      "mobile": 1450,
-      "total": 1830,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
@@ -817,8 +829,8 @@
      "of": 30,
      "volume": {
       "pc": 10,
-      "mobile": 50,
-      "total": 60,
+      "mobile": 10,
+      "total": 20,
       "competition": "중간"
      },
      "docs": null
@@ -1057,9 +1069,9 @@
      "rank": 21,
      "of": 30,
      "volume": {
-      "pc": 90,
-      "mobile": 500,
-      "total": 590,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "낮음"
      },
      "docs": null
@@ -1120,9 +1132,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 130,
-      "mobile": 1370,
-      "total": 1500,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
@@ -1184,9 +1196,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 50,
-      "mobile": 70,
-      "total": 120,
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
       "competition": "높음"
      },
      "docs": null
