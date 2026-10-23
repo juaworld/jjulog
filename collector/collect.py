@@ -101,6 +101,7 @@ def fetch_blog_info(blog_id):
     except NET_ERRORS:
         return {}
     return {
+        "name": r.get("blogName"),
         "nickname": r.get("nickName"),
         "subscribers": r.get("subscriberCount"),
         "total_visitors": r.get("totalVisitorCount"),
@@ -238,6 +239,7 @@ class Search:
         self.mode = "api" if self.cid and self.secret else "web"
         self.calls = 0
         self.doc_counts = {}
+        self.seen = {}  # 다른 블로그 id → {키워드: 최고 순위} (키워드 순위 검색에서 본 것)
 
     def _web(self, params):
         self.calls += 1
@@ -286,6 +288,10 @@ class Search:
             res = self.blog_tab(keyword)
         except NET_ERRORS:
             return {"rank": None, "error": True}
+        for i, (bid, _) in enumerate(res[:30], 1):
+            if bid != self.blog_id:
+                kws = self.seen.setdefault(bid, {})
+                kws[keyword] = min(kws.get(keyword, i), i)
         for i, (bid, log) in enumerate(res, 1):
             if bid == self.blog_id and (log_no is None or log == log_no):
                 return {"rank": i, "of": len(res)}
@@ -478,6 +484,94 @@ def diagnose(idx, checked, plist, visitor_series):
     return out, risk
 
 
+# ---------------------------------------------------------------- 경쟁 블로그
+
+def avg_visitors(visitors):
+    """5일 방문자 중 집계 중인 오늘을 뺀 평균."""
+    days = visitors[:-1] if visitors and len(visitors) > 1 else visitors
+    return round(sum(v["count"] for v in days) / len(days), 1) if days else None
+
+
+def recent_posts(blog_id, days=30):
+    """총 글 수와 최근 N일 글 수 (글 목록 첫 페이지만)."""
+    url = ("https://blog.naver.com/PostTitleListAsync.naver?"
+           + urllib.parse.urlencode({"blogId": blog_id, "viewdate": "", "currentPage": 1,
+                                     "categoryNo": 0, "parentCategoryNo": "", "countPerPage": 30}))
+    try:
+        _, body = http_get(url, {"Referer": f"https://blog.naver.com/{blog_id}"})
+        data = json.loads(body.replace("\\'", "'"))
+    except NET_ERRORS:
+        return None, None
+    if data.get("resultCode") != "S":
+        return None, None
+    since = now_kst() - timedelta(days=days)
+    rows = data.get("postList") or []
+    return to_int(data.get("totalCount")), sum(1 for p in rows if parse_list_date(p.get("addDate")) >= since)
+
+
+def weight_score(b):
+    """블로그 체급 0~100: 방문자 50 · 구독자 20 · 최근 30일 발행 20 · 누적 글 10.
+    경쟁 블로그도 똑같이 잴 수 있는 공개 지표만 쓴다."""
+    vis, subs = b.get("visitors_avg"), b.get("subscribers") or 0
+    if vis is None:  # 방문자 비공개면 오늘 방문자로 대신
+        vis = b.get("today_visitors") or 0
+    parts = [
+        (50, clamp(math.log10(vis + 1) / 4)),
+        (20, clamp(math.log10(subs + 1) / 4)),
+        (20, clamp((b.get("posts_30d") or 0) / 30)),
+        (10, clamp(math.log10((b.get("total_posts") or 0) + 1) / 3.5)),
+    ]
+    return round(sum(w * v for w, v in parts), 1)
+
+
+def pick_competitors(seen, limit):
+    """여러 키워드에서 겹칠수록, 순위가 높을수록 가까운 경쟁자."""
+    ranked = sorted(seen.items(), key=lambda kv: (-len(kv[1]), sum(kv[1].values()) / len(kv[1])))
+    return ranked[:limit]
+
+
+def build_competitors(me, seen, limit=20):
+    rows = []
+    for bid, kws in pick_competitors(seen, limit):
+        info = fetch_blog_info(bid)
+        if not info:
+            continue
+        total, p30 = recent_posts(bid)
+        vis = fetch_visitors(bid)
+        b = {
+            "blog_id": bid, "name": info.get("name"), "nickname": info.get("nickname"),
+            "topic": info.get("topic"), "subscribers": info.get("subscribers"),
+            "today_visitors": info.get("today_visitors"), "visitors_avg": avg_visitors(vis),
+            "total_posts": total, "posts_30d": p30,
+            "shared": [{"keyword": k, "rank": r} for k, r in sorted(kws.items(), key=lambda x: x[1])],
+            "influencer": info.get("power_blog") or info.get("naver_mate"),
+        }
+        b["score"] = weight_score(b)
+        rows.append(b)
+        time.sleep(0.4)
+    me = {**me, "score": weight_score(me), "me": True}
+    everyone = sorted(rows + [me], key=lambda b: -b["score"])
+    for i, b in enumerate(everyone, 1):
+        b["rank"] = i
+
+    def place(key):
+        vals = sorted([b.get(key) or 0 for b in everyone], reverse=True)
+        return vals.index(me.get(key) or 0) + 1
+
+    n = len(everyone)
+    return {
+        "count": n,
+        "my_rank": me["rank"],
+        "top_percent": round(me["rank"] / n * 100) if n else None,
+        "same_topic": sum(1 for b in rows if b.get("topic") and b["topic"] == me.get("topic")),
+        "my_place": {"visitors_avg": place("visitors_avg"), "subscribers": place("subscribers"),
+                     "posts_30d": place("posts_30d"), "total_posts": place("total_posts")},
+        "averages": {k: round(sum(b.get(k) or 0 for b in rows) / len(rows), 1) if rows else None
+                     for k in ("visitors_avg", "subscribers", "posts_30d", "total_posts", "score")},
+        "blogs": everyone,
+    }
+
+
 # ---------------------------------------------------------------- 실행
 
 def main():
@@ -540,6 +634,17 @@ def main():
     vseries = [{"date": d, "count": c} for d, c in sorted(vmap.items())][-400:]
     save_json(vpath, [{**v, "blog_id": blog_id} for v in vseries])
 
+    print(f"경쟁 블로그 후보 {len(search.seen)}곳")
+    competitors = build_competitors({
+        "blog_id": blog_id, "name": info.get("name") or profile["title"], "nickname": info.get("nickname"),
+        "topic": info.get("topic"), "subscribers": info.get("subscribers"),
+        "today_visitors": info.get("today_visitors"), "visitors_avg": avg_visitors(visitors),
+        "total_posts": total,
+        "posts_30d": sum(1 for p in plist if datetime.fromisoformat(p["date"]) >= stamp - timedelta(days=30)),
+        "shared": [],
+    }, search.seen, int(cfg.get("competitors", 20)))
+    print(f"경쟁 블로그 {competitors['count']}곳 중 {competitors['my_rank']}위")
+
     idx = estimate_index(posts_12w, checked, visitors, info)
     diag, risk = diagnose(idx, checked, posts_12w, vseries)
     idx["low_quality_risk"] = risk
@@ -561,6 +666,7 @@ def main():
         "diagnosis": diag,
         "posts": checked,
         "watch_keywords": watch,
+        "competitors": competitors,
     })
 
     hist_path = os.path.join(DATA_DIR, "history.json")
@@ -575,6 +681,8 @@ def main():
         "subscribers": info.get("subscribers"),
         "total_posts": total,
         "keywords": {w["keyword"]: w.get("rank") for w in watch},
+        "competitor_rank": competitors["my_rank"],
+        "competitor_count": competitors["count"],
     })
     save_json(hist_path, history[-400:])
     print(f"완료: {idx['grade']} ({idx['score']}점), 블로그탭 {idx['stats']['exposure_rate']}, "

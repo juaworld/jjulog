@@ -149,6 +149,29 @@ a{color:inherit}
 .comp{font-size:11px;border-radius:5px;padding:0 6px}
 .c-low{background:var(--leaf-soft);color:var(--leaf)}.c-mid{background:var(--sun-soft);color:var(--sun)}.c-high{background:var(--plum-soft);color:var(--plum)}
 
+/* 경쟁 블로그 */
+.rival-head{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-bottom:16px}
+@media (max-width:680px){.rival-head{grid-template-columns:1fr}}
+.rival-big{font-size:40px;line-height:1.1}
+.rival-big small{font-size:16px;color:var(--ink-3);font-family:"Noto Sans KR"}
+.places{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+@media (max-width:680px){.places{grid-template-columns:repeat(2,1fr)}}
+.places div{background:var(--paper);border-radius:12px;padding:8px 12px;font-size:12px;color:var(--ink-3)}
+.places b{display:block;font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums}
+.places em{font-style:normal;font-size:11px;color:var(--ink-3)}
+.rt-wrap{overflow-x:auto}
+.rt{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
+.rt th{font-weight:500;color:var(--ink-3);font-size:12px;text-align:right;padding:6px 8px;white-space:nowrap}
+.rt th:nth-child(2),.rt td:nth-child(2){text-align:left}
+.rt td{padding:8px;border-top:1px dashed var(--rule);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rt td:nth-child(2){white-space:normal;max-width:260px}
+.rt tr.me td{background:var(--coral-soft)}
+.rt tr.me td:first-child{border-radius:10px 0 0 10px}.rt tr.me td:last-child{border-radius:0 10px 10px 0}
+.rt a{text-decoration:none;font-weight:500}
+.rt .sub{display:block;font-size:11px;color:var(--ink-3)}
+.wbar{display:inline-block;width:60px;height:6px;border-radius:3px;background:var(--stone);vertical-align:middle;margin-left:6px;overflow:hidden}
+.wbar i{display:block;height:100%;background:var(--coral);border-radius:0 3px 3px 0}
+
 .chart{position:relative}
 .chart svg{display:block;width:100%;height:auto;overflow:visible}
 .chart .gl{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 4}
@@ -328,6 +351,8 @@ function render(d, history, vseries) {
     </div>
   </div>
 
+  ${d.competitors && d.competitors.count > 1 ? `<section class="sec" id="rivals"></section>` : ""}
+
   <section class="sec">
     <h3 class="hand">쭈로그 기록 <span class="tabs" id="rangeF">
       <button data-r="30" class="on">한 달</button><button data-r="90">세 달</button><button data-r="0">전부</button></span></h3>
@@ -337,6 +362,7 @@ function render(d, history, vseries) {
 
   renderPosts(d.posts, "all");
   tabs("#postF", b => renderPosts(d.posts, b.dataset.s));
+  if ($("#rivals")) renderRivals(d.competitors, history);
 
   const drawTrend = r => {
     const cut = r ? Date.now() - r * 864e5 : 0;
@@ -350,6 +376,43 @@ function render(d, history, vseries) {
   const drawVis = r => barChart($("#visits"), (r ? vs.slice(-r) : vs).map(v => ({x: v.date.slice(5).replace("-", "/"), y: v.count, label: `${v.date} · ${fmt(v.count)}명`})));
   drawVis(14);
   tabs("#visF", b => drawVis(+b.dataset.r));
+}
+
+const RIVAL_SORT = {score: "체급", visitors_avg: "하루 방문", subscribers: "구독자", posts_30d: "30일 발행"};
+
+function renderRivals(c, history) {
+  const prev = history.length > 1 ? history[history.length - 2] : null;
+  const move = prev && prev.competitor_rank ? prev.competitor_rank - c.my_rank : null;
+  const me = c.blogs.find(b => b.me);
+  const pl = c.my_place, avg = c.averages;
+  const place = (label, rank, mine, a, unit) => `<div>${label}<b>${rank}위 <em>/ ${c.count}</em></b><em>나 ${fmt(mine)}${unit} · 평균 ${fmt(Math.round(a))}${unit}</em></div>`;
+  $("#rivals").innerHTML = `
+    <h3 class="hand">경쟁 블로그 <span class="tabs" id="rivalF">${Object.entries(RIVAL_SORT).map(([k, v], i) =>
+      `<button data-k="${k}" class="${i ? "" : "on"}">${v}순</button>`).join("")}</span></h3>
+    <div class="rival-head">
+      <div class="rival-big hand">${c.my_rank}위 <small>/ ${c.count}곳 · 상위 ${c.top_percent}%${move ? ` · 어제보다 ${move > 0 ? "▲" : "▼"}${Math.abs(move)}` : ""}</small></div>
+      <div class="places">
+        ${place("하루 방문", pl.visitors_avg, me.visitors_avg ?? me.today_visitors, avg.visitors_avg, "명")}
+        ${place("구독자", pl.subscribers, me.subscribers, avg.subscribers, "명")}
+        ${place("최근 30일 글", pl.posts_30d, me.posts_30d, avg.posts_30d, "개")}
+        ${place("누적 글", pl.total_posts, me.total_posts, avg.total_posts, "개")}
+      </div>
+    </div>
+    <div class="rt-wrap"><table class="rt" id="rivalT"></table></div>
+    <p class="note">내 글 키워드로 검색했을 때 30위 안에 함께 뜬 블로그 중 자주 겹치는 ${c.count - 1}곳${c.same_topic ? ` (같은 주제 ${c.same_topic}곳)` : ""}과 비교했어요.
+      체급 = 하루 방문 50 · 구독자 20 · 최근 30일 발행 20 · 누적 글 10. 비공개 방문자는 오늘 방문자로 대신 계산해요.</p>`;
+  const draw = key => {
+    const rows = [...c.blogs].sort((a, b) => ((b[key] ?? b.today_visitors ?? 0) - (a[key] ?? a.today_visitors ?? 0)));
+    $("#rivalT").innerHTML = `<tr><th>#</th><th>블로그</th><th>체급</th><th>하루 방문</th><th>구독자</th><th>30일 글</th><th>누적 글</th></tr>` +
+      rows.map((b, i) => `<tr class="${b.me ? "me" : ""}"><td>${i + 1}</td>
+        <td><a href="https://blog.naver.com/${esc(b.blog_id)}" target="_blank" rel="noopener">${esc(b.name || b.blog_id)}</a>${b.me ? " (나)" : ""}
+          <span class="sub">${esc(b.topic || "")}${b.shared.length ? ` · 겹친 키워드 ${b.shared.length}개: ${b.shared.slice(0, 3).map(s => esc(s.keyword) + " " + s.rank + "위").join(", ")}` : ""}</span></td>
+        <td>${b.score}<span class="wbar"><i style="width:${b.score}%"></i></span></td>
+        <td>${b.visitors_avg != null ? fmt(Math.round(b.visitors_avg)) : `<span title="방문자 비공개 — 오늘 방문">${fmt(b.today_visitors)}*</span>`}</td>
+        <td>${fmt(b.subscribers)}</td><td>${fmt(b.posts_30d)}</td><td>${fmt(b.total_posts)}</td></tr>`).join("");
+  };
+  draw("score");
+  tabs("#rivalF", b => draw(b.dataset.k));
 }
 
 function tabs(sel, fn) {
