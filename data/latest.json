@@ -140,7 +140,70 @@
    "top10_keywords": 8,
    "best_top10_volume": 4100
   },
-  "low_quality_risk": false
+  "low_quality_risk": false,
+  "plan": {
+   "next_grade": "준최3",
+   "next_at": 48.1,
+   "need": 4.1,
+   "this_at": 40.0,
+   "scenarios": [
+    {
+     "label": "지금처럼 (발행·키워드 그대로)",
+     "per_week": 0.7,
+     "weeks": null,
+     "after_4w": 45.1,
+     "after_12w": 45.4
+    },
+    {
+     "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
+     "per_week": 3,
+     "weeks": 2,
+     "after_4w": 55.4,
+     "after_12w": 61.0
+    },
+    {
+     "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
+     "per_week": 5,
+     "weeks": 1,
+     "after_4w": 57.5,
+     "after_12w": 63.8
+    },
+    {
+     "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
+     "per_week": 7,
+     "weeks": 1,
+     "after_4w": 60.1,
+     "after_12w": 68.3
+    }
+   ],
+   "levers": [
+    {
+     "label": "키워드 경쟁력",
+     "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
+     "gain": 4.7
+    },
+    {
+     "label": "발행 페이스",
+     "how": "12주 동안 주 3개씩 쓰면",
+     "gain": 3.3
+    },
+    {
+     "label": "꾸준함",
+     "how": "12주 동안 매주 1개 이상 쓰면",
+     "gain": 3.3
+    },
+    {
+     "label": "방문자 규모",
+     "how": "하루 방문이 72명 → 143명이 되면",
+     "gain": 2.2
+    },
+    {
+     "label": "통합검색 노출",
+     "how": "최근 글 80%가 통검에 뜨면",
+     "gain": 2.0
+    }
+   ]
+  }
  },
  "diagnosis": [
   {

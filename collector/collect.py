@@ -484,6 +484,97 @@ def diagnose(idx, checked, plist, visitor_series):
     return out, risk
 
 
+# ---------------------------------------------------------------- 다음 등급 로드맵
+
+def level_plan(idx, checked, posts_12w, vis_avg):
+    """다음 등급까지 몇 점이 필요한지, 무엇을 하면 몇 주 걸리는지 시뮬레이션.
+    방문자·노출률·소통은 지금 그대로 둔다(보수적) — 발행과 키워드만 바꿔 본다."""
+    gi = idx["grade_index"]
+    if gi + 1 >= len(GRADES):
+        return None
+    weights = {f["key"]: f["weight"] for f in idx["factors"]}
+    base = {f["key"]: f["value"] for f in idx["factors"]}
+    wsum = sum(weights[k] for k, v in base.items() if v is not None) or 1
+
+    def score(values):
+        return sum(weights[k] * v for k, v in values.items() if v is not None) / wsum * 100
+
+    target = GRADE_AT[gi + 1]
+    old_kp = [[keyword_power(k) for k in c.get("keywords", [])] for c in checked]
+    weeks_active = idx["stats"]["weeks_active"]
+
+    flat_old = [kp for p in old_kp for kp in p]
+    kp_now = sum(flat_old) / len(flat_old) if flat_old else 0
+
+    def kp_of(vol, rank):
+        return rank_score(rank) * clamp(math.log10(vol + 1) / 5)
+
+    def keyword_with(n_new, new_kp):
+        """새 글 n_new 개가 최근 글 목록 앞에 들어왔을 때 키워드 경쟁력.
+        현실적으로 대표 태그만 제 순위에 뜨고, 두 번째는 절반, 세 번째는 못 뜬다고 본다."""
+        posts = [[new_kp, new_kp * 0.5, 0.0] for _ in range(n_new)] + old_kp
+        kws = [kp for i, p in enumerate(posts[:15]) for kp in (p[:3] if i < 10 else p[:1])]
+        return clamp(2 * sum(kws) / len(kws)) if kws else base.get("keyword")
+
+    def simulate(rate, new_kp, weeks):
+        """주 rate 개씩, 대표 키워드 경쟁력 new_kp 인 글을 weeks 주 동안 쓰면."""
+        w = min(weeks, 12)
+        v = dict(base)
+        v["pace"] = clamp((len(posts_12w) * (12 - w) / 12 + rate * w) / 12 / 7)
+        v["consistency"] = clamp((weeks_active * (12 - w) / 12 + min(1, rate) * w) / 12)
+        if v.get("keyword") is not None:
+            v["keyword"] = keyword_with(int(rate * weeks), new_kp)
+        return score(v)
+
+    def weeks_to(rate, new_kp):
+        for wk in range(1, 27):
+            if simulate(rate, new_kp, wk) >= target:
+                return wk
+        return None
+
+    scenarios = []
+    for label, rate, new_kp in [
+        ("지금처럼 (발행·키워드 그대로)", max(0.1, idx["stats"]["weekly_posts"]), kp_now),
+        ("주 3개 · 대표 키워드 월 검색 1~3천, 10위 안", 3, kp_of(2000, 7)),
+        ("주 5개 · 대표 키워드 월 검색 1~3천, 10위 안", 5, kp_of(2000, 7)),
+        ("매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안", 7, kp_of(4000, 4)),
+    ]:
+        scenarios.append({"label": label, "per_week": rate, "weeks": weeks_to(rate, new_kp),
+                          "after_4w": round(simulate(rate, new_kp, 4), 1),
+                          "after_12w": round(simulate(rate, new_kp, 12), 1)})
+
+    # 항목 하나만 바꿨을 때 오르는 점수
+    levers = []
+    for label, key, value, how in [
+        ("발행 페이스", "pace", 3 / 7, "12주 동안 주 3개씩 쓰면"),
+        ("꾸준함", "consistency", 1.0, "12주 동안 매주 1개 이상 쓰면"),
+        ("통합검색 노출", "total", 0.8, "최근 글 80%가 통검에 뜨면"),
+        ("방문자 규모", "visitors", None, None),
+    ]:
+        v = dict(base)
+        if key == "visitors":
+            if base.get("visitors") is None or not vis_avg:
+                continue
+            goal = round(vis_avg * 2)
+            value, how = clamp(math.log10(goal + 1) / 4), f"하루 방문이 {round(vis_avg)}명 → {goal}명이 되면"
+        if base.get(key) is None or base[key] >= value:
+            continue
+        v[key] = value
+        levers.append({"label": label, "how": how, "gain": round(score(v) - idx["score"], 1)})
+    if base.get("keyword") is not None:
+        levers.append({"label": "키워드 경쟁력", "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
+                       "gain": round(score({**base, "keyword": keyword_with(5, kp_of(2000, 7))}) - idx["score"], 1)})
+    levers.sort(key=lambda x: -x["gain"])
+    return {
+        "next_grade": GRADES[gi + 1],
+        "next_at": target,
+        "need": round(max(0, target - idx["score"]), 1),
+        "this_at": GRADE_AT[gi],
+        "scenarios": scenarios,
+        "levers": levers,
+    }
+
+
 # ---------------------------------------------------------------- 경쟁 블로그
 
 def avg_visitors(visitors):
@@ -648,6 +739,7 @@ def main():
     idx = estimate_index(posts_12w, checked, visitors, info)
     diag, risk = diagnose(idx, checked, posts_12w, vseries)
     idx["low_quality_risk"] = risk
+    idx["plan"] = level_plan(idx, checked, posts_12w, avg_visitors(visitors))
 
     save_json(os.path.join(DATA_DIR, "latest.json"), {
         "configured": True,

@@ -79,6 +79,24 @@ a{color:inherit}
 .track-l{display:grid;grid-template-columns:1fr 7fr 3fr 4fr;font-size:11px;color:var(--ink-3);margin-top:6px;text-align:left}
 .warn{display:inline-block;margin-top:14px;background:var(--plum-soft);color:var(--plum);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700}
 
+/* 다음 레벨 로드맵 */
+.road{margin-top:22px;background:var(--card);border-radius:24px;padding:22px}
+.road h3{margin:0 0 4px;font-size:20px;font-weight:400}
+.road .lead{color:var(--ink-2);font-size:14px;margin:0 0 14px}
+.road .lead b{color:var(--coral)}
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.path{background:var(--paper);border-radius:16px;padding:14px;border:2px solid transparent}
+.path.best{border-color:var(--coral)}
+.path .lbl{font-size:13px;font-weight:700;line-height:1.4;min-height:36px}
+.path .when{font-size:26px;font-weight:900;margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.path .when.never{font-size:16px;color:var(--ink-3);font-weight:700}
+.path .after{font-size:12px;color:var(--ink-3)}
+.path .after b{color:var(--ink-2);font-weight:500}
+.levers{margin-top:16px;display:grid;gap:6px}
+.levers div{display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:center;font-size:13px}
+.levers b{text-align:right;color:var(--leaf);font-variant-numeric:tabular-nums}
+.levers span{color:var(--ink-2)}
+
 /* 숫자 줄 */
 .strip{display:grid;grid-template-columns:repeat(6,1fr);background:var(--card);border-radius:20px;overflow:hidden;margin:22px 0}
 @media (max-width:760px){.strip{grid-template-columns:repeat(3,1fr)}}
@@ -285,7 +303,7 @@ function render(d, history, vseries) {
       <div class="c"><b>${Math.round(idx.score)}</b><small>쭈로그 점수</small>${diff ? `<small>${diff}</small>` : ""}</div>
     </div>
     <div>
-      <div class="who">${p.image ? `<img src="${esc(p.image)}" alt="" referrerpolicy="no-referrer">` : ""}
+      <div class="who">${p.image ? `<img src="${esc(p.image.replace(/^http:/, "https:"))}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)} · @${esc(d.blog_id)} ↗</a>
         ${info.topic ? `<span class="pill">${esc(info.topic)}</span>` : ""}
         ${info.naver_mate ? `<span class="pill mate">네이버 메이트${info.mate_citations ? " · AI 인용 " + esc(info.mate_citations) : ""}</span>` : ""}
@@ -298,6 +316,8 @@ function render(d, history, vseries) {
       ${idx.low_quality_risk ? `<div class="warn">⚠ 저품질 의심</div>` : ""}
     </div>
   </section>
+
+  ${idx.plan ? roadmap(idx) : ""}
 
   <section class="strip">
     <div><span>총 글</span><b>${fmt(d.total_posts)}</b></div>
@@ -378,7 +398,32 @@ function render(d, history, vseries) {
   tabs("#visF", b => drawVis(+b.dataset.r));
 }
 
-const RIVAL_SORT = {score: "체급", visitors_avg: "하루 방문", subscribers: "구독자", posts_30d: "30일 발행"};
+function gradeAt(idx, score) {
+  const at = idx.grade_at || idx.grades.map((_, i) => i / 15 * 100);
+  let g = 0; at.forEach((v, i) => { if (score >= v) g = i; });
+  return idx.grades[g];
+}
+
+function roadmap(idx) {
+  const p = idx.plan;
+  const reach = p.scenarios.filter(s => s.weeks);
+  const best = reach.length ? reach.reduce((a, b) => (a.per_week <= b.per_week ? a : b)) : null;
+  const when = w => w == null ? "6개월 안엔 어려워요" : w <= 1 ? "약 1주" : `약 ${w}주`;
+  return `<section class="road">
+    <h3 class="hand">${esc(p.next_grade)}까지 이렇게 하면</h3>
+    <p class="lead">지금 ${idx.score}점 · ${esc(p.next_grade)} 기준 ${p.next_at}점 — <b>${p.need}점</b> 더 필요해요.
+      ${best ? `가장 현실적인 길은 <b>${esc(best.label)}</b> — <b>${when(best.weeks)}</b>.` : ""}</p>
+    <div class="paths">${p.scenarios.map(s => `<div class="path ${s === best ? "best" : ""}">
+      <div class="lbl">${esc(s.label)}</div>
+      <div class="when ${s.weeks ? "" : "never"}">${when(s.weeks)}</div>
+      <div class="after">4주 뒤 <b>${s.after_4w}점 · ${esc(gradeAt(idx, s.after_4w))}</b><br>12주 뒤 <b>${s.after_12w}점 · ${esc(gradeAt(idx, s.after_12w))}</b></div>
+    </div>`).join("")}</div>
+    ${p.levers.length ? `<div class="levers">${p.levers.map(l => `<div><b>+${l.gain}점</b><span>${esc(l.how)} <small style="color:var(--ink-3)">(${esc(l.label)})</small></span></div>`).join("")}</div>` : ""}
+    <p class="note">매일 아침 오늘 데이터로 다시 계산해요. 방문자·노출률은 지금 그대로라고 보고 발행과 키워드만 바꿔 본 쭈로그 기준 예상이에요. 실제 네이버 반영은 보통 2~4주 늦게 따라와요.</p>
+  </section>`;
+}
+
+const RIVAL_SORT ={score: "체급", visitors_avg: "하루 방문", subscribers: "구독자", posts_30d: "30일 발행"};
 
 function renderRivals(c, history) {
   const prev = history.length > 1 ? history[history.length - 2] : null;
