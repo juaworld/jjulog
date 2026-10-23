@@ -243,5 +243,26 @@
   "total": 10,
   "competition": "낮음",
   "date": "2026-10-23"
+ },
+ "웨딩홀투어체크리스트": {
+  "pc": 300,
+  "mobile": 440,
+  "total": 740,
+  "competition": "높음",
+  "date": "2026-10-24"
+ },
+ "웨딩홀체크리스트": {
+  "pc": 260,
+  "mobile": 390,
+  "total": 650,
+  "competition": "높음",
+  "date": "2026-10-24"
+ },
+ "웨딩홀투어질문": {
+  "pc": 5,
+  "mobile": 10,
+  "total": 15,
+  "competition": "낮음",
+  "date": "2026-10-24"
  }
 }
