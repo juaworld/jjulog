@@ -242,11 +242,18 @@ class Search:
         self.seen = {}  # 다른 블로그 id → {키워드: 최고 순위} (키워드 순위 검색에서 본 것)
 
     def _web(self, params):
-        self.calls += 1
-        time.sleep(1.2)
-        _, text = http_get("https://search.naver.com/search.naver?" + urllib.parse.urlencode(params),
-                           {"Referer": "https://www.naver.com"})
-        return text
+        """네이버 검색 페이지. 너무 자주 부르면 403/429로 막히니 한 번 쉬었다 다시 시도."""
+        url = "https://search.naver.com/search.naver?" + urllib.parse.urlencode(params)
+        for attempt in range(2):
+            self.calls += 1
+            time.sleep(1.5 if not attempt else 45)
+            try:
+                _, text = http_get(url, {"Referer": "https://www.naver.com"})
+                return text
+            except urllib.error.HTTPError as e:
+                if e.code not in (403, 429) or attempt:
+                    raise
+                print(f"  검색 차단({e.code}) — 45초 쉬고 다시 시도")
 
     def blog_tab(self, query, sort="sim"):
         """블로그탭 결과 순서 = 순위."""
@@ -392,10 +399,11 @@ def estimate_index(posts_12w, checked, visitors, info):
     exposure = (sum(c["status"] == "노출" for c in judged) / len(judged)) if judged else None
     tj = [c for c in checked if c.get("total_search") in ("노출", "미노출")]
     total_exp = (sum(c["total_search"] == "노출" for c in tj) / len(tj)) if tj else None
-    kws = [k for c in checked for k in c.get("keywords", []) if not k.get("error")]
+    all_kws = [k for c in checked for k in c.get("keywords", [])]
+    kws = [k for k in all_kws if not k.get("error")]
     ranks = [k.get("rank") for k in kws]
-    # 태그 절반은 원래 큰 키워드라 평균의 2배를 만점으로
-    kw = clamp(2 * sum(keyword_power(k) for k in kws) / len(kws)) if kws else None
+    # 태그 절반은 원래 큰 키워드라 평균의 2배를 만점으로. 검색이 절반 넘게 실패하면 판단 보류
+    kw = clamp(2 * sum(keyword_power(k) for k in kws) / len(kws)) if kws and len(kws) * 2 >= len(all_kws) else None
     opt = [c["content"]["score"] for c in checked if c.get("content")]
     content = (sum(opt) / len(opt) / 100) if opt else None
     comments = (sum(p["comments"] for p in posts_12w) / len(posts_12w)) if posts_12w else 0
@@ -704,6 +712,23 @@ def main():
         checked.append(item)
         print(f"  {item['status']}/{item['total_search']} {item['content'] and item['content']['score']}점 {p['title'][:30]}")
 
+    # 검색이 막혀 실패한 글은 지난 수집 결과를 그대로 쓴다 (0점 처리 방지)
+    prev = load_json(os.path.join(DATA_DIR, "latest.json"), {})
+    prev_posts = {p["logNo"]: p for p in prev.get("posts", [])} if prev.get("blog_id") == blog_id else {}
+    reused = 0
+    for item in checked:
+        old = prev_posts.get(item["logNo"])
+        if not old:
+            continue
+        if item["status"] == "에러" and old.get("status") in ("노출", "누락"):
+            item["status"], item["total_search"], reused = old["status"], old.get("total_search"), reused + 1
+        elif item["total_search"] == "에러" and old.get("total_search") in ("노출", "미노출"):
+            item["total_search"] = old["total_search"]
+        old_kw = {k["keyword"]: k for k in old.get("keywords", []) if not k.get("error")}
+        item["keywords"] = [old_kw.get(k["keyword"], k) if k.get("error") else k for k in item["keywords"]]
+    if reused:
+        print(f"검색 실패 {reused}개 글은 지난 결과 사용")
+
     watch = [{"keyword": kw, **search.rank(kw)} for kw in cfg.get("keywords", [])]
 
     # 키워드 검색량 (검색광고 API 키가 있을 때)
@@ -748,6 +773,7 @@ def main():
         "search_mode": search.mode,
         "keyword_tool": tool.enabled,
         "search_calls": search.calls,
+        "search_reused": reused,
         "profile": profile,
         "info": info,
         "total_posts": total,
