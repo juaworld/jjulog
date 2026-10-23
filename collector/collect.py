@@ -343,43 +343,62 @@ def rank_score(r):
     return 0.0
 
 
+def keyword_power(k):
+    """키워드 하나의 경쟁력 0~1: 순위 점수 × 검색량 크기(월 10만 = 1).
+    검색량을 모르면 중간값(0.5)으로 본다."""
+    vol = (k.get("volume") or {}).get("total")
+    size = clamp(math.log10(vol + 1) / 5) if vol is not None else 0.5
+    return rank_score(k.get("rank")) * size
+
+
+# 등급 경계: 위로 갈수록 촘촘히 어려워지게 score = 100 × (i/15)^(1/2.2)
+# → 준최1 29점, 준최4 55점, 최적1 75점, 최적4+ 98점
+GRADE_CURVE = 2.2
+GRADE_AT = [round(100 * (i / len(GRADES)) ** (1 / GRADE_CURVE), 1) for i in range(len(GRADES))]
+
+
 def estimate_index(posts_12w, checked, visitors, info):
-    """쭈로그 지수: 각 요소 0~1 × 가중치, 값이 없는 요소는 빼고 정규화."""
+    """쭈로그 지수: 각 요소 0~1 × 가중치, 값이 없는 요소는 빼고 정규화.
+    방문자 규모와 '얼마나 큰 키워드에서 상위에 뜨는지'가 등급을 좌우한다."""
     weekly = len(posts_12w) / 12
     weeks_active = len({datetime.fromisoformat(p["date"]).isocalendar()[:2] for p in posts_12w})
     judged = [c for c in checked if c["status"] in ("노출", "누락")]
     exposure = (sum(c["status"] == "노출" for c in judged) / len(judged)) if judged else None
     tj = [c for c in checked if c.get("total_search") in ("노출", "미노출")]
     total_exp = (sum(c["total_search"] == "노출" for c in tj) / len(tj)) if tj else None
-    ranks = [k.get("rank") for c in checked for k in c.get("keywords", [])]
-    kw = (sum(rank_score(r) for r in ranks) / len(ranks)) if ranks else None
+    kws = [k for c in checked for k in c.get("keywords", []) if not k.get("error")]
+    ranks = [k.get("rank") for k in kws]
+    # 태그 절반은 원래 큰 키워드라 평균의 2배를 만점으로
+    kw = clamp(2 * sum(keyword_power(k) for k in kws) / len(kws)) if kws else None
     opt = [c["content"]["score"] for c in checked if c.get("content")]
     content = (sum(opt) / len(opt) / 100) if opt else None
     comments = (sum(p["comments"] for p in posts_12w) / len(posts_12w)) if posts_12w else 0
     subs = info.get("subscribers")
-    engagement = clamp(0.6 * math.log1p(comments) / math.log1p(20)
-                       + 0.4 * (math.log1p(subs) / math.log1p(5000) if subs else 0))
-    vis_avg = (sum(v["count"] for v in visitors) / len(visitors)) if visitors else None
+    engagement = clamp(0.5 * math.log1p(comments) / math.log1p(30)
+                       + 0.5 * (math.log10(subs + 1) / 4 if subs else 0))
+    # 오늘은 집계 중이라 빼고 평균
+    full_days = visitors[:-1] if visitors and len(visitors) > 1 else visitors
+    vis_avg = (sum(v["count"] for v in full_days) / len(full_days)) if full_days else None
 
     factors = [
-        ("exposure", "블로그탭 노출", 30, exposure),
+        ("visitors", "방문자 규모", 30, None if vis_avg is None else clamp(math.log10(vis_avg + 1) / 4)),
+        ("keyword", "키워드 경쟁력", 30, kw),
+        ("exposure", "블로그탭 노출", 10, exposure),
         ("total", "통합검색 노출", 10, total_exp),
-        ("keyword", "키워드 순위", 15, kw),
-        ("pace", "발행 페이스", 15, clamp(weekly / 7)),
-        ("consistency", "꾸준함", 10, clamp(weeks_active / 12)),
-        ("content", "글 최적화", 10, content),
+        ("pace", "발행 페이스", 10, clamp(weekly / 7)),
+        ("consistency", "꾸준함", 5, clamp(weeks_active / 12)),
         ("engagement", "소통·구독", 5, engagement),
-        ("visitors", "방문자", 5, None if vis_avg is None else clamp(math.log1p(vis_avg) / math.log1p(3000))),
     ]
     usable = [f for f in factors if f[3] is not None]
     wsum = sum(f[2] for f in usable) or 1
     score = round(sum(f[2] * f[3] for f in usable) / wsum * 100, 1)
-    gi = min(len(GRADES) - 1, int(score / 100 * len(GRADES)))
+    gi = max(i for i, at in enumerate(GRADE_AT) if score >= at)
     return {
         "score": score,
         "grade": GRADES[gi],
         "grade_index": gi,
         "grades": GRADES,
+        "grade_at": GRADE_AT,
         "factors": [{"key": k, "label": lbl, "weight": w, "value": None if v is None else round(v, 3)}
                     for k, lbl, w, v in factors],
         "stats": {
@@ -391,6 +410,8 @@ def estimate_index(posts_12w, checked, visitors, info):
             "avg_content_score": round(sum(opt) / len(opt)) if opt else None,
             "visitors_avg": None if vis_avg is None else round(vis_avg, 1),
             "top10_keywords": sum(1 for r in ranks if r and r <= 10),
+            "best_top10_volume": max([(k.get("volume") or {}).get("total") or 0
+                                      for k in kws if k.get("rank") and k["rank"] <= 10] or [0]),
         },
     }
 

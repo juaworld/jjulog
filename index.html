@@ -193,8 +193,8 @@ function ago(iso) {
 }
 
 const BLOG_TAB = {"노출": ["s-ok", "블로그탭 노출"], "누락": ["s-miss", "블로그탭 누락"], "에러": ["s-err", "확인 실패"], "검색 비허용": ["s-off", "검색 꺼짐"]};
-const FACTOR_COLOR = {exposure: "var(--coral)", total: "var(--sky)", keyword: "var(--sun)", pace: "var(--leaf)",
-  consistency: "#7a9a3a", content: "#9a6bc0", engagement: "#c0577f", visitors: "var(--ink-3)"};
+const FACTOR_COLOR = {visitors: "var(--coral)", keyword: "var(--sun)", exposure: "var(--leaf)", total: "var(--sky)",
+  pace: "#9a6bc0", consistency: "#7a9a3a", engagement: "#c0577f", content: "var(--ink-3)"};
 const COMP = {"낮음": "c-low", "중간": "c-mid", "높음": "c-high"};
 
 function applyTheme(t) { if (t) document.documentElement.dataset.theme = t; }
@@ -240,7 +240,8 @@ function render(d, history, vseries) {
   const prev = history.length > 1 ? history[history.length - 2].score : null;
   const diff = prev == null ? "" : (idx.score - prev >= 0 ? "▲ " : "▼ ") + Math.abs(idx.score - prev).toFixed(1) + " 어제보다";
   const next = idx.grades[idx.grade_index + 1];
-  const toNext = next ? Math.max(0, ((idx.grade_index + 1) / 15 * 100 - idx.score)).toFixed(1) : null;
+  const nextAt = idx.grade_at ? idx.grade_at[idx.grade_index + 1] : (idx.grade_index + 1) / 15 * 100;
+  const toNext = next ? Math.max(0, nextAt - idx.score).toFixed(1) : null;
   const allKw = [...d.posts.flatMap(x => (x.keywords || []).map(k => ({...k, post: x.title}))), ...d.watch_keywords.map(k => ({...k, watch: true}))];
   const hasVol = allKw.some(k => k.volume), hasDocs = allKw.some(k => k.docs);
 
