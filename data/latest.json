@@ -1,7 +1,7 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T10:09:52.687055+09:00",
+ "updated_at": "2026-10-23T10:20:24.588819+09:00",
  "search_mode": "web",
  "keyword_tool": true,
  "search_calls": 65,
@@ -13,9 +13,9 @@
  },
  "info": {
   "nickname": "쭈아",
-  "subscribers": 303,
-  "total_visitors": 48256,
-  "today_visitors": 24,
+  "subscribers": 304,
+  "total_visitors": 48258,
+  "today_visitors": 26,
   "topic": "육아·결혼",
   "power_blog": false,
   "naver_mate": false,
@@ -23,7 +23,7 @@
   "official": false
  },
  "total_posts": 107,
- "last_post": "2026-10-22T12:09:55.507686+09:00",
+ "last_post": "2026-10-22T12:20:27.992530+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -44,7 +44,7 @@
   },
   {
    "date": "2026-10-23",
-   "count": 24
+   "count": 26
   }
  ],
  "index": {
@@ -174,7 +174,7 @@
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T12:09:55.507686+09:00",
+   "date": "2026-10-22T12:20:27.992530+09:00",
    "comments": 14,
    "category": "결혼 준비",
    "tags": [
@@ -216,7 +216,7 @@
     },
     {
      "keyword": "서울웨딩홀견적비교",
-     "rank": 3,
+     "rank": 2,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -290,7 +290,7 @@
    "keywords": [
     {
      "keyword": "아그작케이크",
-     "rank": 14,
+     "rank": 15,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -314,7 +314,7 @@
     },
     {
      "keyword": "뚜레쥬르아그작",
-     "rank": 9,
+     "rank": 10,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -901,9 +901,9 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 4250,
-      "mobile": 17100,
-      "total": 21350,
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
       "competition": "높음"
      },
      "docs": null
@@ -1263,7 +1263,7 @@
     {
      "keyword": "신대방카페",
      "rank": null,
-     "of": 31,
+     "of": 30,
      "volume": {
       "pc": 5,
       "mobile": 5,
