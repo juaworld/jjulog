@@ -1,7 +1,7 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T09:30:59.193307+09:00",
+ "updated_at": "2026-10-23T09:35:52.779681+09:00",
  "search_mode": "web",
  "keyword_tool": false,
  "search_calls": 65,
@@ -14,8 +14,8 @@
  "info": {
   "nickname": "쭈아",
   "subscribers": 303,
-  "total_visitors": 48250,
-  "today_visitors": 18,
+  "total_visitors": 48251,
+  "today_visitors": 19,
   "topic": "육아·결혼",
   "power_blog": false,
   "naver_mate": false,
@@ -23,7 +23,7 @@
   "official": false
  },
  "total_posts": 107,
- "last_post": "2026-10-22T12:30:59.380052+09:00",
+ "last_post": "2026-10-22T12:35:55.919668+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -44,11 +44,11 @@
   },
   {
    "date": "2026-10-23",
-   "count": 18
+   "count": 19
   }
  ],
  "index": {
-  "score": 61.3,
+  "score": 61.6,
   "grade": "최적2",
   "grade_index": 9,
   "grades": [
@@ -85,7 +85,7 @@
     "key": "keyword",
     "label": "키워드 순위",
     "weight": 15,
-    "value": 0.297
+    "value": 0.32
    },
    {
     "key": "pace",
@@ -125,8 +125,8 @@
    "total_exposure_rate": 0.6,
    "avg_comments": 15.4,
    "avg_content_score": 94,
-   "visitors_avg": 60.8,
-   "top10_keywords": 7
+   "visitors_avg": 61.0,
+   "top10_keywords": 8
   },
   "low_quality_risk": false
  },
@@ -162,7 +162,7 @@
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T12:30:59.380052+09:00",
+   "date": "2026-10-22T12:35:55.919668+09:00",
    "comments": 11,
    "category": "결혼 준비",
    "tags": [
@@ -263,7 +263,7 @@
    "keywords": [
     {
      "keyword": "아그작케이크",
-     "rank": 16,
+     "rank": 14,
      "of": 30,
      "volume": null,
      "docs": null
@@ -277,7 +277,7 @@
     },
     {
      "keyword": "뚜레쥬르아그작",
-     "rank": 14,
+     "rank": 10,
      "of": 30,
      "volume": null,
      "docs": null
@@ -708,8 +708,8 @@
    "keywords": [
     {
      "keyword": "롯데월드미용실",
-     "rank": null,
-     "of": 0,
+     "rank": 19,
+     "of": 30,
      "volume": null,
      "docs": null
     },
