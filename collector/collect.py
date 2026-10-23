@@ -301,12 +301,28 @@ class KeywordTool:
         self.secret = os.environ.get("NAVER_AD_SECRET", "").strip()
         self.enabled = bool(self.cust and self.key and self.secret)
 
-    def volumes(self, keywords):
+    def volumes(self, keywords, cache, max_age_days=7):
+        """월간 검색량. cache(키워드→값+날짜)를 먼저 쓰고 오래된 것만 새로 묻는다.
+        API가 자주 불리면 큰 키워드도 "< 10" 으로 가려서 주는 경우가 있어,
+        그런 응답이 알려진 큰 값을 덮어쓰지 않게 한다."""
+        today = now_kst().strftime("%Y-%m-%d")
+        fresh_after = (now_kst() - timedelta(days=max_age_days)).strftime("%Y-%m-%d")
+        wanted = list(dict.fromkeys(k.replace(" ", "") for k in keywords if k.strip()))
+        todo = [k for k in wanted if not (k in cache and cache[k].get("date", "") >= fresh_after)]
+        if self.enabled and todo:
+            for kw, v in self._query(todo).items():
+                old = cache.get(kw)
+                masked = v["pc"] <= 5 and v["mobile"] <= 5
+                if masked and old and old["total"] > 20:
+                    old["date"] = today  # 가려진 응답 — 알던 값 유지
+                    continue
+                cache[kw] = {**v, "date": today}
+        return {k: cache[k] for k in wanted if k in cache}
+
+    def _query(self, keywords):
         out = {}
-        if not self.enabled:
-            return out
         # 여러 개를 한 번에 물으면 일부가 "< 10" 으로 잘못 오는 경우가 있어 하나씩 묻는다
-        for kw in dict.fromkeys(k.replace(" ", "") for k in keywords if k.strip()):
+        for kw in keywords:
             ts = str(int(time.time() * 1000))
             sig = base64.b64encode(hmac.new(self.secret.encode(), f"{ts}.GET./keywordstool".encode(),
                                             hashlib.sha256).digest()).decode()
@@ -320,8 +336,6 @@ class KeywordTool:
                 continue
             rows = json.loads(body).get("keywordList", [])
             row = next((r for r in rows if r.get("relKeyword", "").upper() == kw.upper()), None)
-            print(f"  검색량 {kw}: 결과 {len(rows)}행, 일치 {row and {k: row.get(k) for k in ('relKeyword', 'monthlyPcQcCnt', 'monthlyMobileQcCnt', 'compIdx')}}"
-                  f", 첫 행 {rows[0].get('relKeyword') if rows else None}")
             if row:
                 pc, mo = self._count(row.get("monthlyPcQcCnt")), self._count(row.get("monthlyMobileQcCnt"))
                 out[kw] = {"pc": pc, "mobile": mo, "total": pc + mo, "competition": row.get("compIdx")}
@@ -510,7 +524,10 @@ def main():
     # 키워드 검색량 (검색광고 API 키가 있을 때)
     tool = KeywordTool()
     all_kw = [k["keyword"] for c in checked for k in c["keywords"]] + [w["keyword"] for w in watch]
-    vols = tool.volumes(all_kw)
+    kv_path = os.path.join(DATA_DIR, "keyword_volumes.json")
+    kv_cache = load_json(kv_path, {})
+    vols = tool.volumes(all_kw, kv_cache)
+    save_json(kv_path, kv_cache)
     for k in [k for c in checked for k in c["keywords"]] + watch:
         k["volume"] = vols.get(k["keyword"].replace(" ", ""))
         k["docs"] = search.doc_counts.get(k["keyword"])
