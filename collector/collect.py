@@ -318,8 +318,10 @@ class KeywordTool:
             except NET_ERRORS as e:
                 print(f"  검색광고 API 실패 ({kw}): {e}")
                 continue
-            row = next((r for r in json.loads(body).get("keywordList", [])
-                        if r.get("relKeyword", "").upper() == kw.upper()), None)
+            rows = json.loads(body).get("keywordList", [])
+            row = next((r for r in rows if r.get("relKeyword", "").upper() == kw.upper()), None)
+            print(f"  검색량 {kw}: 결과 {len(rows)}행, 일치 {row and {k: row.get(k) for k in ('relKeyword', 'monthlyPcQcCnt', 'monthlyMobileQcCnt', 'compIdx')}}"
+                  f", 첫 행 {rows[0].get('relKeyword') if rows else None}")
             if row:
                 pc, mo = self._count(row.get("monthlyPcQcCnt")), self._count(row.get("monthlyMobileQcCnt"))
                 out[kw] = {"pc": pc, "mobile": mo, "total": pc + mo, "competition": row.get("compIdx")}
