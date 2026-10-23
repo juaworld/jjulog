@@ -27,7 +27,7 @@ config.json 을 고쳐 커밋하면 바로 다시 수집해요. 수동 실행은
 
 | 받는 곳 | Secret 이름 | 효과 |
 |---|---|---|
-| [네이버 개발자센터](https://developers.naver.com) → 애플리케이션 등록, 사용 API **검색** | `NAVER_CLIENT_ID`, `NAVER_CLIENT_SECRET` | 블로그탭 순위 100위까지, 키워드 문서 수 |
+| 네이버클라우드 **NAVER API HUB** → Application 생성, Search API 선택 (2026-07부터 개발자센터 신규 신청 종료) | `NAVER_CLIENT_ID`, `NAVER_CLIENT_SECRET` | 블로그탭 순위 100위까지, 키워드 문서 수 |
 | [네이버 검색광고](https://searchad.naver.com) → 도구 → API 사용 관리 | `NAVER_AD_CUSTOMER_ID`, `NAVER_AD_API_KEY`, `NAVER_AD_SECRET` | 키워드 월간 검색량·경쟁도 |
 
 ## 점수 계산

@@ -5,7 +5,7 @@ data/latest.json, data/history.json, data/visitors.json 을 만든다. 표준 �
 
 환경변수 (모두 선택)
   BLOG_ID                       config.json 의 blog_id 대신 쓸 블로그 아이디
-  NAVER_CLIENT_ID / SECRET      네이버 검색 API — 블로그탭 순위 100위까지, 문서 수
+  NAVER_CLIENT_ID / SECRET      NAVER API HUB 검색 API — 블로그탭 순위 100위까지, 문서 수
   NAVER_AD_CUSTOMER_ID / API_KEY / SECRET
                                 네이버 검색광고 API — 키워드 월간 검색량·경쟁도
 """
@@ -251,9 +251,10 @@ class Search:
         if self.mode == "api":
             self.calls += 1
             time.sleep(0.3)
-            url = ("https://openapi.naver.com/v1/search/blog.json?"
-                   + urllib.parse.urlencode({"query": query, "display": 100, "sort": sort}))
-            _, body = http_get(url, {"X-Naver-Client-Id": self.cid, "X-Naver-Client-Secret": self.secret})
+            # 2026-07부터 검색 API는 네이버클라우드 NAVER API HUB 에서 발급·호출
+            url = ("https://naverapihub.apigw.ntruss.com/search/v1/blog?"
+                   + urllib.parse.urlencode({"query": query, "display": 100, "sort": sort, "format": "json"}))
+            _, body = http_get(url, {"X-NCP-APIGW-API-KEY-ID": self.cid, "X-NCP-APIGW-API-KEY": self.secret})
             data = json.loads(body)
             self.doc_counts[query] = data.get("total")
             return link_keys("\n".join(i.get("link", "") for i in data.get("items", [])))
