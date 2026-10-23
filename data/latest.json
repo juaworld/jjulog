@@ -1,7 +1,7 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T10:20:24.588819+09:00",
+ "updated_at": "2026-10-23T10:28:17.737409+09:00",
  "search_mode": "web",
  "keyword_tool": true,
  "search_calls": 65,
@@ -13,9 +13,9 @@
  },
  "info": {
   "nickname": "쭈아",
-  "subscribers": 304,
-  "total_visitors": 48258,
-  "today_visitors": 26,
+  "subscribers": 305,
+  "total_visitors": 48259,
+  "today_visitors": 27,
   "topic": "육아·결혼",
   "power_blog": false,
   "naver_mate": false,
@@ -23,7 +23,7 @@
   "official": false
  },
  "total_posts": 107,
- "last_post": "2026-10-22T12:20:27.992530+09:00",
+ "last_post": "2026-10-22T12:28:20.915250+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -44,11 +44,11 @@
   },
   {
    "date": "2026-10-23",
-   "count": 26
+   "count": 27
   }
  ],
  "index": {
-  "score": 40.2,
+  "score": 44.0,
   "grade": "준최2",
   "grade_index": 2,
   "grades": [
@@ -96,7 +96,7 @@
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.133
+    "value": 0.26
    },
    {
     "key": "exposure",
@@ -126,7 +126,7 @@
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.721
+    "value": 0.722
    }
   ],
   "stats": {
@@ -134,11 +134,11 @@
    "weeks_active": 4,
    "exposure_rate": 1.0,
    "total_exposure_rate": 0.6,
-   "avg_comments": 15.8,
+   "avg_comments": 15.9,
    "avg_content_score": 94,
    "visitors_avg": 71.5,
    "top10_keywords": 8,
-   "best_top10_volume": 10
+   "best_top10_volume": 4100
   },
   "low_quality_risk": false
  },
@@ -174,7 +174,7 @@
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T12:20:27.992530+09:00",
+   "date": "2026-10-22T12:28:20.915250+09:00",
    "comments": 14,
    "category": "결혼 준비",
    "tags": [
@@ -207,10 +207,11 @@
      "rank": 1,
      "of": 32,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 60,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -219,10 +220,11 @@
      "rank": 2,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "높음"
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -231,10 +233,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 820,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -290,13 +293,14 @@
    "keywords": [
     {
      "keyword": "아그작케이크",
-     "rank": 15,
+     "rank": 14,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 8510,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -305,10 +309,11 @@
      "rank": 7,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "중간"
+      "pc": null,
+      "mobile": null,
+      "total": 2920,
+      "competition": "중간",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -317,10 +322,11 @@
      "rank": 10,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "중간"
+      "pc": null,
+      "mobile": null,
+      "total": 4100,
+      "competition": "중간",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -346,7 +352,7 @@
    "title": "베르사유 궁전 후기｜2026 입장료·예약 꿀팁부터 거울의 방과 마리 앙투아네트 마을까지",
    "url": "https://blog.naver.com/hbokey/224447580328",
    "date": "2026-10-20T12:00:00+09:00",
-   "comments": 11,
+   "comments": 12,
    "category": "해외 여행",
    "tags": [
     "베르사유궁전후기",
@@ -378,10 +384,11 @@
      "rank": 1,
      "of": 31,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "높음"
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -390,10 +397,11 @@
      "rank": null,
      "of": 33,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 8460,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -402,10 +410,11 @@
      "rank": 12,
      "of": 31,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 1760,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -464,10 +473,11 @@
      "rank": null,
      "of": 27,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "낮음"
+      "competition": "낮음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -476,10 +486,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 17460,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -488,10 +499,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 2580,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -548,10 +560,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 2980,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -560,10 +573,11 @@
      "rank": 17,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "낮음"
+      "competition": "낮음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -572,10 +586,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 90,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -643,10 +658,11 @@
      "rank": 10,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "중간"
+      "pc": null,
+      "mobile": null,
+      "total": 460,
+      "competition": "중간",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -655,10 +671,11 @@
      "rank": 3,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "중간"
+      "pc": null,
+      "mobile": null,
+      "total": 80,
+      "competition": "중간",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -667,10 +684,11 @@
      "rank": 12,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 60,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -733,10 +751,11 @@
      "rank": null,
      "of": 31,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "높음"
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -745,10 +764,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 1830,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -757,10 +777,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "높음"
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -828,10 +849,11 @@
      "rank": 19,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "중간"
+      "pc": null,
+      "mobile": null,
+      "total": 60,
+      "competition": "중간",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -840,10 +862,11 @@
      "rank": 5,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "낮음"
+      "competition": "낮음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -852,10 +875,11 @@
      "rank": 27,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "높음"
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -901,10 +925,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 21350,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -913,10 +938,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "중간"
+      "pc": null,
+      "mobile": null,
+      "total": 2120,
+      "competition": "중간",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -925,10 +951,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 1710,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -989,10 +1016,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 200,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -1001,10 +1029,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 50,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     },
@@ -1013,10 +1042,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 650,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -1069,10 +1099,11 @@
      "rank": 21,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "낮음"
+      "pc": null,
+      "mobile": null,
+      "total": 590,
+      "competition": "낮음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -1132,10 +1163,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 1500,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -1196,10 +1228,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 120,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -1265,10 +1298,11 @@
      "rank": null,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "높음"
+      "pc": null,
+      "mobile": null,
+      "total": 620,
+      "competition": "높음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
@@ -1328,10 +1362,11 @@
      "rank": 13,
      "of": 30,
      "volume": {
-      "pc": 5,
-      "mobile": 5,
+      "pc": null,
+      "mobile": null,
       "total": 10,
-      "competition": "낮음"
+      "competition": "낮음",
+      "date": "2026-10-23"
      },
      "docs": null
     }
