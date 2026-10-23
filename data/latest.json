@@ -1,7 +1,7 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T10:28:17.737409+09:00",
+ "updated_at": "2026-10-23T10:40:59.574508+09:00",
  "search_mode": "web",
  "keyword_tool": true,
  "search_calls": 65,
@@ -12,6 +12,7 @@
   "link": "https://blog.naver.com/hbokey"
  },
  "info": {
+  "name": "우당탕탕 쭈아의 결혼일기",
   "nickname": "쭈아",
   "subscribers": 305,
   "total_visitors": 48259,
@@ -23,7 +24,7 @@
   "official": false
  },
  "total_posts": 107,
- "last_post": "2026-10-22T12:28:20.915250+09:00",
+ "last_post": "2026-10-22T11:41:02.610377+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -48,7 +49,7 @@
   }
  ],
  "index": {
-  "score": 44.0,
+  "score": 41.0,
   "grade": "준최2",
   "grade_index": 2,
   "grades": [
@@ -96,7 +97,7 @@
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.26
+    "value": 0.148
    },
    {
     "key": "exposure",
@@ -108,7 +109,7 @@
     "key": "total",
     "label": "통합검색 노출",
     "weight": 10,
-    "value": 0.6
+    "value": 0.636
    },
    {
     "key": "pace",
@@ -133,77 +134,14 @@
    "weekly_posts": 0.7,
    "weeks_active": 4,
    "exposure_rate": 1.0,
-   "total_exposure_rate": 0.6,
+   "total_exposure_rate": 0.636,
    "avg_comments": 15.9,
    "avg_content_score": 94,
    "visitors_avg": 71.5,
-   "top10_keywords": 8,
-   "best_top10_volume": 4100
+   "top10_keywords": 3,
+   "best_top10_volume": 460
   },
-  "low_quality_risk": false,
-  "plan": {
-   "next_grade": "준최3",
-   "next_at": 48.1,
-   "need": 4.1,
-   "this_at": 40.0,
-   "scenarios": [
-    {
-     "label": "지금처럼 (발행·키워드 그대로)",
-     "per_week": 0.7,
-     "weeks": null,
-     "after_4w": 45.1,
-     "after_12w": 45.4
-    },
-    {
-     "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
-     "per_week": 3,
-     "weeks": 2,
-     "after_4w": 55.4,
-     "after_12w": 61.0
-    },
-    {
-     "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
-     "per_week": 5,
-     "weeks": 1,
-     "after_4w": 57.5,
-     "after_12w": 63.8
-    },
-    {
-     "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
-     "per_week": 7,
-     "weeks": 1,
-     "after_4w": 60.1,
-     "after_12w": 68.3
-    }
-   ],
-   "levers": [
-    {
-     "label": "키워드 경쟁력",
-     "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
-     "gain": 4.7
-    },
-    {
-     "label": "발행 페이스",
-     "how": "12주 동안 주 3개씩 쓰면",
-     "gain": 3.3
-    },
-    {
-     "label": "꾸준함",
-     "how": "12주 동안 매주 1개 이상 쓰면",
-     "gain": 3.3
-    },
-    {
-     "label": "방문자 규모",
-     "how": "하루 방문이 72명 → 143명이 되면",
-     "gain": 2.2
-    },
-    {
-     "label": "통합검색 노출",
-     "how": "최근 글 80%가 통검에 뜨면",
-     "gain": 2.0
-    }
-   ]
-  }
+  "low_quality_risk": false
  },
  "diagnosis": [
   {
@@ -214,7 +152,7 @@
   {
    "level": "good",
    "title": "통합검색 진입",
-   "detail": "최근 글 60%가 통합검색(통검)에도 떠요."
+   "detail": "최근 글 64%가 통합검색(통검)에도 떠요."
   },
   {
    "level": "good",
@@ -237,7 +175,7 @@
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T12:28:20.915250+09:00",
+   "date": "2026-10-22T11:41:02.610377+09:00",
    "comments": 14,
    "category": "결혼 준비",
    "tags": [
@@ -262,13 +200,13 @@
     "웨딩홀보증인원",
     "2026결혼준비"
    ],
-   "status": "노출",
-   "total_search": "미노출",
+   "status": "에러",
+   "total_search": "에러",
    "keywords": [
     {
      "keyword": "서울웨딩홀투어",
-     "rank": 1,
-     "of": 32,
+     "rank": null,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -280,8 +218,8 @@
     },
     {
      "keyword": "서울웨딩홀견적비교",
-     "rank": 2,
-     "of": 30,
+     "rank": null,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -294,7 +232,7 @@
     {
      "keyword": "서울웨딩홀추천",
      "rank": null,
-     "of": 30,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -351,13 +289,13 @@
     "기념일케이크",
     "디저트후기"
    ],
-   "status": "노출",
-   "total_search": "노출",
+   "status": "에러",
+   "total_search": "에러",
    "keywords": [
     {
      "keyword": "아그작케이크",
-     "rank": 14,
-     "of": 30,
+     "rank": null,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -369,8 +307,8 @@
     },
     {
      "keyword": "뚜레쥬르아그작케이크",
-     "rank": 7,
-     "of": 30,
+     "rank": null,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -382,8 +320,8 @@
     },
     {
      "keyword": "뚜레쥬르아그작",
-     "rank": 10,
-     "of": 30,
+     "rank": null,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -439,13 +377,13 @@
     "파리가볼만한곳",
     "프랑스여행"
    ],
-   "status": "노출",
-   "total_search": "노출",
+   "status": "에러",
+   "total_search": "에러",
    "keywords": [
     {
      "keyword": "베르사유궁전후기",
-     "rank": 1,
-     "of": 31,
+     "rank": null,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -458,7 +396,7 @@
     {
      "keyword": "베르사유궁전",
      "rank": null,
-     "of": 33,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -470,8 +408,8 @@
     },
     {
      "keyword": "베르사유궁전예약",
-     "rank": 12,
-     "of": 31,
+     "rank": null,
+     "error": true,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -528,8 +466,8 @@
     "프랑스여행",
     "나폴레옹3세아파트"
    ],
-   "status": "노출",
-   "total_search": "미노출",
+   "status": "에러",
+   "total_search": "에러",
    "keywords": [
     {
      "keyword": "루브르박물관줄없이입장",
@@ -1451,5 +1389,593 @@
    }
   }
  ],
- "watch_keywords": []
+ "watch_keywords": [],
+ "competitors": {
+  "count": 21,
+  "my_rank": 15,
+  "top_percent": 71,
+  "same_topic": 1,
+  "my_place": {
+   "visitors_avg": 13,
+   "subscribers": 12,
+   "posts_30d": 14,
+   "total_posts": 17
+  },
+  "averages": {
+   "visitors_avg": 450.6,
+   "subscribers": 1296.2,
+   "posts_30d": 17.9,
+   "total_posts": 785.8,
+   "score": 57.9
+  },
+  "blogs": [
+   {
+    "blog_id": "rlen1234",
+    "name": "반짝반짝별빛육아",
+    "nickname": "별빛인생",
+    "topic": "육아·결혼",
+    "subscribers": 7102,
+    "today_visitors": 1258,
+    "visitors_avg": 5524.0,
+    "total_posts": 3842,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "상견례선물고르는법",
+      "rank": 20
+     },
+     {
+      "keyword": "양가부모님선물",
+      "rank": 20
+     },
+     {
+      "keyword": "상견례선물추천",
+      "rank": 25
+     }
+    ],
+    "influencer": false,
+    "score": 96.0,
+    "rank": 1
+   },
+   {
+    "blog_id": "whdidtns52",
+    "name": "20210225",
+    "nickname": "56",
+    "topic": "스타·연예인",
+    "subscribers": 7872,
+    "today_visitors": 249,
+    "visitors_avg": 755.8,
+    "total_posts": 3863,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 5
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 10
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 12
+     }
+    ],
+    "influencer": false,
+    "score": 85.5,
+    "rank": 2
+   },
+   {
+    "blog_id": "whdk0207",
+    "name": "지구 산책하며 맛도리 호로롭",
+    "nickname": "지구호로롭",
+    "topic": "국내여행",
+    "subscribers": 1780,
+    "today_visitors": 236,
+    "visitors_avg": 792.5,
+    "total_posts": 992,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "루브르박물관예약",
+      "rank": 2
+     },
+     {
+      "keyword": "루브르박물관",
+      "rank": 3
+     }
+    ],
+    "influencer": false,
+    "score": 81.1,
+    "rank": 3
+   },
+   {
+    "blog_id": "wo0owo0ow",
+    "name": "No Rice, No Life",
+    "nickname": "박우현",
+    "topic": "세계여행",
+    "subscribers": 885,
+    "today_visitors": 106,
+    "visitors_avg": 372.5,
+    "total_posts": 1306,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 20
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 23
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 27
+     }
+    ],
+    "influencer": false,
+    "score": 75.8,
+    "rank": 4
+   },
+   {
+    "blog_id": "byulccong2",
+    "name": "9개월 결혼 준비 기록.zip",
+    "nickname": "별꽁이",
+    "topic": "",
+    "subscribers": 1236,
+    "today_visitors": 57,
+    "visitors_avg": 330.2,
+    "total_posts": 444,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "상견례선물추천",
+      "rank": 1
+     },
+     {
+      "keyword": "상견례선물고르는법",
+      "rank": 2
+     }
+    ],
+    "influencer": false,
+    "score": 74.5,
+    "rank": 5
+   },
+   {
+    "blog_id": "narara0621",
+    "name": "조용히 흐르던 우리의 시간✨",
+    "nickname": "TIMI",
+    "topic": "일상·생각",
+    "subscribers": 523,
+    "today_visitors": 118,
+    "visitors_avg": null,
+    "total_posts": 1879,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 2
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 9
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 16
+     }
+    ],
+    "influencer": false,
+    "score": 68.9,
+    "rank": 6
+   },
+   {
+    "blog_id": "travelhunter_kmin",
+    "name": "국내해외 여행맛도리",
+    "nickname": "민둥이",
+    "topic": "세계여행",
+    "subscribers": 571,
+    "today_visitors": 32,
+    "visitors_avg": 140.8,
+    "total_posts": 219,
+    "posts_30d": 29,
+    "shared": [
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 7
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 14
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 16
+     }
+    ],
+    "influencer": false,
+    "score": 66.7,
+    "rank": 7
+   },
+   {
+    "blog_id": "1223jik",
+    "name": "밥먹고 술마시고 랜드마크보고",
+    "nickname": "밥술랜",
+    "topic": "세계여행",
+    "subscribers": 280,
+    "today_visitors": 92,
+    "visitors_avg": null,
+    "total_posts": 526,
+    "posts_30d": 26,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 17
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 21
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 26
+     }
+    ],
+    "influencer": false,
+    "score": 62.0,
+    "rank": 8
+   },
+   {
+    "blog_id": "hyunj2022",
+    "name": "일상다반사",
+    "nickname": "Alix",
+    "topic": "일상·생각",
+    "subscribers": 41,
+    "today_visitors": 24,
+    "visitors_avg": 101.0,
+    "total_posts": 203,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 13
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 16
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 20
+     }
+    ],
+    "influencer": false,
+    "score": 59.8,
+    "rank": 9
+   },
+   {
+    "blog_id": "re_vrewing",
+    "name": "24개국 여행자의 정보 공유방 ✈",
+    "nickname": "리뷰루잉",
+    "topic": "세계여행",
+    "subscribers": 29,
+    "today_visitors": 109,
+    "visitors_avg": 368.8,
+    "total_posts": 63,
+    "posts_30d": 22,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 4
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 4
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 8
+     }
+    ],
+    "influencer": false,
+    "score": 59.3,
+    "rank": 10
+   },
+   {
+    "blog_id": "cat_ion",
+    "name": "갓생사는 혠찌 일상 ✌️",
+    "nickname": "혠찌",
+    "topic": "맛집",
+    "subscribers": 1660,
+    "today_visitors": 40,
+    "visitors_avg": 123.5,
+    "total_posts": 292,
+    "posts_30d": 12,
+    "shared": [
+     {
+      "keyword": "봉천역헬스장",
+      "rank": 8
+     },
+     {
+      "keyword": "봉천동PT",
+      "rank": 9
+     },
+     {
+      "keyword": "봉천동헬스",
+      "rank": 15
+     }
+    ],
+    "influencer": false,
+    "score": 57.3,
+    "rank": 11
+   },
+   {
+    "blog_id": "judy9650",
+    "name": "먹짱 돼지의 일상 이야기",
+    "nickname": "먹짱",
+    "topic": "맛집",
+    "subscribers": 1700,
+    "today_visitors": 18,
+    "visitors_avg": 110.8,
+    "total_posts": 559,
+    "posts_30d": 11,
+    "shared": [
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 10
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 15
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 23
+     }
+    ],
+    "influencer": false,
+    "score": 56.9,
+    "rank": 12
+   },
+   {
+    "blog_id": "ehrud135",
+    "name": "강아지강씨 아웃도어 라이프",
+    "nickname": "콜리강",
+    "topic": "국내여행",
+    "subscribers": 226,
+    "today_visitors": 47,
+    "visitors_avg": 255.8,
+    "total_posts": 170,
+    "posts_30d": 5,
+    "shared": [
+     {
+      "keyword": "봉천동헬스",
+      "rank": 13
+     },
+     {
+      "keyword": "봉천동PT",
+      "rank": 14
+     },
+     {
+      "keyword": "봉천역헬스장",
+      "rank": 22
+     }
+    ],
+    "influencer": false,
+    "score": 51.6,
+    "rank": 13
+   },
+   {
+    "blog_id": "941_life",
+    "name": "구사일라이프",
+    "nickname": "941",
+    "topic": "인테리어·DIY",
+    "subscribers": 1090,
+    "today_visitors": 85,
+    "visitors_avg": 120.2,
+    "total_posts": 165,
+    "posts_30d": 3,
+    "shared": [
+     {
+      "keyword": "봉천동헬스",
+      "rank": 3
+     },
+     {
+      "keyword": "봉천동PT",
+      "rank": 3
+     },
+     {
+      "keyword": "봉천역헬스장",
+      "rank": 23
+     }
+    ],
+    "influencer": false,
+    "score": 49.6,
+    "rank": 14
+   },
+   {
+    "blog_id": "hbokey",
+    "name": "우당탕탕 쭈아의 결혼일기",
+    "nickname": "쭈아",
+    "topic": "육아·결혼",
+    "subscribers": 305,
+    "today_visitors": 27,
+    "visitors_avg": 71.5,
+    "total_posts": 107,
+    "posts_30d": 6,
+    "shared": [],
+    "score": 45.5,
+    "me": true,
+    "rank": 15
+   },
+   {
+    "blog_id": "ellen040718",
+    "name": "eun_zip 모음집",
+    "nickname": "리진입니다만",
+    "topic": "",
+    "subscribers": 26,
+    "today_visitors": 51,
+    "visitors_avg": null,
+    "total_posts": 45,
+    "posts_30d": 15,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 2
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 3
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 6
+     }
+    ],
+    "influencer": false,
+    "score": 43.4,
+    "rank": 16
+   },
+   {
+    "blog_id": "leemargin",
+    "name": "Matdori Place",
+    "nickname": "도리",
+    "topic": "취미",
+    "subscribers": 75,
+    "today_visitors": 34,
+    "visitors_avg": null,
+    "total_posts": 52,
+    "posts_30d": 6,
+    "shared": [
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 3
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 5
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 7
+     }
+    ],
+    "influencer": false,
+    "score": 37.6,
+    "rank": 17
+   },
+   {
+    "blog_id": "daeul_0",
+    "name": "뷰티•맛집•카페 분석 review ૮ ․ ․ ྀིა",
+    "nickname": "다을가을",
+    "topic": "패션·미용",
+    "subscribers": 287,
+    "today_visitors": 5,
+    "visitors_avg": 17.0,
+    "total_posts": 81,
+    "posts_30d": 6,
+    "shared": [
+     {
+      "keyword": "봉천동헬스",
+      "rank": 7
+     },
+     {
+      "keyword": "봉천역헬스장",
+      "rank": 13
+     },
+     {
+      "keyword": "봉천동PT",
+      "rank": 18
+     }
+    ],
+    "influencer": false,
+    "score": 37.5,
+    "rank": 18
+   },
+   {
+    "blog_id": "ziyoin",
+    "name": "시작은 하고 볼 일",
+    "nickname": "여행바라기",
+    "topic": "",
+    "subscribers": 449,
+    "today_visitors": 11,
+    "visitors_avg": null,
+    "total_posts": 603,
+    "posts_30d": 3,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 6
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 8
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 27
+     }
+    ],
+    "influencer": false,
+    "score": 36.7,
+    "rank": 19
+   },
+   {
+    "blog_id": "hyj8864",
+    "name": "블루의 메모장",
+    "nickname": "블루",
+    "topic": "일상·생각",
+    "subscribers": 38,
+    "today_visitors": 12,
+    "visitors_avg": null,
+    "total_posts": 127,
+    "posts_30d": 3,
+    "shared": [
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 1
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 7
+     },
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 9
+     }
+    ],
+    "influencer": false,
+    "score": 29.9,
+    "rank": 20
+   },
+   {
+    "blog_id": "page-me",
+    "name": "Page me",
+    "nickname": "my page",
+    "topic": "일상·생각",
+    "subscribers": 54,
+    "today_visitors": 3,
+    "visitors_avg": null,
+    "total_posts": 285,
+    "posts_30d": 6,
+    "shared": [
+     {
+      "keyword": "아이슬란드기념품",
+      "rank": 1
+     },
+     {
+      "keyword": "아이슬란드기념품추천",
+      "rank": 1
+     },
+     {
+      "keyword": "아이슬란드쇼핑",
+      "rank": 2
+     }
+    ],
+    "influencer": false,
+    "score": 27.2,
+    "rank": 21
+   }
+  ]
+ }
 }
