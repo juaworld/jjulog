@@ -1,13 +1,18 @@
 """쭈로그 수집기 — 내 네이버 블로그 현황.
 
-네이버 공개 데이터(RSS, 글 목록, 방문자 그래프, 블로그 검색)를 모아
-data/latest.json 과 data/history.json 을 만든다. 외부 패키지 없이 표준 라이브러리만 쓴다.
+네이버 공개 데이터(RSS, 글 목록, 모바일 블로그 정보, 글 본문, 방문자 그래프, 검색)를 모아
+data/latest.json, data/history.json, data/visitors.json 을 만든다. 표준 라이브러리만 쓴다.
 
-환경변수
-  BLOG_ID                  config.json 의 blog_id 대신 쓸 블로그 아이디
-  NAVER_CLIENT_ID/SECRET   있으면 네이버 검색 API 사용(정확·안정), 없으면 검색 페이지를 직접 읽음
+환경변수 (모두 선택)
+  BLOG_ID                       config.json 의 blog_id 대신 쓸 블로그 아이디
+  NAVER_CLIENT_ID / SECRET      네이버 검색 API — 블로그탭 순위 100위까지, 문서 수
+  NAVER_AD_CUSTOMER_ID / API_KEY / SECRET
+                                네이버 검색광고 API — 키워드 월간 검색량·경쟁도
 """
 
+import base64
+import hashlib
+import hmac
 import html
 import json
 import math
@@ -27,9 +32,10 @@ KST = timezone(timedelta(hours=9))
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
 
-# 쭈로그 성장 단계: 5단계 × 3칸
-GRADES = ["씨앗 1", "씨앗 2", "씨앗 3", "새싹 1", "새싹 2", "새싹 3",
-          "꽃 1", "꽃 2", "꽃 3", "나무 1", "나무 2", "나무 3", "숲 1", "숲 2", "숲 3"]
+GRADES = ["일반", "준최1", "준최2", "준최3", "준최4", "준최5", "준최6", "준최7",
+          "최적1", "최적2", "최적3", "최적1+", "최적2+", "최적3+", "최적4+"]
+
+NET_ERRORS = (urllib.error.URLError, ValueError, TimeoutError, ConnectionError)
 
 
 def now_kst():
@@ -58,13 +64,17 @@ def save_json(path, obj):
         json.dump(obj, f, ensure_ascii=False, indent=1)
 
 
+def to_int(s):
+    digits = re.sub(r"[^\d]", "", str(s or ""))
+    return int(digits) if digits else 0
+
+
 # ---------------------------------------------------------------- 블로그 데이터
 
 def fetch_rss(blog_id):
-    """프로필과 최근 글(태그·요약 포함)."""
+    """프로필과 최근 글(태그·카테고리)."""
     _, body = http_get(f"https://rss.blog.naver.com/{blog_id}.xml")
-    root = ET.fromstring(body)
-    ch = root.find("channel")
+    ch = ET.fromstring(body).find("channel")
     profile = {
         "title": (ch.findtext("title") or "").strip(),
         "description": (ch.findtext("description") or "").strip(),
@@ -73,36 +83,42 @@ def fetch_rss(blog_id):
     }
     posts = {}
     for it in ch.findall("item"):
-        guid = it.findtext("guid") or it.findtext("link") or ""
-        m = re.search(r"/(\d{9,})", guid)
-        if not m:
-            continue
-        tags = [t.strip() for t in (it.findtext("tag") or "").split(",") if t.strip()]
-        pub = it.findtext("pubDate") or ""
-        try:
-            date = datetime.strptime(pub, "%a, %d %b %Y %H:%M:%S %z").astimezone(KST)
-        except ValueError:
-            date = None
-        posts[m.group(1)] = {
-            "title": (it.findtext("title") or "").strip(),
-            "category": (it.findtext("category") or "").strip(),
-            "tags": tags,
-            "date": date.isoformat() if date else None,
-        }
+        m = re.search(r"/(\d{9,})", it.findtext("guid") or it.findtext("link") or "")
+        if m:
+            posts[m.group(1)] = {
+                "category": (it.findtext("category") or "").strip(),
+                "tags": [t.strip() for t in (it.findtext("tag") or "").split(",") if t.strip()],
+            }
     return profile, posts
 
 
-def to_int(s):
-    digits = re.sub(r"[^\d]", "", str(s or ""))
-    return int(digits) if digits else 0
+def fetch_blog_info(blog_id):
+    """모바일 블로그 정보: 구독자·누적 방문·주제·네이버 메이트."""
+    try:
+        _, body = http_get(f"https://m.blog.naver.com/api/blogs/{blog_id}",
+                           {"Referer": f"https://m.blog.naver.com/{blog_id}"})
+        r = json.loads(body).get("result") or {}
+    except NET_ERRORS:
+        return {}
+    return {
+        "nickname": r.get("nickName"),
+        "subscribers": r.get("subscriberCount"),
+        "total_visitors": r.get("totalVisitorCount"),
+        "today_visitors": r.get("dayVisitorCount"),
+        "topic": r.get("blogDirectoryName"),
+        "power_blog": bool(r.get("powerBlog")),
+        "naver_mate": bool(r.get("isNaverMateBlog")),
+        "mate_citations": r.get("mateCitations"),
+        "official": bool(r.get("officialBlog")),
+    }
 
 
 def parse_list_date(s):
     s = (s or "").strip()
     m = re.match(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})", s)
     if m:
-        return datetime(int(m[1]), int(m[2]), int(m[3]), tzinfo=KST)
-    m = re.match(r"(\d+)\s*(분|시간)\s*전", s)  # 오늘 쓴 글은 "3시간 전" 형태
+        return datetime(int(m[1]), int(m[2]), int(m[3]), 12, tzinfo=KST)
+    m = re.match(r"(\d+)\s*(분|시간)\s*전", s)  # 하루 안에 쓴 글은 "3시간 전" 형태
     if m:
         delta = timedelta(minutes=int(m[1])) if m[2] == "분" else timedelta(hours=int(m[1]))
         return now_kst() - delta
@@ -110,7 +126,7 @@ def parse_list_date(s):
 
 
 def fetch_post_list(blog_id, weeks=12, max_pages=6):
-    """글 목록 API: 총 글 수 + 최근 N주 글(날짜·댓글 수)."""
+    """글 목록: 총 글 수 + 최근 N주 글(날짜·댓글 수·검색 허용)."""
     since = now_kst() - timedelta(weeks=weeks)
     out, total = [], None
     for page in range(1, max_pages + 1):
@@ -118,18 +134,16 @@ def fetch_post_list(blog_id, weeks=12, max_pages=6):
                + urllib.parse.urlencode({"blogId": blog_id, "viewdate": "", "currentPage": page,
                                          "categoryNo": 0, "parentCategoryNo": "", "countPerPage": 30}))
         _, body = http_get(url, {"Referer": f"https://blog.naver.com/{blog_id}"})
-        # 응답에 \' 같은 비표준 이스케이프가 섞여 있어 정리 후 파싱
-        data = json.loads(body.replace("\\'", "'"))
+        data = json.loads(body.replace("\\'", "'"))  # 비표준 이스케이프 정리
         if data.get("resultCode") != "S":
             break
         total = to_int(data.get("totalCount"))
         rows = data.get("postList") or []
         for p in rows:
-            d = parse_list_date(p.get("addDate"))
             out.append({
                 "logNo": p["logNo"],
                 "title": html.unescape(urllib.parse.unquote_plus(p.get("title", ""))),
-                "date": d.isoformat(),
+                "date": parse_list_date(p.get("addDate")).isoformat(),
                 "comments": to_int(p.get("commentCount")),
                 "searchable": p.get("searchYn") == "true",
             })
@@ -140,24 +154,82 @@ def fetch_post_list(blog_id, weeks=12, max_pages=6):
 
 
 def fetch_visitors(blog_id):
-    """최근 5일 방문자 수. 블로그 주인이 카운터를 숨기면 None."""
+    """최근 5일 방문자 수. 카운터가 비공개면 None."""
     try:
         status, body = http_get(f"https://blog.naver.com/NVisitorgp4Ajax.naver?blogId={blog_id}",
                                 {"Referer": f"https://blog.naver.com/{blog_id}"})
-    except urllib.error.URLError:
+    except NET_ERRORS:
         return None
-    if status != 200 or not body.strip():
-        return None
-    rows = re.findall(r'id="(\d{8})"\s+cnt="(\d+)"', body)
-    if not rows:
-        return None
-    return [{"date": f"{d[:4]}-{d[4:6]}-{d[6:]}", "count": int(c)} for d, c in rows]
+    rows = re.findall(r'id="(\d{8})"\s+cnt="(\d+)"', body) if status == 200 else []
+    return [{"date": f"{d[:4]}-{d[4:6]}-{d[6:]}", "count": int(c)} for d, c in rows] or None
 
 
-# ---------------------------------------------------------------- 검색 노출
+# ---------------------------------------------------------------- 글 본문 분석
+
+def analyze_post(blog_id, log_no, title, keyword):
+    """글 본문을 읽어 원고 지표와 최적화 점수(0~100)를 낸다."""
+    try:
+        _, body = http_get(f"https://blog.naver.com/PostView.naver?blogId={blog_id}&logNo={log_no}",
+                           {"Referer": f"https://blog.naver.com/{blog_id}"})
+    except NET_ERRORS:
+        return None
+    start = body.find("se-main-container")
+    main = body[start:] if start >= 0 else body
+    end = main.find('class="comment_area')
+    main = main[:end] if end > 0 else main
+    paragraphs = re.findall(r'<p class="se-text-paragraph[^"]*"[^>]*>(.*?)</p>', main, re.S)
+    text = html.unescape(re.sub(r"<[^>]+>", "", " ".join(paragraphs)))
+    text = re.sub(r"[​\s]+", " ", text).strip()
+    chars = len(text.replace(" ", ""))
+    m = {
+        "chars": chars,
+        "images": main.count("se-image-resource"),
+        "videos": main.count("se-video"),
+        "quotes": main.count("se-quotation-container"),
+        "headings": main.count("se-section-sectionTitle"),
+        "links": main.count("se-oglink") // 2,
+        "maps": min(main.count("se-placesMap"), 1),
+        "title_len": len(title),
+        # 띄어쓰기를 무시하고 센다 (태그는 붙여 쓰고 본문은 띄어 쓰는 경우가 많음)
+        "kw_count": text.replace(" ", "").count(keyword.replace(" ", "")) if keyword else None,
+    }
+
+    checks = []  # (점수, 만점, 통과 여부, 팁)
+
+    def add(ok_ratio, weight, tip):
+        checks.append((weight * ok_ratio, weight, ok_ratio >= 0.99, tip))
+
+    add(min(1, chars / 1500), 30, f"본문 {chars:,}자 — 1,500자 이상 권장")
+    add(min(1, m["images"] / 8), 20, f"사진 {m['images']}장 — 8장 이상 권장")
+    add(1 if 15 <= m["title_len"] <= 40 else 0.5, 10, f"제목 {m['title_len']}자 — 15~40자 권장")
+    if keyword:
+        k = m["kw_count"] or 0
+        add(1 if 3 <= k <= 10 else (0.6 if k else 0), 20, f"대표 키워드 '{keyword}' 본문 {k}회 — 3~10회 권장")
+    else:
+        add(0, 20, "태그가 없어요 — 대표 키워드를 태그 첫 번째에 넣어보세요")
+    add(1 if (m["headings"] + m["quotes"]) >= 2 else 0.5, 10, "소제목·인용구로 문단 나누기")
+    add(1 if (m["videos"] or m["maps"]) else 0.5, 10, "동영상이나 지도 1개 이상")
+    score = round(sum(c[0] for c in checks))
+    m["score"] = score
+    m["tips"] = [c[3] for c in checks if not c[2]]
+    return m
+
+
+# ---------------------------------------------------------------- 검색
+
+def link_keys(text):
+    """HTML/JSON 안의 블로그 글 링크 (blogId, logNo) 를 등장 순서대로."""
+    seen, out = set(), []
+    for bid, log in re.findall(r"blog\.naver\.com(?:\\?/|%2F)([A-Za-z0-9_\-]+)(?:\\?/|%2F)(\d{9,})", text):
+        key = (bid.lower(), log)
+        if key not in seen:
+            seen.add(key)
+            out.append(key)
+    return out
+
 
 class Search:
-    """블로그 검색 결과에서 '내 블로그 글'의 위치를 찾는다."""
+    """검색 결과에서 '내 블로그 글'의 위치를 찾는다."""
 
     def __init__(self, blog_id):
         self.blog_id = blog_id.lower()
@@ -165,46 +237,53 @@ class Search:
         self.secret = os.environ.get("NAVER_CLIENT_SECRET", "").strip()
         self.mode = "api" if self.cid and self.secret else "web"
         self.calls = 0
+        self.doc_counts = {}
 
-    def _results(self, query, sort="sim"):
-        """검색 결과 블로그 글 (blogId, logNo) 목록. 순서 = 순위."""
+    def _web(self, params):
         self.calls += 1
-        time.sleep(0.3 if self.mode == "api" else 1.2)
+        time.sleep(1.2)
+        _, text = http_get("https://search.naver.com/search.naver?" + urllib.parse.urlencode(params),
+                           {"Referer": "https://www.naver.com"})
+        return text
+
+    def blog_tab(self, query, sort="sim"):
+        """블로그탭 결과 순서 = 순위."""
         if self.mode == "api":
+            self.calls += 1
+            time.sleep(0.3)
             url = ("https://openapi.naver.com/v1/search/blog.json?"
                    + urllib.parse.urlencode({"query": query, "display": 100, "sort": sort}))
-            _, body = http_get(url, {"X-Naver-Client-Id": self.cid,
-                                     "X-Naver-Client-Secret": self.secret})
-            links = [i.get("link", "") for i in json.loads(body).get("items", [])]
-            text = "\n".join(links)
-        else:
-            params = {"ssc": "tab.blog.all", "query": query}
-            if sort == "date":
-                params["nso"] = "so:dd,p:all"
-            _, text = http_get("https://search.naver.com/search.naver?" + urllib.parse.urlencode(params))
-        seen, out = set(), []
-        for bid, log in re.findall(r"blog\.naver\.com/([A-Za-z0-9_\-]+)/(\d{9,})", text):
-            key = (bid.lower(), log)
-            if key not in seen:
-                seen.add(key)
-                out.append(key)
-        return out
+            _, body = http_get(url, {"X-Naver-Client-Id": self.cid, "X-Naver-Client-Secret": self.secret})
+            data = json.loads(body)
+            self.doc_counts[query] = data.get("total")
+            return link_keys("\n".join(i.get("link", "") for i in data.get("items", [])))
+        params = {"ssc": "tab.blog.all", "query": query}
+        if sort == "date":
+            params["nso"] = "so:dd,p:all"
+        return link_keys(self._web(params))
 
     def exposure(self, title, log_no):
-        """제목 그대로 검색해 내 글이 보이면 노출, 정확도·최신순 모두 없으면 누락."""
+        """제목 그대로 검색: 블로그탭(정확도·최신) 노출 여부 + 통합검색 노출 여부."""
+        me = (self.blog_id, log_no)
         try:
+            blog = "누락"
             for sort in ("sim", "date"):
-                if (self.blog_id, log_no) in self._results(title, sort):
-                    return "노출"
-            return "누락"
-        except (urllib.error.URLError, ValueError, TimeoutError):
-            return "에러"
+                if me in self.blog_tab(title, sort):
+                    blog = "노출"
+                    break
+        except NET_ERRORS:
+            blog = "에러"
+        try:
+            total = "노출" if me in link_keys(self._web({"query": title})) else "미노출"
+        except NET_ERRORS:
+            total = "에러"
+        return blog, total
 
     def rank(self, keyword, log_no=None):
-        """키워드 검색 시 내 글(log_no 지정 시 그 글, 아니면 내 블로그 아무 글)의 순위."""
+        """키워드 블로그탭 순위 (log_no 지정 시 그 글, 아니면 내 블로그 아무 글)."""
         try:
-            res = self._results(keyword)
-        except (urllib.error.URLError, ValueError, TimeoutError):
+            res = self.blog_tab(keyword)
+        except NET_ERRORS:
             return {"rank": None, "error": True}
         for i, (bid, log) in enumerate(res, 1):
             if bid == self.blog_id and (log_no is None or log == log_no):
@@ -212,7 +291,43 @@ class Search:
         return {"rank": None, "of": len(res)}
 
 
-# ---------------------------------------------------------------- 지수 추정
+class KeywordTool:
+    """네이버 검색광고 API 키워드 도구 — 월간 검색량·경쟁도. 키가 없으면 비활성."""
+
+    def __init__(self):
+        self.cust = os.environ.get("NAVER_AD_CUSTOMER_ID", "").strip()
+        self.key = os.environ.get("NAVER_AD_API_KEY", "").strip()
+        self.secret = os.environ.get("NAVER_AD_SECRET", "").strip()
+        self.enabled = bool(self.cust and self.key and self.secret)
+
+    def volumes(self, keywords):
+        out = {}
+        if not self.enabled:
+            return out
+        clean = list(dict.fromkeys(k.replace(" ", "") for k in keywords if k.strip()))
+        for i in range(0, len(clean), 5):  # API 한 번에 5개까지
+            batch = clean[i:i + 5]
+            ts = str(int(time.time() * 1000))
+            sig = base64.b64encode(hmac.new(self.secret.encode(), f"{ts}.GET./keywordstool".encode(),
+                                            hashlib.sha256).digest()).decode()
+            url = "https://api.searchad.naver.com/keywordstool?" + urllib.parse.urlencode(
+                {"hintKeywords": ",".join(batch), "showDetail": 1})
+            try:
+                _, body = http_get(url, {"X-Timestamp": ts, "X-API-KEY": self.key,
+                                         "X-Customer": self.cust, "X-Signature": sig})
+            except NET_ERRORS as e:
+                print(f"  검색광고 API 실패: {e}")
+                continue
+            for row in json.loads(body).get("keywordList", []):
+                if row.get("relKeyword") in batch:
+                    pc, mo = (to_int(row.get("monthlyPcQcCnt")), to_int(row.get("monthlyMobileQcCnt")))
+                    out[row["relKeyword"]] = {"pc": pc, "mobile": mo, "total": pc + mo,
+                                              "competition": row.get("compIdx")}
+            time.sleep(0.3)
+        return out
+
+
+# ---------------------------------------------------------------- 지수·진단
 
 def clamp(x, lo=0.0, hi=1.0):
     return max(lo, min(hi, x))
@@ -221,57 +336,104 @@ def clamp(x, lo=0.0, hi=1.0):
 def rank_score(r):
     if not r:
         return 0.0
-    if r <= 3:
-        return 1.0
-    if r <= 10:
-        return 0.8
-    if r <= 30:
-        return 0.5
-    if r <= 100:
-        return 0.2
+    for limit, s in ((3, 1.0), (10, 0.8), (30, 0.5), (100, 0.2)):
+        if r <= limit:
+            return s
     return 0.0
 
 
-def estimate_index(posts_12w, checked, visitors):
-    """쭈로그 점수: 각 요소 0~1 점수 × 가중치, 값이 없는 요소는 빼고 정규화."""
+def estimate_index(posts_12w, checked, visitors, info):
+    """쭈로그 지수: 각 요소 0~1 × 가중치, 값이 없는 요소는 빼고 정규화."""
     weekly = len(posts_12w) / 12
     weeks_active = len({datetime.fromisoformat(p["date"]).isocalendar()[:2] for p in posts_12w})
     judged = [c for c in checked if c["status"] in ("노출", "누락")]
     exposure = (sum(c["status"] == "노출" for c in judged) / len(judged)) if judged else None
-    ranked = [c for c in checked if c.get("keyword")]
-    kw = (sum(rank_score(c["keyword"].get("rank")) for c in ranked) / len(ranked)) if ranked else None
+    tj = [c for c in checked if c.get("total_search") in ("노출", "미노출")]
+    total_exp = (sum(c["total_search"] == "노출" for c in tj) / len(tj)) if tj else None
+    ranks = [k.get("rank") for c in checked for k in c.get("keywords", [])]
+    kw = (sum(rank_score(r) for r in ranks) / len(ranks)) if ranks else None
+    opt = [c["content"]["score"] for c in checked if c.get("content")]
+    content = (sum(opt) / len(opt) / 100) if opt else None
     comments = (sum(p["comments"] for p in posts_12w) / len(posts_12w)) if posts_12w else 0
+    subs = info.get("subscribers")
+    engagement = clamp(0.6 * math.log1p(comments) / math.log1p(20)
+                       + 0.4 * (math.log1p(subs) / math.log1p(5000) if subs else 0))
     vis_avg = (sum(v["count"] for v in visitors) / len(visitors)) if visitors else None
 
     factors = [
-        ("exposure", "검색 노출률", 40, exposure),
-        ("keyword", "키워드 순위", 20, kw),
-        ("pace", "포스팅 페이스", 15, clamp(weekly / 7)),
-        ("consistency", "꾸준함(활동 주)", 10, clamp(weeks_active / 12)),
-        ("engagement", "댓글 반응", 10, clamp(math.log1p(comments) / math.log1p(20))),
-        ("visitors", "방문자", 5, None if vis_avg is None else clamp(math.log1p(vis_avg) / math.log1p(1000))),
+        ("exposure", "블로그탭 노출", 30, exposure),
+        ("total", "통합검색 노출", 10, total_exp),
+        ("keyword", "키워드 순위", 15, kw),
+        ("pace", "발행 페이스", 15, clamp(weekly / 7)),
+        ("consistency", "꾸준함", 10, clamp(weeks_active / 12)),
+        ("content", "글 최적화", 10, content),
+        ("engagement", "소통·구독", 5, engagement),
+        ("visitors", "방문자", 5, None if vis_avg is None else clamp(math.log1p(vis_avg) / math.log1p(3000))),
     ]
     usable = [f for f in factors if f[3] is not None]
     wsum = sum(f[2] for f in usable) or 1
     score = round(sum(f[2] * f[3] for f in usable) / wsum * 100, 1)
-    grade_i = min(len(GRADES) - 1, int(score / 100 * len(GRADES)))
-    low_quality = bool(judged and len(judged) >= 5 and exposure is not None and exposure < 0.3)
+    gi = min(len(GRADES) - 1, int(score / 100 * len(GRADES)))
     return {
         "score": score,
-        "grade": GRADES[grade_i],
-        "grade_index": grade_i,
+        "grade": GRADES[gi],
+        "grade_index": gi,
         "grades": GRADES,
-        "low_quality_risk": low_quality,
-        "factors": [{"key": k, "label": lbl, "weight": w,
-                     "value": None if v is None else round(v, 3)} for k, lbl, w, v in factors],
+        "factors": [{"key": k, "label": lbl, "weight": w, "value": None if v is None else round(v, 3)}
+                    for k, lbl, w, v in factors],
         "stats": {
             "weekly_posts": round(weekly, 1),
             "weeks_active": weeks_active,
             "exposure_rate": None if exposure is None else round(exposure, 3),
+            "total_exposure_rate": None if total_exp is None else round(total_exp, 3),
             "avg_comments": round(comments, 1),
+            "avg_content_score": round(sum(opt) / len(opt)) if opt else None,
             "visitors_avg": None if vis_avg is None else round(vis_avg, 1),
+            "top10_keywords": sum(1 for r in ranks if r and r <= 10),
         },
     }
+
+
+def diagnose(idx, checked, plist, visitor_series):
+    """블로그 진단 체크리스트. level: good / warn / bad."""
+    st, out = idx["stats"], []
+
+    def add(level, title, detail):
+        out.append({"level": level, "title": title, "detail": detail})
+
+    er = st["exposure_rate"]
+    if er is not None:
+        add("good" if er >= 0.8 else "warn" if er >= 0.5 else "bad", "블로그탭 노출",
+            f"최근 글 {round(er * 100)}%가 블로그 검색에 보여요."
+            + ("" if er >= 0.8 else " 누락된 글은 제목·본문 중복이나 금칙어를 점검해 보세요."))
+    te = st["total_exposure_rate"]
+    if te is not None:
+        add("good" if te >= 0.5 else "warn" if te >= 0.2 else "bad", "통합검색 진입",
+            f"최근 글 {round(te * 100)}%가 통합검색(통검)에도 떠요.")
+    recent7 = sum(1 for p in plist if datetime.fromisoformat(p["date"]) >= now_kst() - timedelta(days=7))
+    add("good" if recent7 >= 3 else "warn" if recent7 else "bad", "최근 7일 발행",
+        f"최근 7일 동안 {recent7}개 발행. 주 3개 이상이 지수에 유리해요.")
+    if len(plist) >= 2:
+        dates = sorted(datetime.fromisoformat(p["date"]) for p in plist)
+        gaps = [(b - a).days for a, b in zip(dates, dates[1:])]
+        mx = max(gaps)
+        add("good" if mx <= 7 else "warn" if mx <= 14 else "bad", "발행 공백",
+            f"최근 12주 중 가장 긴 공백 {mx}일.")
+    cs = st["avg_content_score"]
+    if cs is not None:
+        add("good" if cs >= 80 else "warn" if cs >= 60 else "bad", "글 최적화",
+            f"최근 글 평균 {cs}점. 글자 수·사진·키워드 반복을 맞추면 올라가요.")
+    if len(visitor_series) >= 10:
+        recent = sum(v["count"] for v in visitor_series[-5:]) / 5
+        before = sum(v["count"] for v in visitor_series[-10:-5]) / 5
+        if before:
+            ch = (recent - before) / before
+            add("good" if ch >= -0.1 else "warn" if ch >= -0.4 else "bad", "방문자 추세",
+                f"최근 5일 평균 {recent:.0f}명, 그 전 5일 대비 {ch * 100:+.0f}%.")
+    risk = bool(er is not None and len([c for c in checked if c['status'] in ('노출', '누락')]) >= 5 and er < 0.3)
+    if risk:
+        add("bad", "저품질 의심", "최근 글 대부분이 검색에 안 보여요. 블로그 전체가 밀려났을 수 있어요.")
+    return out, risk
 
 
 # ---------------------------------------------------------------- 실행
@@ -281,80 +443,97 @@ def main():
     blog_id = (os.environ.get("BLOG_ID") or cfg.get("blog_id") or "").strip()
     stamp = now_kst()
     if not blog_id:
-        save_json(os.path.join(DATA_DIR, "latest.json"),
-                  {"configured": False, "updated_at": stamp.isoformat()})
+        save_json(os.path.join(DATA_DIR, "latest.json"), {"configured": False, "updated_at": stamp.isoformat()})
         print("config.json 의 blog_id 가 비어 있습니다. 아이디를 넣고 다시 실행하세요.")
         return 0
 
     max_check = int(cfg.get("max_check_posts", 15))
+    kw_posts = int(cfg.get("keyword_check_posts", 10))
     print(f"[{blog_id}] 수집 시작")
     profile, rss = fetch_rss(blog_id)
+    info = fetch_blog_info(blog_id)
     total, plist = fetch_post_list(blog_id)
     visitors = fetch_visitors(blog_id)
-    since = stamp - timedelta(weeks=12)
-    posts_12w = [p for p in plist if datetime.fromisoformat(p["date"]) >= since]
+    posts_12w = [p for p in plist if datetime.fromisoformat(p["date"]) >= stamp - timedelta(weeks=12)]
 
     search = Search(blog_id)
     print(f"검색 모드: {search.mode}")
     checked = []
-    for p in plist[:max_check]:
-        meta = rss.get(p["logNo"], {})
-        tags = meta.get("tags", [])
+    for n, p in enumerate(plist[:max_check]):
+        tags = rss.get(p["logNo"], {}).get("tags", [])
         item = {
-            "logNo": p["logNo"],
-            "title": p["title"],
+            "logNo": p["logNo"], "title": p["title"],
             "url": f"https://blog.naver.com/{blog_id}/{p['logNo']}",
-            "date": p["date"],
-            "comments": p["comments"],
-            "category": meta.get("category", ""),
-            "tags": tags,
+            "date": p["date"], "comments": p["comments"],
+            "category": rss.get(p["logNo"], {}).get("category", ""), "tags": tags,
         }
-        item["status"] = search.exposure(p["title"], p["logNo"]) if p["searchable"] else "검색 비허용"
-        if tags:
-            item["keyword"] = {"keyword": tags[0], **search.rank(tags[0], p["logNo"])}
+        if p["searchable"]:
+            item["status"], item["total_search"] = search.exposure(p["title"], p["logNo"])
+        else:
+            item["status"], item["total_search"] = "검색 비허용", None
+        item["keywords"] = [{"keyword": t, **search.rank(t, p["logNo"])}
+                            for t in tags[:3 if n < kw_posts else 1]]
+        item["content"] = analyze_post(blog_id, p["logNo"], p["title"], tags[0] if tags else "")
         checked.append(item)
-        print(f"  {item['status']:<4} {p['title'][:40]}")
+        print(f"  {item['status']}/{item['total_search']} {item['content'] and item['content']['score']}점 {p['title'][:30]}")
 
-    watch = []
-    for kw in cfg.get("keywords", []):
-        watch.append({"keyword": kw, **search.rank(kw)})
-        print(f"  키워드 '{kw}': {watch[-1].get('rank')}")
+    watch = [{"keyword": kw, **search.rank(kw)} for kw in cfg.get("keywords", [])]
 
-    idx = estimate_index(posts_12w, checked, visitors)
-    last_post = plist[0]["date"] if plist else None
-    latest = {
+    # 키워드 검색량 (검색광고 API 키가 있을 때)
+    tool = KeywordTool()
+    all_kw = [k["keyword"] for c in checked for k in c["keywords"]] + [w["keyword"] for w in watch]
+    vols = tool.volumes(all_kw)
+    for k in [k for c in checked for k in c["keywords"]] + watch:
+        k["volume"] = vols.get(k["keyword"].replace(" ", ""))
+        k["docs"] = search.doc_counts.get(k["keyword"])
+
+    # 방문자: 매 수집의 5일치를 합쳐 긴 기록으로
+    vpath = os.path.join(DATA_DIR, "visitors.json")
+    vmap = {v["date"]: v["count"] for v in load_json(vpath, []) if v.get("blog_id", blog_id) == blog_id}
+    for v in visitors or []:
+        vmap[v["date"]] = v["count"]
+    vseries = [{"date": d, "count": c} for d, c in sorted(vmap.items())][-400:]
+    save_json(vpath, [{**v, "blog_id": blog_id} for v in vseries])
+
+    idx = estimate_index(posts_12w, checked, visitors, info)
+    diag, risk = diagnose(idx, checked, posts_12w, vseries)
+    idx["low_quality_risk"] = risk
+
+    save_json(os.path.join(DATA_DIR, "latest.json"), {
         "configured": True,
         "blog_id": blog_id,
         "updated_at": stamp.isoformat(),
         "search_mode": search.mode,
+        "keyword_tool": tool.enabled,
         "search_calls": search.calls,
         "profile": profile,
+        "info": info,
         "total_posts": total,
-        "last_post": last_post,
+        "last_post": plist[0]["date"] if plist else None,
         "posts_12w": len(posts_12w),
         "visitors": visitors,
         "index": idx,
+        "diagnosis": diag,
         "posts": checked,
         "watch_keywords": watch,
-    }
-    save_json(os.path.join(DATA_DIR, "latest.json"), latest)
+    })
 
     hist_path = os.path.join(DATA_DIR, "history.json")
-    history = [h for h in load_json(hist_path, []) if h.get("blog_id") == blog_id]
     today = stamp.strftime("%Y-%m-%d")
-    history = [h for h in history if h["date"] != today]
+    history = [h for h in load_json(hist_path, []) if h.get("blog_id") == blog_id and h["date"] != today]
     history.append({
-        "date": today,
-        "blog_id": blog_id,
-        "score": idx["score"],
-        "grade": idx["grade"],
+        "date": today, "blog_id": blog_id,
+        "score": idx["score"], "grade": idx["grade"],
         "exposure_rate": idx["stats"]["exposure_rate"],
-        "visitors_today": visitors[-1]["count"] if visitors else None,
+        "total_exposure_rate": idx["stats"]["total_exposure_rate"],
+        "visitors_today": visitors[-1]["count"] if visitors else info.get("today_visitors"),
+        "subscribers": info.get("subscribers"),
         "total_posts": total,
         "keywords": {w["keyword"]: w.get("rank") for w in watch},
     })
     save_json(hist_path, history[-400:])
-    print(f"완료: {idx['grade']} ({idx['score']}점), 노출률 {idx['stats']['exposure_rate']}")
+    print(f"완료: {idx['grade']} ({idx['score']}점), 블로그탭 {idx['stats']['exposure_rate']}, "
+          f"통검 {idx['stats']['total_exposure_rate']}, 검색 {search.calls}회")
     return 0
 
 

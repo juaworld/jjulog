@@ -1,5 +1,6 @@
 {
   "blog_id": "hbokey",
   "keywords": [],
-  "max_check_posts": 15
+  "max_check_posts": 15,
+  "keyword_check_posts": 10
 }

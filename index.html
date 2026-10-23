@@ -17,6 +17,7 @@
   --leaf:#3f8f5a; --leaf-soft:#e1f1e5;
   --sun:#c98a12; --sun-soft:#fbefd2;
   --plum:#b2344a; --plum-soft:#f8dde2;
+  --sky:#3f77a8; --sky-soft:#e0ecf7;
   --stone:#ece4d8;
 }
 @media (prefers-color-scheme: dark){
@@ -27,6 +28,7 @@
     --leaf:#6fcb8d; --leaf-soft:#1f3a28;
     --sun:#f2b84b; --sun-soft:#3f3115;
     --plum:#ff7d93; --plum-soft:#4a2028;
+    --sky:#7fb5e6; --sky-soft:#1d3044;
     --stone:#352e28;
   }
 }
@@ -37,87 +39,97 @@
   --leaf:#6fcb8d; --leaf-soft:#1f3a28;
   --sun:#f2b84b; --sun-soft:#3f3115;
   --plum:#ff7d93; --plum-soft:#4a2028;
+  --sky:#7fb5e6; --sky-soft:#1d3044;
   --stone:#352e28;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:15px;line-height:1.6}
 a{color:inherit}
 .hand{font-family:"Gowun Dodum","Noto Sans KR",sans-serif}
-.wrap{max-width:980px;margin:0 auto;padding:28px 16px 72px}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 16px 72px}
 
 /* 상단 */
 .top{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding-bottom:18px;border-bottom:2px dashed var(--rule);margin-bottom:26px}
-.logo{font-size:34px;line-height:1;font-weight:400;letter-spacing:-.01em}
+.logo{font-size:34px;line-height:1;font-weight:400}
 .logo span{color:var(--coral)}
 .today{color:var(--ink-2);font-size:14px;margin-top:6px}
 .top-r{display:flex;gap:8px;align-items:center;color:var(--ink-3);font-size:12px;text-align:right}
 .round-btn{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--rule);background:var(--card);color:var(--ink-2);cursor:pointer;font-size:15px}
 
 /* 히어로 */
-.hero{display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:center;background:var(--card);border-radius:28px;padding:26px;box-shadow:0 1px 0 var(--rule),0 12px 30px -18px rgba(90,50,20,.25)}
+.hero{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;background:var(--card);border-radius:28px;padding:26px;box-shadow:0 1px 0 var(--rule),0 12px 30px -18px rgba(90,50,20,.25)}
 @media (max-width:680px){.hero{grid-template-columns:1fr;justify-items:center;text-align:center}}
-.ring{position:relative;width:200px;height:200px}
+.ring{position:relative;width:190px;height:190px}
 .ring svg{width:100%;height:100%;transform:rotate(-90deg)}
 .ring .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.ring .c b{font-size:48px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums}
+.ring .c b{font-size:46px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums}
 .ring .c small{color:var(--ink-3);font-size:12px;margin-top:4px}
-.who{display:flex;gap:10px;align-items:center;margin-bottom:6px}
+.who{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 @media (max-width:680px){.who{justify-content:center}}
 .who img{width:30px;height:30px;border-radius:50%;object-fit:cover;background:var(--card-2)}
 .who a{color:var(--ink-2);font-size:14px;text-decoration:none}
-.stage{font-size:40px;line-height:1.15;margin:4px 0 2px}
-.stage-sub{color:var(--ink-2);font-size:14px}
-.path{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap}
-@media (max-width:680px){.path{justify-content:center}}
-.path .st{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 10px;border-radius:14px;background:var(--card-2);min-width:62px;opacity:.55}
-.path .st.past{opacity:.9}
-.path .st.now{opacity:1;background:var(--coral-soft);outline:2px solid var(--coral)}
-.path .st i{font-style:normal;font-size:22px;line-height:1}
-.path .st span{font-size:11px;color:var(--ink-2)}
-.path .dots{display:flex;gap:3px}
-.path .dots u{width:6px;height:6px;border-radius:50%;background:var(--rule);text-decoration:none}
-.path .dots u.on{background:var(--coral)}
+.pill{font-size:11px;font-weight:700;border-radius:999px;padding:1px 9px;background:var(--card-2);color:var(--ink-2)}
+.pill.mate{background:var(--sky-soft);color:var(--sky)}
+.grade{font-size:44px;line-height:1.15;margin:8px 0 2px}
+.grade-sub{color:var(--ink-2);font-size:14px}
+.track{display:grid;grid-template-columns:repeat(15,1fr);gap:3px;margin-top:16px}
+.track i{height:10px;border-radius:5px;background:var(--stone)}
+.track i.on{background:var(--coral)}
+.track i.now{outline:2px solid var(--coral);outline-offset:2px}
+.track-l{display:grid;grid-template-columns:1fr 7fr 3fr 4fr;font-size:11px;color:var(--ink-3);margin-top:6px;text-align:left}
 .warn{display:inline-block;margin-top:14px;background:var(--plum-soft);color:var(--plum);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700}
 
-/* 오늘의 메모 */
-.memo{margin:26px 0;background:var(--sun-soft);border-radius:20px;padding:18px 22px;position:relative}
-.memo h3{margin:0 0 8px;font-size:18px;font-weight:400}
-.memo ul{margin:0;padding-left:0;list-style:none}
-.memo li{padding:3px 0 3px 26px;position:relative}
-.memo li::before{content:attr(data-i);position:absolute;left:0}
-
 /* 숫자 줄 */
-.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:var(--card);border-radius:20px;overflow:hidden;margin-bottom:26px}
-@media (max-width:680px){.strip{grid-template-columns:repeat(2,1fr)}}
-.strip div{padding:16px 18px;border-right:1px solid var(--rule)}
-.strip div:last-child{border-right:0}
+.strip{display:grid;grid-template-columns:repeat(6,1fr);background:var(--card);border-radius:20px;overflow:hidden;margin:22px 0}
+@media (max-width:760px){.strip{grid-template-columns:repeat(3,1fr)}}
+.strip div{padding:14px 16px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .strip span{display:block;font-size:12px;color:var(--ink-3)}
-.strip b{font-size:22px;font-weight:900;font-variant-numeric:tabular-nums}
-.strip em{font-style:normal;font-size:12px;color:var(--ink-2);margin-left:4px}
+.strip b{font-size:21px;font-weight:900;font-variant-numeric:tabular-nums}
+.strip em{font-style:normal;font-size:12px;color:var(--ink-2);margin-left:3px}
 
-.cols{display:grid;grid-template-columns:1.45fr 1fr;gap:22px}
-@media (max-width:820px){.cols{grid-template-columns:1fr}}
+.cols{display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
+.cols > div,.hero > div{min-width:0}
+@media (max-width:860px){.cols{grid-template-columns:1fr}}
 .sec{background:var(--card);border-radius:24px;padding:22px;min-width:0;margin-bottom:22px}
-.sec h3{margin:0 0 14px;font-size:20px;font-weight:400;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.sec h3{margin:0 0 14px;font-size:20px;font-weight:400;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .sec h3 small{font-family:"Noto Sans KR";font-size:12px;color:var(--ink-3)}
 
-.tabs{display:inline-flex;background:var(--card-2);border-radius:999px;padding:3px;gap:2px}
+/* 진단 */
+.diag{display:grid;gap:8px}
+.diag div{display:grid;grid-template-columns:28px 1fr;gap:4px 10px;padding:10px 12px;border-radius:14px;background:var(--paper)}
+.diag i{font-style:normal;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:900}
+.diag .good i{background:var(--leaf-soft);color:var(--leaf)}
+.diag .warn i{background:var(--sun-soft);color:var(--sun)}
+.diag .bad i{background:var(--plum-soft);color:var(--plum)}
+.diag b{font-weight:700;font-size:14px}
+.diag p{grid-column:2;margin:0;font-size:13px;color:var(--ink-2)}
+
+.tabs{display:inline-flex;background:var(--card-2);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap}
 .tabs button{border:0;background:none;color:var(--ink-2);border-radius:999px;padding:4px 11px;font:inherit;font-size:12px;cursor:pointer}
 .tabs button.on{background:var(--card);color:var(--ink);font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.08)}
 
 /* 글 카드 */
-.plist{display:grid;gap:10px;margin-top:12px}
-.post{display:grid;grid-template-columns:6px 1fr;gap:12px;background:var(--paper);border-radius:14px;padding:12px 14px 12px 10px;text-decoration:none}
-.post:hover{background:var(--card-2)}
-.post .bar{border-radius:3px}
+.plist{display:grid;gap:10px}
+.post{background:var(--paper);border-radius:16px;padding:12px 14px}
+.post summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.post summary::-webkit-details-marker{display:none}
 .post .tt{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.post .mt{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12px;color:var(--ink-3);align-items:center;margin-top:2px}
-.tag{font-size:12px;font-weight:700;border-radius:6px;padding:0 7px}
+.post .mt{display:flex;flex-wrap:wrap;gap:5px 8px;font-size:12px;color:var(--ink-3);align-items:center;margin-top:4px}
+.opt{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:15px;font-variant-numeric:tabular-nums;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--stone) 0)}
+.opt span{width:36px;height:36px;border-radius:50%;background:var(--paper);display:grid;place-items:center}
+.tag{font-size:11px;font-weight:700;border-radius:6px;padding:0 7px}
 .s-ok{background:var(--leaf-soft);color:var(--leaf)}.s-miss{background:var(--plum-soft);color:var(--plum)}
 .s-err{background:var(--sun-soft);color:var(--sun)}.s-off{background:var(--stone);color:var(--ink-2)}
-.bar.s-ok{background:var(--leaf)}.bar.s-miss{background:var(--plum)}.bar.s-err{background:var(--sun)}.bar.s-off{background:var(--rule)}
-.kwc{color:var(--coral);font-weight:500}
-.kwc.out{color:var(--ink-3)}
+.s-tot{background:var(--sky-soft);color:var(--sky)}
+.kwc{border:1px solid var(--rule);border-radius:999px;padding:0 8px;color:var(--ink-2)}
+.kwc b{color:var(--coral)}
+.kwc.out b{color:var(--ink-3);font-weight:400}
+.detail{margin-top:12px;padding-top:12px;border-top:1px dashed var(--rule);display:grid;gap:10px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:6px}
+.metrics div{background:var(--card);border-radius:10px;padding:6px 10px;font-size:12px;color:var(--ink-3)}
+.metrics b{display:block;font-size:15px;color:var(--ink);font-variant-numeric:tabular-nums}
+.tips{margin:0;padding-left:18px;font-size:13px;color:var(--ink-2)}
+.go{font-size:12px;color:var(--coral);text-decoration:none;font-weight:700}
 
 /* 점수 구성 */
 .mix{display:flex;height:16px;border-radius:8px;overflow:hidden;gap:2px;background:var(--stone)}
@@ -127,16 +139,24 @@ a{color:inherit}
 .legend s{width:12px;height:12px;border-radius:4px;display:block}
 .legend b{font-variant-numeric:tabular-nums;font-weight:500;color:var(--ink-2)}
 
+/* 키워드 표 */
+.kwt{width:100%;border-collapse:collapse;font-size:13px}
+.kwt th{font-weight:500;color:var(--ink-3);text-align:right;padding:4px 0;font-size:12px}
+.kwt th:first-child,.kwt td:first-child{text-align:left}
+.kwt td{padding:7px 0;border-top:1px dashed var(--rule);text-align:right;font-variant-numeric:tabular-nums}
+.kwt td.r{font-weight:700;color:var(--coral)}
+.kwt td.r.out{color:var(--ink-3);font-weight:400}
+.comp{font-size:11px;border-radius:5px;padding:0 6px}
+.c-low{background:var(--leaf-soft);color:var(--leaf)}.c-mid{background:var(--sun-soft);color:var(--sun)}.c-high{background:var(--plum-soft);color:var(--plum)}
+
 .chart{position:relative}
 .chart svg{display:block;width:100%;height:auto;overflow:visible}
 .chart .gl{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 4}
 .chart .ax{fill:var(--ink-3);font-size:11px;font-family:"Noto Sans KR"}
 .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:12px;padding:5px 9px;border-radius:10px;white-space:nowrap;transform:translate(-50%,-115%);opacity:0;transition:opacity .1s}
-.kwl{width:100%;border-collapse:collapse;font-size:14px}
-.kwl td{padding:7px 0;border-bottom:1px dashed var(--rule)}
-.kwl td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
 .empty{color:var(--ink-3);font-size:13px;text-align:center;padding:18px 0}
 .foot{color:var(--ink-3);font-size:12px;text-align:center;margin-top:10px}
+.note{font-size:12px;color:var(--ink-3);margin:10px 0 0}
 .setup{max-width:560px;margin:60px auto;text-align:center}
 .setup ol{text-align:left;background:var(--card);border-radius:20px;padding:20px 20px 20px 40px}
 .setup code{background:var(--card-2);padding:1px 6px;border-radius:5px}
@@ -172,10 +192,10 @@ function ago(iso) {
   return Math.round(m / 1440) + "일 전";
 }
 
-const STAGES = [["🌰", "씨앗"], ["🌱", "새싹"], ["🌷", "꽃"], ["🌳", "나무"], ["🌲", "숲"]];
-const STATUS = {"노출": ["s-ok", "보여요"], "누락": ["s-miss", "빠졌어요"], "에러": ["s-err", "확인 실패"], "검색 비허용": ["s-off", "검색 꺼짐"]};
-const FACTOR_COLOR = {exposure: "var(--coral)", keyword: "var(--sun)", pace: "var(--leaf)",
-  consistency: "#5a8fb8", engagement: "#9a6bc0", visitors: "var(--ink-3)"};
+const BLOG_TAB = {"노출": ["s-ok", "블로그탭 노출"], "누락": ["s-miss", "블로그탭 누락"], "에러": ["s-err", "확인 실패"], "검색 비허용": ["s-off", "검색 꺼짐"]};
+const FACTOR_COLOR = {exposure: "var(--coral)", total: "var(--sky)", keyword: "var(--sun)", pace: "var(--leaf)",
+  consistency: "#7a9a3a", content: "#9a6bc0", engagement: "#c0577f", visitors: "var(--ink-3)"};
+const COMP = {"낮음": "c-low", "중간": "c-mid", "높음": "c-high"};
 
 function applyTheme(t) { if (t) document.documentElement.dataset.theme = t; }
 try { applyTheme(localStorage.getItem("jjulog-theme")); } catch (e) {}
@@ -189,16 +209,16 @@ function toggleTheme() {
 
 async function load() {
   const get = p => fetch(p + "?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
-  const [latest, history] = await Promise.all([get("data/latest.json"), get("data/history.json")]);
+  const [latest, history, visitors] = await Promise.all([get("data/latest.json"), get("data/history.json"), get("data/visitors.json")]);
   if (!latest || !latest.configured) return renderSetup(latest);
-  render(latest, history || []);
+  render(latest, history || [], (visitors || []).filter(v => !v.blog_id || v.blog_id === latest.blog_id));
 }
 
 function renderSetup(latest) {
   $("#app").innerHTML = `
     <div class="setup">
       <div class="logo hand">쭈로그<span>.</span></div>
-      <p class="today">아직 어떤 블로그를 볼지 몰라요 🌰</p>
+      <p class="today">아직 어떤 블로그를 볼지 몰라요</p>
       <ol>
         <li>저장소의 <code>config.json</code> 에서 <code>"blog_id"</code> 에 블로그 아이디를 넣고 커밋</li>
         <li>몇 분 기다리면 자동으로 첫 수집이 돌아요 (Actions → 쭈로그 수집)</li>
@@ -208,78 +228,76 @@ function renderSetup(latest) {
     </div>`;
 }
 
-function memos(d) {
-  const out = [], st = d.index.stats;
-  const miss = d.posts.filter(p => p.status === "누락");
-  const last = days(d.last_post);
-  if (miss.length) out.push(["🔍", `검색에서 빠진 글이 ${miss.length}개 있어요. 아래 목록에서 빨간 글을 확인해 보세요.`]);
-  else if (d.posts.length) out.push(["✨", `최근 글 ${d.posts.length}개가 모두 검색에 보여요.`]);
-  if (last != null && last >= 7) out.push(["✏️", `마지막 글이 ${last}일 전이에요. 이번 주에 하나 써볼까요?`]);
-  else if (last != null) out.push(["✏️", `마지막 글은 ${last === 0 ? "오늘" : last + "일 전"}. 주 평균 ${st.weekly_posts}개 쓰고 있어요.`]);
-  const top = d.posts.filter(p => p.keyword && p.keyword.rank && p.keyword.rank <= 10);
-  if (top.length) out.push(["🏆", `"${top[0].keyword.keyword}" 키워드에서 ${top[0].keyword.rank}위예요.`]);
-  if (d.index.low_quality_risk) out.push(["⚠️", "최근 글 대부분이 검색에 안 보여요. 블로그 전체가 밀려났을 수 있어요."]);
-  return out;
+function kwChip(k) {
+  const r = k.error ? "확인 실패" : k.rank ? k.rank + "위" : "순위 밖";
+  return `<span class="kwc ${k.rank ? "" : "out"}">#${esc(k.keyword)} <b>${r}</b></span>`;
 }
 
-function render(d, history) {
-  const idx = d.index, st = idx.stats, p = d.profile;
-  const vis = d.visitors || [];
-  const stage = Math.floor(idx.grade_index / 3), step = idx.grade_index % 3;
-  const R = 86, C = 2 * Math.PI * R;
+function render(d, history, vseries) {
+  const idx = d.index, st = idx.stats, p = d.profile, info = d.info || {};
+  const R = 80, C = 2 * Math.PI * R;
   const wsum = idx.factors.filter(f => f.value != null).reduce((a, f) => a + f.weight, 0) || 1;
   const prev = history.length > 1 ? history[history.length - 2].score : null;
-  const diff = prev == null ? "" : (idx.score - prev >= 0 ? "▲" : "▼") + Math.abs(idx.score - prev).toFixed(1) + " 어제보다";
-  const now = new Date();
+  const diff = prev == null ? "" : (idx.score - prev >= 0 ? "▲ " : "▼ ") + Math.abs(idx.score - prev).toFixed(1) + " 어제보다";
+  const next = idx.grades[idx.grade_index + 1];
+  const toNext = next ? Math.max(0, ((idx.grade_index + 1) / 15 * 100 - idx.score)).toFixed(1) : null;
+  const allKw = [...d.posts.flatMap(x => (x.keywords || []).map(k => ({...k, post: x.title}))), ...d.watch_keywords.map(k => ({...k, watch: true}))];
+  const hasVol = allKw.some(k => k.volume), hasDocs = allKw.some(k => k.docs);
 
   $("#app").innerHTML = `
   <div class="top">
     <div><div class="logo hand">쭈로그<span>.</span></div>
-      <div class="today">${now.toLocaleDateString("ko-KR", {month: "long", day: "numeric", weekday: "long"})}의 내 블로그</div></div>
-    <div class="top-r"><span>${esc(ago(d.updated_at))} 확인<br>${d.search_mode === "api" ? "API 모드" : "기본 모드"}</span>
+      <div class="today">${new Date().toLocaleDateString("ko-KR", {month: "long", day: "numeric", weekday: "long"})}의 내 블로그</div></div>
+    <div class="top-r"><span>${esc(ago(d.updated_at))} 확인<br>${d.search_mode === "api" ? "검색 API" : "기본 모드"}${d.keyword_tool ? " · 검색량 API" : ""}</span>
       <button class="round-btn" onclick="toggleTheme()" aria-label="밝기 전환">☾</button></div>
   </div>
 
   <section class="hero">
     <div class="ring">
-      <svg viewBox="0 0 200 200" aria-hidden="true">
-        <circle cx="100" cy="100" r="${R}" fill="none" stroke="var(--stone)" stroke-width="14"/>
-        <circle cx="100" cy="100" r="${R}" fill="none" stroke="var(--coral)" stroke-width="14" stroke-linecap="round"
-          stroke-dasharray="${C * idx.score / 100} ${C}"/>
+      <svg viewBox="0 0 190 190" aria-hidden="true">
+        <circle cx="95" cy="95" r="${R}" fill="none" stroke="var(--stone)" stroke-width="13"/>
+        <circle cx="95" cy="95" r="${R}" fill="none" stroke="var(--coral)" stroke-width="13" stroke-linecap="round" stroke-dasharray="${C * idx.score / 100} ${C}"/>
       </svg>
       <div class="c"><b>${Math.round(idx.score)}</b><small>쭈로그 점수</small>${diff ? `<small>${diff}</small>` : ""}</div>
     </div>
     <div>
       <div class="who">${p.image ? `<img src="${esc(p.image)}" alt="" referrerpolicy="no-referrer">` : ""}
-        <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)} · @${esc(d.blog_id)} ↗</a></div>
-      <div class="stage hand">${STAGES[stage][0]} ${esc(idx.grade)} 단계</div>
-      <div class="stage-sub">${stage < 4 ? `다음은 ${STAGES[stage + 1][1]}! 한 칸씩 자라는 중이에요.` : "가장 높은 숲 단계예요."}</div>
-      <div class="path">${STAGES.map(([ic, nm], i) => `
-        <div class="st ${i < stage ? "past" : i === stage ? "now" : ""}"><i>${ic}</i><span>${nm}</span>
-          <div class="dots">${[0, 1, 2].map(k => `<u class="${i < stage || (i === stage && k <= step) ? "on" : ""}"></u>`).join("")}</div></div>`).join("")}
-      </div>
-      ${idx.low_quality_risk ? `<div class="warn">⚠ 검색 노출 경고</div>` : ""}
+        <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)} · @${esc(d.blog_id)} ↗</a>
+        ${info.topic ? `<span class="pill">${esc(info.topic)}</span>` : ""}
+        ${info.naver_mate ? `<span class="pill mate">네이버 메이트${info.mate_citations ? " · AI 인용 " + esc(info.mate_citations) : ""}</span>` : ""}
+        ${info.power_blog ? `<span class="pill">파워블로그</span>` : ""}</div>
+      <div class="grade hand">${esc(idx.grade)}</div>
+      <div class="grade-sub">${next ? `${esc(next)}까지 ${toNext}점 남았어요` : "가장 높은 등급이에요"}</div>
+      <div class="track" role="img" aria-label="15단계 중 ${idx.grade_index + 1}단계">
+        ${idx.grades.map((g, i) => `<i class="${i <= idx.grade_index ? "on" : ""} ${i === idx.grade_index ? "now" : ""}" title="${esc(g)}"></i>`).join("")}</div>
+      <div class="track-l"><span>일반</span><span>준최1 ~ 7</span><span>최적1 ~ 3</span><span>최적1+ ~ 4+</span></div>
+      ${idx.low_quality_risk ? `<div class="warn">⚠ 저품질 의심</div>` : ""}
     </div>
   </section>
 
-  <section class="memo"><h3 class="hand">오늘의 메모</h3>
-    <ul>${memos(d).map(([i, t]) => `<li data-i="${i}">${esc(t)}</li>`).join("")}</ul></section>
-
   <section class="strip">
     <div><span>총 글</span><b>${fmt(d.total_posts)}</b></div>
-    <div><span>검색 노출</span><b>${pct(st.exposure_rate)}</b></div>
-    <div><span>주간 글</span><b>${st.weekly_posts}</b><em>개</em></div>
-    <div><span>글당 댓글</span><b>${st.avg_comments}</b></div>
-    <div><span>오늘 방문</span><b>${fmt(vis.length ? vis[vis.length - 1].count : null)}</b></div>
+    <div><span>구독자</span><b>${fmt(info.subscribers)}</b></div>
+    <div><span>오늘 방문</span><b>${fmt(info.today_visitors ?? (d.visitors || []).slice(-1)[0]?.count)}</b></div>
+    <div><span>누적 방문</span><b>${fmt(info.total_visitors)}</b></div>
+    <div><span>블로그탭 / 통검</span><b>${pct(st.exposure_rate)}</b><em>/ ${pct(st.total_exposure_rate)}</em></div>
+    <div><span>TOP10 키워드</span><b>${st.top10_keywords}</b><em>개</em></div>
   </section>
 
   <div class="cols">
     <div>
       <section class="sec">
-        <h3 class="hand">글 노출 체크 <span class="tabs" id="postF">
-          <button data-s="all" class="on">전체</button><button data-s="노출">보여요</button><button data-s="누락">빠졌어요</button></span></h3>
+        <h3 class="hand">블로그 진단 <small>${esc(ago(d.updated_at))}</small></h3>
+        <div class="diag">${d.diagnosis.map(x => `<div class="${x.level}"><i>${x.level === "good" ? "✓" : x.level === "warn" ? "!" : "✕"}</i>
+          <b>${esc(x.title)}</b><p>${esc(x.detail)}</p></div>`).join("")}</div>
+      </section>
+
+      <section class="sec">
+        <h3 class="hand">최근 글 분석 <span class="tabs" id="postF">
+          <button data-s="all" class="on">전체</button><button data-s="miss">누락</button>
+          <button data-s="nototal">통검 미노출</button><button data-s="low">점수 80 미만</button></span></h3>
         <div class="plist" id="postList"></div>
-        <p class="foot">제목 그대로 블로그 검색(정확도·최신)에 넣어 확인해요. 시간에 따라 바뀔 수 있어요.</p>
+        <p class="note">블로그탭: 제목 그대로 블로그 검색(정확도·최신)에 보이는지 · 통검: 통합검색 첫 화면에 보이는지 · 동그라미: 글 최적화 점수. 글을 누르면 자세히 보여요.</p>
       </section>
     </div>
     <div>
@@ -290,15 +308,21 @@ function render(d, history) {
         <div class="legend">${idx.factors.map(f => `<div><s style="background:${FACTOR_COLOR[f.key]}"></s><span>${esc(f.label)}</span>
           <b>${f.value == null ? "제외" : Math.round(f.value * f.weight) + " / " + f.weight}</b></div>`).join("")}</div>
       </section>
+
       <section class="sec">
-        <h3 class="hand">방문자 <small>최근 5일</small></h3>
+        <h3 class="hand">방문자 <span class="tabs" id="visF"><button data-r="14" class="on">2주</button><button data-r="60">2달</button><button data-r="0">전부</button></span></h3>
         <div class="chart" id="visits"></div>
       </section>
+
       <section class="sec">
-        <h3 class="hand">관심 키워드</h3>
-        ${d.watch_keywords.length ? `<table class="kwl">${d.watch_keywords.map(k => `<tr><td>${esc(k.keyword)}</td>
-          <td>${k.error ? "확인 실패" : k.rank ? k.rank + "위" : `<span style="color:var(--ink-3);font-weight:400">순위 밖</span>`}</td></tr>`).join("")}</table>`
-          : `<div class="empty">config.json 의 keywords 에 넣으면 매일 순위를 기록해요.</div>`}
+        <h3 class="hand">키워드 <small>${allKw.length}개</small></h3>
+        ${allKw.length ? `<table class="kwt"><tr><th>키워드</th>${hasVol ? "<th>월 검색</th><th>경쟁</th>" : ""}${hasDocs ? "<th>문서</th>" : ""}<th>내 순위</th></tr>
+          ${allKw.sort((a, b) => (a.rank || 999) - (b.rank || 999)).map(k => `<tr><td>${k.watch ? "★ " : ""}${esc(k.keyword)}</td>
+            ${hasVol ? `<td>${k.volume ? fmt(k.volume.total) : "—"}</td><td>${k.volume?.competition ? `<span class="comp ${COMP[k.volume.competition] || ""}">${esc(k.volume.competition)}</span>` : "—"}</td>` : ""}
+            ${hasDocs ? `<td>${fmt(k.docs)}</td>` : ""}
+            <td class="r ${k.rank ? "" : "out"}">${k.error ? "실패" : k.rank ? k.rank + "위" : "밖"}</td></tr>`).join("")}</table>`
+          : `<div class="empty">글에 태그를 달면 키워드 순위를 볼 수 있어요.</div>`}
+        <p class="note">${hasVol ? "" : "월 검색량·경쟁도는 네이버 검색광고 API 키를 넣으면 보여요. "}★ = config.json 관심 키워드</p>
       </section>
     </div>
   </div>
@@ -308,20 +332,23 @@ function render(d, history) {
       <button data-r="30" class="on">한 달</button><button data-r="90">세 달</button><button data-r="0">전부</button></span></h3>
     <div class="chart" id="trend"></div>
   </section>
-  <p class="foot">쭈로그 점수는 네이버 공식 등급이 아니에요. 매일의 흐름을 보는 나만의 기준이에요.</p>`;
+  <p class="foot">쭈로그 점수·등급은 네이버 공식 값이 아니라 공개 데이터로 계산한 추정치예요. 매일의 흐름을 보세요.</p>`;
 
   renderPosts(d.posts, "all");
   tabs("#postF", b => renderPosts(d.posts, b.dataset.s));
 
   const drawTrend = r => {
     const cut = r ? Date.now() - r * 864e5 : 0;
-    const rows = history.filter(h => new Date(h.date) >= cut);
-    lineChart($("#trend"), rows.map(h => ({x: h.date, y: h.score, label: `${h.date} · ${h.grade} · ${h.score}점 · 노출 ${pct(h.exposure_rate)}`})));
+    lineChart($("#trend"), history.filter(h => new Date(h.date) >= cut).map(h => ({x: h.date, y: h.score,
+      label: `${h.date} · ${h.grade} ${h.score}점 · 블로그탭 ${pct(h.exposure_rate)} · 통검 ${pct(h.total_exposure_rate)}`})));
   };
   drawTrend(30);
   tabs("#rangeF", b => drawTrend(+b.dataset.r));
 
-  barChart($("#visits"), vis.map(v => ({x: v.date.slice(5).replace("-", "/"), y: v.count, label: `${v.date} · ${fmt(v.count)}명`})));
+  const vs = vseries.length ? vseries : (d.visitors || []);
+  const drawVis = r => barChart($("#visits"), (r ? vs.slice(-r) : vs).map(v => ({x: v.date.slice(5).replace("-", "/"), y: v.count, label: `${v.date} · ${fmt(v.count)}명`})));
+  drawVis(14);
+  tabs("#visF", b => drawVis(+b.dataset.r));
 }
 
 function tabs(sel, fn) {
@@ -332,20 +359,40 @@ function tabs(sel, fn) {
   };
 }
 
+const POST_FILTER = {
+  all: () => true,
+  miss: p => p.status === "누락",
+  nototal: p => p.total_search === "미노출",
+  low: p => p.content && p.content.score < 80,
+};
+
 function renderPosts(posts, filter) {
-  const rows = posts.filter(p => filter === "all" || p.status === filter);
+  const rows = posts.filter(POST_FILTER[filter]);
   $("#postList").innerHTML = rows.length ? rows.map(p => {
-    const [cls, txt] = STATUS[p.status] || ["s-off", p.status];
-    const kw = p.keyword;
-    const chip = kw ? `<span class="kwc ${kw.rank ? "" : "out"}">#${esc(kw.keyword)} ${kw.error ? "확인 실패" : kw.rank ? kw.rank + "위" : "순위 밖"}</span>` : "";
-    return `<a class="post" href="${esc(p.url)}" target="_blank" rel="noopener"><span class="bar ${cls}"></span>
+    const [cls, txt] = BLOG_TAB[p.status] || ["s-off", p.status];
+    const tot = p.total_search === "노출" ? `<span class="tag s-tot">통검 노출</span>` : p.total_search === "미노출" ? `<span class="tag s-off">통검 미노출</span>` : "";
+    const c = p.content;
+    const color = !c ? "var(--stone)" : c.score >= 90 ? "var(--leaf)" : c.score >= 70 ? "var(--sun)" : "var(--plum)";
+    return `<details class="post"><summary>
       <div style="min-width:0"><div class="tt">${esc(p.title)}</div>
-      <div class="mt"><span class="tag ${cls}">${txt}</span><span>${esc(p.date.slice(5, 10).replace("-", "/"))}</span><span>💬 ${p.comments}</span>${chip}</div></div></a>`;
+        <div class="mt"><span class="tag ${cls}">${txt}</span>${tot}<span>${esc(p.date.slice(5, 10).replace("-", "/"))}</span><span>💬 ${p.comments}</span>
+        ${(p.keywords || []).map(kwChip).join("")}</div></div>
+      <div class="opt" style="--p:${c ? c.score : 0};--c:${color}" title="글 최적화 점수"><span>${c ? c.score : "—"}</span></div>
+    </summary>
+    <div class="detail">
+      ${c ? `<div class="metrics">
+        <div>글자 수<b>${fmt(c.chars)}</b></div><div>사진<b>${c.images}</b></div><div>동영상<b>${c.videos}</b></div>
+        <div>인용·소제목<b>${c.quotes + c.headings}</b></div><div>링크<b>${c.links}</b></div><div>제목 길이<b>${c.title_len}</b></div>
+        <div>키워드 반복<b>${c.kw_count ?? "—"}</b></div></div>
+        ${c.tips.length ? `<ul class="tips">${c.tips.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : `<div class="note">최적화 체크를 모두 통과했어요 👍</div>`}`
+        : `<div class="note">본문을 읽지 못했어요.</div>`}
+      <a class="go" href="${esc(p.url)}" target="_blank" rel="noopener">글 열기 ↗</a>
+    </div></details>`;
   }).join("") : `<div class="empty">해당하는 글이 없어요.</div>`;
 }
 
 // ---- 차트: 단일 시리즈, 호버 툴팁
-const W = 600, H = 190, PAD = {l: 30, r: 10, t: 12, b: 24};
+const W = 600, H = 190, PAD = {l: 34, r: 10, t: 12, b: 24};
 
 function grid(yMax, ticks) {
   const iy = v => PAD.t + (H - PAD.t - PAD.b) * (1 - v / yMax);
@@ -386,12 +433,13 @@ function barChart(el, data) {
   if (!data.length) { el.innerHTML = `<div class="empty">방문자 카운터가 비공개라 볼 수 없어요.</div>`; return; }
   const top = Math.ceil(Math.max(...data.map(d => d.y), 1) * 1.15);
   const {iy, g} = grid(top, [0, top]);
-  const slot = (W - PAD.l - PAD.r) / data.length, bw = Math.min(40, slot - 2);
+  const slot = (W - PAD.l - PAD.r) / data.length, bw = Math.max(2, Math.min(36, slot - 2));
+  const every = Math.ceil(data.length / 8);
   const pts = data.map((d, i) => ({...d, cx: PAD.l + slot * (i + .5), cy: iy(d.y)}));
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="최근 방문자 수">${g}
-    ${pts.map(p => { const h = H - PAD.b - p.cy, r = Math.min(4, h);
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="방문자 수">${g}
+    ${pts.map((p, i) => { const h = H - PAD.b - p.cy, r = Math.min(4, h, bw / 2);
       return `<path d="M${p.cx - bw / 2} ${H - PAD.b} V${p.cy + r} q0 -${r} ${r} -${r} H${p.cx + bw / 2 - r} q${r} 0 ${r} ${r} V${H - PAD.b}Z" fill="var(--leaf)"/>
-      <text class="ax" x="${p.cx}" y="${H - 6}" text-anchor="middle">${esc(p.x)}</text>`; }).join("")}
+      ${(data.length - 1 - i) % every === 0 ? `<text class="ax" x="${p.cx}" y="${H - 6}" text-anchor="middle">${esc(p.x)}</text>` : ""}`; }).join("")}
     <rect width="${W}" height="${H}" fill="transparent"/></svg>`;
   hover(el, pts);
 }

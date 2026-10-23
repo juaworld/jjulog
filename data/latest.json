@@ -1,17 +1,29 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T09:21:37.263245+09:00",
+ "updated_at": "2026-10-23T09:30:59.193307+09:00",
  "search_mode": "web",
- "search_calls": 30,
+ "keyword_tool": false,
+ "search_calls": 65,
  "profile": {
   "title": "우당탕탕 쭈아의 결혼일기",
   "description": "쭈아는 우당탕탕 결혼준비중! 맛집, 여행, 일상소소하게 기록하고 나눌게요 :) 광고 문의 : hbokey@naver.com",
   "image": "http://blogpfthumb.phinf.naver.net/MjAyNjA0MDNfMTgy/MDAxNzc1MjExNjI2MzU5.tz4S4maxL6eK2v911dSRHgSsd_-srZhf63zy1Xt4DPkg.v5eSLpQLkI2Q8XEzaYDSzEdReF2cKnRKxVYGAQPopZwg.JPEG/profileImage.jpg?type=m2",
   "link": "https://blog.naver.com/hbokey"
  },
+ "info": {
+  "nickname": "쭈아",
+  "subscribers": 303,
+  "total_visitors": 48250,
+  "today_visitors": 18,
+  "topic": "육아·결혼",
+  "power_blog": false,
+  "naver_mate": false,
+  "mate_citations": null,
+  "official": false
+ },
  "total_posts": 107,
- "last_post": "2026-10-22T12:21:39.833068+09:00",
+ "last_post": "2026-10-22T12:30:59.380052+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -36,79 +48,121 @@
   }
  ],
  "index": {
-  "score": 63.3,
-  "grade": "나무 1",
+  "score": 61.3,
+  "grade": "최적2",
   "grade_index": 9,
   "grades": [
-   "씨앗 1",
-   "씨앗 2",
-   "씨앗 3",
-   "새싹 1",
-   "새싹 2",
-   "새싹 3",
-   "꽃 1",
-   "꽃 2",
-   "꽃 3",
-   "나무 1",
-   "나무 2",
-   "나무 3",
-   "숲 1",
-   "숲 2",
-   "숲 3"
+   "일반",
+   "준최1",
+   "준최2",
+   "준최3",
+   "준최4",
+   "준최5",
+   "준최6",
+   "준최7",
+   "최적1",
+   "최적2",
+   "최적3",
+   "최적1+",
+   "최적2+",
+   "최적3+",
+   "최적4+"
   ],
-  "low_quality_risk": false,
   "factors": [
    {
     "key": "exposure",
-    "label": "검색 노출률",
-    "weight": 40,
+    "label": "블로그탭 노출",
+    "weight": 30,
     "value": 1.0
+   },
+   {
+    "key": "total",
+    "label": "통합검색 노출",
+    "weight": 10,
+    "value": 0.6
    },
    {
     "key": "keyword",
     "label": "키워드 순위",
-    "weight": 20,
-    "value": 0.32
+    "weight": 15,
+    "value": 0.297
    },
    {
     "key": "pace",
-    "label": "포스팅 페이스",
+    "label": "발행 페이스",
     "weight": 15,
     "value": 0.095
    },
    {
     "key": "consistency",
-    "label": "꾸준함(활동 주)",
+    "label": "꾸준함",
     "weight": 10,
     "value": 0.333
    },
    {
-    "key": "engagement",
-    "label": "댓글 반응",
+    "key": "content",
+    "label": "글 최적화",
     "weight": 10,
-    "value": 0.913
+    "value": 0.939
+   },
+   {
+    "key": "engagement",
+    "label": "소통·구독",
+    "weight": 5,
+    "value": 0.819
    },
    {
     "key": "visitors",
     "label": "방문자",
     "weight": 5,
-    "value": 0.597
+    "value": 0.515
    }
   ],
   "stats": {
    "weekly_posts": 0.7,
    "weeks_active": 4,
    "exposure_rate": 1.0,
-   "avg_comments": 15.1,
-   "visitors_avg": 60.8
-  }
+   "total_exposure_rate": 0.6,
+   "avg_comments": 15.4,
+   "avg_content_score": 94,
+   "visitors_avg": 60.8,
+   "top10_keywords": 7
+  },
+  "low_quality_risk": false
  },
+ "diagnosis": [
+  {
+   "level": "good",
+   "title": "블로그탭 노출",
+   "detail": "최근 글 100%가 블로그 검색에 보여요."
+  },
+  {
+   "level": "good",
+   "title": "통합검색 진입",
+   "detail": "최근 글 60%가 통합검색(통검)에도 떠요."
+  },
+  {
+   "level": "good",
+   "title": "최근 7일 발행",
+   "detail": "최근 7일 동안 4개 발행. 주 3개 이상이 지수에 유리해요."
+  },
+  {
+   "level": "bad",
+   "title": "발행 공백",
+   "detail": "최근 12주 중 가장 긴 공백 34일."
+  },
+  {
+   "level": "good",
+   "title": "글 최적화",
+   "detail": "최근 글 평균 94점. 글자 수·사진·키워드 반복을 맞추면 올라가요."
+  }
+ ],
  "posts": [
   {
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T12:21:39.833068+09:00",
+   "date": "2026-10-22T12:30:59.380052+09:00",
    "comments": 11,
    "category": "결혼 준비",
    "tags": [
@@ -134,18 +188,53 @@
     "2026결혼준비"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "서울웨딩홀투어",
-    "rank": 1,
-    "of": 32
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "서울웨딩홀투어",
+     "rank": 1,
+     "of": 32,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "서울웨딩홀견적비교",
+     "rank": 3,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "서울웨딩홀추천",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2168,
+    "images": 24,
+    "videos": 0,
+    "quotes": 8,
+    "headings": 0,
+    "links": 28,
+    "maps": 0,
+    "title_len": 52,
+    "kw_count": 4,
+    "score": 90,
+    "tips": [
+     "제목 52자 — 15~40자 권장",
+     "동영상이나 지도 1개 이상"
+    ]
    }
   },
   {
    "logNo": "224448771282",
    "title": "뚜레쥬르 아그작케이크 후기｜내돈내산 복숭아 레몬 비교 솔직 리뷰",
    "url": "https://blog.naver.com/hbokey/224448771282",
-   "date": "2026-10-21T00:00:00+09:00",
-   "comments": 19,
+   "date": "2026-10-21T12:00:00+09:00",
+   "comments": 20,
    "category": "맛집 리뷰",
    "tags": [
     "아그작케이크",
@@ -170,18 +259,52 @@
     "디저트후기"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "아그작케이크",
-    "rank": 16,
-    "of": 30
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "아그작케이크",
+     "rank": 16,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "뚜레쥬르아그작케이크",
+     "rank": 7,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "뚜레쥬르아그작",
+     "rank": 14,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1701,
+    "images": 10,
+    "videos": 0,
+    "quotes": 11,
+    "headings": 0,
+    "links": 8,
+    "maps": 0,
+    "title_len": 35,
+    "kw_count": 8,
+    "score": 95,
+    "tips": [
+     "동영상이나 지도 1개 이상"
+    ]
    }
   },
   {
    "logNo": "224447580328",
    "title": "베르사유 궁전 후기｜2026 입장료·예약 꿀팁부터 거울의 방과 마리 앙투아네트 마을까지",
    "url": "https://blog.naver.com/hbokey/224447580328",
-   "date": "2026-10-20T00:00:00+09:00",
-   "comments": 10,
+   "date": "2026-10-20T12:00:00+09:00",
+   "comments": 11,
    "category": "해외 여행",
    "tags": [
     "베르사유궁전후기",
@@ -206,17 +329,52 @@
     "프랑스여행"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "베르사유궁전후기",
-    "rank": 1,
-    "of": 31
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "베르사유궁전후기",
+     "rank": 1,
+     "of": 31,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "베르사유궁전",
+     "rank": null,
+     "of": 33,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "베르사유궁전예약",
+     "rank": 11,
+     "of": 31,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 3029,
+    "images": 52,
+    "videos": 0,
+    "quotes": 10,
+    "headings": 0,
+    "links": 8,
+    "maps": 0,
+    "title_len": 48,
+    "kw_count": 5,
+    "score": 90,
+    "tips": [
+     "제목 48자 — 15~40자 권장",
+     "동영상이나 지도 1개 이상"
+    ]
    }
   },
   {
    "logNo": "224446356205",
    "title": "루브르 박물관 줄 없이 입장 후기｜까루젤 입구 꿀팁과 2026 입장료·예약 방법",
    "url": "https://blog.naver.com/hbokey/224446356205",
-   "date": "2026-10-19T00:00:00+09:00",
+   "date": "2026-10-19T12:00:00+09:00",
    "comments": 41,
    "category": "해외 여행",
    "tags": [
@@ -242,17 +400,51 @@
     "나폴레옹3세아파트"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "루브르박물관줄없이입장",
-    "rank": null,
-    "of": 27
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "루브르박물관줄없이입장",
+     "rank": null,
+     "of": 27,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "루브르박물관",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "루브르박물관예약",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 3205,
+    "images": 47,
+    "videos": 0,
+    "quotes": 14,
+    "headings": 0,
+    "links": 8,
+    "maps": 1,
+    "title_len": 44,
+    "kw_count": 6,
+    "score": 95,
+    "tips": [
+     "제목 44자 — 15~40자 권장"
+    ]
    }
   },
   {
    "logNo": "224433234049",
    "title": "상견례 양가 부모님 선물 고르는 법 | 금액대와 추천 품목",
    "url": "https://blog.naver.com/hbokey/224433234049",
-   "date": "2026-10-06T00:00:00+09:00",
+   "date": "2026-10-06T12:00:00+09:00",
    "comments": 13,
    "category": "결혼 꿀팁",
    "tags": [
@@ -277,17 +469,51 @@
     "쭈아의결혼일기적이거나"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "상견례선물추천",
-    "rank": null,
-    "of": 30
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "상견례선물추천",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "상견례선물고르는법",
+     "rank": 17,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "양가부모님선물",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1772,
+    "images": 10,
+    "videos": 0,
+    "quotes": 8,
+    "headings": 0,
+    "links": 12,
+    "maps": 0,
+    "title_len": 32,
+    "kw_count": 3,
+    "score": 95,
+    "tips": [
+     "동영상이나 지도 1개 이상"
+    ]
    }
   },
   {
    "logNo": "224428105728",
    "title": "아이슬란드 기념품 추천｜초콜릿, 소금, 보드카 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224428105728",
-   "date": "2026-10-01T00:00:00+09:00",
+   "date": "2026-10-01T12:00:00+09:00",
    "comments": 5,
    "category": "해외 여행",
    "tags": [
@@ -323,17 +549,51 @@
     "두바이초콜릿"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "아이슬란드기념품",
-    "rank": 10,
-    "of": 30
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "아이슬란드기념품",
+     "rank": 10,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "아이슬란드기념품추천",
+     "rank": 3,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "아이슬란드쇼핑",
+     "rank": 12,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1986,
+    "images": 25,
+    "videos": 0,
+    "quotes": 7,
+    "headings": 0,
+    "links": 12,
+    "maps": 0,
+    "title_len": 31,
+    "kw_count": 3,
+    "score": 95,
+    "tips": [
+     "동영상이나 지도 1개 이상"
+    ]
    }
   },
   {
    "logNo": "224393491461",
    "title": "강남 스몰웨딩 메리스에이프럴 본식후기｜생화 가득한 하우스웨딩",
    "url": "https://blog.naver.com/hbokey/224393491461",
-   "date": "2026-08-28T00:00:00+09:00",
+   "date": "2026-08-28T12:00:00+09:00",
    "comments": 16,
    "category": "결혼 준비",
    "tags": [
@@ -364,17 +624,51 @@
     "결혼식후기"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "강남하우스웨딩",
-    "rank": null,
-    "of": 31
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "강남하우스웨딩",
+     "rank": null,
+     "of": 31,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "서울스몰웨딩",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "서울스몰베뉴",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2334,
+    "images": 22,
+    "videos": 0,
+    "quotes": 13,
+    "headings": 0,
+    "links": 20,
+    "maps": 1,
+    "title_len": 33,
+    "kw_count": 2,
+    "score": 92,
+    "tips": [
+     "대표 키워드 '강남하우스웨딩' 본문 2회 — 3~10회 권장"
+    ]
    }
   },
   {
    "logNo": "224389537847",
    "title": "롯데월드 미용실 여자머리 추천｜단발 고민 기장 유지 커트 + 잠실 뿌리볼륨펌 후기",
    "url": "https://blog.naver.com/hbokey/224389537847",
-   "date": "2026-08-25T00:00:00+09:00",
+   "date": "2026-08-25T12:00:00+09:00",
    "comments": 6,
    "category": "생활 리뷰",
    "tags": [
@@ -410,17 +704,51 @@
     "우당탕탕"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "롯데월드미용실",
-    "rank": 19,
-    "of": 30
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "롯데월드미용실",
+     "rank": null,
+     "of": 0,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "잠실긴머리커트",
+     "rank": 5,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "잠실뿌리볼륨펌",
+     "rank": 27,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1879,
+    "images": 21,
+    "videos": 0,
+    "quotes": 6,
+    "headings": 0,
+    "links": 8,
+    "maps": 1,
+    "title_len": 45,
+    "kw_count": 3,
+    "score": 95,
+    "tips": [
+     "제목 45자 — 15~40자 권장"
+    ]
    }
   },
   {
    "logNo": "224347263935",
    "title": "쿤달 올리브영드라이샴푸 볼륨핏·쿨링으로 뿌리볼륨 살리기!",
    "url": "https://blog.naver.com/hbokey/224347263935",
-   "date": "2026-07-15T00:00:00+09:00",
+   "date": "2026-07-15T12:00:00+09:00",
    "comments": 2,
    "category": "뷰티 리뷰",
    "tags": [
@@ -434,17 +762,51 @@
     "우당탕탕"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "쿤달",
-    "rank": null,
-    "of": 30
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "쿤달",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "올리브영드라이샴푸",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "뿌리볼륨",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1939,
+    "images": 22,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 12,
+    "maps": 0,
+    "title_len": 31,
+    "kw_count": 10,
+    "score": 95,
+    "tips": [
+     "동영상이나 지도 1개 이상"
+    ]
    }
   },
   {
    "logNo": "224329245574",
    "title": "봉천역헬스장 관악구 여성전용PT 비비핏 후기",
    "url": "https://blog.naver.com/hbokey/224329245574",
-   "date": "2026-06-28T00:00:00+09:00",
+   "date": "2026-06-28T12:00:00+09:00",
    "comments": 3,
    "category": "생활 리뷰",
    "tags": [
@@ -473,17 +835,51 @@
     "관악구비비핏"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "봉천동헬스",
-    "rank": null,
-    "of": 30
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "봉천동헬스",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "봉천동PT",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    },
+    {
+     "keyword": "봉천역헬스장",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2159,
+    "images": 20,
+    "videos": 0,
+    "quotes": 8,
+    "headings": 0,
+    "links": 8,
+    "maps": 1,
+    "title_len": 24,
+    "kw_count": 0,
+    "score": 80,
+    "tips": [
+     "대표 키워드 '봉천동헬스' 본문 0회 — 3~10회 권장"
+    ]
    }
   },
   {
    "logNo": "224323275011",
    "title": "꼬메로 혼주양장 후기｜양가 어머니 모시고 피팅부터 당일 계약까지",
    "url": "https://blog.naver.com/hbokey/224323275011",
-   "date": "2026-06-22T00:00:00+09:00",
+   "date": "2026-06-22T12:00:00+09:00",
    "comments": 16,
    "category": "결혼 준비",
    "tags": [
@@ -504,17 +900,35 @@
     "혼주피팅"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "꼬메로",
-    "rank": 21,
-    "of": 30
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "꼬메로",
+     "rank": 21,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2080,
+    "images": 21,
+    "videos": 0,
+    "quotes": 13,
+    "headings": 0,
+    "links": 8,
+    "maps": 1,
+    "title_len": 35,
+    "kw_count": 10,
+    "score": 100,
+    "tips": []
    }
   },
   {
    "logNo": "224319705593",
    "title": "쑹산공항 대만 스타벅스 동전지갑 후기｜대만 여행 기념품 추천",
    "url": "https://blog.naver.com/hbokey/224319705593",
-   "date": "2026-06-18T00:00:00+09:00",
+   "date": "2026-06-18T12:00:00+09:00",
    "comments": 15,
    "category": "해외 여행",
    "tags": [
@@ -544,17 +958,37 @@
     "대만쑹산공항"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "대만스타벅스",
-    "rank": null,
-    "of": 30
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "대만스타벅스",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1235,
+    "images": 23,
+    "videos": 0,
+    "quotes": 5,
+    "headings": 0,
+    "links": 8,
+    "maps": 1,
+    "title_len": 33,
+    "kw_count": 6,
+    "score": 95,
+    "tips": [
+     "본문 1,235자 — 1,500자 이상 권장"
+    ]
    }
   },
   {
    "logNo": "224315797395",
    "title": "가평빠지패키지 비버네선착장｜무제한 바베큐장까지 즐긴 여름 물놀이 후기",
    "url": "https://blog.naver.com/hbokey/224315797395",
-   "date": "2026-06-14T00:00:00+09:00",
+   "date": "2026-06-14T12:00:00+09:00",
    "comments": 0,
    "category": "국내 여행",
    "tags": [
@@ -583,17 +1017,35 @@
     "우당탕탕"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "가평빠지패키지",
-    "rank": null,
-    "of": 30
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "가평빠지패키지",
+     "rank": null,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2628,
+    "images": 34,
+    "videos": 0,
+    "quotes": 16,
+    "headings": 0,
+    "links": 20,
+    "maps": 1,
+    "title_len": 38,
+    "kw_count": 3,
+    "score": 100,
+    "tips": []
    }
   },
   {
    "logNo": "224307925301",
    "title": "신대방 카페 서라당 내돈내산 후기｜생과일 우유 생크림 쌀푸딩 맛집",
    "url": "https://blog.naver.com/hbokey/224307925301",
-   "date": "2026-06-06T00:00:00+09:00",
+   "date": "2026-06-06T12:00:00+09:00",
    "comments": 1,
    "category": "맛집 리뷰",
    "tags": [
@@ -629,17 +1081,37 @@
     "다이어트간식"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "신대방카페",
-    "rank": null,
-    "of": 31
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "신대방카페",
+     "rank": null,
+     "of": 31,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1426,
+    "images": 21,
+    "videos": 1,
+    "quotes": 8,
+    "headings": 0,
+    "links": 8,
+    "maps": 1,
+    "title_len": 36,
+    "kw_count": 4,
+    "score": 99,
+    "tips": [
+     "본문 1,426자 — 1,500자 이상 권장"
+    ]
    }
   },
   {
    "logNo": "224301972211",
    "title": "아이스트 에어세럼 후기｜안개분사 세럼으로 여름 피부 열감 잡는 법",
    "url": "https://blog.naver.com/hbokey/224301972211",
-   "date": "2026-05-31T00:00:00+09:00",
+   "date": "2026-05-31T12:00:00+09:00",
    "comments": 4,
    "category": "뷰티 리뷰",
    "tags": [
@@ -667,10 +1139,30 @@
     "우당탕탕"
    ],
    "status": "노출",
-   "keyword": {
-    "keyword": "에어세럼",
-    "rank": 13,
-    "of": 30
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "에어세럼",
+     "rank": 13,
+     "of": 30,
+     "volume": null,
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1535,
+    "images": 18,
+    "videos": 1,
+    "quotes": 8,
+    "headings": 0,
+    "links": 16,
+    "maps": 0,
+    "title_len": 36,
+    "kw_count": 11,
+    "score": 92,
+    "tips": [
+     "대표 키워드 '에어세럼' 본문 11회 — 3~10회 권장"
+    ]
    }
   }
  ],
