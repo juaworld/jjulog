@@ -1,9 +1,9 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-23T09:35:52.779681+09:00",
+ "updated_at": "2026-10-23T09:56:46.383478+09:00",
  "search_mode": "web",
- "keyword_tool": false,
+ "keyword_tool": true,
  "search_calls": 65,
  "profile": {
   "title": "우당탕탕 쭈아의 결혼일기",
@@ -14,8 +14,8 @@
  "info": {
   "nickname": "쭈아",
   "subscribers": 303,
-  "total_visitors": 48251,
-  "today_visitors": 19,
+  "total_visitors": 48256,
+  "today_visitors": 24,
   "topic": "육아·결혼",
   "power_blog": false,
   "naver_mate": false,
@@ -23,7 +23,7 @@
   "official": false
  },
  "total_posts": 107,
- "last_post": "2026-10-22T12:35:55.919668+09:00",
+ "last_post": "2026-10-22T11:56:49.995186+09:00",
  "posts_12w": 8,
  "visitors": [
   {
@@ -44,11 +44,11 @@
   },
   {
    "date": "2026-10-23",
-   "count": 19
+   "count": 24
   }
  ],
  "index": {
-  "score": 61.6,
+  "score": 61.7,
   "grade": "최적2",
   "grade_index": 9,
   "grades": [
@@ -109,13 +109,13 @@
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.819
+    "value": 0.824
    },
    {
     "key": "visitors",
     "label": "방문자",
     "weight": 5,
-    "value": 0.515
+    "value": 0.517
    }
   ],
   "stats": {
@@ -123,9 +123,9 @@
    "weeks_active": 4,
    "exposure_rate": 1.0,
    "total_exposure_rate": 0.6,
-   "avg_comments": 15.4,
+   "avg_comments": 15.8,
    "avg_content_score": 94,
-   "visitors_avg": 61.0,
+   "visitors_avg": 62.0,
    "top10_keywords": 8
   },
   "low_quality_risk": false
@@ -162,8 +162,8 @@
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
-   "date": "2026-10-22T12:35:55.919668+09:00",
-   "comments": 11,
+   "date": "2026-10-22T11:56:49.995186+09:00",
+   "comments": 14,
    "category": "결혼 준비",
    "tags": [
     "서울웨딩홀투어",
@@ -194,21 +194,36 @@
      "keyword": "서울웨딩홀투어",
      "rank": 1,
      "of": 32,
-     "volume": null,
+     "volume": {
+      "pc": 30,
+      "mobile": 30,
+      "total": 60,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "서울웨딩홀견적비교",
      "rank": 3,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "서울웨딩홀추천",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 290,
+      "mobile": 530,
+      "total": 820,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -265,21 +280,36 @@
      "keyword": "아그작케이크",
      "rank": 14,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 850,
+      "mobile": 7660,
+      "total": 8510,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "뚜레쥬르아그작케이크",
      "rank": 7,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 320,
+      "mobile": 2600,
+      "total": 2920,
+      "competition": "중간"
+     },
      "docs": null
     },
     {
      "keyword": "뚜레쥬르아그작",
-     "rank": 10,
+     "rank": 9,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 430,
+      "mobile": 3670,
+      "total": 4100,
+      "competition": "중간"
+     },
      "docs": null
     }
    ],
@@ -335,21 +365,36 @@
      "keyword": "베르사유궁전후기",
      "rank": 1,
      "of": 31,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "베르사유궁전",
      "rank": null,
      "of": 33,
-     "volume": null,
+     "volume": {
+      "pc": 1660,
+      "mobile": 6800,
+      "total": 8460,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "베르사유궁전예약",
-     "rank": 11,
+     "rank": 12,
      "of": 31,
-     "volume": null,
+     "volume": {
+      "pc": 560,
+      "mobile": 1200,
+      "total": 1760,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -406,21 +451,36 @@
      "keyword": "루브르박물관줄없이입장",
      "rank": null,
      "of": 27,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "낮음"
+     },
      "docs": null
     },
     {
      "keyword": "루브르박물관",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 3260,
+      "mobile": 14200,
+      "total": 17460,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "루브르박물관예약",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 860,
+      "mobile": 1720,
+      "total": 2580,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -475,21 +535,36 @@
      "keyword": "상견례선물추천",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 850,
+      "mobile": 2130,
+      "total": 2980,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "상견례선물고르는법",
      "rank": 17,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "낮음"
+     },
      "docs": null
     },
     {
      "keyword": "양가부모님선물",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 80,
+      "total": 90,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -555,21 +630,36 @@
      "keyword": "아이슬란드기념품",
      "rank": 10,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 370,
+      "total": 460,
+      "competition": "중간"
+     },
      "docs": null
     },
     {
      "keyword": "아이슬란드기념품추천",
      "rank": 3,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 70,
+      "total": 80,
+      "competition": "중간"
+     },
      "docs": null
     },
     {
      "keyword": "아이슬란드쇼핑",
      "rank": 12,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 50,
+      "total": 60,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -630,21 +720,36 @@
      "keyword": "강남하우스웨딩",
      "rank": null,
      "of": 31,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "서울스몰웨딩",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 380,
+      "mobile": 1450,
+      "total": 1830,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "서울스몰베뉴",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -710,21 +815,36 @@
      "keyword": "롯데월드미용실",
      "rank": 19,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 50,
+      "total": 60,
+      "competition": "중간"
+     },
      "docs": null
     },
     {
      "keyword": "잠실긴머리커트",
      "rank": 5,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "낮음"
+     },
      "docs": null
     },
     {
      "keyword": "잠실뿌리볼륨펌",
      "rank": 27,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -768,21 +888,36 @@
      "keyword": "쿤달",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 4250,
+      "mobile": 17100,
+      "total": 21350,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "올리브영드라이샴푸",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 200,
+      "mobile": 1920,
+      "total": 2120,
+      "competition": "중간"
+     },
      "docs": null
     },
     {
      "keyword": "뿌리볼륨",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 260,
+      "mobile": 1450,
+      "total": 1710,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -841,21 +976,36 @@
      "keyword": "봉천동헬스",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 190,
+      "total": 200,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "봉천동PT",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 30,
+      "mobile": 20,
+      "total": 50,
+      "competition": "높음"
+     },
      "docs": null
     },
     {
      "keyword": "봉천역헬스장",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 220,
+      "mobile": 430,
+      "total": 650,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -906,7 +1056,12 @@
      "keyword": "꼬메로",
      "rank": 21,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 500,
+      "total": 590,
+      "competition": "낮음"
+     },
      "docs": null
     }
    ],
@@ -964,7 +1119,12 @@
      "keyword": "대만스타벅스",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 130,
+      "mobile": 1370,
+      "total": 1500,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -1023,7 +1183,12 @@
      "keyword": "가평빠지패키지",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 50,
+      "mobile": 70,
+      "total": 120,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -1087,7 +1252,12 @@
      "keyword": "신대방카페",
      "rank": null,
      "of": 31,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 530,
+      "total": 620,
+      "competition": "높음"
+     },
      "docs": null
     }
    ],
@@ -1145,7 +1315,12 @@
      "keyword": "에어세럼",
      "rank": 13,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 10,
+      "mobile": 10,
+      "total": 20,
+      "competition": "낮음"
+     },
      "docs": null
     }
    ],
