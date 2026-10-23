@@ -305,27 +305,31 @@ class KeywordTool:
         out = {}
         if not self.enabled:
             return out
-        clean = list(dict.fromkeys(k.replace(" ", "") for k in keywords if k.strip()))
-        for i in range(0, len(clean), 5):  # API 한 번에 5개까지
-            batch = clean[i:i + 5]
+        # 여러 개를 한 번에 물으면 일부가 "< 10" 으로 잘못 오는 경우가 있어 하나씩 묻는다
+        for kw in dict.fromkeys(k.replace(" ", "") for k in keywords if k.strip()):
             ts = str(int(time.time() * 1000))
             sig = base64.b64encode(hmac.new(self.secret.encode(), f"{ts}.GET./keywordstool".encode(),
                                             hashlib.sha256).digest()).decode()
             url = "https://api.searchad.naver.com/keywordstool?" + urllib.parse.urlencode(
-                {"hintKeywords": ",".join(batch), "showDetail": 1})
+                {"hintKeywords": kw, "showDetail": 1})
             try:
                 _, body = http_get(url, {"X-Timestamp": ts, "X-API-KEY": self.key,
                                          "X-Customer": self.cust, "X-Signature": sig})
             except NET_ERRORS as e:
-                print(f"  검색광고 API 실패: {e}")
+                print(f"  검색광고 API 실패 ({kw}): {e}")
                 continue
-            for row in json.loads(body).get("keywordList", []):
-                if row.get("relKeyword") in batch:
-                    pc, mo = (to_int(row.get("monthlyPcQcCnt")), to_int(row.get("monthlyMobileQcCnt")))
-                    out[row["relKeyword"]] = {"pc": pc, "mobile": mo, "total": pc + mo,
-                                              "competition": row.get("compIdx")}
-            time.sleep(0.3)
+            row = next((r for r in json.loads(body).get("keywordList", [])
+                        if r.get("relKeyword", "").upper() == kw.upper()), None)
+            if row:
+                pc, mo = self._count(row.get("monthlyPcQcCnt")), self._count(row.get("monthlyMobileQcCnt"))
+                out[kw] = {"pc": pc, "mobile": mo, "total": pc + mo, "competition": row.get("compIdx")}
+            time.sleep(0.25)
         return out
+
+    @staticmethod
+    def _count(v):
+        """검색광고 API는 10 미만을 "< 10" 문자열로 준다 → 5로 본다."""
+        return 5 if isinstance(v, str) and "<" in v else to_int(v)
 
 
 # ---------------------------------------------------------------- 지수·진단
