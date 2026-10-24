@@ -509,7 +509,7 @@ function renderTop(all) {
     const topMax = Math.max(1, top[0]?.[key] || 0);
     $("#topL").innerHTML = top.length ? top.map((p, i) => `<a class="tp" href="${esc(p.url)}" target="_blank" rel="noopener">
       <span class="no">${i + 1}</span>
-      ${p.thumb ? `<img class="th" src="${esc(p.thumb.replace(/^http:/, "https:"))}?type=w160" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'th'}))">` : `<span class="th"></span>`}
+      ${p.thumb ? `<img class="th" src="${esc(p.thumb.replace(/^http:/, "https:"))}?type=s100" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'th'}))">` : `<span class="th"></span>`}
       <div style="min-width:0"><div class="tt">${esc(p.title)}</div>
         <div class="mt"><span>${p.date ? esc(p.date.slice(2, 10).replace(/-/g, ".")) : ""}</span>${p.category ? `<span>${esc(p.category)}</span>` : ""}<span>종합 ${p.score}</span></div></div>
       <div class="nums"><span class="${key === "likes" ? "hi" : ""}">♥ <b>${fmt(p.likes)}</b></span><span class="${key === "comments" ? "hi" : ""}">💬 <b>${fmt(p.comments)}</b></span>${hasViews ? `<span class="${key === "views" ? "hi" : ""}">👁 <b>${fmt(p.views)}</b></span>` : ""}</div>
