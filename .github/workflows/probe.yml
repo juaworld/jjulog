@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           exec > probe.txt 2>&1
-          for t in w160 w80_blur f120_120 w2 ""; do curl -s -o /dev/null -w "$t %{http_code} %{size_download} %{content_type}\n" -e https://blog.naver.com/ "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjFfMjE3/MDAxNzkyNTc3Mjk0OTMw.DdTbt1UhqcaMdC5qmoUp_TzgpF9nM0CVkl3ZSG7xFUwg.IsGGpquV2cLzz4ApYBl5xFMNkVBh0XlfGuIMDmSOAu0g.JPEG/07.jpg${t:+?type=$t}"; curl -s -o /dev/null -w "noref $t %{http_code} %{size_download}\n" "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjFfMjE3/MDAxNzkyNTc3Mjk0OTMw.DdTbt1UhqcaMdC5qmoUp_TzgpF9nM0CVkl3ZSG7xFUwg.IsGGpquV2cLzz4ApYBl5xFMNkVBh0XlfGuIMDmSOAu0g.JPEG/07.jpg${t:+?type=$t}"; done
+          for t in w240 w400 w580 w773 s100 ffn120_120 f100_100 w80; do curl -s -o /dev/null -w "$t %{http_code} %{size_download} %{content_type}\n" -e https://blog.naver.com/ "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjFfMjE3/MDAxNzkyNTc3Mjk0OTMw.DdTbt1UhqcaMdC5qmoUp_TzgpF9nM0CVkl3ZSG7xFUwg.IsGGpquV2cLzz4ApYBl5xFMNkVBh0XlfGuIMDmSOAu0g.JPEG/07.jpg${t:+?type=$t}"; curl -s -o /dev/null -w "noref $t %{http_code} %{size_download}\n" "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjFfMjE3/MDAxNzkyNTc3Mjk0OTMw.DdTbt1UhqcaMdC5qmoUp_TzgpF9nM0CVkl3ZSG7xFUwg.IsGGpquV2cLzz4ApYBl5xFMNkVBh0XlfGuIMDmSOAu0g.JPEG/07.jpg${t:+?type=$t}"; done
       - run: |
           git config user.name bot; git config user.email bot@x
           git add probe.txt; git commit -m out; git push
