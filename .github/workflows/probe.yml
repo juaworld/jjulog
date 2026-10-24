@@ -1,0 +1,13 @@
+name: probe
+on: push
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+          echo "== titlelist"; curl -s -A "$UA" -e https://blog.naver.com/hbokey "https://blog.naver.com/PostTitleListAsync.naver?blogId=hbokey&viewdate=&currentPage=1&categoryNo=0&parentCategoryNo=&countPerPage=3" | head -c 2500; echo
+          echo "== mobile postlist"; curl -s -A "$UA" -e https://m.blog.naver.com/hbokey "https://m.blog.naver.com/api/blogs/hbokey/post-list?categoryNo=0&itemCount=3&page=1" | head -c 4000; echo
+          echo "== like"; curl -s -A "$UA" -e https://blog.naver.com/hbokey "https://blog.like.naver.com/v1/search/contents?suppress_response_codes=true&pool=blogid&q=BLOG%5Bhbokey_224451116799%5D&isDuplication=true" | head -c 2000; echo
+          echo "== like multi"; curl -s -A "$UA" -e https://blog.naver.com/hbokey "https://blog.like.naver.com/v1/search/contents?suppress_response_codes=true&pool=blogid&q=BLOG%5Bhbokey_224451116799%5D%7CBLOG%5Bhbokey_224450000000%5D&isDuplication=true" | head -c 2000; echo
+          echo "== postview read"; curl -s -A "$UA" -e https://blog.naver.com/hbokey "https://blog.naver.com/PostView.naver?blogId=hbokey&logNo=224451116799" | grep -oiE '.{80}(readCount|sympathy|조회|likeCount|viewCount).{120}' | head -20
