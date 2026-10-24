@@ -190,6 +190,24 @@ a{color:inherit}
 .wbar{display:inline-block;width:60px;height:6px;border-radius:3px;background:var(--stone);vertical-align:middle;margin-left:6px;overflow:hidden}
 .wbar i{display:block;height:100%;background:var(--coral);border-radius:0 3px 3px 0}
 
+/* 인기 글 */
+.top-l{display:grid;gap:8px;counter-reset:n}
+.tp{display:grid;grid-template-columns:28px 56px 1fr auto;gap:12px;align-items:center;background:var(--paper);border-radius:16px;padding:10px 14px 10px 10px;text-decoration:none}
+.tp .no{font-size:20px;font-weight:900;text-align:center;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.tp:nth-child(-n+3) .no{color:var(--coral)}
+.tp .th{width:56px;height:56px;border-radius:12px;background:var(--card-2);object-fit:cover;display:block}
+.tp .tt{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tp .mt{font-size:12px;color:var(--ink-3);margin-top:2px;display:flex;gap:8px;flex-wrap:wrap}
+.tp .nums{display:flex;gap:12px;font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tp .nums b{color:var(--ink);font-weight:700}
+.tp .nums .hi b{color:var(--coral)}
+.tp .bar{grid-column:3 / -1;height:4px;border-radius:2px;background:var(--stone);overflow:hidden;margin-top:-4px}
+.tp .bar i{display:block;height:100%;background:var(--coral)}
+@media (max-width:600px){.tp{grid-template-columns:24px 44px 1fr}.tp .th{width:44px;height:44px}.tp .nums{grid-column:3}.tp .bar{grid-column:3}}
+.top-sum{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.top-sum div{background:var(--paper);border-radius:12px;padding:8px 12px;font-size:12px;color:var(--ink-3)}
+.top-sum b{display:block;font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums}
+
 .chart{position:relative}
 .chart svg{display:block;width:100%;height:auto;overflow:visible}
 .chart .gl{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 4}
@@ -371,6 +389,8 @@ function render(d, history, vseries) {
     </div>
   </div>
 
+  ${d.post_stats && d.post_stats.length ? `<section class="sec" id="topPosts"></section>` : ""}
+
   ${d.competitors && d.competitors.count > 1 ? `<section class="sec" id="rivals"></section>` : ""}
 
   <section class="sec">
@@ -382,6 +402,7 @@ function render(d, history, vseries) {
 
   renderPosts(d.posts, "all");
   tabs("#postF", b => renderPosts(d.posts, b.dataset.s));
+  if ($("#topPosts")) renderTop(d.post_stats);
   if ($("#rivals")) renderRivals(d.competitors, history);
 
   const drawTrend = r => {
@@ -460,6 +481,46 @@ function renderRivals(c, history) {
   tabs("#rivalF", b => draw(b.dataset.k));
 }
 
+// 인기 글: 종합 = 기간 안 최댓값 대비 공감 + 댓글 (+ 조회수 공개 시) 평균
+function renderTop(all) {
+  const hasViews = all.some(p => p.views != null);
+  const SORT = {score: "종합", likes: "공감", comments: "댓글", ...(hasViews ? {views: "조회수"} : {})};
+  let key = "score", range = 90;
+  $("#topPosts").innerHTML = `
+    <h3 class="hand">인기 글 TOP 10
+      <span style="display:flex;gap:6px;flex-wrap:wrap">
+        <span class="tabs" id="topK">${Object.entries(SORT).map(([k, v], i) => `<button data-k="${k}" class="${i ? "" : "on"}">${v}</button>`).join("")}</span>
+        <span class="tabs" id="topR"><button data-r="30">한 달</button><button data-r="90" class="on">세 달</button><button data-r="0">전부</button></span>
+      </span></h3>
+    <div class="top-sum" id="topSum"></div>
+    <div class="top-l" id="topL"></div>
+    <p class="note">공개 글 ${all.length}개 기준 · 종합 = 공감·댓글${hasViews ? "·조회수" : ""}을 기간 안 1등 대비 비율로 바꿔 평균 낸 값(100 = 전부 1등).
+      댓글 수에는 내가 단 답글도 포함돼요.${hasViews ? "" : " 조회수는 네이버가 공개하지 않아(블로그 조회수 비공개) 빠져 있어요."}</p>`;
+  const draw = () => {
+    const cut = range ? Date.now() - range * 864e5 : 0;
+    const rows = all.filter(p => !p.date || new Date(p.date) >= cut);
+    const metrics = ["likes", "comments", ...(hasViews ? ["views"] : [])];
+    const max = Object.fromEntries(metrics.map(m => [m, Math.max(1, ...rows.map(p => p[m] || 0))]));
+    rows.forEach(p => p.score = Math.round(metrics.reduce((a, m) => a + (p[m] || 0) / max[m], 0) / metrics.length * 100));
+    const sum = m => rows.reduce((a, p) => a + (p[m] || 0), 0);
+    const avg = m => rows.length ? (sum(m) / rows.length).toFixed(1) : "—";
+    $("#topSum").innerHTML = `<div>글<b>${rows.length}개</b></div><div>평균 공감<b>${avg("likes")}</b></div><div>평균 댓글<b>${avg("comments")}</b></div>`;
+    const top = [...rows].sort((a, b) => (b[key] || 0) - (a[key] || 0) || (b.score - a.score)).slice(0, 10);
+    const topMax = Math.max(1, top[0]?.[key] || 0);
+    $("#topL").innerHTML = top.length ? top.map((p, i) => `<a class="tp" href="${esc(p.url)}" target="_blank" rel="noopener">
+      <span class="no">${i + 1}</span>
+      ${p.thumb ? `<img class="th" src="${esc(p.thumb.replace(/^http:/, "https:"))}?type=w160" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'th'}))">` : `<span class="th"></span>`}
+      <div style="min-width:0"><div class="tt">${esc(p.title)}</div>
+        <div class="mt"><span>${p.date ? esc(p.date.slice(2, 10).replace(/-/g, ".")) : ""}</span>${p.category ? `<span>${esc(p.category)}</span>` : ""}<span>종합 ${p.score}</span></div></div>
+      <div class="nums"><span class="${key === "likes" ? "hi" : ""}">♥ <b>${fmt(p.likes)}</b></span><span class="${key === "comments" ? "hi" : ""}">💬 <b>${fmt(p.comments)}</b></span>${hasViews ? `<span class="${key === "views" ? "hi" : ""}">👁 <b>${fmt(p.views)}</b></span>` : ""}</div>
+      <div class="bar"><i style="width:${(p[key] || 0) / topMax * 100}%"></i></div>
+    </a>`).join("") : `<div class="empty">이 기간에 쓴 글이 없어요.</div>`;
+  };
+  draw();
+  tabs("#topK", b => { key = b.dataset.k; draw(); });
+  tabs("#topR", b => { range = +b.dataset.r; draw(); });
+}
+
 function tabs(sel, fn) {
   $(sel).onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
@@ -484,7 +545,7 @@ function renderPosts(posts, filter) {
     const color = !c ? "var(--stone)" : c.score >= 90 ? "var(--leaf)" : c.score >= 70 ? "var(--sun)" : "var(--plum)";
     return `<details class="post"><summary>
       <div style="min-width:0"><div class="tt">${esc(p.title)}</div>
-        <div class="mt"><span class="tag ${cls}">${txt}</span>${tot}<span>${esc(p.date.slice(5, 10).replace("-", "/"))}</span><span>💬 ${p.comments}</span>
+        <div class="mt"><span class="tag ${cls}">${txt}</span>${tot}<span>${esc(p.date.slice(5, 10).replace("-", "/"))}</span>${p.likes != null ? `<span>♥ ${p.likes}</span>` : ""}<span>💬 ${p.comments}</span>
         ${(p.keywords || []).map(kwChip).join("")}</div></div>
       <div class="opt" style="--p:${c ? c.score : 0};--c:${color}" title="글 최적화 점수"><span>${c ? c.score : "—"}</span></div>
     </summary>

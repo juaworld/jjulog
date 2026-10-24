@@ -1,6 +1,6 @@
 """쭈로그 수집기 — 내 네이버 블로그 현황.
 
-네이버 공개 데이터(RSS, 글 목록, 모바일 블로그 정보, 글 본문, 방문자 그래프, 검색)를 모아
+네이버 공개 데이터(RSS, 글 목록, 모바일 블로그 정보·글 목록(공감·댓글), 글 본문, 방문자 그래프, 검색)를 모아
 data/latest.json, data/history.json, data/visitors.json 을 만든다. 표준 라이브러리만 쓴다.
 
 환경변수 (모두 선택)
@@ -152,6 +152,42 @@ def fetch_post_list(blog_id, weeks=12, max_pages=6):
             break
         time.sleep(0.5)
     return total, out
+
+
+def fetch_post_stats(blog_id, max_pages=6):
+    """모바일 글 목록: 글마다 공감·댓글·조회수(공개한 경우만)·썸네일. 인기 글 순위용."""
+    out, seen = [], set()
+    for page in range(1, max_pages + 1):
+        try:
+            _, body = http_get(f"https://m.blog.naver.com/api/blogs/{blog_id}/post-list?"
+                               + urllib.parse.urlencode({"categoryNo": 0, "itemCount": 30, "page": page}),
+                               {"Referer": f"https://m.blog.naver.com/{blog_id}"})
+            items = (json.loads(body).get("result") or {}).get("items") or []
+        except NET_ERRORS:
+            break
+        new = [it for it in items if str(it.get("logNo")) not in seen]
+        for it in new:
+            log_no = str(it["logNo"])
+            seen.add(log_no)
+            if it.get("notOpen"):
+                continue
+            thumbs = it.get("thumbnailList") or []
+            read = it.get("readCount")
+            out.append({
+                "logNo": log_no,
+                "title": html.unescape(it.get("titleWithInspectMessage") or ""),
+                "url": f"https://blog.naver.com/{blog_id}/{log_no}",
+                "date": datetime.fromtimestamp(it["addDate"] / 1000, KST).isoformat() if it.get("addDate") else None,
+                "category": it.get("categoryName") or "",
+                "likes": to_int(it.get("sympathyCnt")),
+                "comments": to_int(it.get("commentCnt")),
+                "views": to_int(read) if read not in (None, "") else None,  # 조회수 비공개면 None
+                "thumb": thumbs[0].get("encodedThumbnailUrl") if thumbs else None,
+            })
+        if len(items) < 30 or not new:
+            break
+        time.sleep(0.4)
+    return out
 
 
 def fetch_visitors(blog_id):
@@ -689,6 +725,9 @@ def main():
     info = fetch_blog_info(blog_id)
     total, plist = fetch_post_list(blog_id)
     visitors = fetch_visitors(blog_id)
+    post_stats = fetch_post_stats(blog_id)
+    stats_by_no = {p["logNo"]: p for p in post_stats}
+    print(f"공감·댓글 수집 {len(post_stats)}개 글")
     posts_12w = [p for p in plist if datetime.fromisoformat(p["date"]) >= stamp - timedelta(weeks=12)]
 
     search = Search(blog_id)
@@ -700,6 +739,7 @@ def main():
             "logNo": p["logNo"], "title": p["title"],
             "url": f"https://blog.naver.com/{blog_id}/{p['logNo']}",
             "date": p["date"], "comments": p["comments"],
+            "likes": stats_by_no.get(p["logNo"], {}).get("likes"),
             "category": rss.get(p["logNo"], {}).get("category", ""), "tags": tags,
         }
         if p["searchable"]:
@@ -783,6 +823,7 @@ def main():
         "index": idx,
         "diagnosis": diag,
         "posts": checked,
+        "post_stats": post_stats,
         "watch_keywords": watch,
         "competitors": competitors,
     })
