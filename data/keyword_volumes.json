@@ -264,5 +264,26 @@
   "total": 15,
   "competition": "낮음",
   "date": "2026-10-24"
+ },
+ "디즈니랜드파리": {
+  "pc": 110,
+  "mobile": 480,
+  "total": 590,
+  "competition": "높음",
+  "date": "2026-10-24"
+ },
+ "디즈니랜드파리후기": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-10-24"
+ },
+ "디즈니랜드파리꿀팁": {
+  "pc": 5,
+  "mobile": 30,
+  "total": 35,
+  "competition": "중간",
+  "date": "2026-10-24"
  }
 }
