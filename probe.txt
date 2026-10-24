@@ -1,10 +1,16 @@
-w160 404 0 
-noref w160 404 0
-w80_blur 200 2786 image/jpeg
-noref w80_blur 200 2786
-f120_120 404 0 
-noref f120_120 404 0
-w2 200 192035 image/jpeg
-noref w2 200 192035
- 404 0 
-noref  404 0
+w240 404 0 
+noref w240 404 0
+w400 200 74547 image/jpeg
+noref w400 200 74547
+w580 200 144674 image/jpeg
+noref w580 200 144674
+w773 200 233332 image/jpeg
+noref w773 200 233332
+s100 200 5570 image/jpeg
+noref s100 200 5570
+ffn120_120 404 0 
+noref ffn120_120 404 0
+f100_100 404 0 
+noref f100_100 404 0
+w80 404 0 
+noref w80 404 0
