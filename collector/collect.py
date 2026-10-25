@@ -274,11 +274,18 @@ class Search:
         self.secret = os.environ.get("NAVER_CLIENT_SECRET", "").strip()
         self.mode = "api" if self.cid and self.secret else "web"
         self.calls = 0
+        self.blocked = False  # 차단이 이어지면 남은 검색은 건너뛰고 지난 결과를 쓴다
+        self.deadline = time.time() + 11 * 60  # 워크플로 20분 제한 안에 저장까지 끝내도록
         self.doc_counts = {}
         self.seen = {}  # 다른 블로그 id → {키워드: 최고 순위} (키워드 순위 검색에서 본 것)
 
     def _web(self, params):
         """네이버 검색 페이지. 너무 자주 부르면 403/429로 막히니 한 번 쉬었다 다시 시도."""
+        if self.blocked or time.time() > self.deadline:
+            if not self.blocked:
+                print("  검색 시간 초과 — 남은 검색은 건너뜀")
+            self.blocked = True
+            raise urllib.error.URLError("검색 건너뜀")
         url = "https://search.naver.com/search.naver?" + urllib.parse.urlencode(params)
         for attempt in range(2):
             self.calls += 1
@@ -287,7 +294,11 @@ class Search:
                 _, text = http_get(url, {"Referer": "https://www.naver.com"})
                 return text
             except urllib.error.HTTPError as e:
-                if e.code not in (403, 429) or attempt:
+                if e.code not in (403, 429):
+                    raise
+                if attempt:
+                    self.blocked = True
+                    print(f"  검색 계속 차단({e.code}) — 남은 검색은 건너뛰고 지난 결과 사용")
                     raise
                 print(f"  검색 차단({e.code}) — 45초 쉬고 다시 시도")
 
@@ -791,14 +802,18 @@ def main():
     save_json(vpath, [{**v, "blog_id": blog_id} for v in vseries])
 
     print(f"경쟁 블로그 후보 {len(search.seen)}곳")
-    competitors = build_competitors({
-        "blog_id": blog_id, "name": info.get("name") or profile["title"], "nickname": info.get("nickname"),
-        "topic": info.get("topic"), "subscribers": info.get("subscribers"),
-        "today_visitors": info.get("today_visitors"), "visitors_avg": avg_visitors(visitors),
-        "total_posts": total,
-        "posts_30d": sum(1 for p in plist if datetime.fromisoformat(p["date"]) >= stamp - timedelta(days=30)),
-        "shared": [],
-    }, search.seen, int(cfg.get("competitors", 20)))
+    prev_comp = prev.get("competitors") if prev.get("blog_id") == blog_id else None
+    if search.blocked and prev_comp:
+        competitors = prev_comp  # 검색이 막혀 후보를 못 모았으면 지난 결과 유지
+    else:
+        competitors = build_competitors({
+            "blog_id": blog_id, "name": info.get("name") or profile["title"], "nickname": info.get("nickname"),
+            "topic": info.get("topic"), "subscribers": info.get("subscribers"),
+            "today_visitors": info.get("today_visitors"), "visitors_avg": avg_visitors(visitors),
+            "total_posts": total,
+            "posts_30d": sum(1 for p in plist if datetime.fromisoformat(p["date"]) >= stamp - timedelta(days=30)),
+            "shared": [],
+        }, search.seen, int(cfg.get("competitors", 20)))
     print(f"경쟁 블로그 {competitors['count']}곳 중 {competitors['my_rank']}위")
 
     idx = estimate_index(posts_12w, checked, visitors, info)
@@ -814,6 +829,7 @@ def main():
         "keyword_tool": tool.enabled,
         "search_calls": search.calls,
         "search_reused": reused,
+        "search_blocked": search.blocked,
         "profile": profile,
         "info": info,
         "total_posts": total,
