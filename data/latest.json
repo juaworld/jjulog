@@ -1,37 +1,34 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-24T13:14:37.155547+09:00",
+ "updated_at": "2026-10-25T17:07:48.579971+09:00",
  "search_mode": "web",
  "keyword_tool": true,
  "search_calls": 65,
  "search_reused": 0,
+ "search_blocked": false,
  "profile": {
-  "title": "우당탕탕 쭈아의 결혼일기",
-  "description": "쭈아는 우당탕탕 결혼준비중! 맛집, 여행, 일상소소하게 기록하고 나눌게요 :) 광고 문의 : hbokey@naver.com",
+  "title": "쭈아월드｜우당탕탕 신혼일기",
+  "description": "우당탕탕 결혼준비 꿀팁!\n해외여행 · 신혼일상 기록 ✈️\n직접 다녀오고 겪은 솔직 후기만 꼼꼼하게 남깁니다 :)\n문의 : hbokey@naver.com",
   "image": "http://blogpfthumb.phinf.naver.net/MjAyNjA0MDNfMTgy/MDAxNzc1MjExNjI2MzU5.tz4S4maxL6eK2v911dSRHgSsd_-srZhf63zy1Xt4DPkg.v5eSLpQLkI2Q8XEzaYDSzEdReF2cKnRKxVYGAQPopZwg.JPEG/profileImage.jpg?type=m2",
   "link": "https://blog.naver.com/hbokey"
  },
  "info": {
-  "name": "우당탕탕 쭈아의 결혼일기",
+  "name": "쭈아월드｜우당탕탕 신혼일기",
   "nickname": "쭈아",
-  "subscribers": 315,
-  "total_visitors": 48373,
-  "today_visitors": 37,
+  "subscribers": 328,
+  "total_visitors": 48516,
+  "today_visitors": 94,
   "topic": "육아·결혼",
   "power_blog": false,
   "naver_mate": false,
   "mate_citations": null,
   "official": false
  },
- "total_posts": 109,
- "last_post": "2026-10-24T12:14:40.348969+09:00",
- "posts_12w": 10,
+ "total_posts": 110,
+ "last_post": "2026-10-25T13:07:50.482046+09:00",
+ "posts_12w": 11,
  "visitors": [
-  {
-   "date": "2026-10-20",
-   "count": 64
-  },
   {
    "date": "2026-10-21",
    "count": 68
@@ -46,11 +43,15 @@
   },
   {
    "date": "2026-10-24",
-   "count": 37
+   "count": 86
+  },
+  {
+   "date": "2026-10-25",
+   "count": 94
   }
  ],
  "index": {
-  "score": 46.0,
+  "score": 47.6,
   "grade": "준최2",
   "grade_index": 2,
   "grades": [
@@ -92,13 +93,13 @@
     "key": "visitors",
     "label": "방문자 규모",
     "weight": 30,
-    "value": 0.479
+    "value": 0.486
    },
    {
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.348
+    "value": 0.434
    },
    {
     "key": "exposure",
@@ -110,13 +111,13 @@
     "key": "total",
     "label": "통합검색 노출",
     "weight": 10,
-    "value": 0.467
+    "value": 0.333
    },
    {
     "key": "pace",
     "label": "발행 페이스",
     "weight": 10,
-    "value": 0.119
+    "value": 0.131
    },
    {
     "key": "consistency",
@@ -128,70 +129,70 @@
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.721
+    "value": 0.74
    }
   ],
   "stats": {
-   "weekly_posts": 0.8,
+   "weekly_posts": 0.9,
    "weeks_active": 4,
    "exposure_rate": 1.0,
-   "total_exposure_rate": 0.467,
-   "avg_comments": 15.5,
-   "avg_content_score": 93,
-   "visitors_avg": 81.8,
-   "top10_keywords": 11,
+   "total_exposure_rate": 0.333,
+   "avg_comments": 17.5,
+   "avg_content_score": 92,
+   "visitors_avg": 87.2,
+   "top10_keywords": 14,
    "best_top10_volume": 2920
   },
   "low_quality_risk": false,
   "plan": {
    "next_grade": "준최3",
    "next_at": 48.1,
-   "need": 2.1,
+   "need": 0.5,
    "this_at": 40.0,
    "scenarios": [
     {
      "label": "지금처럼 (발행·키워드 그대로)",
-     "per_week": 0.8,
-     "weeks": null,
-     "after_4w": 46.6,
-     "after_12w": 46.1
+     "per_week": 0.9,
+     "weeks": 2,
+     "after_4w": 48.6,
+     "after_12w": 47.3
     },
     {
      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 3,
      "weeks": 1,
-     "after_4w": 55.4,
-     "after_12w": 60.0
+     "after_4w": 55.1,
+     "after_12w": 59.0
     },
     {
      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 5,
      "weeks": 1,
-     "after_4w": 56.7,
-     "after_12w": 62.9
+     "after_4w": 55.8,
+     "after_12w": 61.9
     },
     {
      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
      "per_week": 7,
      "weeks": 1,
-     "after_4w": 59.3,
-     "after_12w": 67.4
+     "after_4w": 58.4,
+     "after_12w": 66.4
     }
    ],
    "levers": [
     {
+     "label": "통합검색 노출",
+     "how": "최근 글 80%가 통검에 뜨면",
+     "gain": 4.7
+    },
+    {
      "label": "키워드 경쟁력",
      "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
-     "gain": 5.1
+     "gain": 4.0
     },
     {
      "label": "꾸준함",
      "how": "12주 동안 매주 1개 이상 쓰면",
-     "gain": 3.3
-    },
-    {
-     "label": "통합검색 노출",
-     "how": "최근 글 80%가 통검에 뜨면",
      "gain": 3.3
     },
     {
@@ -201,7 +202,7 @@
     },
     {
      "label": "방문자 규모",
-     "how": "하루 방문이 82명 → 164명이 되면",
+     "how": "하루 방문이 87명 → 174명이 되면",
      "gain": 2.2
     }
    ]
@@ -216,12 +217,12 @@
   {
    "level": "warn",
    "title": "통합검색 진입",
-   "detail": "최근 글 47%가 통합검색(통검)에도 떠요."
+   "detail": "최근 글 33%가 통합검색(통검)에도 떠요."
   },
   {
    "level": "good",
    "title": "최근 7일 발행",
-   "detail": "최근 7일 동안 6개 발행. 주 3개 이상이 지수에 유리해요."
+   "detail": "최근 7일 동안 7개 발행. 주 3개 이상이 지수에 유리해요."
   },
   {
    "level": "bad",
@@ -231,18 +232,108 @@
   {
    "level": "good",
    "title": "글 최적화",
-   "detail": "최근 글 평균 93점. 글자 수·사진·키워드 반복을 맞추면 올라가요."
+   "detail": "최근 글 평균 92점. 글자 수·사진·키워드 반복을 맞추면 올라가요."
   }
  ],
  "posts": [
   {
+   "logNo": "224452977704",
+   "title": "파리 생트샤펠 후기｜통합권·뮤지엄패스 예약 방법과 스테인드글라스 관람 꿀팁",
+   "url": "https://blog.naver.com/hbokey/224452977704",
+   "date": "2026-10-25T13:07:50.482046+09:00",
+   "comments": 2,
+   "likes": 13,
+   "category": "해외여행·신혼여행",
+   "tags": [
+    "생트샤펠",
+    "파리생트샤펠",
+    "세인트샤펠",
+    "생트샤펠예약",
+    "생트샤펠입장료",
+    "생트샤펠통합권",
+    "생트샤펠후기",
+    "생트샤펠스테인드글라스",
+    "생트샤펠성당",
+    "생트샤펠장미창",
+    "시테섬",
+    "콩시에르주리통합권",
+    "파리스테인드글라스",
+    "파리성당",
+    "파리신혼여행",
+    "파리여행",
+    "파리여행코스",
+    "파리가볼만한곳",
+    "프랑스여행",
+    "생트샤펠뮤지엄패스"
+   ],
+   "status": "노출",
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "생트샤펠",
+     "rank": 2,
+     "of": 30,
+     "volume": {
+      "pc": 580,
+      "mobile": 1430,
+      "total": 2010,
+      "competition": "높음",
+      "date": "2026-10-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "파리생트샤펠",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 90,
+      "mobile": 200,
+      "total": 290,
+      "competition": "높음",
+      "date": "2026-10-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "세인트샤펠",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 10,
+      "mobile": 70,
+      "total": 80,
+      "competition": "중간",
+      "date": "2026-10-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2607,
+    "images": 28,
+    "videos": 1,
+    "quotes": 8,
+    "headings": 0,
+    "links": 16,
+    "maps": 0,
+    "title_len": 41,
+    "kw_count": 33,
+    "score": 87,
+    "tips": [
+     "제목 41자 — 15~40자 권장",
+     "대표 키워드 '생트샤펠' 본문 33회 — 3~10회 권장"
+    ]
+   }
+  },
+  {
    "logNo": "224452128765",
    "title": "디즈니랜드 파리 후기｜겨울왕국 어트랙션부터 불꽃놀이 자리·RER A 퇴장 꿀팁",
    "url": "https://blog.naver.com/hbokey/224452128765",
-   "date": "2026-10-24T12:14:40.348969+09:00",
-   "comments": 0,
-   "likes": 4,
-   "category": "해외 여행",
+   "date": "2026-10-24T12:00:00+09:00",
+   "comments": 18,
+   "likes": 14,
+   "category": "해외여행·신혼여행",
    "tags": [
     "디즈니랜드파리",
     "디즈니랜드파리후기",
@@ -283,7 +374,7 @@
     },
     {
      "keyword": "디즈니랜드파리후기",
-     "rank": 1,
+     "rank": 5,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -310,7 +401,7 @@
    ],
    "content": {
     "chars": 4454,
-    "images": 41,
+    "images": 42,
     "videos": 0,
     "quotes": 16,
     "headings": 0,
@@ -331,8 +422,8 @@
    "url": "https://blog.naver.com/hbokey/224451116799",
    "date": "2026-10-23T12:00:00+09:00",
    "comments": 5,
-   "likes": 9,
-   "category": "결혼 준비",
+   "likes": 11,
+   "category": "꿀팁·체크리스트",
    "tags": [
     "웨딩홀투어체크리스트",
     "웨딩홀체크리스트",
@@ -360,7 +451,7 @@
    "keywords": [
     {
      "keyword": "웨딩홀투어체크리스트",
-     "rank": 8,
+     "rank": 3,
      "of": 33,
      "volume": {
       "pc": 300,
@@ -373,7 +464,7 @@
     },
     {
      "keyword": "웨딩홀체크리스트",
-     "rank": 11,
+     "rank": 5,
      "of": 33,
      "volume": {
       "pc": 260,
@@ -386,7 +477,7 @@
     },
     {
      "keyword": "웨딩홀투어질문",
-     "rank": 3,
+     "rank": 1,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -400,7 +491,7 @@
    ],
    "content": {
     "chars": 2503,
-    "images": 23,
+    "images": 24,
     "videos": 0,
     "quotes": 16,
     "headings": 0,
@@ -421,9 +512,9 @@
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
    "date": "2026-10-22T12:00:00+09:00",
-   "comments": 25,
-   "likes": 17,
-   "category": "결혼 준비",
+   "comments": 37,
+   "likes": 21,
+   "category": "결혼준비",
    "tags": [
     "서울웨딩홀투어",
     "서울웨딩홀견적비교",
@@ -451,7 +542,7 @@
    "keywords": [
     {
      "keyword": "서울웨딩홀투어",
-     "rank": 2,
+     "rank": 3,
      "of": 32,
      "volume": {
       "pc": null,
@@ -464,7 +555,7 @@
     },
     {
      "keyword": "서울웨딩홀견적비교",
-     "rank": 6,
+     "rank": 13,
      "of": 30,
      "volume": {
       "pc": null,
@@ -491,7 +582,7 @@
    ],
    "content": {
     "chars": 2168,
-    "images": 24,
+    "images": 25,
     "videos": 0,
     "quotes": 8,
     "headings": 0,
@@ -511,9 +602,9 @@
    "title": "뚜레쥬르 아그작케이크 후기｜내돈내산 복숭아 레몬 비교 솔직 리뷰",
    "url": "https://blog.naver.com/hbokey/224448771282",
    "date": "2026-10-21T12:00:00+09:00",
-   "comments": 28,
-   "likes": 20,
-   "category": "맛집 리뷰",
+   "comments": 33,
+   "likes": 23,
+   "category": "데이트 맛집·카페",
    "tags": [
     "아그작케이크",
     "뚜레쥬르아그작케이크",
@@ -541,7 +632,7 @@
    "keywords": [
     {
      "keyword": "아그작케이크",
-     "rank": 13,
+     "rank": 15,
      "of": 30,
      "volume": {
       "pc": null,
@@ -554,7 +645,7 @@
     },
     {
      "keyword": "뚜레쥬르아그작케이크",
-     "rank": 6,
+     "rank": 8,
      "of": 30,
      "volume": {
       "pc": null,
@@ -567,7 +658,7 @@
     },
     {
      "keyword": "뚜레쥬르아그작",
-     "rank": 11,
+     "rank": 22,
      "of": 30,
      "volume": {
       "pc": null,
@@ -581,7 +672,7 @@
    ],
    "content": {
     "chars": 1701,
-    "images": 10,
+    "images": 11,
     "videos": 0,
     "quotes": 11,
     "headings": 0,
@@ -600,9 +691,9 @@
    "title": "베르사유 궁전 후기｜2026 입장료·예약 꿀팁부터 거울의 방과 마리 앙투아네트 마을까지",
    "url": "https://blog.naver.com/hbokey/224447580328",
    "date": "2026-10-20T12:00:00+09:00",
-   "comments": 16,
-   "likes": 16,
-   "category": "해외 여행",
+   "comments": 17,
+   "likes": 17,
+   "category": "해외여행·신혼여행",
    "tags": [
     "베르사유궁전후기",
     "베르사유궁전",
@@ -630,7 +721,7 @@
    "keywords": [
     {
      "keyword": "베르사유궁전후기",
-     "rank": 2,
+     "rank": 1,
      "of": 31,
      "volume": {
       "pc": null,
@@ -656,7 +747,7 @@
     },
     {
      "keyword": "베르사유궁전예약",
-     "rank": 12,
+     "rank": 8,
      "of": 31,
      "volume": {
       "pc": null,
@@ -670,7 +761,7 @@
    ],
    "content": {
     "chars": 3021,
-    "images": 54,
+    "images": 55,
     "videos": 0,
     "quotes": 11,
     "headings": 0,
@@ -692,7 +783,7 @@
    "date": "2026-10-19T12:00:00+09:00",
    "comments": 41,
    "likes": 31,
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "tags": [
     "루브르박물관줄없이입장",
     "루브르박물관",
@@ -760,7 +851,7 @@
    ],
    "content": {
     "chars": 3165,
-    "images": 48,
+    "images": 49,
     "videos": 0,
     "quotes": 14,
     "headings": 0,
@@ -781,7 +872,7 @@
    "date": "2026-10-06T12:00:00+09:00",
    "comments": 13,
    "likes": 25,
-   "category": "결혼 꿀팁",
+   "category": "꿀팁·체크리스트",
    "tags": [
     "상견례선물추천",
     "상견례선물고르는법",
@@ -821,7 +912,7 @@
     },
     {
      "keyword": "상견례선물고르는법",
-     "rank": 20,
+     "rank": 30,
      "of": 30,
      "volume": {
       "pc": null,
@@ -869,7 +960,7 @@
    "date": "2026-10-01T12:00:00+09:00",
    "comments": 5,
    "likes": 19,
-   "category": "해외 여행",
+   "category": "여행 준비·꿀팁",
    "tags": [
     "아이슬란드기념품",
     "아이슬란드기념품추천",
@@ -907,7 +998,7 @@
    "keywords": [
     {
      "keyword": "아이슬란드기념품",
-     "rank": 9,
+     "rank": 8,
      "of": 30,
      "volume": {
       "pc": null,
@@ -920,7 +1011,7 @@
     },
     {
      "keyword": "아이슬란드기념품추천",
-     "rank": 4,
+     "rank": 2,
      "of": 30,
      "volume": {
       "pc": null,
@@ -947,7 +1038,7 @@
    ],
    "content": {
     "chars": 1986,
-    "images": 25,
+    "images": 26,
     "videos": 0,
     "quotes": 7,
     "headings": 0,
@@ -968,7 +1059,7 @@
    "date": "2026-08-28T12:00:00+09:00",
    "comments": 16,
    "likes": 25,
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "tags": [
     "강남하우스웨딩",
     "서울스몰웨딩",
@@ -997,7 +1088,7 @@
     "결혼식후기"
    ],
    "status": "노출",
-   "total_search": "노출",
+   "total_search": "미노출",
    "keywords": [
     {
      "keyword": "강남하우스웨딩",
@@ -1041,7 +1132,7 @@
    ],
    "content": {
     "chars": 2334,
-    "images": 22,
+    "images": 23,
     "videos": 0,
     "quotes": 13,
     "headings": 0,
@@ -1062,7 +1153,7 @@
    "date": "2026-08-25T12:00:00+09:00",
    "comments": 6,
    "likes": 21,
-   "category": "생활 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "tags": [
     "롯데월드미용실",
     "잠실긴머리커트",
@@ -1100,39 +1191,13 @@
    "keywords": [
     {
      "keyword": "롯데월드미용실",
-     "rank": 20,
+     "rank": 24,
      "of": 30,
      "volume": {
       "pc": null,
       "mobile": null,
       "total": 60,
       "competition": "중간",
-      "date": "2026-10-23"
-     },
-     "docs": null
-    },
-    {
-     "keyword": "잠실긴머리커트",
-     "rank": null,
-     "of": 0,
-     "volume": {
-      "pc": null,
-      "mobile": null,
-      "total": 10,
-      "competition": "낮음",
-      "date": "2026-10-23"
-     },
-     "docs": null
-    },
-    {
-     "keyword": "잠실뿌리볼륨펌",
-     "rank": 27,
-     "of": 30,
-     "volume": {
-      "pc": null,
-      "mobile": null,
-      "total": 10,
-      "competition": "높음",
       "date": "2026-10-23"
      },
      "docs": null
@@ -1161,7 +1226,7 @@
    "date": "2026-07-15T12:00:00+09:00",
    "comments": 2,
    "likes": 10,
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "tags": [
     "쿤달",
     "올리브영드라이샴푸",
@@ -1212,7 +1277,7 @@
    "date": "2026-06-28T12:00:00+09:00",
    "comments": 3,
    "likes": 10,
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "tags": [
     "봉천동헬스",
     "봉천동PT",
@@ -1278,7 +1343,7 @@
    "date": "2026-06-22T12:00:00+09:00",
    "comments": 16,
    "likes": 14,
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "tags": [
     "꼬메로",
     "꼬메로혼주양장",
@@ -1297,11 +1362,11 @@
     "혼주피팅"
    ],
    "status": "노출",
-   "total_search": "노출",
+   "total_search": "미노출",
    "keywords": [
     {
      "keyword": "꼬메로",
-     "rank": 20,
+     "rank": 27,
      "of": 30,
      "volume": {
       "pc": null,
@@ -1315,7 +1380,7 @@
    ],
    "content": {
     "chars": 2080,
-    "images": 21,
+    "images": 22,
     "videos": 0,
     "quotes": 13,
     "headings": 0,
@@ -1334,7 +1399,7 @@
    "date": "2026-06-18T12:00:00+09:00",
    "comments": 15,
    "likes": 30,
-   "category": "해외 여행",
+   "category": "여행 준비·꿀팁",
    "tags": [
     "대만스타벅스",
     "쑹산공항스타벅스",
@@ -1359,7 +1424,8 @@
     "쑹산공항쇼핑",
     "여행쇼핑",
     "대만여행추천",
-    "대만쑹산공항"
+    "대만쑹산공항",
+    "우당탕탕"
    ],
    "status": "노출",
    "total_search": "노출",
@@ -1380,7 +1446,7 @@
    ],
    "content": {
     "chars": 1235,
-    "images": 23,
+    "images": 24,
     "videos": 0,
     "quotes": 5,
     "headings": 0,
@@ -1393,145 +1459,92 @@
      "본문 1,235자 — 1,500자 이상 권장"
     ]
    }
-  },
-  {
-   "logNo": "224315797395",
-   "title": "가평빠지패키지 비버네선착장｜무제한 바베큐장까지 즐긴 여름 물놀이 후기",
-   "url": "https://blog.naver.com/hbokey/224315797395",
-   "date": "2026-06-14T12:00:00+09:00",
-   "comments": 0,
-   "likes": 8,
-   "category": "국내 여행",
-   "tags": [
-    "가평빠지패키지",
-    "가평빠지숙박패키지",
-    "가평빠지올인원패키지",
-    "가평빠지펜션패키지",
-    "가평빠지추천",
-    "가평수상레저",
-    "가평수상레저패키지",
-    "가평워터파크",
-    "가평물놀이",
-    "가평여행",
-    "가평가볼만한곳",
-    "비버네선착장",
-    "비버네선착장후기",
-    "가평바베큐장",
-    "가평바베큐파티",
-    "가평빠지바베큐",
-    "가평펜션패키지",
-    "가평숙박패키지",
-    "가평빠지숙박",
-    "가평빠지펜션",
-    "가평올인원패키지",
-    "여름물놀이",
-    "우당탕탕"
-   ],
-   "status": "노출",
-   "total_search": "미노출",
-   "keywords": [
-    {
-     "keyword": "가평빠지패키지",
-     "rank": null,
-     "of": 30,
-     "volume": {
-      "pc": null,
-      "mobile": null,
-      "total": 120,
-      "competition": "높음",
-      "date": "2026-10-23"
-     },
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 2628,
-    "images": 34,
-    "videos": 0,
-    "quotes": 16,
-    "headings": 0,
-    "links": 20,
-    "maps": 1,
-    "title_len": 38,
-    "kw_count": 3,
-    "score": 100,
-    "tips": []
-   }
   }
  ],
  "post_stats": [
+  {
+   "logNo": "224452977704",
+   "title": "파리 생트샤펠 후기｜통합권·뮤지엄패스 예약 방법과 스테인드글라스 관람 꿀팁",
+   "url": "https://blog.naver.com/hbokey/224452977704",
+   "date": "2026-10-25T12:27:41.531000+09:00",
+   "category": "해외여행·신혼여행",
+   "likes": 13,
+   "comments": 2,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfODMg/MDAxNzkyOTEwNDI0NjQ0.uLn2lfSk1teLgDtMrlSluzBTZj1yZh9J-c2R7kmjGy0g.VRzqSpqH91QS_4ke60VM0QfuhzAAJSqXbU80ezebtb0g.PNG/thumb-224452977704.png"
+  },
   {
    "logNo": "224452128765",
    "title": "디즈니랜드 파리 후기｜겨울왕국 어트랙션부터 불꽃놀이 자리·RER A 퇴장 꿀팁",
    "url": "https://blog.naver.com/hbokey/224452128765",
    "date": "2026-10-24T12:14:16.940000+09:00",
-   "category": "해외 여행",
-   "likes": 4,
-   "comments": 0,
+   "category": "해외여행·신혼여행",
+   "likes": 14,
+   "comments": 18,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjFfMjE3/MDAxNzkyNTc3Mjk0OTMw.DdTbt1UhqcaMdC5qmoUp_TzgpF9nM0CVkl3ZSG7xFUwg.IsGGpquV2cLzz4ApYBl5xFMNkVBh0XlfGuIMDmSOAu0g.JPEG/07.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjIg/MDAxNzkyOTEwNTE0NDAy.6G3Z9BtS-do7KbsIie9C7t3dGW-tX-ZbATFzTV-UDSQg.e_ySP9gK2qGqV154c9iPiGhmug2WpVcZJJ68MtMKj08g.PNG/thumb-224452128765.png"
   },
   {
    "logNo": "224451116799",
    "title": "웨딩홀 투어 체크리스트｜계약 전 꼭 물어볼 질문 총정리 (보증인원·식대·계약금 환불·엑셀 공유)",
    "url": "https://blog.naver.com/hbokey/224451116799",
    "date": "2026-10-23T11:53:29.756000+09:00",
-   "category": "결혼 준비",
-   "likes": 9,
+   "category": "꿀팁·체크리스트",
+   "likes": 11,
    "comments": 5,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjFfMTIw/MDAxNzkyNTcwMjcwMDUx.pOxHMO_o1RdnsYRVzZOyaWtSSyNKx2IEFe-LIh-ux-gg.9kt9EVkp6TDqcL_4v-W41k_MlrI7xp2N60mke3XqkpEg.JPEG/01_intro_virginroad.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjIw/MDAxNzkyOTEwNTg4NjA1.DWL97vnKORbCiC6DJREottk89e3Qg7FsLQrVz3X_yqgg.1qIfaHLPxdxWIT-P9nuBSGpFt6V3vxNpgi8Vnkxcr8Ug.PNG/thumb-224451116799.png"
   },
   {
    "logNo": "224449951803",
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
    "date": "2026-10-22T11:40:11.619000+09:00",
-   "category": "결혼 준비",
-   "likes": 17,
-   "comments": 25,
+   "category": "결혼준비",
+   "likes": 21,
+   "comments": 37,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjFfMjY1/MDAxNzkyNTYzNjM1MzI1.8TQDgs8-TC3F8TScZUKk-spA_z4rc814gaUxbSriQTMg.FjDELGPzZIgurpoi0Atv026o4wg2Bgc-TSr16jJ91BIg.JPEG/01_intro.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjM5/MDAxNzkyOTEwNjU2MzI4.FTtCVsCVchsxrPbl6iTd6iAHjMPSRYmYxakpK48NSTMg.CUf5y9CxLx0uv3w-O_TMWTPrvqnk1nA1L79OYzP8bmwg.PNG/thumb-224449951803.png"
   },
   {
    "logNo": "224448771282",
    "title": "뚜레쥬르 아그작케이크 후기｜내돈내산 복숭아 레몬 비교 솔직 리뷰",
    "url": "https://blog.naver.com/hbokey/224448771282",
    "date": "2026-10-21T11:31:44.075000+09:00",
-   "category": "맛집 리뷰",
-   "likes": 20,
-   "comments": 28,
+   "category": "데이트 맛집·카페",
+   "likes": 23,
+   "comments": 33,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjBfODcg/MDAxNzkyNDg4MDI4MzMz.L_KQIr0KHupRzgDOXXqdL48Mm2M5288Cdluy9a6DgBog.8uEd8-3DzY80qVyOAPSrD6zamnXZiauCjV-iu1Kj5I0g.JPEG/06.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMTM2/MDAxNzkyOTEwNzE0NDc3.TL1M1YvJwzQtgBkafhKJZuUaB8Z_2MwsYzHmVDLCB1Ag.xLYctcmieKZsT4Aj8yi7naBu1--YvjLK9nEsDwf7etcg.PNG/thumb-224448771282.png"
   },
   {
    "logNo": "224447580328",
    "title": "베르사유 궁전 후기｜2026 입장료·예약 꿀팁부터 거울의 방과 마리 앙투아네트 마을까지",
    "url": "https://blog.naver.com/hbokey/224447580328",
    "date": "2026-10-20T12:04:02.560000+09:00",
-   "category": "해외 여행",
-   "likes": 16,
-   "comments": 16,
+   "category": "해외여행·신혼여행",
+   "likes": 17,
+   "comments": 17,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTlfMTA4/MDAxNzkyMzgxMDY5NTQ0.kitJDfW0sPkoc6C_iNmyEowzmPp0XV5H82yBR8KG0FQg.Y3gDtMJ1Jlwy6uyKOCdAOCnATkAIQcQue2wuct_5unYg.JPEG/IMG%A3%DF6406.JPG"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfNDMg/MDAxNzkyOTEwODA4NDk1.Htyavh6TPlIk7RqvUI47FDf9of2Ldj6xgWHxKSwKVokg.YzzmsGoRl_858T9hbXFuw8cz5270HPqiaPXEAtpwPI4g.PNG/thumb-224447580328.png"
   },
   {
    "logNo": "224446356205",
    "title": "루브르 박물관 줄 없이 입장 후기｜까루젤 입구 꿀팁과 2026 입장료·예약 방법",
    "url": "https://blog.naver.com/hbokey/224446356205",
    "date": "2026-10-19T11:31:14.951000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 31,
    "comments": 41,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTlfMTIz/MDAxNzkyMzc2OTUxNTM5.O6zf5tz0az6tVatJIsTxFdeIompAS0nmtakdonhtEUwg.qfcpZEr8YheDGK4oQxsxAZdFzI90-FAtxWKiXYfMvBkg.JPEG/IMG%A3%DF6930.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjMx/MDAxNzkyOTEwODk2MTQ1.RLIy2c2BAYE6hKOCQaadHC0mtnvNrDlkNow_iLToKnAg.YZ26d-QrjnnsSDp3zMbPGLmLdtW1BzXiKhIhrj9vT78g.PNG/thumb-224446356205.png"
   },
   {
    "logNo": "224433234049",
    "title": "상견례 양가 부모님 선물 고르는 법 | 금액대와 추천 품목",
    "url": "https://blog.naver.com/hbokey/224433234049",
    "date": "2026-10-06T18:21:52.637000+09:00",
-   "category": "결혼 꿀팁",
+   "category": "꿀팁·체크리스트",
    "likes": 25,
    "comments": 13,
    "views": null,
@@ -1542,29 +1555,29 @@
    "title": "아이슬란드 기념품 추천｜초콜릿, 소금, 보드카 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224428105728",
    "date": "2026-10-01T12:10:00.707000+09:00",
-   "category": "해외 여행",
+   "category": "여행 준비·꿀팁",
    "likes": 19,
    "comments": 5,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MzBfMzAg/MDAxNzkwNzM3MDQ4MjI3.l4pVwrpMdC5bUHWGrYOTCGH9UTetYv0GyPO752x3lXkg.GVj-tFMZznN6m327jQ5WjuqtkAG19r70HddUezuizBcg.JPEG/IMG%A3%DF8359.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfNDkg/MDAxNzkyOTE0MTkxMDM3.TwWI6TvkVJ5rCHAbUZX6Evq7hH_xeebM5zQhK2cDE2Qg.Akd16XrnlqxAPKWBaDM9vzukCLxv5IoUz8hVDagOuMcg.PNG/thumb-224428105728.png"
   },
   {
    "logNo": "224393491461",
    "title": "강남 스몰웨딩 메리스에이프럴 본식후기｜생화 가득한 하우스웨딩",
    "url": "https://blog.naver.com/hbokey/224393491461",
    "date": "2026-08-28T19:14:03.163000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 25,
    "comments": 16,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MjhfMTkg/MDAxNzg3OTEwODAxODA5.DL9KE8yAtmcdaVa7ZaeeIPgrpj78Eqd8KcrnVmFRmqcg.OCmReNq14bsDGmSqgQNCgPbINLJUoT5QuBUVgNY2GM4g.JPEG/IMG%A3%DF2009.JPG"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMTQ2/MDAxNzkyOTE0MTI2OTM4.-bnhNoFHCOKfu6hEnKHo-EDc6aQY4vDV4QMQannzofgg.WP2qSXfwTy3g-klLEnUZiQkNmPthONTJ1Ub-R21YQaIg.PNG/thumb-224393491461.png"
   },
   {
    "logNo": "224389537847",
    "title": "롯데월드 미용실 여자머리 추천｜단발 고민 기장 유지 커트 + 잠실 뿌리볼륨펌 후기",
    "url": "https://blog.naver.com/hbokey/224389537847",
    "date": "2026-08-25T12:22:49.509000+09:00",
-   "category": "생활 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 21,
    "comments": 6,
    "views": null,
@@ -1575,7 +1588,7 @@
    "title": "쿤달 올리브영드라이샴푸 볼륨핏·쿨링으로 뿌리볼륨 살리기!",
    "url": "https://blog.naver.com/hbokey/224347263935",
    "date": "2026-07-15T12:10:19.476000+09:00",
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 10,
    "comments": 2,
    "views": null,
@@ -1586,7 +1599,7 @@
    "title": "봉천역헬스장 관악구 여성전용PT 비비핏 후기",
    "url": "https://blog.naver.com/hbokey/224329245574",
    "date": "2026-06-28T00:25:34.065000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 10,
    "comments": 3,
    "views": null,
@@ -1597,29 +1610,29 @@
    "title": "꼬메로 혼주양장 후기｜양가 어머니 모시고 피팅부터 당일 계약까지",
    "url": "https://blog.naver.com/hbokey/224323275011",
    "date": "2026-06-22T12:16:18.109000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 14,
    "comments": 16,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MjJfNjIg/MDAxNzgyMDk4MTE3NTMz.crJkdqdY8gz5ZBOeZqnNZVr_3IRy_KDg-LxhoNwjpf4g.33JWDprtXk_PxN-0ANwwcFUwlmHQ4Veo9CIjgnsuDtgg.JPEG/IMG%A3%DF8442.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjAw/MDAxNzkyOTE0MzY1MzQw.F3slnTj8hhytBG-z6sBegrJEKNuMn2QCH1TQx6CTmJMg.dG4cbZPFTpnXaIEAvEDi6l4VL721nbf-w2mhSqG9lDUg.PNG/thumb-224323275011.png"
   },
   {
    "logNo": "224319705593",
    "title": "쑹산공항 대만 스타벅스 동전지갑 후기｜대만 여행 기념품 추천",
    "url": "https://blog.naver.com/hbokey/224319705593",
    "date": "2026-06-18T12:12:58.227000+09:00",
-   "category": "해외 여행",
+   "category": "여행 준비·꿀팁",
    "likes": 30,
    "comments": 15,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MTdfOTAg/MDAxNzgxNjYyODA1Nzc3.v5xqM_270mKvQ1Rk5We1znuzoiym_yRfxFFhogXFzXgg.leGeoOTY7t10QGaIEww8xrIuNLathVwWUlUGJCI554Ug.JPEG/IMG%A3%DF7710.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjYx/MDAxNzkyOTE0MjgwMDMz.IGSXRbSXjrcyBtzG6wtWhcMYg101_lpqm99QGSX6Qu0g.TE0Ujcr51xofvRdF1VxYI3Rv77fI1VFbK8ECuZ2S2J8g.PNG/thumb-224319705593.png"
   },
   {
    "logNo": "224315797395",
    "title": "가평빠지패키지 비버네선착장｜무제한 바베큐장까지 즐긴 여름 물놀이 후기",
    "url": "https://blog.naver.com/hbokey/224315797395",
    "date": "2026-06-14T22:21:12.443000+09:00",
-   "category": "국내 여행",
+   "category": "국내여행·호캉스",
    "likes": 8,
    "comments": 0,
    "views": null,
@@ -1630,7 +1643,7 @@
    "title": "신대방 카페 서라당 내돈내산 후기｜생과일 우유 생크림 쌀푸딩 맛집",
    "url": "https://blog.naver.com/hbokey/224307925301",
    "date": "2026-06-06T18:24:07.606000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 9,
    "comments": 1,
    "views": null,
@@ -1641,7 +1654,7 @@
    "title": "아이스트 에어세럼 후기｜안개분사 세럼으로 여름 피부 열감 잡는 법",
    "url": "https://blog.naver.com/hbokey/224301972211",
    "date": "2026-05-31T21:40:31.780000+09:00",
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 9,
    "comments": 4,
    "views": null,
@@ -1652,7 +1665,7 @@
    "title": "서울웨딩촬영 고래의사진 후기｜스튜디오부터 야외 웨딩스냅 촬영까지",
    "url": "https://blog.naver.com/hbokey/224290705777",
    "date": "2026-05-19T23:13:30.777000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 11,
    "comments": 3,
    "views": null,
@@ -1663,7 +1676,7 @@
    "title": "행궁동카페 호뜨프라하 굴뚝빵 후기, 수원 데이트 코스로 가기 좋은 카페!",
    "url": "https://blog.naver.com/hbokey/224286271240",
    "date": "2026-05-15T12:10:13.392000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 12,
    "comments": 9,
    "views": null,
@@ -1674,7 +1687,7 @@
    "title": "직장인도 받을까? 고유가지원금 대상 조회해보니｜소득하위 70% 총정리",
    "url": "https://blog.naver.com/hbokey/224282788830",
    "date": "2026-05-12T12:02:24.253000+09:00",
-   "category": "일상 꿀팁",
+   "category": "신혼일상",
    "likes": 10,
    "comments": 4,
    "views": null,
@@ -1685,18 +1698,18 @@
    "title": "웨딩촬영 소품 추천｜아디다스 삼바 스칼렛 IG8905 커플운동화 내돈내산 후기",
    "url": "https://blog.naver.com/hbokey/224281029483",
    "date": "2026-05-10T21:41:52.706000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 13,
    "comments": 6,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDdfMjc5/MDAxNzc4MTIxMjgyOTUw.Ke1S552r6skKlEhsbS0wf8p_pcQFxrTRWJTmntIWm0Ug.-ErVm9XKxuxTNMojWqunaUeJy4Id50lcByT5V0z3wDog.JPEG/IMG%A3%DF3655.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjUz/MDAxNzkyOTE0MzExMDA3.bvzFK7IX3Wms6MupZSsZBnfL9-MkjkJLVbls3hB_Vkgg.P7BzZvxPhR380TXt8ja1i6guupOkHHo7ANt37DO9Xe0g.PNG/thumb-224281029483.png"
   },
   {
    "logNo": "224276311690",
    "title": "커플 데이트로 다녀온 대학로 연극 추천｜히든퍼즐 관객 참여형 후기",
    "url": "https://blog.naver.com/hbokey/224276311690",
    "date": "2026-05-06T11:46:17.912000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 13,
    "comments": 4,
    "views": null,
@@ -1707,7 +1720,7 @@
    "title": "상수맛집 추천 하와이조개 홍대점 후기, 홍대맛집 고민될때 바로여기!",
    "url": "https://blog.naver.com/hbokey/224275791488",
    "date": "2026-05-05T22:23:10.941000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 9,
    "comments": 2,
    "views": null,
@@ -1718,7 +1731,7 @@
    "title": "양재사진관 리파인모노스튜디오 예비부부의 기념일 커플사진 촬영 후기",
    "url": "https://blog.naver.com/hbokey/224267794869",
    "date": "2026-04-28T12:07:27.899000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 13,
    "comments": 6,
    "views": null,
@@ -1729,7 +1742,7 @@
    "title": "수원셀프웨딩촬영 모노무드스튜디오 솔직후기｜커플사진까지 만족",
    "url": "https://blog.naver.com/hbokey/224263029430",
    "date": "2026-04-23T23:11:41.783000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 13,
    "comments": 3,
    "views": null,
@@ -1740,7 +1753,7 @@
    "title": "서울대입구역맛집 설입 후기 샤로수길술집 데이트",
    "url": "https://blog.naver.com/hbokey/224262305600",
    "date": "2026-04-23T12:07:33.060000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 9,
    "comments": 3,
    "views": null,
@@ -1751,7 +1764,7 @@
    "title": "교대역 술집 스미로우 후기, 나베+텐동 환상의 조합 추천",
    "url": "https://blog.naver.com/hbokey/224259299710",
    "date": "2026-04-20T23:14:45.312000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 14,
    "comments": 0,
    "views": null,
@@ -1762,29 +1775,29 @@
    "title": "클레이샵 스퀴지 브레드, 내돈내산 빨아쓰는행주 셀룰로오스 키친타올 후기",
    "url": "https://blog.naver.com/hbokey/224254318407",
    "date": "2026-04-16T12:23:10.494000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 17,
    "comments": 2,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MTZfMjA2/MDAxNzc2MzA3MTk4OTk2.tnUJdd2zdX54W5GO-H3L8UFKvjWWOBFIBVSeZG7RxQsg.JrTYfNc-n_jz-5CIcfnoa1ypZluvILdCgnGbl82qvAEg.JPEG/IMG%A3%DF4844.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfNjEg/MDAxNzkyOTE0NDM1NTQw.iDXD28U7DThVyayjBMXjnfcf0UhgzMEeGctbfGmHRQAg._QU-g61HGEtdx6fk2yUQThJiEqjSs_RyEn_XygcY3Q4g.PNG/thumb-224254318407.png"
   },
   {
    "logNo": "224245007409",
    "title": "샤넬WOC 후기｜프로포즈백 추천, 수납력, 착용감 솔직 리뷰",
    "url": "https://blog.naver.com/hbokey/224245007409",
    "date": "2026-04-08T11:53:40.623000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 19,
    "comments": 6,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MDhfOTYg/MDAxNzc1NjE2ODYzMTg0.Rf_cyKwYTN0xel4KHD-AGHNxsdbvC8XD2rXQtw7Oynkg.q2hKxfbrU-vOj_iIj27I_pWENLgDVDCUhwZV3oK4YpEg.JPEG/900%A3%DFIMG%A3%DF9078.JPG"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjk0/MDAxNzkyOTE0MzQ2MTk3.7nA96TjodxQVuG2ck8zhjHAthfnmUlVW7hIuZHjuqTEg.jqKd7ebhwn-HMG8kTb6wwyU15sBq8W1GdpGCoq2DX3Ig.PNG/thumb-224245007409.png"
   },
   {
    "logNo": "224244485467",
    "title": "소유에딧(류헤어스튜디오) 헤어변형 후기｜헤변으로 풍부해진 웨딩촬영 현장",
    "url": "https://blog.naver.com/hbokey/224244485467",
    "date": "2026-04-07T23:05:30.898000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 9,
    "comments": 10,
    "views": null,
@@ -1795,7 +1808,7 @@
    "title": "대학로 메이크업루다 웨딩메이크업 후기｜장시간 촬영에도 유지된 피부표현",
    "url": "https://blog.naver.com/hbokey/224237560427",
    "date": "2026-04-01T22:57:31.022000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 10,
    "comments": 8,
    "views": null,
@@ -1806,7 +1819,7 @@
    "title": "맥도날드해피밀 크레용 짱구 3월 키덜트 직장인 취향 저격 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224228869826",
    "date": "2026-03-25T11:40:32.108000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 8,
    "comments": 0,
    "views": null,
@@ -1817,7 +1830,7 @@
    "title": "코엑스 메가박스 VR콘서트 투어스 후기, 몰입감 미쳤던 예매 꿀팁까지",
    "url": "https://blog.naver.com/hbokey/224227681886",
    "date": "2026-03-24T12:12:18.884000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 12,
    "comments": 1,
    "views": null,
@@ -1828,7 +1841,7 @@
    "title": "더시드모공픽서 진피복원앰플 피부 어려 보이는 콜라겐 탄력 앰플 찐 사용 리뷰",
    "url": "https://blog.naver.com/hbokey/224223316217",
    "date": "2026-03-20T11:53:43.030000+09:00",
-   "category": "생활 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 9,
    "comments": 0,
    "views": null,
@@ -1839,7 +1852,7 @@
    "title": "상도미용실 박승철헤어 상도점 수민 디자이너 파뿌리 비단 만드는 헤어 클리닉",
    "url": "https://blog.naver.com/hbokey/224216569162",
    "date": "2026-03-14T22:46:43.614000+09:00",
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 7,
    "comments": 4,
    "views": null,
@@ -1850,7 +1863,7 @@
    "title": "아이폰17프로 후기｜실사용 장단점, 지금사도 될까?",
    "url": "https://blog.naver.com/hbokey/224212383849",
    "date": "2026-03-11T11:48:06.254000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 13,
    "comments": 4,
    "views": null,
@@ -1861,7 +1874,7 @@
    "title": "신림 낙지볶음 맛집 신방통통낙지 직장인 퇴근 후 방문후기",
    "url": "https://blog.naver.com/hbokey/224205167555",
    "date": "2026-03-05T12:12:02.280000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 8,
    "comments": 2,
    "views": null,
@@ -1872,7 +1885,7 @@
    "title": "셀린느 틴룰루백 실사용 후기, 수납력 착용감 신세계 센트럴시티 구매팁",
    "url": "https://blog.naver.com/hbokey/224201537320",
    "date": "2026-03-02T18:22:38.787000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 14,
    "comments": 4,
    "views": null,
@@ -1883,7 +1896,7 @@
    "title": "천안맛집 팔미낙지한마리수제비｜병천 낙지볶음 맛집 가족외식",
    "url": "https://blog.naver.com/hbokey/224190422008",
    "date": "2026-02-21T11:57:56.857000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 9,
    "comments": 2,
    "views": null,
@@ -1894,7 +1907,7 @@
    "title": "천안카페 사당｜유관순열사기념관 근처 병천카페 가족나들이 추천, 주말 방문 후기",
    "url": "https://blog.naver.com/hbokey/224190343801",
    "date": "2026-02-21T10:22:37.498000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 7,
    "comments": 2,
    "views": null,
@@ -1905,7 +1918,7 @@
    "title": "서울 남자예복대여 고민 끝｜연남동 프라이빗 테일러 세호테일러 후기",
    "url": "https://blog.naver.com/hbokey/224179863462",
    "date": "2026-02-11T11:44:32.356000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 7,
    "comments": 19,
    "views": null,
@@ -1916,7 +1929,7 @@
    "title": "연남동맛집 스테이키스트｜기념일에 좋은 한우 스테이크 코스",
    "url": "https://blog.naver.com/hbokey/224177152161",
    "date": "2026-02-09T12:17:42.229000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 15,
    "comments": 2,
    "views": null,
@@ -1927,7 +1940,7 @@
    "title": "가양역미용실 박준뷰티랩 가양역점 복구매직 & 디자인펌 후기",
    "url": "https://blog.naver.com/hbokey/224168556784",
    "date": "2026-02-02T12:18:30.138000+09:00",
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 13,
    "comments": 0,
    "views": null,
@@ -1938,7 +1951,7 @@
    "title": "강남예복대여 후기｜애스콧테일러 청담예복 하루 만에 해결",
    "url": "https://blog.naver.com/hbokey/224162537619",
    "date": "2026-01-28T11:43:26.173000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 16,
    "comments": 2,
    "views": null,
@@ -1949,7 +1962,7 @@
    "title": "종로셀프사진관 추천｜서울 한복판 나만의 감성 사진관, 아미스타 스튜디오 커플 사진 후기",
    "url": "https://blog.naver.com/hbokey/224159962803",
    "date": "2026-01-26T11:50:46.615000+09:00",
-   "category": "쭈아’s 신혼일기",
+   "category": "결혼준비",
    "likes": 17,
    "comments": 6,
    "views": null,
@@ -1960,7 +1973,7 @@
    "title": "센과 치히로 뮤지컬 덕후의 오페라하우스 1층 좌석 시야 총정리",
    "url": "https://blog.naver.com/hbokey/224157565473",
    "date": "2026-01-23T22:19:27.780000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 23,
    "comments": 4,
    "views": null,
@@ -1971,7 +1984,7 @@
    "title": "킹키부츠 뮤지컬 샤롯데씨어터 1층 6열 시야 부모님 관람 후기",
    "url": "https://blog.naver.com/hbokey/224155075561",
    "date": "2026-01-21T22:15:18.703000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 12,
    "comments": 4,
    "views": null,
@@ -1982,7 +1995,7 @@
    "title": "본식 준비하다 찾은 종로 테일러샵 아티플로 맞춤정장 종로본점",
    "url": "https://blog.naver.com/hbokey/224152466726",
    "date": "2026-01-19T22:02:11.277000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 16,
    "comments": 2,
    "views": null,
@@ -1993,7 +2006,7 @@
    "title": "구디 술집 인생술상 직장인 원픽 퇴근하고 스지수육 맛집 가자!",
    "url": "https://blog.naver.com/hbokey/224152132679",
    "date": "2026-01-19T16:58:00.095000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 13,
    "comments": 3,
    "views": null,
@@ -2004,7 +2017,7 @@
    "title": "에스파스젬 | 순금 리세팅 청담 다이아전문샵 웨딩링 구경 후기",
    "url": "https://blog.naver.com/hbokey/224147908963",
    "date": "2026-01-15T18:35:24.651000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 10,
    "comments": 4,
    "views": null,
@@ -2015,7 +2028,7 @@
    "title": "골전도 이어폰 베이스튠 후기 통화 많이 하는 직장인 일주일 실사용 리뷰",
    "url": "https://blog.naver.com/hbokey/224146855903",
    "date": "2026-01-14T22:45:19.601000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 24,
    "comments": 9,
    "views": null,
@@ -2026,7 +2039,7 @@
    "title": "블루스퀘어 1열에서 본 물랑루즈 뮤지컬 후기 (이석훈·정선아)",
    "url": "https://blog.naver.com/hbokey/224144787494",
    "date": "2026-01-13T12:09:00.979000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 17,
    "comments": 4,
    "views": null,
@@ -2037,7 +2050,7 @@
    "title": "남양주 카페 미담소 후기 서울 근교 조용한 데이트 찻집",
    "url": "https://blog.naver.com/hbokey/224141795680",
    "date": "2026-01-10T18:50:17.314000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 10,
    "comments": 2,
    "views": null,
@@ -2048,7 +2061,7 @@
    "title": "하남카페웨더 내돈내산 후기｜서울근교 감성 카페 직접 다녀온 리뷰",
    "url": "https://blog.naver.com/hbokey/224138956335",
    "date": "2026-01-08T11:56:11.436000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 10,
    "comments": 5,
    "views": null,
@@ -2059,7 +2072,7 @@
    "title": "남영역 맛집｜퇴근한 직장인의 옹계집숯불닭갈비 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224137600256",
    "date": "2026-01-07T12:14:13.751000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 15,
    "comments": 0,
    "views": null,
@@ -2070,7 +2083,7 @@
    "title": "더화이트베일 홀투어 후기｜남부터미널 웨딩홀 2026 하반기 견적·식대 정리",
    "url": "https://blog.naver.com/hbokey/224136561910",
    "date": "2026-01-06T16:37:01.298000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 28,
    "comments": 125,
    "views": null,
@@ -2081,7 +2094,7 @@
    "title": "서울스몰웨딩 메리스에이프럴｜2026 하우스웨딩 워크인 방문기",
    "url": "https://blog.naver.com/hbokey/224130332673",
    "date": "2026-01-01T12:53:49.563000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 10,
    "comments": 29,
    "views": null,
@@ -2092,7 +2105,7 @@
    "title": "강동 KDW 견적 홀투어｜2026년 하반기 예식 총정리",
    "url": "https://blog.naver.com/hbokey/224128990800",
    "date": "2025-12-31T11:54:07.262000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 23,
    "comments": 72,
    "views": null,
@@ -2103,7 +2116,7 @@
    "title": "육대장 단계무실점｜가족외식 원주시청 맛집 육개장 후기",
    "url": "https://blog.naver.com/hbokey/224126922166",
    "date": "2025-12-29T20:50:59.033000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 11,
    "comments": 3,
    "views": null,
@@ -2114,7 +2127,7 @@
    "title": "신의악단 시사회 후기｜연말 영화 추천 CGV 용산 관람기",
    "url": "https://blog.naver.com/hbokey/224123145710",
    "date": "2025-12-26T12:13:12.567000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 24,
    "comments": 2,
    "views": null,
@@ -2125,7 +2138,7 @@
    "title": "춘천 숨은 맛집 르포렘 후기｜1인 셰프 예약제 레스토랑",
    "url": "https://blog.naver.com/hbokey/224122671587",
    "date": "2025-12-25T23:50:45.294000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 11,
    "comments": 2,
    "views": null,
@@ -2136,7 +2149,7 @@
    "title": "유럽 도시 여행은 왜 덜 피곤할까?｜걷기 좋은 도시의 구조",
    "url": "https://blog.naver.com/hbokey/224121526919",
    "date": "2025-12-24T19:00:52.035000+09:00",
-   "category": "해외 여행",
+   "category": "여행 준비·꿀팁",
    "likes": 18,
    "comments": 4,
    "views": null,
@@ -2147,7 +2160,7 @@
    "title": "혜화 안녕 또 안녕 후기｜서울 소극장 연극 추천",
    "url": "https://blog.naver.com/hbokey/224119681640",
    "date": "2025-12-23T11:45:59.281000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 11,
    "comments": 4,
    "views": null,
@@ -2158,7 +2171,7 @@
    "title": "초보 여행 블로그 쭈아월드의 '2025 마이 블로그 리포트' 기록과 취향",
    "url": "https://blog.naver.com/hbokey/224119160941",
    "date": "2025-12-22T23:09:24.268000+09:00",
-   "category": "[블챌] 왓츠인마이블로그",
+   "category": "여행 준비·꿀팁",
    "likes": 10,
    "comments": 0,
    "views": null,
@@ -2169,7 +2182,7 @@
    "title": "서울역 규카츠 후기｜데이트·점심 식사로 만족스러웠던 선택",
    "url": "https://blog.naver.com/hbokey/224117237473",
    "date": "2025-12-21T10:06:49.706000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 13,
    "comments": 4,
    "views": null,
@@ -2180,7 +2193,7 @@
    "title": "연극 마트로시카 후기｜12월 연말 데이트로 추천하는 서울연극",
    "url": "https://blog.naver.com/hbokey/224115269680",
    "date": "2025-12-19T11:58:17.156000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 12,
    "comments": 6,
    "views": null,
@@ -2191,7 +2204,7 @@
    "title": "지니마켓 후기｜천재 교과서 학부모 쇼핑몰 12월 이벤트 포인트로 문구·생활템 알뜰 구매",
    "url": "https://blog.naver.com/hbokey/224113450744",
    "date": "2025-12-17T22:09:16.458000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 11,
    "comments": 2,
    "views": null,
@@ -2202,7 +2215,7 @@
    "title": "웨딩 용어 총정리｜결혼 준비 용어 대사전 (웨딩홀·스드메·예물·예단·본식 체크리스트)",
    "url": "https://blog.naver.com/hbokey/224112251913",
    "date": "2025-12-16T22:50:32.203000+09:00",
-   "category": "결혼 꿀팁",
+   "category": "꿀팁·체크리스트",
    "likes": 17,
    "comments": 7,
    "views": null,
@@ -2213,7 +2226,7 @@
    "title": "아이웨딩 웨딩홀 페스타 후기｜아르베·더화이트베일 2026년 견적 비교 정리",
    "url": "https://blog.naver.com/hbokey/224110979743",
    "date": "2025-12-15T23:00:48.333000+09:00",
-   "category": "결혼 준비",
+   "category": "결혼준비",
    "likes": 17,
    "comments": 26,
    "views": null,
@@ -2224,7 +2237,7 @@
    "title": "금천구 공방 체험 추천｜해피무드캔들 제스모나이트 화병 만들기 후기",
    "url": "https://blog.naver.com/hbokey/224109654870",
    "date": "2025-12-14T22:26:51.050000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 12,
    "comments": 6,
    "views": null,
@@ -2235,18 +2248,18 @@
    "title": "도쿄 마리오카트 후기｜아키하바라 여행 중 제일 재밌었던 순간",
    "url": "https://blog.naver.com/hbokey/224106496776",
    "date": "2025-12-11T21:55:14.469000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 18,
    "comments": 6,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNTEyMTFfMTQz/MDAxNzY1NDU1OTI0Mjk2.wFOzqOG40nNFFBDN6OiHPDxO4E3fucB2MY1QENF-zfwg.LaE5AQiTT1A18J9NzaJbIzphZoePTczCOtUeyf-VQZIg.JPEG/1676904148648.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfNTEg/MDAxNzkyOTE0Mzg1NzIw.7ME-G-7Of97VOamcH2QztvnkDGV8s89z0dKZI4747r0g.iFZ-4a9dW4LYa3nqwcU0Cjss8SIKr3ynVpuHOJHCXrYg.PNG/thumb-224106496776.png"
   },
   {
    "logNo": "224103383042",
    "title": "강남역 시간때우는 법｜일상 비일상의 틈 전시 + 주토피아2 포토존 후기",
    "url": "https://blog.naver.com/hbokey/224103383042",
    "date": "2025-12-09T12:03:26.876000+09:00",
-   "category": "공연· 전시",
+   "category": "공연·전시·문화",
    "likes": 16,
    "comments": 4,
    "views": null,
@@ -2257,7 +2270,7 @@
    "title": "허페이 여행｜공유 자전거로 루양 공업구~허페이북 역 14km 라이딩 코스",
    "url": "https://blog.naver.com/hbokey/224101393908",
    "date": "2025-12-07T19:39:11.403000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 14,
    "comments": 4,
    "views": null,
@@ -2268,7 +2281,7 @@
    "title": "논현역 감성 맛집 '준준'｜스테이크부터 티라미수까지",
    "url": "https://blog.naver.com/hbokey/224100770901",
    "date": "2025-12-07T08:50:00+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 12,
    "comments": 2,
    "views": null,
@@ -2279,7 +2292,7 @@
    "title": "2026 삿포로 맥주축제 지도 후기｜오도리공원에서 즐긴 여름축제",
    "url": "https://blog.naver.com/hbokey/224097328371",
    "date": "2025-12-04T08:50:00+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 15,
    "comments": 10,
    "views": null,
@@ -2290,7 +2303,7 @@
    "title": "여행용 목베개 리뷰 '트래블 블루코리아 '｜편안함·착용감 상세 리뷰",
    "url": "https://blog.naver.com/hbokey/224096058233",
    "date": "2025-12-02T22:46:55.876000+09:00",
-   "category": "생활 리뷰",
+   "category": "여행 준비·꿀팁",
    "likes": 7,
    "comments": 2,
    "views": null,
@@ -2301,7 +2314,7 @@
    "title": "제주 구남동 로컬카페 카도커피하우스｜느좋 말차크림 딸기라떼로 시작한 하루",
    "url": "https://blog.naver.com/hbokey/224094779428",
    "date": "2025-12-01T22:37:48.042000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 10,
    "comments": 2,
    "views": null,
@@ -2312,7 +2325,7 @@
    "title": "제주 해비치호텔 가는법｜대중교통·크리스탈홀·그랜드볼룸",
    "url": "https://blog.naver.com/hbokey/224090165834",
    "date": "2025-11-27T16:48:16.983000+09:00",
-   "category": "국내 여행",
+   "category": "국내여행·호캉스",
    "likes": 10,
    "comments": 6,
    "views": null,
@@ -2323,7 +2336,7 @@
    "title": "허페이 여행｜메이충 호수공원·스톤헨지 광장 산책코스",
    "url": "https://blog.naver.com/hbokey/224088010712",
    "date": "2025-11-25T21:18:45.627000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 12,
    "comments": 6,
    "views": null,
@@ -2334,7 +2347,7 @@
    "title": "미쉐린 3스타 첫 방문｜청담 밍글스에서 보낸 생일 디너 후기",
    "url": "https://blog.naver.com/hbokey/224086910053",
    "date": "2025-11-24T23:41:59.853000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 8,
    "comments": 6,
    "views": null,
@@ -2345,7 +2358,7 @@
    "title": "압구정 우모크 런치｜여동생 생일 고기 오마카세 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224085680567",
    "date": "2025-11-23T23:35:21.820000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 9,
    "comments": 4,
    "views": null,
@@ -2356,7 +2369,7 @@
    "title": "춘천 카페 추천｜엄마랑 데이트! 감성 카페 ‘슬로울리’ 방문기",
    "url": "https://blog.naver.com/hbokey/224082819432",
    "date": "2025-11-21T00:08:49.444000+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 8,
    "comments": 2,
    "views": null,
@@ -2367,7 +2380,7 @@
    "title": "비에이 마을 여행｜홋카이도 삿포로 근교 소도시 맛집ㆍ전망대 완벽 정리",
    "url": "https://blog.naver.com/hbokey/224080454404",
    "date": "2025-11-18T22:48:01.950000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 12,
    "comments": 6,
    "views": null,
@@ -2378,7 +2391,7 @@
    "title": "삿포로 숨은 여행지｜타키노 영원 후기 & 안도 다다오 ‘부처의 언덕’ 가는 길",
    "url": "https://blog.naver.com/hbokey/224077993437",
    "date": "2025-11-16T22:15:36.916000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 6,
    "comments": 4,
    "views": null,
@@ -2389,7 +2402,7 @@
    "title": "춘천 청평사 도보 산책 코스｜가족 나들이로 조용하게 걷기 좋은 곳",
    "url": "https://blog.naver.com/hbokey/224075175007",
    "date": "2025-11-13T21:58:19.253000+09:00",
-   "category": "국내 여행",
+   "category": "국내여행·호캉스",
    "likes": 13,
    "comments": 10,
    "views": null,
@@ -2400,7 +2413,7 @@
    "title": "허페이 가볼 만한 곳｜2호선 종점 상청루역 → 홍거리, 로컬 자전거 산책 코스",
    "url": "https://blog.naver.com/hbokey/224071502596",
    "date": "2025-11-10T21:39:51.530000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 6,
    "comments": 2,
    "views": null,
@@ -2411,7 +2424,7 @@
    "title": "허페이 출장 숙소 추천｜크라운 플라자 호텔 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224069005669",
    "date": "2025-11-08T14:01:06.051000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 11,
    "comments": 6,
    "views": null,
@@ -2422,7 +2435,7 @@
    "title": "동대문안경 ‘이음안경’ 방문기｜블루라이트 차단 안경, CARBIN 덱스안경 리뷰",
    "url": "https://blog.naver.com/hbokey/224064775996",
    "date": "2025-11-04T21:18:00.761000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 11,
    "comments": 2,
    "views": null,
@@ -2433,7 +2446,7 @@
    "title": "2025 최신판｜여행 전 꼭 알아야 할 '보조배터리' 기내 반입 규정 총정리",
    "url": "https://blog.naver.com/hbokey/224062409512",
    "date": "2025-11-02T23:33:21.510000+09:00",
-   "category": "여행 꿀팁",
+   "category": "여행 준비·꿀팁",
    "likes": 8,
    "comments": 3,
    "views": null,
@@ -2444,7 +2457,7 @@
    "title": "싱가포르 숙소 추천｜하늘위 인피니티풀 야경, 마리나베이샌즈에서의 특별한 하루",
    "url": "https://blog.naver.com/hbokey/224060592195",
    "date": "2025-10-31T23:17:28.856000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 7,
    "comments": 4,
    "views": null,
@@ -2455,7 +2468,7 @@
    "title": "중국 허페이｜광활한 대자연 속 ‘허페이 야생동물원’ 리얼 후기",
    "url": "https://blog.naver.com/hbokey/224056993772",
    "date": "2025-10-28T22:12:13.947000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 13,
    "comments": 6,
    "views": null,
@@ -2466,7 +2479,7 @@
    "title": "마곡나루역 속눈썹 펌 후기｜강서구 나나벨라 블랙 틴팅 펌으로 또렷한 눈매 완성",
    "url": "https://blog.naver.com/hbokey/224054003589",
    "date": "2025-10-26T09:02:37.295000+09:00",
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 10,
    "comments": 4,
    "views": null,
@@ -2477,7 +2490,7 @@
    "title": "부산 2박3일 우정여행｜자갈치시장·요트투어·밀락더마켓 야시장 완벽코스",
    "url": "https://blog.naver.com/hbokey/224052590515",
    "date": "2025-10-24T17:23:35.037000+09:00",
-   "category": "국내 여행",
+   "category": "국내여행·호캉스",
    "likes": 18,
    "comments": 5,
    "views": null,
@@ -2488,7 +2501,7 @@
    "title": "세부 쉐라톤 막탄 리조트 후기｜오션뷰·인피니티풀·조식까지 완벽했던 호캉스",
    "url": "https://blog.naver.com/hbokey/224049174534",
    "date": "2025-10-21T22:25:16.783000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 16,
    "comments": 9,
    "views": null,
@@ -2499,7 +2512,7 @@
    "title": "세부 준투어 후기｜오슬롭 고래상어·가와산 캐녀닝·모알보알 스노쿨링 완벽 코스",
    "url": "https://blog.naver.com/hbokey/224044962215",
    "date": "2025-10-18T06:30:00+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 18,
    "comments": 34,
    "views": null,
@@ -2510,7 +2523,7 @@
    "title": "미사 헤어스파 루시르에스테틱 ｜두피 관리 피부 리프팅 리얼후기",
    "url": "https://blog.naver.com/hbokey/224042648443",
    "date": "2025-10-16T09:00:00+09:00",
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 11,
    "comments": 2,
    "views": null,
@@ -2521,7 +2534,7 @@
    "title": "춘천맛집 유포리막국수｜바삭한 감자전과 메밀향 한가득",
    "url": "https://blog.naver.com/hbokey/224036006878",
    "date": "2025-10-12T19:50:00+09:00",
-   "category": "맛집 리뷰",
+   "category": "데이트 맛집·카페",
    "likes": 15,
    "comments": 2,
    "views": null,
@@ -2532,7 +2545,7 @@
    "title": "파일로 받는 나만의 사주리포트 ‘사주봐주는요정’ 카톡상담 체험기",
    "url": "https://blog.naver.com/hbokey/224035033687",
    "date": "2025-10-09T19:15:31.894000+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 13,
    "comments": 8,
    "views": null,
@@ -2543,7 +2556,7 @@
    "title": "보홀 육지투어! 현지인 Romel에게 직접 예약한 가성비 1일 코스 총정리",
    "url": "https://blog.naver.com/hbokey/224033638263",
    "date": "2025-10-07T08:40:04.401000+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 17,
    "comments": 14,
    "views": null,
@@ -2554,7 +2567,7 @@
    "title": "인생 눈썹 찾았다! 김포 장기 바비인뷰티 자연눈썹 디자인 후기",
    "url": "https://blog.naver.com/hbokey/224031844800",
    "date": "2025-10-05T09:03:20.487000+09:00",
-   "category": "뷰티 리뷰",
+   "category": "뷰티·헤어 리뷰",
    "likes": 14,
    "comments": 8,
    "views": null,
@@ -2565,7 +2578,7 @@
    "title": "강릉 가족여행 코스 추천! 스카이베이 호텔, 조개의 정석, 아르떼 뮤지엄 후기",
    "url": "https://blog.naver.com/hbokey/224028976906",
    "date": "2025-10-02T09:00:00+09:00",
-   "category": "국내 여행",
+   "category": "국내여행·호캉스",
    "likes": 15,
    "comments": 6,
    "views": null,
@@ -2576,7 +2589,7 @@
    "title": "IT 가성비템! 잇섭 추천, 알리익스프레스 매직키보드 구조독 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224024990015",
    "date": "2025-09-29T09:00:00+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 13,
    "comments": 2,
    "views": null,
@@ -2587,7 +2600,7 @@
    "title": "보홀 호텔 추천! 숨은 보석 같은 아마렐라 리조트 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224019272563",
    "date": "2025-09-25T09:00:00+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 21,
    "comments": 15,
    "views": null,
@@ -2598,7 +2611,7 @@
    "title": "성인스피치학원 효과! 도화스피치 2년차 직장인 솔직 후기",
    "url": "https://blog.naver.com/hbokey/224016656523",
    "date": "2025-09-22T09:00:00+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 7,
    "comments": 4,
    "views": null,
@@ -2609,7 +2622,7 @@
    "title": "삿포로 모에레누마 공원 산책｜이사무 노구치가 만든 대지의 조각",
    "url": "https://blog.naver.com/hbokey/224015198926",
    "date": "2025-09-21T09:00:00+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 14,
    "comments": 4,
    "views": null,
@@ -2620,18 +2633,18 @@
    "title": "71to96 유현화한복 댕기백 내돈내산 솔직 후기! 와디즈 펀딩 vs 더블유컨셉",
    "url": "https://blog.naver.com/hbokey/224013425137",
    "date": "2025-09-19T09:00:00+09:00",
-   "category": "생활 리뷰",
+   "category": "신혼살림·생활 리뷰",
    "likes": 15,
    "comments": 7,
    "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNTA5MjBfMjY1/MDAxNzU4MzQxMzU5MDUz.pydczB7pxG_IVgX7nCrGyHt66f4-soOdIjtWhi1b1_wg.kOqU1Nn57rBl9btwZ-6PCKvySFVwZPyOu9FPT7Qw6gog.JPEG/20250917_192350.jpg"
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjg2/MDAxNzkyOTE0NDA0Nzg1.8XcSeEI_grQuF2yvQQgBjpKu55eEPBnV7gkxySxI6XIg.g6oRICHIdcWNjuqbb3z1ozOgG34tlSIaQJCEFwPsslwg.PNG/thumb-224013425137.png"
   },
   {
    "logNo": "224012132387",
    "title": "속초아이 후기, 속초 여행 필수코스! 요금·운영시간·위치 완벽 정리",
    "url": "https://blog.naver.com/hbokey/224012132387",
    "date": "2025-09-18T09:00:00+09:00",
-   "category": "국내 여행",
+   "category": "국내여행·호캉스",
    "likes": 14,
    "comments": 6,
    "views": null,
@@ -2642,7 +2655,7 @@
    "title": "홋카이도 신치토세공항 맛집 '부타동 메이진' 가격, 맛, 소스 구매 팁!",
    "url": "https://blog.naver.com/hbokey/224001834070",
    "date": "2025-09-11T09:00:00+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 13,
    "comments": 6,
    "views": null,
@@ -2653,7 +2666,7 @@
    "title": "홋카이도 삿포로 라멘요코초 완전 정복｜역사·현지 맛집·방문 팁 총정리",
    "url": "https://blog.naver.com/hbokey/223974202066",
    "date": "2025-08-21T10:00:00+09:00",
-   "category": "해외 여행",
+   "category": "해외여행·신혼여행",
    "likes": 8,
    "comments": 0,
    "views": null,
@@ -2663,31 +2676,67 @@
  "watch_keywords": [],
  "competitors": {
   "count": 21,
-  "my_rank": 14,
-  "top_percent": 67,
-  "same_topic": 5,
+  "my_rank": 16,
+  "top_percent": 76,
+  "same_topic": 4,
   "my_place": {
-   "visitors_avg": 14,
-   "subscribers": 12,
-   "posts_30d": 15,
+   "visitors_avg": 16,
+   "subscribers": 13,
+   "posts_30d": 17,
    "total_posts": 14
   },
   "averages": {
-   "visitors_avg": 438.1,
-   "subscribers": 1572.5,
-   "posts_30d": 19.0,
-   "total_posts": 514.0,
-   "score": 61.2
+   "visitors_avg": 702.3,
+   "subscribers": 2069.6,
+   "posts_30d": 22.6,
+   "total_posts": 639.6,
+   "score": 67.8
   },
   "blogs": [
+   {
+    "blog_id": "jennyjelly_",
+    "name": "여행하는 제니✈️",
+    "nickname": "제니",
+    "topic": "세계여행",
+    "subscribers": 6375,
+    "today_visitors": 2071,
+    "visitors_avg": 2995.0,
+    "total_posts": 1286,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "루브르박물관예약",
+      "rank": 18
+     },
+     {
+      "keyword": "파리생트샤펠",
+      "rank": 19
+     },
+     {
+      "keyword": "루브르박물관",
+      "rank": 20
+     },
+     {
+      "keyword": "생트샤펠",
+      "rank": 24
+     },
+     {
+      "keyword": "베르사유궁전후기",
+      "rank": 25
+     }
+    ],
+    "influencer": false,
+    "score": 91.4,
+    "rank": 1
+   },
    {
     "blog_id": "hoff_",
     "name": "Fasten your seat belt",
     "nickname": "홒 HOFF",
     "topic": "세계여행",
-    "subscribers": 5400,
-    "today_visitors": 708,
-    "visitors_avg": 2366.2,
+    "subscribers": 5399,
+    "today_visitors": 1423,
+    "visitors_avg": 2225.0,
     "total_posts": 1492,
     "posts_30d": 30,
     "shared": [
@@ -2697,66 +2746,102 @@
      },
      {
       "keyword": "디즈니랜드파리후기",
-      "rank": 5
+      "rank": 6
      },
      {
       "keyword": "디즈니랜드파리꿀팁",
-      "rank": 7
+      "rank": 8
      }
     ],
     "influencer": false,
-    "score": 89.9,
-    "rank": 1
+    "score": 89.6,
+    "rank": 2
+   },
+   {
+    "blog_id": "travelmeow",
+    "name": "냥이유와 세계정복 World Traveler",
+    "nickname": "냥이유",
+    "topic": "국내여행",
+    "subscribers": 6565,
+    "today_visitors": 1533,
+    "visitors_avg": 2113.0,
+    "total_posts": 1261,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "서울웨딩홀추천",
+      "rank": 1
+     },
+     {
+      "keyword": "서울스몰웨딩",
+      "rank": 1
+     },
+     {
+      "keyword": "서울스몰베뉴",
+      "rank": 1
+     }
+    ],
+    "influencer": false,
+    "score": 89.5,
+    "rank": 3
    },
    {
     "blog_id": "yourfavenzo",
     "name": "Sea you soon (씨유순)",
     "nickname": "최고야",
     "topic": "세계여행",
-    "subscribers": 12372,
-    "today_visitors": 476,
-    "visitors_avg": 1208.0,
-    "total_posts": 1614,
+    "subscribers": 12418,
+    "today_visitors": 700,
+    "visitors_avg": 1178.8,
+    "total_posts": 1619,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "베르사유궁전예약",
-      "rank": 6
+      "keyword": "베르사유궁전",
+      "rank": 4
      },
      {
-      "keyword": "베르사유궁전",
-      "rank": 11
+      "keyword": "베르사유궁전예약",
+      "rank": 7
      },
      {
       "keyword": "루브르박물관예약",
-      "rank": 18
+      "rank": 19
      },
      {
       "keyword": "루브르박물관",
-      "rank": 24
+      "rank": 28
      }
     ],
     "influencer": false,
-    "score": 87.7,
-    "rank": 2
+    "score": 87.6,
+    "rank": 4
    },
    {
     "blog_id": "pasmal_jun",
     "name": "All about Paris",
     "nickname": "Paris Traveler",
     "topic": "세계여행",
-    "subscribers": 4858,
-    "today_visitors": 465,
-    "visitors_avg": 1131.8,
-    "total_posts": 1180,
-    "posts_30d": 28,
+    "subscribers": 4862,
+    "today_visitors": 644,
+    "visitors_avg": 1115.0,
+    "total_posts": 1182,
+    "posts_30d": 30,
     "shared": [
      {
       "keyword": "베르사유궁전예약",
-      "rank": 2
+      "rank": 1
      },
      {
       "keyword": "베르사유궁전",
+      "rank": 3
+     },
+     {
+      "keyword": "파리생트샤펠",
+      "rank": 6
+     },
+     {
+      "keyword": "생트샤펠",
       "rank": 8
      },
      {
@@ -2765,31 +2850,31 @@
      },
      {
       "keyword": "디즈니랜드파리",
-      "rank": 20
+      "rank": 18
      }
     ],
     "influencer": false,
-    "score": 84.1,
-    "rank": 3
+    "score": 85.3,
+    "rank": 5
    },
    {
     "blog_id": "yoojha92",
     "name": "지니맘 유동이의 꼼꼼한 기록✨",
     "nickname": "지니와유동이",
     "topic": "육아·결혼",
-    "subscribers": 564,
-    "today_visitors": 476,
-    "visitors_avg": 1095.8,
-    "total_posts": 574,
+    "subscribers": 566,
+    "today_visitors": 1264,
+    "visitors_avg": 1154.5,
+    "total_posts": 575,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "뚜레쥬르아그작케이크",
-      "rank": 2
-     },
-     {
       "keyword": "아그작케이크",
       "rank": 3
+     },
+     {
+      "keyword": "뚜레쥬르아그작케이크",
+      "rank": 4
      },
      {
       "keyword": "뚜레쥬르아그작",
@@ -2797,48 +2882,8 @@
      }
     ],
     "influencer": false,
-    "score": 79.6,
-    "rank": 4
-   },
-   {
-    "blog_id": "ellyrama",
-    "name": "이라마린의 똑부러지는 결혼준비",
-    "nickname": "이라마린",
-    "topic": "육아·결혼",
-    "subscribers": 830,
-    "today_visitors": 379,
-    "visitors_avg": 753.0,
-    "total_posts": 346,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "서울웨딩홀추천",
-      "rank": 2
-     },
-     {
-      "keyword": "웨딩홀투어질문",
-      "rank": 7
-     },
-     {
-      "keyword": "서울웨딩홀투어",
-      "rank": 8
-     },
-     {
-      "keyword": "웨딩홀체크리스트",
-      "rank": 14
-     },
-     {
-      "keyword": "서울웨딩홀견적비교",
-      "rank": 22
-     },
-     {
-      "keyword": "웨딩홀투어체크리스트",
-      "rank": 24
-     }
-    ],
-    "influencer": false,
-    "score": 77.8,
-    "rank": 5
+    "score": 79.9,
+    "rank": 6
    },
    {
     "blog_id": "today_traveller",
@@ -2846,9 +2891,9 @@
     "nickname": "오늘여기",
     "topic": "세계여행",
     "subscribers": 1307,
-    "today_visitors": 381,
+    "today_visitors": 626,
     "visitors_avg": null,
-    "total_posts": 1279,
+    "total_posts": 1280,
     "posts_30d": 30,
     "shared": [
      {
@@ -2856,175 +2901,227 @@
       "rank": 3
      },
      {
+      "keyword": "생트샤펠",
+      "rank": 6
+     },
+     {
       "keyword": "디즈니랜드파리",
-      "rank": 5
+      "rank": 6
      },
      {
       "keyword": "디즈니랜드파리꿀팁",
-      "rank": 5
+      "rank": 6
+     },
+     {
+      "keyword": "파리생트샤펠",
+      "rank": 7
+     },
+     {
+      "keyword": "베르사유궁전",
+      "rank": 8
      },
      {
       "keyword": "루브르박물관",
       "rank": 9
      },
      {
-      "keyword": "베르사유궁전",
-      "rank": 10
-     },
-     {
       "keyword": "루브르박물관예약",
-      "rank": 19
-     }
-    ],
-    "influencer": false,
-    "score": 76.7,
-    "rank": 6
-   },
-   {
-    "blog_id": "5drawingseo",
-    "name": "행복한 댕댕이 오복이",
-    "nickname": "오복이",
-    "topic": "육아·결혼",
-    "subscribers": 876,
-    "today_visitors": 151,
-    "visitors_avg": 389.8,
-    "total_posts": 1173,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "웨딩홀투어질문",
-      "rank": 2
-     },
-     {
-      "keyword": "웨딩홀투어체크리스트",
-      "rank": 5
-     },
-     {
-      "keyword": "웨딩홀체크리스트",
-      "rank": 7
-     },
-     {
-      "keyword": "서울웨딩홀추천",
       "rank": 22
      }
     ],
     "influencer": false,
-    "score": 75.9,
+    "score": 79.4,
     "rank": 7
    },
    {
-    "blog_id": "msb920",
-    "name": "오뚜기밥",
-    "nickname": "뚜비두밥",
-    "topic": "세계여행",
-    "subscribers": 1035,
-    "today_visitors": 172,
-    "visitors_avg": 393.2,
-    "total_posts": 758,
+    "blog_id": "ellyrama",
+    "name": "이라마린의 똑부러지는 결혼준비",
+    "nickname": "이라마린",
+    "topic": "육아·결혼",
+    "subscribers": 832,
+    "today_visitors": 808,
+    "visitors_avg": 831.0,
+    "total_posts": 350,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "루브르박물관",
-      "rank": 13
+      "keyword": "서울웨딩홀추천",
+      "rank": 5
      },
      {
-      "keyword": "루브르박물관예약",
+      "keyword": "웨딩홀투어질문",
+      "rank": 7
+     },
+     {
+      "keyword": "서울웨딩홀투어",
+      "rank": 9
+     },
+     {
+      "keyword": "서울웨딩홀견적비교",
       "rank": 15
      },
      {
-      "keyword": "베르사유궁전후기",
-      "rank": 23
+      "keyword": "웨딩홀체크리스트",
+      "rank": 17
      },
      {
-      "keyword": "베르사유궁전",
-      "rank": 28
+      "keyword": "웨딩홀투어체크리스트",
+      "rank": 26
      }
     ],
     "influencer": false,
-    "score": 75.8,
+    "score": 78.4,
     "rank": 8
+   },
+   {
+    "blog_id": "hyearchiving",
+    "name": "Archives des voyages",
+    "nickname": "혜아",
+    "topic": "세계여행",
+    "subscribers": 1038,
+    "today_visitors": 330,
+    "visitors_avg": 478.2,
+    "total_posts": 932,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "파리생트샤펠",
+      "rank": 14
+     },
+     {
+      "keyword": "베르사유궁전예약",
+      "rank": 17
+     },
+     {
+      "keyword": "생트샤펠",
+      "rank": 22
+     },
+     {
+      "keyword": "루브르박물관예약",
+      "rank": 29
+     }
+    ],
+    "influencer": false,
+    "score": 77.1,
+    "rank": 9
+   },
+   {
+    "blog_id": "ducky777",
+    "name": "에이프릴 스토리",
+    "nickname": "APRIL",
+    "topic": "문학·책",
+    "subscribers": 341,
+    "today_visitors": 377,
+    "visitors_avg": 492.8,
+    "total_posts": 1104,
+    "posts_30d": 26,
+    "shared": [
+     {
+      "keyword": "루브르박물관예약",
+      "rank": 4
+     },
+     {
+      "keyword": "루브르박물관",
+      "rank": 10
+     },
+     {
+      "keyword": "파리생트샤펠",
+      "rank": 25
+     },
+     {
+      "keyword": "생트샤펠",
+      "rank": 29
+     }
+    ],
+    "influencer": false,
+    "score": 72.4,
+    "rank": 10
+   },
+   {
+    "blog_id": "byw0524",
+    "name": "예온댁의 세계여행! 노는 게 제일 좋아!",
+    "nickname": "예온댁",
+    "topic": "맛집",
+    "subscribers": 417,
+    "today_visitors": 146,
+    "visitors_avg": 249.8,
+    "total_posts": 802,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "디즈니랜드파리",
+      "rank": 7
+     },
+     {
+      "keyword": "디즈니랜드파리후기",
+      "rank": 10
+     },
+     {
+      "keyword": "베르사유궁전예약",
+      "rank": 24
+     },
+     {
+      "keyword": "베르사유궁전",
+      "rank": 25
+     }
+    ],
+    "influencer": false,
+    "score": 71.4,
+    "rank": 11
    },
    {
     "blog_id": "honey_malrang",
     "name": "꿀말랑의 말랑하게 살아가기",
     "nickname": "꿀말랑",
     "topic": "일상·생각",
-    "subscribers": 81,
-    "today_visitors": 123,
-    "visitors_avg": 320.0,
-    "total_posts": 68,
+    "subscribers": 82,
+    "today_visitors": 203,
+    "visitors_avg": 312.2,
+    "total_posts": 69,
     "posts_30d": 30,
     "shared": [
      {
       "keyword": "서울웨딩홀추천",
-      "rank": 1
+      "rank": 2
      },
      {
       "keyword": "서울웨딩홀투어",
-      "rank": 4
-     },
-     {
-      "keyword": "서울스몰웨딩",
-      "rank": 4
-     },
-     {
-      "keyword": "웨딩홀투어질문",
-      "rank": 13
+      "rank": 7
      },
      {
       "keyword": "서울스몰베뉴",
       "rank": 13
+     },
+     {
+      "keyword": "웨딩홀투어질문",
+      "rank": 14
+     },
+     {
+      "keyword": "서울스몰웨딩",
+      "rank": 14
      }
     ],
     "influencer": false,
-    "score": 66.2,
-    "rank": 9
-   },
-   {
-    "blog_id": "zkminkz-",
-    "name": "밥 먹은 꽥굥이",
-    "nickname": "굥",
-    "topic": "맛집",
-    "subscribers": 1944,
-    "today_visitors": 77,
-    "visitors_avg": 210.2,
-    "total_posts": 238,
-    "posts_30d": 15,
-    "shared": [
-     {
-      "keyword": "뚜레쥬르아그작케이크",
-      "rank": 3
-     },
-     {
-      "keyword": "아그작케이크",
-      "rank": 5
-     },
-     {
-      "keyword": "뚜레쥬르아그작",
-      "rank": 6
-     }
-    ],
-    "influencer": false,
-    "score": 62.3,
-    "rank": 10
+    "score": 66.1,
+    "rank": 12
    },
    {
     "blog_id": "re_vrewing",
     "name": "24개국 여행자의 정보 공유방 ✈",
     "nickname": "리뷰루잉",
     "topic": "세계여행",
-    "subscribers": 29,
-    "today_visitors": 157,
-    "visitors_avg": 395.5,
-    "total_posts": 65,
-    "posts_30d": 24,
+    "subscribers": 33,
+    "today_visitors": 253,
+    "visitors_avg": 406.2,
+    "total_posts": 68,
+    "posts_30d": 27,
     "shared": [
      {
-      "keyword": "아이슬란드기념품추천",
-      "rank": 5
+      "keyword": "아이슬란드쇼핑",
+      "rank": 4
      },
      {
-      "keyword": "아이슬란드쇼핑",
+      "keyword": "아이슬란드기념품추천",
       "rank": 5
      },
      {
@@ -3033,8 +3130,8 @@
      }
     ],
     "influencer": false,
-    "score": 61.1,
-    "rank": 11
+    "score": 63.5,
+    "rank": 13
    },
    {
     "blog_id": "yum_zzi07",
@@ -3042,10 +3139,10 @@
     "nickname": "햅삐영",
     "topic": "육아·결혼",
     "subscribers": 158,
-    "today_visitors": 54,
-    "visitors_avg": 154.2,
+    "today_visitors": 98,
+    "visitors_avg": 155.0,
     "total_posts": 238,
-    "posts_30d": 23,
+    "posts_30d": 21,
     "shared": [
      {
       "keyword": "디즈니랜드파리",
@@ -3053,147 +3150,63 @@
      },
      {
       "keyword": "디즈니랜드파리후기",
-      "rank": 2
+      "rank": 3
      },
      {
       "keyword": "디즈니랜드파리꿀팁",
-      "rank": 2
+      "rank": 3
      }
     ],
     "influencer": false,
-    "score": 60.5,
-    "rank": 12
-   },
-   {
-    "blog_id": "we_dding_jin",
-    "name": "연두부에서 강철두부로",
-    "nickname": "강철두부",
-    "topic": "육아·결혼",
-    "subscribers": 160,
-    "today_visitors": 57,
-    "visitors_avg": 172.5,
-    "total_posts": 97,
-    "posts_30d": 10,
-    "shared": [
-     {
-      "keyword": "서울웨딩홀견적비교",
-      "rank": 1
-     },
-     {
-      "keyword": "서울웨딩홀추천",
-      "rank": 5
-     },
-     {
-      "keyword": "상견례선물추천",
-      "rank": 10
-     }
-    ],
-    "influencer": false,
-    "score": 51.4,
-    "rank": 13
-   },
-   {
-    "blog_id": "hbokey",
-    "name": "우당탕탕 쭈아의 결혼일기",
-    "nickname": "쭈아",
-    "topic": "육아·결혼",
-    "subscribers": 315,
-    "today_visitors": 37,
-    "visitors_avg": 81.8,
-    "total_posts": 109,
-    "posts_30d": 8,
-    "shared": [],
-    "score": 47.6,
-    "me": true,
+    "score": 59.2,
     "rank": 14
    },
    {
-    "blog_id": "dysl38",
-    "name": "으나루",
-    "nickname": "으나",
-    "topic": "일상·생각",
-    "subscribers": 868,
-    "today_visitors": 44,
-    "visitors_avg": null,
-    "total_posts": 547,
-    "posts_30d": 3,
+    "blog_id": "se_lll",
+    "name": "셀미's 웨딩준비 일지❤️",
+    "nickname": "밍쓰",
+    "topic": "육아·결혼",
+    "subscribers": 70,
+    "today_visitors": 128,
+    "visitors_avg": 168.8,
+    "total_posts": 50,
+    "posts_30d": 15,
     "shared": [
-     {
-      "keyword": "아그작케이크",
-      "rank": 4
-     },
-     {
-      "keyword": "뚜레쥬르아그작케이크",
-      "rank": 4
-     },
-     {
-      "keyword": "뚜레쥬르아그작",
-      "rank": 9
-     }
-    ],
-    "influencer": false,
-    "score": 45.2,
-    "rank": 15
-   },
-   {
-    "blog_id": "shimmer_ing_",
-    "name": "\" Log \"",
-    "nickname": "향기",
-    "topic": "국내여행",
-    "subscribers": 112,
-    "today_visitors": 62,
-    "visitors_avg": 110.5,
-    "total_posts": 55,
-    "posts_30d": 5,
-    "shared": [
-     {
-      "keyword": "웨딩홀투어질문",
-      "rank": 1
-     },
      {
       "keyword": "웨딩홀투어체크리스트",
-      "rank": 2
+      "rank": 7
      },
      {
       "keyword": "웨딩홀체크리스트",
-      "rank": 2
-     }
-    ],
-    "influencer": false,
-    "score": 44.2,
-    "rank": 16
-   },
-   {
-    "blog_id": "bongbongee2_",
-    "name": "보오오옹",
-    "nickname": "봉봉",
-    "topic": "일상·생각",
-    "subscribers": 663,
-    "today_visitors": 19,
-    "visitors_avg": 62.2,
-    "total_posts": 47,
-    "posts_30d": 4,
-    "shared": [
-     {
-      "keyword": "베르사유궁전후기",
-      "rank": 8
-     },
-     {
-      "keyword": "루브르박물관예약",
       "rank": 9
      },
      {
-      "keyword": "베르사유궁전예약",
-      "rank": 22
+      "keyword": "웨딩홀투어질문",
+      "rank": 9
      },
      {
-      "keyword": "베르사유궁전",
-      "rank": 24
+      "keyword": "서울웨딩홀투어",
+      "rank": 20
      }
     ],
     "influencer": false,
-    "score": 44.1,
-    "rank": 17
+    "score": 52.0,
+    "rank": 15
+   },
+   {
+    "blog_id": "hbokey",
+    "name": "쭈아월드｜우당탕탕 신혼일기",
+    "nickname": "쭈아",
+    "topic": "육아·결혼",
+    "subscribers": 328,
+    "today_visitors": 94,
+    "visitors_avg": 87.2,
+    "total_posts": 110,
+    "posts_30d": 9,
+    "shared": [],
+    "score": 48.7,
+    "me": true,
+    "rank": 16
    },
    {
     "blog_id": "ellen040718",
@@ -3201,27 +3214,27 @@
     "nickname": "리진입니다만",
     "topic": "",
     "subscribers": 26,
-    "today_visitors": 74,
+    "today_visitors": 130,
     "visitors_avg": null,
     "total_posts": 45,
     "posts_30d": 13,
     "shared": [
      {
-      "keyword": "아이슬란드기념품추천",
-      "rank": 2
+      "keyword": "아이슬란드기념품",
+      "rank": 3
      },
      {
-      "keyword": "아이슬란드기념품",
-      "rank": 5
+      "keyword": "아이슬란드기념품추천",
+      "rank": 3
      },
      {
       "keyword": "아이슬란드쇼핑",
-      "rank": 6
+      "rank": 5
      }
     ],
     "influencer": false,
-    "score": 44.0,
-    "rank": 18
+    "score": 47.0,
+    "rank": 17
    },
    {
     "blog_id": "leemargin",
@@ -3229,54 +3242,86 @@
     "nickname": "도리",
     "topic": "취미",
     "subscribers": 75,
-    "today_visitors": 74,
+    "today_visitors": 129,
     "visitors_avg": null,
     "total_posts": 52,
     "posts_30d": 6,
-    "shared": [
-     {
-      "keyword": "아이슬란드기념품",
-      "rank": 3
-     },
-     {
-      "keyword": "아이슬란드기념품추천",
-      "rank": 3
-     },
-     {
-      "keyword": "아이슬란드쇼핑",
-      "rank": 3
-     }
-    ],
-    "influencer": false,
-    "score": 41.8,
-    "rank": 19
-   },
-   {
-    "blog_id": "hyj8864",
-    "name": "블루의 메모장",
-    "nickname": "블루",
-    "topic": "일상·생각",
-    "subscribers": 38,
-    "today_visitors": 10,
-    "visitors_avg": null,
-    "total_posts": 127,
-    "posts_30d": 3,
     "shared": [
      {
       "keyword": "아이슬란드쇼핑",
       "rank": 2
      },
      {
-      "keyword": "아이슬란드기념품추천",
-      "rank": 6
+      "keyword": "아이슬란드기념품",
+      "rank": 4
      },
      {
-      "keyword": "아이슬란드기념품",
-      "rank": 8
+      "keyword": "아이슬란드기념품추천",
+      "rank": 4
      }
     ],
     "influencer": false,
-    "score": 29.0,
+    "score": 44.8,
+    "rank": 18
+   },
+   {
+    "blog_id": "shimmer_ing_",
+    "name": "\" Log \"",
+    "nickname": "향기",
+    "topic": "국내여행",
+    "subscribers": 111,
+    "today_visitors": 83,
+    "visitors_avg": 115.0,
+    "total_posts": 55,
+    "posts_30d": 5,
+    "shared": [
+     {
+      "keyword": "웨딩홀투어체크리스트",
+      "rank": 1
+     },
+     {
+      "keyword": "웨딩홀체크리스트",
+      "rank": 1
+     },
+     {
+      "keyword": "웨딩홀투어질문",
+      "rank": 2
+     }
+    ],
+    "influencer": false,
+    "score": 44.4,
+    "rank": 19
+   },
+   {
+    "blog_id": "bongbongee2_",
+    "name": "보오오옹",
+    "nickname": "봉봉",
+    "topic": "일상·생각",
+    "subscribers": 662,
+    "today_visitors": 33,
+    "visitors_avg": 55.2,
+    "total_posts": 47,
+    "posts_30d": 3,
+    "shared": [
+     {
+      "keyword": "베르사유궁전후기",
+      "rank": 8
+     },
+     {
+      "keyword": "루브르박물관예약",
+      "rank": 11
+     },
+     {
+      "keyword": "베르사유궁전",
+      "rank": 21
+     },
+     {
+      "keyword": "베르사유궁전예약",
+      "rank": 21
+     }
+    ],
+    "influencer": false,
+    "score": 42.8,
     "rank": 20
    },
    {
@@ -3285,10 +3330,10 @@
     "nickname": "my page",
     "topic": "일상·생각",
     "subscribers": 54,
-    "today_visitors": 3,
+    "today_visitors": 16,
     "visitors_avg": null,
     "total_posts": 285,
-    "posts_30d": 6,
+    "posts_30d": 5,
     "shared": [
      {
       "keyword": "아이슬란드기념품",
@@ -3300,11 +3345,11 @@
      },
      {
       "keyword": "아이슬란드쇼핑",
-      "rank": 4
+      "rank": 3
      }
     ],
     "influencer": false,
-    "score": 27.2,
+    "score": 34.4,
     "rank": 21
    }
   ]

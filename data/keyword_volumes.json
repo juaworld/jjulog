@@ -285,5 +285,26 @@
   "total": 35,
   "competition": "중간",
   "date": "2026-10-24"
+ },
+ "생트샤펠": {
+  "pc": 580,
+  "mobile": 1430,
+  "total": 2010,
+  "competition": "높음",
+  "date": "2026-10-25"
+ },
+ "파리생트샤펠": {
+  "pc": 90,
+  "mobile": 200,
+  "total": 290,
+  "competition": "높음",
+  "date": "2026-10-25"
+ },
+ "세인트샤펠": {
+  "pc": 10,
+  "mobile": 70,
+  "total": 80,
+  "competition": "중간",
+  "date": "2026-10-25"
  }
 }
