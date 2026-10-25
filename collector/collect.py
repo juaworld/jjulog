@@ -319,22 +319,26 @@ class Search:
             params["nso"] = "so:dd,p:all"
         return link_keys(self._web(params))
 
-    def exposure(self, title, log_no):
-        """제목 그대로 검색: 블로그탭(정확도·최신) 노출 여부 + 통합검색 노출 여부."""
+    def exposure(self, title, log_no, blog_tab=True, total=True):
+        """제목 그대로 검색: 블로그탭(정확도·최신) 노출 여부 + 통합검색 노출 여부.
+        건너뛴 항목은 None (지난 결과를 쓰라는 뜻)."""
         me = (self.blog_id, log_no)
-        try:
-            blog = "누락"
-            for sort in ("sim", "date"):
-                if me in self.blog_tab(title, sort):
-                    blog = "노출"
-                    break
-        except NET_ERRORS:
-            blog = "에러"
-        try:
-            total = "노출" if me in link_keys(self._web({"query": title})) else "미노출"
-        except NET_ERRORS:
-            total = "에러"
-        return blog, total
+        blog = tot = None
+        if blog_tab:
+            try:
+                blog = "누락"
+                for sort in ("sim", "date"):
+                    if me in self.blog_tab(title, sort):
+                        blog = "노출"
+                        break
+            except NET_ERRORS:
+                blog = "에러"
+        if total:  # 통합검색은 공식 API가 없어 항상 검색 페이지를 읽는다
+            try:
+                tot = "노출" if me in link_keys(self._web({"query": title})) else "미노출"
+            except NET_ERRORS:
+                tot = "에러"
+        return blog, tot
 
     def rank(self, keyword, log_no=None):
         """키워드 블로그탭 순위 (log_no 지정 시 그 글, 아니면 내 블로그 아무 글)."""
@@ -743,6 +747,8 @@ def main():
 
     search = Search(blog_id)
     print(f"검색 모드: {search.mode}")
+    prev = load_json(os.path.join(DATA_DIR, "latest.json"), {})
+    prev_posts = {p["logNo"]: p for p in prev.get("posts", [])} if prev.get("blog_id") == blog_id else {}
     checked = []
     for n, p in enumerate(plist[:max_check]):
         tags = rss.get(p["logNo"], {}).get("tags", [])
@@ -754,7 +760,17 @@ def main():
             "category": rss.get(p["logNo"], {}).get("category", ""), "tags": tags,
         }
         if p["searchable"]:
-            item["status"], item["total_search"] = search.exposure(p["title"], p["logNo"])
+            # 차단을 줄이려고 검색 페이지 호출은 최근 14일 글만 매일, 나머지는 요일을 나눠 주 1회.
+            # 블로그탭은 API 모드면 매일 본다.
+            old = prev_posts.get(p["logNo"], {})
+            daily = (stamp - datetime.fromisoformat(p["date"]) <= timedelta(days=14)
+                     or int(p["logNo"]) % 7 == stamp.weekday())
+            web_tab = daily or old.get("status") not in ("노출", "누락")
+            web_tot = daily or old.get("total_search") not in ("노출", "미노출")
+            blog, tot = search.exposure(p["title"], p["logNo"],
+                                        blog_tab=search.mode == "api" or web_tab, total=web_tot)
+            item["status"] = blog or old["status"]
+            item["total_search"] = tot or old["total_search"]
         else:
             item["status"], item["total_search"] = "검색 비허용", None
         item["keywords"] = [{"keyword": t, **search.rank(t, p["logNo"])}
@@ -764,8 +780,6 @@ def main():
         print(f"  {item['status']}/{item['total_search']} {item['content'] and item['content']['score']}점 {p['title'][:30]}")
 
     # 검색이 막혀 실패한 글은 지난 수집 결과를 그대로 쓴다 (0점 처리 방지)
-    prev = load_json(os.path.join(DATA_DIR, "latest.json"), {})
-    prev_posts = {p["logNo"]: p for p in prev.get("posts", [])} if prev.get("blog_id") == blog_id else {}
     reused = 0
     for item in checked:
         old = prev_posts.get(item["logNo"])
