@@ -306,5 +306,47 @@
   "total": 80,
   "competition": "중간",
   "date": "2026-10-25"
+ },
+ "용산떡볶이맛집": {
+  "pc": 30,
+  "mobile": 280,
+  "total": 310,
+  "competition": "높음",
+  "date": "2026-10-27"
+ },
+ "용산맛집": {
+  "pc": 10200,
+  "mobile": 61100,
+  "total": 71300,
+  "competition": "높음",
+  "date": "2026-10-27"
+ },
+ "용리단길맛집": {
+  "pc": 2810,
+  "mobile": 19100,
+  "total": 21910,
+  "competition": "높음",
+  "date": "2026-10-27"
+ },
+ "파리콩시에르주리": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "중간",
+  "date": "2026-10-27"
+ },
+ "콩시에르주리": {
+  "pc": 160,
+  "mobile": 400,
+  "total": 560,
+  "competition": "높음",
+  "date": "2026-10-27"
+ },
+ "콩시에르주리후기": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-10-27"
  }
 }
