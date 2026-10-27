@@ -96,6 +96,8 @@ a{color:inherit}
 .levers div{display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:center;font-size:13px}
 .levers b{text-align:right;color:var(--leaf);font-variant-numeric:tabular-nums}
 .levers span{color:var(--ink-2)}
+.goal{margin-top:20px;padding-top:18px;border-top:2px dashed var(--rule)}
+.goal h3{margin:0 0 4px;font-size:18px;font-weight:400}
 
 /* 숫자 줄 */
 .strip{display:grid;grid-template-columns:repeat(6,1fr);background:var(--card);border-radius:20px;overflow:hidden;margin:22px 0}
@@ -441,7 +443,21 @@ function roadmap(idx) {
     </div>`).join("")}</div>
     ${p.levers.length ? `<div class="levers">${p.levers.map(l => `<div><b>+${l.gain}점</b><span>${esc(l.how)} <small style="color:var(--ink-3)">(${esc(l.label)})</small></span></div>`).join("")}</div>` : ""}
     <p class="note">매일 아침 오늘 데이터로 다시 계산해요. 방문자·노출률은 지금 그대로라고 보고 발행과 키워드만 바꿔 본 쭈로그 기준 예상이에요. 실제 네이버 반영은 보통 2~4주 늦게 따라와요.</p>
+    ${p.goal ? goalBox(idx, p.goal) : ""}
   </section>`;
+}
+
+// 장기 목표(기본 최적1): 발행·키워드만으로 되는지, 아니면 하루 방문이 얼마나 필요한지
+function goalBox(idx, g) {
+  const cell = s => s.weeks ? `<div class="when">약 ${s.weeks}주</div><div class="after">발행·키워드만으로 도달</div>`
+    : s.visitors_needed > 0 ? `<div class="when">하루 ${fmt(s.visitors_needed)}명</div><div class="after">이 정도 방문이 돼야 도달<br>12주 뒤 방문 그대로면 <b>${s.score_12w}점 · ${esc(gradeAt(idx, s.score_12w))}</b></div>`
+    : `<div class="when never">이 속도론 어려워요</div><div class="after">12주 뒤 <b>${s.score_12w}점 · ${esc(gradeAt(idx, s.score_12w))}</b>에서 멈춰요</div>`;
+  return `<div class="goal">
+    <h3 class="hand">🎯 목표 ${esc(g.grade)}</h3>
+    <p class="lead">${esc(g.grade)} 기준 ${g.at}점 — 지금보다 <b>${g.need}점</b> 더 필요해요.
+      ${g.visitors_now ? `지금 하루 방문 <b>${fmt(g.visitors_now)}명</b>.` : ""} 최적 등급은 발행만으론 안 되고 <b>방문자 규모</b>가 같이 올라와야 해요.</p>
+    <div class="paths">${g.scenarios.map(s => `<div class="path"><div class="lbl">${esc(s.label)}</div>${cell(s)}</div>`).join("")}</div>
+  </div>`;
 }
 
 const RIVAL_SORT ={score: "체급", visitors_avg: "하루 방문", subscribers: "구독자", posts_30d: "30일 발행"};

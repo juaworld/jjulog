@@ -20,6 +20,7 @@ GitHub Actions가 매일 07:00(KST)에 수집하고 GitHub Pages에서 봅니다
 | `max_check_posts` | 분석할 최근 글 수 (기본 15) |
 | `keyword_check_posts` | 태그 3개까지 순위를 볼 글 수 (기본 10, 나머지는 첫 태그만) |
 | `competitors` | 비교할 경쟁 블로그 수 (기본 20) |
+| `goal_grade` | 장기 목표 등급 (기본 "최적1") — 로드맵 아래 목표 칸에 몇 주·하루 방문 몇 명이 필요한지 계산 |
 
 config.json 을 고쳐 커밋하면 바로 다시 수집해요. 수동 실행은 **Actions → 쭈로그 수집 → Run workflow**.
 

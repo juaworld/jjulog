@@ -545,7 +545,7 @@ def diagnose(idx, checked, plist, visitor_series):
 
 # ---------------------------------------------------------------- 다음 등급 로드맵
 
-def level_plan(idx, checked, posts_12w, vis_avg):
+def level_plan(idx, checked, posts_12w, vis_avg, goal_grade="최적1"):
     """다음 등급까지 몇 점이 필요한지, 무엇을 하면 몇 주 걸리는지 시뮬레이션.
     방문자·노출률·소통은 지금 그대로 둔다(보수적) — 발행과 키워드만 바꿔 본다."""
     gi = idx["grade_index"]
@@ -624,6 +624,29 @@ def level_plan(idx, checked, posts_12w, vis_avg):
         levers.append({"label": "키워드 경쟁력", "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
                        "gain": round(score({**base, "keyword": keyword_with(5, kp_of(2000, 7))}) - idx["score"], 1)})
     levers.sort(key=lambda x: -x["gain"])
+
+    # 장기 목표 등급(기본 최적1): 발행·키워드만으로 몇 주 걸리는지, 모자라면 하루 방문이 얼마나 돼야 하는지
+    goal = None
+    if goal_grade in GRADES and GRADES.index(goal_grade) > gi:
+        goal_at = GRADE_AT[GRADES.index(goal_grade)]
+        vis_w = weights.get("visitors", 0) / wsum * 100 if base.get("visitors") is not None else 0
+        goal_rows = []
+        for label, rate, new_kp in [
+            ("주 3개 · 대표 키워드 월 검색 1~3천, 10위 안", 3, kp_of(2000, 7)),
+            ("주 5개 · 대표 키워드 월 검색 1~3천, 10위 안", 5, kp_of(2000, 7)),
+            ("매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안", 7, kp_of(4000, 4)),
+        ]:
+            weeks = next((wk for wk in range(1, 53) if simulate(rate, new_kp, wk) >= goal_at), None)
+            s12 = simulate(rate, new_kp, 12)
+            visitors_needed = None
+            if vis_w and weeks is None:
+                need_v = (goal_at - (s12 - vis_w * base["visitors"])) / vis_w
+                visitors_needed = round(10 ** (4 * need_v) - 1) if need_v <= 1 else -1  # -1: 방문자만으론 불가
+            goal_rows.append({"label": label, "weeks": weeks, "score_12w": round(s12, 1),
+                              "visitors_needed": visitors_needed})
+        goal = {"grade": goal_grade, "at": goal_at, "need": round(goal_at - idx["score"], 1),
+                "visitors_now": round(vis_avg) if vis_avg else None, "scenarios": goal_rows}
+
     return {
         "next_grade": GRADES[gi + 1],
         "next_at": target,
@@ -631,6 +654,7 @@ def level_plan(idx, checked, posts_12w, vis_avg):
         "this_at": GRADE_AT[gi],
         "scenarios": scenarios,
         "levers": levers,
+        "goal": goal,
     }
 
 
@@ -833,7 +857,7 @@ def main():
     idx = estimate_index(posts_12w, checked, visitors, info)
     diag, risk = diagnose(idx, checked, posts_12w, vseries)
     idx["low_quality_risk"] = risk
-    idx["plan"] = level_plan(idx, checked, posts_12w, avg_visitors(visitors))
+    idx["plan"] = level_plan(idx, checked, posts_12w, avg_visitors(visitors), cfg.get("goal_grade", "최적1"))
 
     save_json(os.path.join(DATA_DIR, "latest.json"), {
         "configured": True,
