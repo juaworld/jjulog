@@ -1,10 +1,10 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-10-27T09:59:09.167747+09:00",
+ "updated_at": "2026-10-28T07:29:01.632978+09:00",
  "search_mode": "web",
  "keyword_tool": true,
- "search_calls": 57,
+ "search_calls": 55,
  "search_reused": 0,
  "search_blocked": false,
  "profile": {
@@ -16,9 +16,9 @@
  "info": {
   "name": "쭈아월드｜우당탕탕 신혼일기",
   "nickname": "쭈아",
-  "subscribers": 342,
-  "total_visitors": 48772,
-  "today_visitors": 36,
+  "subscribers": 345,
+  "total_visitors": 48936,
+  "today_visitors": 23,
   "topic": "세계여행",
   "power_blog": false,
   "naver_mate": false,
@@ -26,13 +26,9 @@
   "official": false
  },
  "total_posts": 113,
- "last_post": "2026-10-27T08:59:12.330584+09:00",
+ "last_post": "2026-10-27T08:29:04.597693+09:00",
  "posts_12w": 14,
  "visitors": [
-  {
-   "date": "2026-10-23",
-   "count": 104
-  },
   {
    "date": "2026-10-24",
    "count": 86
@@ -47,13 +43,17 @@
   },
   {
    "date": "2026-10-27",
-   "count": 36
+   "count": 177
+  },
+  {
+   "date": "2026-10-28",
+   "count": 23
   }
  ],
  "index": {
-  "score": 56.5,
-  "grade": "준최4",
-  "grade_index": 4,
+  "score": 54.6,
+  "grade": "준최3",
+  "grade_index": 3,
   "grades": [
    "일반",
    "준최1",
@@ -93,13 +93,13 @@
     "key": "visitors",
     "label": "방문자 규모",
     "weight": 30,
-    "value": 0.526
+    "value": 0.541
    },
    {
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.666
+    "value": 0.586
    },
    {
     "key": "exposure",
@@ -129,7 +129,7 @@
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.738
+    "value": 0.751
    }
   ],
   "stats": {
@@ -137,46 +137,46 @@
    "weeks_active": 5,
    "exposure_rate": 1.0,
    "total_exposure_rate": 0.333,
-   "avg_comments": 17.0,
+   "avg_comments": 18.7,
    "avg_content_score": 92,
-   "visitors_avg": 126.0,
-   "top10_keywords": 20,
-   "best_top10_volume": 21910
+   "visitors_avg": 144.2,
+   "top10_keywords": 19,
+   "best_top10_volume": 8510
   },
   "low_quality_risk": false,
   "plan": {
-   "next_grade": "준최5",
-   "next_at": 60.7,
-   "need": 4.2,
-   "this_at": 54.8,
+   "next_grade": "준최4",
+   "next_at": 54.8,
+   "need": 0.2,
+   "this_at": 48.1,
    "scenarios": [
     {
      "label": "지금처럼 (발행·키워드 그대로)",
      "per_week": 1.2,
      "weeks": null,
-     "after_4w": 54.4,
-     "after_12w": 51.4
+     "after_4w": 53.7,
+     "after_12w": 50.6
     },
     {
      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 3,
-     "weeks": null,
-     "after_4w": 56.0,
-     "after_12w": 60.2
+     "weeks": 1,
+     "after_4w": 56.6,
+     "after_12w": 60.7
     },
     {
      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 5,
-     "weeks": 9,
-     "after_4w": 57.5,
-     "after_12w": 63.1
+     "weeks": 1,
+     "after_4w": 58.0,
+     "after_12w": 63.6
     },
     {
      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
      "per_week": 7,
-     "weeks": 5,
-     "after_4w": 60.1,
-     "after_12w": 67.6
+     "weeks": 1,
+     "after_4w": 60.6,
+     "after_12w": 68.1
     }
    ],
    "levers": [
@@ -197,38 +197,38 @@
     },
     {
      "label": "방문자 규모",
-     "how": "하루 방문이 126명 → 252명이 되면",
+     "how": "하루 방문이 144명 → 288명이 되면",
      "gain": 2.3
     },
     {
      "label": "키워드 경쟁력",
      "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
-     "gain": -0.6
+     "gain": 1.0
     }
    ],
    "goal": {
     "grade": "최적1",
     "at": 75.1,
-    "need": 18.6,
-    "visitors_now": 126,
+    "need": 20.5,
+    "visitors_now": 144,
     "scenarios": [
      {
       "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
       "weeks": null,
-      "score_12w": 60.2,
+      "score_12w": 60.7,
       "visitors_needed": -1
      },
      {
       "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
       "weeks": null,
-      "score_12w": 63.1,
-      "visitors_needed": 5131
+      "score_12w": 63.6,
+      "visitors_needed": 5030
      },
      {
       "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
       "weeks": null,
-      "score_12w": 67.6,
-      "visitors_needed": 1285
+      "score_12w": 68.1,
+      "visitors_needed": 1260
      }
     ]
    }
@@ -248,7 +248,7 @@
   {
    "level": "good",
    "title": "최근 7일 발행",
-   "detail": "최근 7일 동안 9개 발행. 주 3개 이상이 지수에 유리해요."
+   "detail": "최근 7일 동안 8개 발행. 주 3개 이상이 지수에 유리해요."
   },
   {
    "level": "bad",
@@ -259,6 +259,11 @@
    "level": "good",
    "title": "글 최적화",
    "detail": "최근 글 평균 92점. 글자 수·사진·키워드 반복을 맞추면 올라가요."
+  },
+  {
+   "level": "good",
+   "title": "방문자 추세",
+   "detail": "최근 5일 평균 120명, 그 전 5일 대비 +54%."
   }
  ],
  "posts": [
@@ -266,9 +271,9 @@
    "logNo": "224453974245",
    "title": "파리 오페라 가르니에 예약 방법｜입장료와 공사중 내부 관람 후기",
    "url": "https://blog.naver.com/hbokey/224453974245",
-   "date": "2026-10-27T08:59:12.330584+09:00",
-   "comments": 1,
-   "likes": 6,
+   "date": "2026-10-27T08:29:04.597693+09:00",
+   "comments": 10,
+   "likes": 21,
    "category": "해외여행·신혼여행",
    "tags": [
     "오페라가르니에예약",
@@ -323,7 +328,7 @@
     },
     {
      "keyword": "파리오페라가르니에",
-     "rank": 2,
+     "rank": 1,
      "of": 30,
      "volume": {
       "pc": 230,
@@ -336,8 +341,8 @@
     }
    ],
    "content": {
-    "chars": 2412,
-    "images": 40,
+    "chars": 2388,
+    "images": 38,
     "videos": 0,
     "quotes": 12,
     "headings": 0,
@@ -355,9 +360,9 @@
    "logNo": "224454572550",
    "title": "용산 떡볶이 맛집 현선이네 용산본점 후기｜용리단길 맛집 현선이콤보세트 메뉴·웨이팅 정리",
    "url": "https://blog.naver.com/hbokey/224454572550",
-   "date": "2026-10-26T20:59:12.330668+09:00",
-   "comments": 2,
-   "likes": 11,
+   "date": "2026-10-26T12:00:00+09:00",
+   "comments": 3,
+   "likes": 13,
    "category": "데이트 맛집·카페",
    "tags": [
     "용산떡볶이맛집",
@@ -412,7 +417,7 @@
     },
     {
      "keyword": "용리단길맛집",
-     "rank": 7,
+     "rank": null,
      "of": 30,
      "volume": {
       "pc": 2810,
@@ -444,7 +449,7 @@
    "logNo": "224453934517",
    "title": "파리 콩시에르주리 후기｜생트샤펠 통합권으로 둘러본 마리 앙투아네트 감옥과 관람 꿀팁",
    "url": "https://blog.naver.com/hbokey/224453934517",
-   "date": "2026-10-26T11:59:12.330717+09:00",
+   "date": "2026-10-26T12:00:00+09:00",
    "comments": 4,
    "likes": 24,
    "category": "해외여행·신혼여행",
@@ -533,7 +538,7 @@
    "title": "파리 생트샤펠 후기｜통합권·뮤지엄패스 예약 방법과 스테인드글라스 관람 꿀팁",
    "url": "https://blog.naver.com/hbokey/224452977704",
    "date": "2026-10-25T12:00:00+09:00",
-   "comments": 8,
+   "comments": 9,
    "likes": 25,
    "category": "해외여행·신혼여행",
    "tags": [
@@ -576,7 +581,7 @@
     },
     {
      "keyword": "파리생트샤펠",
-     "rank": 1,
+     "rank": 2,
      "of": 30,
      "volume": {
       "pc": 90,
@@ -623,8 +628,8 @@
    "title": "디즈니랜드 파리 후기｜겨울왕국 어트랙션부터 불꽃놀이 자리·RER A 퇴장 꿀팁",
    "url": "https://blog.naver.com/hbokey/224452128765",
    "date": "2026-10-24T12:00:00+09:00",
-   "comments": 36,
-   "likes": 22,
+   "comments": 37,
+   "likes": 23,
    "category": "해외여행·신혼여행",
    "tags": [
     "디즈니랜드파리",
@@ -666,7 +671,7 @@
     },
     {
      "keyword": "디즈니랜드파리후기",
-     "rank": 8,
+     "rank": 10,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -679,7 +684,7 @@
     },
     {
      "keyword": "디즈니랜드파리꿀팁",
-     "rank": 2,
+     "rank": 5,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -743,8 +748,8 @@
    "keywords": [
     {
      "keyword": "웨딩홀투어체크리스트",
-     "rank": 6,
-     "of": 33,
+     "rank": 7,
+     "of": 30,
      "volume": {
       "pc": 300,
       "mobile": 440,
@@ -756,8 +761,8 @@
     },
     {
      "keyword": "웨딩홀체크리스트",
-     "rank": 15,
-     "of": 33,
+     "rank": 20,
+     "of": 30,
      "volume": {
       "pc": 260,
       "mobile": 390,
@@ -769,7 +774,7 @@
     },
     {
      "keyword": "웨딩홀투어질문",
-     "rank": 3,
+     "rank": 2,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -804,7 +809,7 @@
    "title": "서울 웨딩홀 투어 4곳 견적 비교｜더화이트베일 강동 KDW 아르베 메리스에이프럴 식대·보증인원",
    "url": "https://blog.naver.com/hbokey/224449951803",
    "date": "2026-10-22T12:00:00+09:00",
-   "comments": 45,
+   "comments": 49,
    "likes": 23,
    "category": "결혼준비",
    "tags": [
@@ -847,7 +852,7 @@
     },
     {
      "keyword": "서울웨딩홀견적비교",
-     "rank": 14,
+     "rank": 12,
      "of": 30,
      "volume": {
       "pc": null,
@@ -861,7 +866,7 @@
     {
      "keyword": "서울웨딩홀추천",
      "rank": null,
-     "of": 30,
+     "of": 35,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -894,8 +899,8 @@
    "title": "뚜레쥬르 아그작케이크 후기｜내돈내산 복숭아 레몬 비교 솔직 리뷰",
    "url": "https://blog.naver.com/hbokey/224448771282",
    "date": "2026-10-21T12:00:00+09:00",
-   "comments": 35,
-   "likes": 25,
+   "comments": 41,
+   "likes": 26,
    "category": "데이트 맛집·카페",
    "tags": [
     "아그작케이크",
@@ -924,7 +929,7 @@
    "keywords": [
     {
      "keyword": "아그작케이크",
-     "rank": 12,
+     "rank": 7,
      "of": 30,
      "volume": {
       "pc": null,
@@ -937,7 +942,7 @@
     },
     {
      "keyword": "뚜레쥬르아그작케이크",
-     "rank": 6,
+     "rank": 4,
      "of": 30,
      "volume": {
       "pc": null,
@@ -950,7 +955,7 @@
     },
     {
      "keyword": "뚜레쥬르아그작",
-     "rank": 22,
+     "rank": 11,
      "of": 30,
      "volume": {
       "pc": null,
@@ -983,7 +988,7 @@
    "title": "베르사유 궁전 후기｜2026 입장료·예약 꿀팁부터 거울의 방과 마리 앙투아네트 마을까지",
    "url": "https://blog.naver.com/hbokey/224447580328",
    "date": "2026-10-20T12:00:00+09:00",
-   "comments": 20,
+   "comments": 21,
    "likes": 17,
    "category": "해외여행·신혼여행",
    "tags": [
@@ -1026,8 +1031,8 @@
     },
     {
      "keyword": "베르사유궁전",
-     "rank": 3,
-     "of": 34,
+     "rank": null,
+     "of": 33,
      "volume": {
       "pc": null,
       "mobile": null,
@@ -1039,7 +1044,7 @@
     },
     {
      "keyword": "베르사유궁전예약",
-     "rank": 8,
+     "rank": 9,
      "of": 31,
      "volume": {
       "pc": null,
@@ -1073,7 +1078,7 @@
    "title": "루브르 박물관 줄 없이 입장 후기｜까루젤 입구 꿀팁과 2026 입장료·예약 방법",
    "url": "https://blog.naver.com/hbokey/224446356205",
    "date": "2026-10-19T12:00:00+09:00",
-   "comments": 42,
+   "comments": 43,
    "likes": 32,
    "category": "해외여행·신혼여행",
    "tags": [
@@ -1116,7 +1121,7 @@
     },
     {
      "keyword": "루브르박물관",
-     "rank": 19,
+     "rank": 11,
      "of": 30,
      "volume": {
       "pc": null,
@@ -1129,7 +1134,7 @@
     },
     {
      "keyword": "루브르박물관예약",
-     "rank": 15,
+     "rank": 12,
      "of": 30,
      "volume": {
       "pc": null,
@@ -1264,7 +1269,7 @@
    "keywords": [
     {
      "keyword": "아이슬란드기념품",
-     "rank": 8,
+     "rank": 7,
      "of": 30,
      "volume": {
       "pc": null,
@@ -1332,7 +1337,7 @@
    "keywords": [
     {
      "keyword": "강남하우스웨딩",
-     "rank": 29,
+     "rank": null,
      "of": 31,
      "volume": {
       "pc": null,
@@ -1405,7 +1410,7 @@
    "keywords": [
     {
      "keyword": "롯데월드미용실",
-     "rank": 21,
+     "rank": 19,
      "of": 30,
      "volume": {
       "pc": null,
@@ -1492,8 +1497,8 @@
    "url": "https://blog.naver.com/hbokey/224453974245",
    "date": "2026-10-27T08:00:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 6,
-   "comments": 1,
+   "likes": 21,
+   "comments": 10,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjdfMjk1/MDAxNzkzMDYyMjE4NzY5.i8dnRb6CAwvwqxHoDb2nOrTX1tBYjvCbQBCYtKIkt7Qg.YRXoVo8PJXxuDWuTvlixUZvWvHwEVkoh_VSwfdcoeSsg.PNG/thumb-224453974245-opera.png"
   },
@@ -1503,8 +1508,8 @@
    "url": "https://blog.naver.com/hbokey/224454572550",
    "date": "2026-10-26T20:58:00.922000+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 11,
-   "comments": 2,
+   "likes": 13,
+   "comments": 3,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjZfMTU1/MDAxNzkzMDE0MDk2NTE5.rnUQHozvmEbqdW4l-0ntJu9bVv5ibxb4iaio7etqenog.A_7XJ-aHomsz9tQLWwy1yE0CTpM9osiWuUrWUsmi2XYg.PNG/thumb-hyunsun-yongsan.png"
   },
@@ -1526,7 +1531,7 @@
    "date": "2026-10-25T12:27:41.531000+09:00",
    "category": "해외여행·신혼여행",
    "likes": 25,
-   "comments": 8,
+   "comments": 9,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfODMg/MDAxNzkyOTEwNDI0NjQ0.uLn2lfSk1teLgDtMrlSluzBTZj1yZh9J-c2R7kmjGy0g.VRzqSpqH91QS_4ke60VM0QfuhzAAJSqXbU80ezebtb0g.PNG/thumb-224452977704.png"
   },
@@ -1536,8 +1541,8 @@
    "url": "https://blog.naver.com/hbokey/224452128765",
    "date": "2026-10-24T12:14:16.940000+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 22,
-   "comments": 36,
+   "likes": 23,
+   "comments": 37,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjIg/MDAxNzkyOTEwNTE0NDAy.6G3Z9BtS-do7KbsIie9C7t3dGW-tX-ZbATFzTV-UDSQg.e_ySP9gK2qGqV154c9iPiGhmug2WpVcZJJ68MtMKj08g.PNG/thumb-224452128765.png"
   },
@@ -1559,7 +1564,7 @@
    "date": "2026-10-22T11:40:11.619000+09:00",
    "category": "결혼준비",
    "likes": 23,
-   "comments": 45,
+   "comments": 49,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjM5/MDAxNzkyOTEwNjU2MzI4.FTtCVsCVchsxrPbl6iTd6iAHjMPSRYmYxakpK48NSTMg.CUf5y9CxLx0uv3w-O_TMWTPrvqnk1nA1L79OYzP8bmwg.PNG/thumb-224449951803.png"
   },
@@ -1569,8 +1574,8 @@
    "url": "https://blog.naver.com/hbokey/224448771282",
    "date": "2026-10-21T11:31:44.075000+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 25,
-   "comments": 35,
+   "likes": 26,
+   "comments": 41,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMTM2/MDAxNzkyOTEwNzE0NDc3.TL1M1YvJwzQtgBkafhKJZuUaB8Z_2MwsYzHmVDLCB1Ag.xLYctcmieKZsT4Aj8yi7naBu1--YvjLK9nEsDwf7etcg.PNG/thumb-224448771282.png"
   },
@@ -1581,7 +1586,7 @@
    "date": "2026-10-20T12:04:02.560000+09:00",
    "category": "해외여행·신혼여행",
    "likes": 17,
-   "comments": 20,
+   "comments": 21,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfNDMg/MDAxNzkyOTEwODA4NDk1.Htyavh6TPlIk7RqvUI47FDf9of2Ldj6xgWHxKSwKVokg.YzzmsGoRl_858T9hbXFuw8cz5270HPqiaPXEAtpwPI4g.PNG/thumb-224447580328.png"
   },
@@ -1592,7 +1597,7 @@
    "date": "2026-10-19T11:31:14.951000+09:00",
    "category": "해외여행·신혼여행",
    "likes": 32,
-   "comments": 42,
+   "comments": 43,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMTMx/MDAxNzkyOTE3NzQ0NDgw.Myp5JF08YYwKH-WRjiMxKVSCCBG901Vt5yjqbuKzOmIg.eJe07v2qoYb8sHhp-8vAp1P6g67FenT60simI0F0vUMg.PNG/thumb-224446356205.png"
   },
@@ -2733,21 +2738,21 @@
  "watch_keywords": [],
  "competitors": {
   "count": 21,
-  "my_rank": 17,
-  "top_percent": 81,
-  "same_topic": 12,
+  "my_rank": 16,
+  "top_percent": 76,
+  "same_topic": 13,
   "my_place": {
-   "visitors_avg": 14,
+   "visitors_avg": 13,
    "subscribers": 16,
    "posts_30d": 17,
    "total_posts": 19
   },
   "averages": {
-   "visitors_avg": 798.7,
-   "subscribers": 2228.7,
-   "posts_30d": 23.2,
-   "total_posts": 682.1,
-   "score": 68.4
+   "visitors_avg": 847.4,
+   "subscribers": 2350.2,
+   "posts_30d": 22.6,
+   "total_posts": 701.0,
+   "score": 66.9
   },
   "blogs": [
    {
@@ -2755,39 +2760,35 @@
     "name": "luxvoyage",
     "nickname": "예진아씨",
     "topic": "세계여행",
-    "subscribers": 3363,
-    "today_visitors": 1685,
-    "visitors_avg": 6215.8,
-    "total_posts": 615,
-    "posts_30d": 28,
+    "subscribers": 3362,
+    "today_visitors": 1669,
+    "visitors_avg": 5812.5,
+    "total_posts": 616,
+    "posts_30d": 29,
     "shared": [
      {
       "keyword": "오페라가르니에예약",
-      "rank": 5
-     },
-     {
-      "keyword": "베르사유궁전후기",
       "rank": 6
-     },
-     {
-      "keyword": "파리오페라가르니에",
-      "rank": 8
      },
      {
       "keyword": "오페라가르니에",
       "rank": 9
      },
      {
-      "keyword": "베르사유궁전",
-      "rank": 22
+      "keyword": "베르사유궁전후기",
+      "rank": 10
      },
      {
-      "keyword": "베르사유궁전예약",
+      "keyword": "파리오페라가르니에",
+      "rank": 12
+     },
+     {
+      "keyword": "베르사유궁전",
       "rank": 25
      }
     ],
     "influencer": false,
-    "score": 91.7,
+    "score": 92.0,
     "rank": 1
    },
    {
@@ -2795,35 +2796,35 @@
     "name": "여행하는 제니✈️",
     "nickname": "제니",
     "topic": "세계여행",
-    "subscribers": 6376,
-    "today_visitors": 687,
-    "visitors_avg": 3134.8,
-    "total_posts": 1290,
+    "subscribers": 6378,
+    "today_visitors": 371,
+    "visitors_avg": 3205.2,
+    "total_posts": 1292,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "파리생트샤펠",
-      "rank": 20
-     },
-     {
       "keyword": "루브르박물관",
-      "rank": 20
+      "rank": 14
      },
      {
-      "keyword": "베르사유궁전후기",
-      "rank": 22
+      "keyword": "파리생트샤펠",
+      "rank": 18
      },
      {
       "keyword": "루브르박물관예약",
-      "rank": 23
+      "rank": 18
+     },
+     {
+      "keyword": "베르사유궁전후기",
+      "rank": 19
      },
      {
       "keyword": "생트샤펠",
-      "rank": 26
+      "rank": 24
      }
     ],
     "influencer": false,
-    "score": 91.6,
+    "score": 91.7,
     "rank": 2
    },
    {
@@ -2831,10 +2832,10 @@
     "name": "Sea you soon (씨유순)",
     "nickname": "최고야",
     "topic": "세계여행",
-    "subscribers": 12470,
-    "today_visitors": 260,
-    "visitors_avg": 1197.0,
-    "total_posts": 1624,
+    "subscribers": 12499,
+    "today_visitors": 170,
+    "visitors_avg": 1269.5,
+    "total_posts": 1626,
     "posts_30d": 30,
     "shared": [
      {
@@ -2843,20 +2844,52 @@
      },
      {
       "keyword": "베르사유궁전예약",
-      "rank": 6
+      "rank": 8
      },
      {
       "keyword": "루브르박물관예약",
-      "rank": 18
+      "rank": 22
      },
      {
       "keyword": "루브르박물관",
-      "rank": 24
+      "rank": 28
      }
     ],
     "influencer": false,
-    "score": 87.7,
+    "score": 88.0,
     "rank": 3
+   },
+   {
+    "blog_id": "on_monday",
+    "name": "지니의 아시아트래블✈️",
+    "nickname": "여행할지니",
+    "topic": "세계여행",
+    "subscribers": 4192,
+    "today_visitors": 208,
+    "visitors_avg": 1464.2,
+    "total_posts": 868,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "루브르박물관예약",
+      "rank": 20
+     },
+     {
+      "keyword": "디즈니랜드파리",
+      "rank": 21
+     },
+     {
+      "keyword": "디즈니랜드파리꿀팁",
+      "rank": 21
+     },
+     {
+      "keyword": "콩시에르주리후기",
+      "rank": 26
+     }
+    ],
+    "influencer": false,
+    "score": 86.1,
+    "rank": 4
    },
    {
     "blog_id": "pasmal_jun",
@@ -2864,8 +2897,8 @@
     "nickname": "Paris Traveler",
     "topic": "세계여행",
     "subscribers": 4862,
-    "today_visitors": 306,
-    "visitors_avg": 1141.2,
+    "today_visitors": 203,
+    "visitors_avg": 1155.8,
     "total_posts": 1182,
     "posts_30d": 29,
     "shared": [
@@ -2875,7 +2908,7 @@
      },
      {
       "keyword": "베르사유궁전예약",
-      "rank": 2
+      "rank": 4
      },
      {
       "keyword": "파리생트샤펠",
@@ -2887,124 +2920,124 @@
      },
      {
       "keyword": "파리오페라가르니에",
-      "rank": 9
+      "rank": 8
      },
      {
       "keyword": "생트샤펠",
-      "rank": 11
+      "rank": 10
      },
      {
       "keyword": "오페라가르니에",
-      "rank": 13
+      "rank": 12
      },
      {
       "keyword": "디즈니랜드파리",
-      "rank": 19
+      "rank": 16
      }
     ],
     "influencer": false,
     "score": 84.8,
-    "rank": 4
+    "rank": 5
    },
    {
     "blog_id": "cooooodus",
     "name": "Holymoly 낭만여행",
     "nickname": "채몽",
     "topic": "세계여행",
-    "subscribers": 5278,
-    "today_visitors": 145,
-    "visitors_avg": 663.5,
-    "total_posts": 691,
+    "subscribers": 5279,
+    "today_visitors": 110,
+    "visitors_avg": 678.2,
+    "total_posts": 692,
     "posts_30d": 30,
     "shared": [
      {
       "keyword": "디즈니랜드파리꿀팁",
-      "rank": 3
+      "rank": 4
      },
      {
       "keyword": "오페라가르니에",
-      "rank": 24
+      "rank": 19
      },
      {
       "keyword": "파리오페라가르니에",
-      "rank": 27
+      "rank": 23
      },
      {
       "keyword": "오페라가르니에예약",
-      "rank": 30
+      "rank": 27
      }
     ],
     "influencer": false,
-    "score": 82.0,
-    "rank": 5
+    "score": 82.1,
+    "rank": 6
    },
    {
     "blog_id": "ellyrama",
     "name": "이라마린의 똑부러지는 결혼준비",
     "nickname": "이라마린",
     "topic": "육아·결혼",
-    "subscribers": 843,
-    "today_visitors": 239,
-    "visitors_avg": 1221.8,
-    "total_posts": 356,
+    "subscribers": 849,
+    "today_visitors": 138,
+    "visitors_avg": 1379.0,
+    "total_posts": 359,
     "posts_30d": 30,
     "shared": [
      {
       "keyword": "서울웨딩홀추천",
-      "rank": 7
+      "rank": 4
      },
      {
       "keyword": "서울웨딩홀투어",
-      "rank": 8
-     },
-     {
-      "keyword": "서울웨딩홀견적비교",
-      "rank": 17
+      "rank": 10
      },
      {
       "keyword": "웨딩홀투어질문",
-      "rank": 20
+      "rank": 21
+     },
+     {
+      "keyword": "서울웨딩홀견적비교",
+      "rank": 23
      }
     ],
     "influencer": false,
-    "score": 80.5,
-    "rank": 6
+    "score": 81.2,
+    "rank": 7
    },
    {
     "blog_id": "hyearchiving",
     "name": "Archives des voyages",
     "nickname": "혜아",
     "topic": "세계여행",
-    "subscribers": 1038,
-    "today_visitors": 145,
-    "visitors_avg": 571.0,
-    "total_posts": 934,
+    "subscribers": 1040,
+    "today_visitors": 91,
+    "visitors_avg": 601.8,
+    "total_posts": 936,
     "posts_30d": 30,
     "shared": [
-     {
-      "keyword": "베르사유궁전예약",
-      "rank": 14
-     },
      {
       "keyword": "파리생트샤펠",
       "rank": 16
      },
      {
-      "keyword": "콩시에르주리후기",
-      "rank": 22
+      "keyword": "베르사유궁전예약",
+      "rank": 18
      },
      {
       "keyword": "생트샤펠",
-      "rank": 25
+      "rank": 23
      },
      {
       "keyword": "루브르박물관예약",
       "rank": 25
+     },
+     {
+      "keyword": "콩시에르주리후기",
+      "rank": 28
      }
     ],
     "influencer": false,
-    "score": 78.0,
-    "rank": 7
+    "score": 78.3,
+    "rank": 8
    },
    {
     "blog_id": "per-o",
@@ -3012,10 +3045,10 @@
     "nickname": "이라오",
     "topic": "세계여행",
     "subscribers": 1794,
-    "today_visitors": 70,
-    "visitors_avg": 413.2,
+    "today_visitors": 36,
+    "visitors_avg": 391.8,
     "total_posts": 290,
-    "posts_30d": 27,
+    "posts_30d": 26,
     "shared": [
      {
       "keyword": "파리콩시에르주리",
@@ -3023,11 +3056,11 @@
      },
      {
       "keyword": "콩시에르주리",
-      "rank": 12
+      "rank": 11
      },
      {
       "keyword": "디즈니랜드파리꿀팁",
-      "rank": 21
+      "rank": 22
      },
      {
       "keyword": "디즈니랜드파리후기",
@@ -3035,111 +3068,43 @@
      },
      {
       "keyword": "디즈니랜드파리",
-      "rank": 30
+      "rank": 28
      }
     ],
     "influencer": false,
-    "score": 74.0,
-    "rank": 8
+    "score": 73.1,
+    "rank": 9
    },
    {
-    "blog_id": "today_traveller",
-    "name": "트래블픽",
-    "nickname": "오늘여기",
-    "topic": "세계여행",
-    "subscribers": 1308,
-    "today_visitors": 218,
-    "visitors_avg": null,
-    "total_posts": 1283,
+    "blog_id": "byw0524",
+    "name": "예온댁의 세계여행! 노는 게 제일 좋아!",
+    "nickname": "예온댁",
+    "topic": "맛집",
+    "subscribers": 416,
+    "today_visitors": 55,
+    "visitors_avg": 289.0,
+    "total_posts": 804,
     "posts_30d": 30,
     "shared": [
-     {
-      "keyword": "베르사유궁전예약",
-      "rank": 1
-     },
-     {
-      "keyword": "오페라가르니에예약",
-      "rank": 2
-     },
-     {
-      "keyword": "파리오페라가르니에",
-      "rank": 3
-     },
-     {
-      "keyword": "콩시에르주리",
-      "rank": 3
-     },
-     {
-      "keyword": "오페라가르니에",
-      "rank": 4
-     },
      {
       "keyword": "디즈니랜드파리",
       "rank": 5
      },
      {
+      "keyword": "디즈니랜드파리후기",
+      "rank": 13
+     },
+     {
       "keyword": "베르사유궁전",
-      "rank": 5
+      "rank": 20
      },
      {
-      "keyword": "디즈니랜드파리꿀팁",
-      "rank": 6
-     },
-     {
-      "keyword": "생트샤펠",
-      "rank": 8
-     },
-     {
-      "keyword": "파리생트샤펠",
-      "rank": 9
-     },
-     {
-      "keyword": "파리콩시에르주리",
-      "rank": 11
-     },
-     {
-      "keyword": "루브르박물관",
-      "rank": 12
-     },
-     {
-      "keyword": "루브르박물관예약",
-      "rank": 19
+      "keyword": "베르사유궁전예약",
+      "rank": 24
      }
     ],
     "influencer": false,
-    "score": 73.7,
-    "rank": 9
-   },
-   {
-    "blog_id": "0411_yammi",
-    "name": "촐랑대는 담비의 여행",
-    "nickname": "담비에오",
-    "topic": "맛집",
-    "subscribers": 1793,
-    "today_visitors": 60,
-    "visitors_avg": 246.8,
-    "total_posts": 484,
-    "posts_30d": 29,
-    "shared": [
-     {
-      "keyword": "루브르박물관",
-      "rank": 5
-     },
-     {
-      "keyword": "파리오페라가르니에",
-      "rank": 16
-     },
-     {
-      "keyword": "루브르박물관예약",
-      "rank": 21
-     },
-     {
-      "keyword": "오페라가르니에",
-      "rank": 23
-     }
-    ],
-    "influencer": false,
-    "score": 73.2,
+    "score": 72.2,
     "rank": 10
    },
    {
@@ -3148,25 +3113,25 @@
     "nickname": "APRIL",
     "topic": "문학·책",
     "subscribers": 341,
-    "today_visitors": 86,
-    "visitors_avg": 529.2,
+    "today_visitors": 56,
+    "visitors_avg": 491.0,
     "total_posts": 1104,
-    "posts_30d": 25,
+    "posts_30d": 24,
     "shared": [
+     {
+      "keyword": "파리콩시에르주리",
+      "rank": 2
+     },
      {
       "keyword": "콩시에르주리",
       "rank": 2
      },
      {
-      "keyword": "파리콩시에르주리",
-      "rank": 3
+      "keyword": "루브르박물관",
+      "rank": 2
      },
      {
       "keyword": "콩시에르주리후기",
-      "rank": 3
-     },
-     {
-      "keyword": "루브르박물관",
       "rank": 3
      },
      {
@@ -3175,47 +3140,79 @@
      },
      {
       "keyword": "파리생트샤펠",
-      "rank": 29
+      "rank": 24
      },
      {
       "keyword": "생트샤펠",
-      "rank": 30
+      "rank": 26
      }
     ],
     "influencer": false,
-    "score": 72.1,
+    "score": 71.0,
     "rank": 11
    },
    {
-    "blog_id": "byw0524",
-    "name": "예온댁의 세계여행! 노는 게 제일 좋아!",
-    "nickname": "예온댁",
-    "topic": "맛집",
-    "subscribers": 416,
-    "today_visitors": 51,
-    "visitors_avg": 263.8,
-    "total_posts": 803,
+    "blog_id": "today_traveller",
+    "name": "트래블픽",
+    "nickname": "오늘여기",
+    "topic": "세계여행",
+    "subscribers": 1308,
+    "today_visitors": 102,
+    "visitors_avg": null,
+    "total_posts": 1278,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "디즈니랜드파리",
-      "rank": 6
+      "keyword": "베르사유궁전예약",
+      "rank": 1
      },
      {
-      "keyword": "디즈니랜드파리후기",
-      "rank": 14
+      "keyword": "오페라가르니에예약",
+      "rank": 2
+     },
+     {
+      "keyword": "파리오페라가르니에",
+      "rank": 3
      },
      {
       "keyword": "베르사유궁전",
-      "rank": 16
+      "rank": 3
      },
      {
-      "keyword": "베르사유궁전예약",
-      "rank": 21
+      "keyword": "콩시에르주리",
+      "rank": 4
+     },
+     {
+      "keyword": "오페라가르니에",
+      "rank": 5
+     },
+     {
+      "keyword": "디즈니랜드파리꿀팁",
+      "rank": 7
+     },
+     {
+      "keyword": "생트샤펠",
+      "rank": 8
+     },
+     {
+      "keyword": "파리생트샤펠",
+      "rank": 8
+     },
+     {
+      "keyword": "루브르박물관",
+      "rank": 9
+     },
+     {
+      "keyword": "파리콩시에르주리",
+      "rank": 11
+     },
+     {
+      "keyword": "루브르박물관예약",
+      "rank": 17
      }
     ],
     "influencer": false,
-    "score": 71.7,
+    "score": 69.6,
     "rank": 12
    },
    {
@@ -3224,22 +3221,22 @@
     "nickname": "느림미학",
     "topic": "세계여행",
     "subscribers": 69,
-    "today_visitors": 146,
+    "today_visitors": 93,
     "visitors_avg": null,
-    "total_posts": 371,
+    "total_posts": 373,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "루브르박물관",
-      "rank": 13
-     },
-     {
       "keyword": "콩시에르주리",
-      "rank": 14
+      "rank": 15
      },
      {
       "keyword": "파리콩시에르주리",
-      "rank": 18
+      "rank": 21
+     },
+     {
+      "keyword": "루브르박물관",
+      "rank": 23
      },
      {
       "keyword": "베르사유궁전예약",
@@ -3247,68 +3244,48 @@
      }
     ],
     "influencer": false,
-    "score": 63.7,
+    "score": 61.2,
     "rank": 13
-   },
-   {
-    "blog_id": "yum_zzi07",
-    "name": "우리의 신혼기록",
-    "nickname": "햅삐영",
-    "topic": "육아·결혼",
-    "subscribers": 160,
-    "today_visitors": 58,
-    "visitors_avg": 178.2,
-    "total_posts": 240,
-    "posts_30d": 23,
-    "shared": [
-     {
-      "keyword": "디즈니랜드파리",
-      "rank": 1
-     },
-     {
-      "keyword": "디즈니랜드파리꿀팁",
-      "rank": 1
-     },
-     {
-      "keyword": "디즈니랜드파리후기",
-      "rank": 2
-     }
-    ],
-    "influencer": false,
-    "score": 61.3,
-    "rank": 14
    },
    {
     "blog_id": "tjwjdtnr9090",
     "name": "열대탐닉",
     "nickname": "여행하는 엘리",
     "topic": "세계여행",
-    "subscribers": 1747,
-    "today_visitors": 32,
-    "visitors_avg": 148.5,
+    "subscribers": 1771,
+    "today_visitors": 26,
+    "visitors_avg": 154.0,
     "total_posts": 719,
-    "posts_30d": 12,
+    "posts_30d": 13,
     "shared": [
      {
-      "keyword": "콩시에르주리",
+      "keyword": "베르사유궁전후기",
       "rank": 11
      },
      {
-      "keyword": "베르사유궁전후기",
-      "rank": 12
+      "keyword": "콩시에르주리",
+      "rank": 13
      },
      {
       "keyword": "콩시에르주리후기",
-      "rank": 13
+      "rank": 15
+     },
+     {
+      "keyword": "베르사유궁전예약",
+      "rank": 26
      },
      {
       "keyword": "파리콩시에르주리",
       "rank": 28
+     },
+     {
+      "keyword": "생트샤펠",
+      "rank": 29
      }
     ],
     "influencer": false,
-    "score": 59.6,
-    "rank": 15
+    "score": 60.5,
+    "rank": 14
    },
    {
     "blog_id": "jinna_lee",
@@ -3316,78 +3293,78 @@
     "nickname": "Hey지나",
     "topic": "세계여행",
     "subscribers": 67,
-    "today_visitors": 33,
+    "today_visitors": 27,
     "visitors_avg": null,
-    "total_posts": 367,
+    "total_posts": 368,
     "posts_30d": 29,
     "shared": [
      {
       "keyword": "파리콩시에르주리",
-      "rank": 14
-     },
-     {
-      "keyword": "콩시에르주리",
       "rank": 18
      },
      {
+      "keyword": "콩시에르주리",
+      "rank": 19
+     },
+     {
       "keyword": "파리생트샤펠",
-      "rank": 22
+      "rank": 20
      },
      {
       "keyword": "생트샤펠",
-      "rank": 24
+      "rank": 22
      }
     ],
     "influencer": false,
-    "score": 55.0,
-    "rank": 16
+    "score": 53.9,
+    "rank": 15
    },
    {
     "blog_id": "hbokey",
     "name": "쭈아월드｜우당탕탕 신혼일기",
     "nickname": "쭈아",
     "topic": "세계여행",
-    "subscribers": 342,
-    "today_visitors": 36,
-    "visitors_avg": 126.0,
+    "subscribers": 345,
+    "today_visitors": 23,
+    "visitors_avg": 144.2,
     "total_posts": 113,
     "posts_30d": 12,
     "shared": [],
-    "score": 52.9,
+    "score": 53.6,
     "me": true,
-    "rank": 17
+    "rank": 16
    },
    {
     "blog_id": "csw52501",
     "name": "중년 항해자의 낭만 항해 (여행/술/맛)",
     "nickname": "낭만 항해자",
     "topic": "세계여행",
-    "subscribers": 1424,
-    "today_visitors": 34,
+    "subscribers": 1432,
+    "today_visitors": 28,
     "visitors_avg": null,
-    "total_posts": 64,
-    "posts_30d": 16,
+    "total_posts": 65,
+    "posts_30d": 17,
     "shared": [
+     {
+      "keyword": "파리생트샤펠",
+      "rank": 1
+     },
      {
       "keyword": "생트샤펠",
       "rank": 2
      },
      {
-      "keyword": "파리생트샤펠",
-      "rank": 2
-     },
-     {
       "keyword": "콩시에르주리후기",
-      "rank": 15
+      "rank": 13
      },
      {
       "keyword": "파리콩시에르주리",
-      "rank": 23
+      "rank": 14
      }
     ],
     "influencer": false,
-    "score": 50.9,
-    "rank": 18
+    "score": 50.6,
+    "rank": 17
    },
    {
     "blog_id": "bongbongee2_",
@@ -3395,30 +3372,62 @@
     "nickname": "봉봉",
     "topic": "일상·생각",
     "subscribers": 661,
-    "today_visitors": 6,
-    "visitors_avg": 49.2,
+    "today_visitors": 8,
+    "visitors_avg": 56.2,
     "total_posts": 48,
     "posts_30d": 4,
     "shared": [
+     {
+      "keyword": "베르사유궁전후기",
+      "rank": 8
+     },
      {
       "keyword": "루브르박물관예약",
       "rank": 9
      },
      {
-      "keyword": "베르사유궁전후기",
-      "rank": 10
-     },
-     {
       "keyword": "베르사유궁전",
-      "rank": 17
+      "rank": 12
      },
      {
       "keyword": "베르사유궁전예약",
-      "rank": 19
+      "rank": 15
      }
     ],
     "influencer": false,
-    "score": 42.9,
+    "score": 43.6,
+    "rank": 18
+   },
+   {
+    "blog_id": "sadtear84",
+    "name": "a little bit of me",
+    "nickname": "r2n22",
+    "topic": "일상·생각",
+    "subscribers": 122,
+    "today_visitors": 6,
+    "visitors_avg": null,
+    "total_posts": 223,
+    "posts_30d": 9,
+    "shared": [
+     {
+      "keyword": "콩시에르주리후기",
+      "rank": 16
+     },
+     {
+      "keyword": "콩시에르주리",
+      "rank": 17
+     },
+     {
+      "keyword": "생트샤펠",
+      "rank": 21
+     },
+     {
+      "keyword": "파리콩시에르주리",
+      "rank": 30
+     }
+    ],
+    "influencer": false,
+    "score": 33.7,
     "rank": 19
    },
    {
@@ -3427,34 +3436,34 @@
     "nickname": "ANDST",
     "topic": "취미",
     "subscribers": 155,
-    "today_visitors": 33,
+    "today_visitors": 19,
     "visitors_avg": null,
     "total_posts": 172,
-    "posts_30d": 2,
+    "posts_30d": 0,
     "shared": [
      {
       "keyword": "콩시에르주리",
-      "rank": 5
+      "rank": 3
      },
      {
       "keyword": "콩시에르주리후기",
-      "rank": 10
+      "rank": 9
      },
      {
       "keyword": "생트샤펠",
-      "rank": 17
+      "rank": 14
      },
      {
       "keyword": "파리생트샤펠",
-      "rank": 17
+      "rank": 15
      },
      {
       "keyword": "파리콩시에르주리",
-      "rank": 26
+      "rank": 23
      }
     ],
     "influencer": false,
-    "score": 37.8,
+    "score": 33.6,
     "rank": 20
    },
    {
@@ -3463,7 +3472,7 @@
     "nickname": "반짝반짝",
     "topic": "비즈니스·경제",
     "subscribers": 408,
-    "today_visitors": 11,
+    "today_visitors": 4,
     "visitors_avg": null,
     "total_posts": 1006,
     "posts_30d": 1,
@@ -3474,19 +3483,19 @@
      },
      {
       "keyword": "콩시에르주리",
-      "rank": 8
+      "rank": 5
      },
      {
       "keyword": "파리생트샤펠",
-      "rank": 14
+      "rank": 12
      },
      {
       "keyword": "생트샤펠",
-      "rank": 19
+      "rank": 15
      }
     ],
     "influencer": false,
-    "score": 35.8,
+    "score": 31.0,
     "rank": 21
    }
   ]
