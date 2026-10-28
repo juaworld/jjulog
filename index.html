@@ -192,6 +192,20 @@ a{color:inherit}
 .wbar{display:inline-block;width:60px;height:6px;border-radius:3px;background:var(--stone);vertical-align:middle;margin-left:6px;overflow:hidden}
 .wbar i{display:block;height:100%;background:var(--coral);border-radius:0 3px 3px 0}
 
+/* 어제와 비교 */
+.why{margin-top:18px;padding-top:16px;border-top:1px dashed var(--rule)}
+.why .head{font-size:15px;margin:0 0 4px}
+.why .head b.up{color:var(--leaf)}.why .head b.down{color:var(--plum)}
+.why .sub{font-size:13px;color:var(--ink-2);margin:0 0 12px}
+.why-l{display:grid;gap:6px}
+.why-l > div{display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:start;background:var(--paper);border-radius:12px;padding:8px 12px;font-size:13px}
+.why-l .d{font-weight:900;text-align:right;font-variant-numeric:tabular-nums}
+.why-l .d.up{color:var(--leaf)}.why-l .d.down{color:var(--plum)}
+.why-l .r{color:var(--ink-2)}
+.why-l .r b{color:var(--ink);font-weight:700}
+.why-l ul{margin:4px 0 0;padding-left:16px;color:var(--ink-2)}
+@media (max-width:600px){.why-l > div{grid-template-columns:42px 1fr;gap:8px}}
+
 /* 인기 글 */
 .top-l{display:grid;gap:8px;counter-reset:n}
 .tp{display:grid;grid-template-columns:28px 56px 1fr auto;gap:12px;align-items:center;background:var(--paper);border-radius:16px;padding:10px 14px 10px 10px;text-decoration:none}
@@ -399,6 +413,7 @@ function render(d, history, vseries) {
     <h3 class="hand">쭈로그 기록 <span class="tabs" id="rangeF">
       <button data-r="30" class="on">한 달</button><button data-r="90">세 달</button><button data-r="0">전부</button></span></h3>
     <div class="chart" id="trend"></div>
+    ${whyChange(history, idx, d.search_mode)}
   </section>
   <p class="foot">쭈로그 점수·등급은 네이버 공식 값이 아니라 공개 데이터로 계산한 추정치예요. 매일의 흐름을 보세요.</p>`;
 
@@ -419,6 +434,68 @@ function render(d, history, vseries) {
   const drawVis = r => barChart($("#visits"), (r ? vs.slice(-r) : vs).map(v => ({x: v.date.slice(5).replace("-", "/"), y: v.count, label: `${v.date} · ${fmt(v.count)}명`})));
   drawVis(14);
   tabs("#visF", b => drawVis(+b.dataset.r));
+}
+
+// 어제와 비교: 점수가 왜 바뀌었는지 요소별로 (history 의 factors·stats·kw 사용)
+const kwPower = (rank, vol) => {
+  const r = !rank ? 0 : rank <= 3 ? 1 : rank <= 10 ? .8 : rank <= 30 ? .5 : rank <= 100 ? .2 : 0;
+  return r * (vol == null ? .5 : Math.min(1, Math.log10(vol + 1) / 5));
+};
+
+function whyChange(history, idx, mode) {
+  if (history.length < 2) return "";
+  const b = history[history.length - 1], a = history[history.length - 2];
+  if (!a.factors || !b.factors) return "";
+  const delta = +(b.score - a.score).toFixed(1);
+  const sign = v => (v > 0 ? "+" : v < 0 ? "−" : "±") + Math.abs(v).toFixed(1);
+  const at = idx.grade_at, gi = idx.grades.indexOf(b.grade), ai = idx.grades.indexOf(a.grade);
+  const dd = s => s.slice(5).replace("-", "/");
+  let head, sub = "";
+  if (gi < ai) {
+    head = `${dd(a.date)} <b>${esc(a.grade)}</b> → 오늘 <b class="down">${esc(b.grade)}</b>로 내려왔어요`;
+    sub = `${a.score} → ${b.score}점 (${sign(delta)}) · ${esc(a.grade)} 기준 ${at[ai]}점에 ${(at[ai] - b.score).toFixed(1)}점 모자라요`;
+  } else if (gi > ai) {
+    head = `${dd(a.date)} <b>${esc(a.grade)}</b> → 오늘 <b class="up">${esc(b.grade)}</b>로 올라갔어요`;
+    sub = `${a.score} → ${b.score}점 (${sign(delta)}) · ${esc(b.grade)} 기준 ${at[gi]}점보다 ${(b.score - at[gi]).toFixed(1)}점 위`;
+  } else {
+    head = `${dd(a.date)}보다 <b class="${delta >= 0 ? "up" : "down"}">${sign(delta)}점</b> · ${esc(b.grade)} 유지`;
+    const next = at[gi + 1];
+    sub = `${a.score} → ${b.score}점` + (next ? ` · ${esc(idx.grades[gi + 1])}까지 ${(next - b.score).toFixed(1)}점, ${esc(b.grade)} 바닥까지 ${(b.score - at[gi]).toFixed(1)}점 여유` : "");
+  }
+
+  const sa = a.stats || {}, sb = b.stats || {};
+  const fromTo = (x, y, unit = "") => `<b>${x ?? "—"}</b> → <b>${y ?? "—"}${unit}</b>`;
+  const reason = {
+    visitors: () => `하루 평균 방문 ${fromTo(sa.visitors_avg, sb.visitors_avg, "명")} (집계 중인 오늘 빼고 최근 4일)`,
+    exposure: () => `블로그탭 노출률 ${fromTo(pct(a.exposure_rate), pct(b.exposure_rate))}`,
+    total: () => `통합검색 노출률 ${fromTo(pct(a.total_exposure_rate), pct(b.total_exposure_rate))}`,
+    pace: () => `최근 12주 주당 발행 ${fromTo(sa.weekly_posts, sb.weekly_posts, "개")}`,
+    consistency: () => `최근 12주 중 글 쓴 주 ${fromTo(sa.weeks_active, sb.weeks_active, "주")}`,
+    engagement: () => `평균 댓글 ${fromTo(sa.avg_comments, sb.avg_comments, "개")} · 구독자 ${fromTo(a.subscribers, b.subscribers, "명")}`,
+    keyword: () => {
+      const ka = a.kw || {}, kb = b.kw || {}, n = Object.keys(kb).length || 1;
+      const rk = r => r ? r + "위" : "순위 밖";
+      const moves = Object.keys(kb).filter(k => k in ka).map(k => {
+        const [r0] = ka[k], [r1, vol] = kb[k];
+        return {k, r0, r1, vol, gain: (kwPower(r1, vol) - kwPower(r0, vol)) * 2 / n * 30};
+      }).filter(m => Math.abs(m.gain) >= .05).sort((x, y) => Math.abs(y.gain) - Math.abs(x.gain)).slice(0, 5);
+      const added = Object.keys(kb).filter(k => !(k in ka)).length, gone = Object.keys(ka).filter(k => !(k in kb)).length;
+      return `TOP10 키워드 ${fromTo(sa.top10_keywords, sb.top10_keywords, "개")}` +
+        (moves.length ? `<ul>${moves.map(m => `<li>${esc(m.k)}${m.vol ? ` (월 ${fmt(m.vol)})` : ""} ${rk(m.r0)} → <b>${rk(m.r1)}</b> <span style="color:var(--${m.gain > 0 ? "leaf" : "plum"})">${sign(m.gain)}</span></li>`).join("")}</ul>` : "") +
+        (added || gone ? `<div style="margin-top:4px">새 글로 추적 키워드 ${added}개 추가 · ${gone}개 빠짐</div>` : "");
+    },
+  };
+  const rows = idx.factors.map(f => ({...f, d: (b.factors[f.key] ?? 0) - (a.factors[f.key] ?? 0)}))
+    .filter(f => Math.abs(f.d) >= .05).sort((x, y) => Math.abs(y.d) - Math.abs(x.d));
+
+  return `<div class="why">
+    <p class="head">${head}</p><p class="sub">${sub}</p>
+    ${rows.length ? `<div class="why-l">${rows.map(f => `<div><span class="d ${f.d > 0 ? "up" : "down"}">${sign(f.d)}</span>
+      <div><b>${esc(f.label)}</b> <span class="r">· ${(reason[f.key] || (() => ""))()}</span></div></div>`).join("")}</div>`
+      : `<div class="empty">요소별 점수 변화가 거의 없어요.</div>`}
+    <p class="note">요소별 숫자는 점수 기여도 변화(합치면 위 증감). 키워드 옆 숫자는 그 키워드 하나의 대략적인 영향이에요.
+      ${mode === "api" ? "'순위 밖'은 블로그탭 100위 밖" : "기본 모드는 블로그탭 30위 안팎까지만 봐서 '순위 밖'은 약 30위 밖"}이란 뜻이고, 하루짜리 순위 변동은 흔하니 2~3일 이어지는지 보세요.</p>
+  </div>`;
 }
 
 function gradeAt(idx, score) {

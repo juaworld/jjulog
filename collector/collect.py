@@ -896,6 +896,13 @@ def main():
         "keywords": {w["keyword"]: w.get("rank") for w in watch},
         "competitor_rank": competitors["my_rank"],
         "competitor_count": competitors["count"],
+        # 어제와 비교해 점수가 왜 바뀌었는지 설명하는 데 쓴다
+        "factors": {f["key"]: None if f["value"] is None else round(f["value"] * f["weight"], 2)
+                    for f in idx["factors"]},
+        "stats": {k: idx["stats"].get(k) for k in ("visitors_avg", "weekly_posts", "weeks_active",
+                                                  "avg_comments", "top10_keywords")},
+        "kw": {k["keyword"]: [k.get("rank"), (k.get("volume") or {}).get("total")]
+               for c in checked for k in c.get("keywords", []) if not k.get("error")},
     })
     save_json(hist_path, history[-400:])
     print(f"완료: {idx['grade']} ({idx['score']}점), 블로그탭 {idx['stats']['exposure_rate']}, "
