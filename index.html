@@ -98,6 +98,23 @@ a{color:inherit}
 .levers span{color:var(--ink-2)}
 .goal{margin-top:20px;padding-top:18px;border-top:2px dashed var(--rule)}
 .goal h3{margin:0 0 4px;font-size:18px;font-weight:400}
+.goal h4{margin:18px 0 8px;font-size:14px}
+.gbar{height:12px;border-radius:99px;background:var(--rule);overflow:hidden;margin:10px 0 4px}
+.gbar i{display:block;height:100%;border-radius:99px;background:var(--coral)}
+.gfac{display:grid;gap:7px}
+.gfac>div{display:grid;grid-template-columns:96px 1fr 84px;gap:10px;align-items:center;font-size:13px}
+.gfac .t{height:8px;border-radius:99px;background:var(--rule);overflow:hidden}
+.gfac .t i{display:block;height:100%;border-radius:99px}
+.gfac b{text-align:right;font-variant-numeric:tabular-nums;font-weight:500;color:var(--ink-2)}
+.gfac b small{color:var(--ink-3)}
+.gtime{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+@media (max-width:560px){.gtime{grid-template-columns:repeat(3,1fr)}}
+.gtime div{background:var(--card-2);border-radius:12px;padding:8px 6px;text-align:center;font-size:12px;color:var(--ink-3)}
+.gtime b{display:block;font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums}
+.gtime div.up{outline:2px solid var(--leaf)}
+.gfin{display:grid;gap:6px;font-size:13px}
+.gfin div{padding:8px 12px;border-radius:12px;background:var(--card-2);color:var(--ink-2)}
+.gfin div.best{outline:2px solid var(--coral);color:var(--ink)}
 
 /* 숫자 줄 */
 .strip{display:grid;grid-template-columns:repeat(6,1fr);background:var(--card);border-radius:20px;overflow:hidden;margin:22px 0}
@@ -524,16 +541,35 @@ function roadmap(idx) {
   </section>`;
 }
 
-// 장기 목표(기본 최적1): 발행·키워드만으로 되는지, 아니면 하루 방문이 얼마나 필요한지
+// 장기 목표(기본 최적1): 항목별 달성도 → 매일 쓰면 어디까지 → 남은 점수 채우는 법
 function goalBox(idx, g) {
-  const cell = s => s.weeks ? `<div class="when">약 ${s.weeks}주</div><div class="after">발행·키워드만으로 도달</div>`
-    : s.visitors_needed > 0 ? `<div class="when">하루 ${fmt(s.visitors_needed)}명</div><div class="after">이 정도 방문이 돼야 도달<br>12주 뒤 방문 그대로면 <b>${s.score_12w}점 · ${esc(gradeAt(idx, s.score_12w))}</b></div>`
-    : `<div class="when never">이 속도론 어려워요</div><div class="after">12주 뒤 <b>${s.score_12w}점 · ${esc(gradeAt(idx, s.score_12w))}</b>에서 멈춰요</div>`;
+  if (!g.factors) return "";  // 예전 데이터
+  const facNote = f => f.points >= f.max - .05 ? " ✅" : "";
+  let prev = idx.grade;
+  const time = g.daily.map(d => {
+    const gr = gradeAt(idx, d.score), up = gr !== prev; prev = gr;
+    return `<div class="${up ? "up" : ""}">${d.weeks}주 뒤<b>${d.score}</b>${esc(gr)}</div>`;
+  }).join("");
+  const reach = g.scenarios.find(s => s.weeks);
   return `<div class="goal">
     <h3 class="hand">🎯 목표 ${esc(g.grade)}</h3>
-    <p class="lead">${esc(g.grade)} 기준 ${g.at}점 — 지금보다 <b>${g.need}점</b> 더 필요해요.
-      ${g.visitors_now ? `지금 하루 방문 <b>${fmt(g.visitors_now)}명</b>.` : ""} 최적 등급은 발행만으론 안 되고 <b>방문자 규모</b>가 같이 올라와야 해요.</p>
-    <div class="paths">${g.scenarios.map(s => `<div class="path"><div class="lbl">${esc(s.label)}</div>${cell(s)}</div>`).join("")}</div>
+    <p class="lead">지금 ${g.score}점 · ${esc(g.grade)} 기준 ${g.at}점 — <b>${g.progress}%</b> 왔어요. <b>${g.need}점</b> 남았어요.</p>
+    <div class="gbar"><i style="width:${Math.min(100, g.progress)}%"></i></div>
+
+    <h4>항목별로 얼마나 찼나</h4>
+    <div class="gfac">${g.factors.map(f => `<div><span>${esc(f.label)}</span>
+      <div class="t"><i style="width:${f.points / f.max * 100}%;background:${FACTOR_COLOR[f.key] || "var(--coral)"}"></i></div>
+      <b>${f.points} <small>/ ${f.max}</small>${facNote(f)}</b></div>`).join("")}</div>
+
+    <h4>매일 1개씩 계속 쓰면</h4>
+    <div class="gtime">${time}</div>
+    <p class="note">발행 페이스·꾸준함은 최근 12주 평균이라 매일 쓰는 주가 쌓일수록 저절로 올라요. 초록 테두리는 등급이 오르는 시점.
+      ${reach ? `<b>${esc(reach.label)}</b>만으로 약 ${reach.weeks}주 뒤 ${esc(g.grade)} 도달.` :
+        `12주 뒤 ${g.after_daily}점 · ${esc(gradeAt(idx, g.after_daily))} — 주 3개면 ${g.scenarios[0].score_12w}점, 주 5개면 ${g.scenarios[1].score_12w}점.`}</p>
+
+    ${g.finish.length ? `<h4>남은 ${g.remain_after_daily}점은 이 중 하나로</h4>
+    <div class="gfin">${g.finish.map(f => `<div class="${f.best ? "best" : ""}">${esc(f.how)}${f.best ? " — 가장 현실적" : ""}</div>`).join("")}</div>` : ""}
+    <p class="note">지금 키워드 실력(상위 노출)과 소통은 그대로 유지된다고 본 쭈로그 기준 예상이에요. 매일 아침 다시 계산해요.</p>
   </div>`;
 }
 

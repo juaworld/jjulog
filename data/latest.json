@@ -209,26 +209,109 @@
    "goal": {
     "grade": "최적1",
     "at": 75.1,
+    "score": 60.7,
     "need": 14.4,
+    "progress": 81,
     "visitors_now": 188,
+    "factors": [
+     {
+      "key": "visitors",
+      "label": "방문자 규모",
+      "points": 17.1,
+      "max": 30.0
+     },
+     {
+      "key": "keyword",
+      "label": "키워드 경쟁력",
+      "points": 22.5,
+      "max": 30.0
+     },
+     {
+      "key": "exposure",
+      "label": "블로그탭 노출",
+      "points": 10.0,
+      "max": 10.0
+     },
+     {
+      "key": "total",
+      "label": "통합검색 노출",
+      "points": 3.3,
+      "max": 10.0
+     },
+     {
+      "key": "pace",
+      "label": "발행 페이스",
+      "points": 1.9,
+      "max": 10.0
+     },
+     {
+      "key": "consistency",
+      "label": "꾸준함",
+      "points": 2.1,
+      "max": 5.0
+     },
+     {
+      "key": "engagement",
+      "label": "소통·구독",
+      "points": 3.8,
+      "max": 5.0
+     }
+    ],
     "scenarios": [
      {
-      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
+      "label": "주 3개",
       "weeks": null,
-      "score_12w": 61.6,
-      "visitors_needed": -1
+      "score_12w": 66.0
      },
      {
-      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
+      "label": "주 5개",
       "weeks": null,
-      "score_12w": 64.5,
-      "visitors_needed": 4893
+      "score_12w": 68.9
      },
      {
-      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
+      "label": "매일 1개",
       "weeks": null,
-      "score_12w": 69.0,
-      "visitors_needed": 1225
+      "score_12w": 71.7
+     }
+    ],
+    "daily": [
+     {
+      "weeks": 2,
+      "score": 62.6
+     },
+     {
+      "weeks": 4,
+      "score": 64.4
+     },
+     {
+      "weeks": 6,
+      "score": 66.2
+     },
+     {
+      "weeks": 8,
+      "score": 68.1
+     },
+     {
+      "weeks": 10,
+      "score": 69.9
+     },
+     {
+      "weeks": 12,
+      "score": 71.7
+     }
+    ],
+    "after_daily": 71.7,
+    "remain_after_daily": 3.4,
+    "finish": [
+     {
+      "how": "하루 방문 188명 → 약 528명"
+     },
+     {
+      "how": "통합검색 노출 33% → 67%"
+     },
+     {
+      "how": "하루 방문 약 316명 + 통합검색 노출 50%",
+      "best": true
      }
     ]
    }

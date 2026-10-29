@@ -625,27 +625,58 @@ def level_plan(idx, checked, posts_12w, vis_avg, goal_grade="최적1"):
                        "gain": round(score({**base, "keyword": keyword_with(5, kp_of(2000, 7))}) - idx["score"], 1)})
     levers.sort(key=lambda x: -x["gain"])
 
-    # 장기 목표 등급(기본 최적1): 발행·키워드만으로 몇 주 걸리는지, 모자라면 하루 방문이 얼마나 돼야 하는지
+    # 장기 목표 등급(기본 최적1): 항목별 달성도 + 지금 키워드 실력을 유지한다고 볼 때의 길.
+    # 다음 등급 시나리오와 달리 새 글 키워드를 따로 가정하지 않는다 — 이미 상위를 잘 잡는 블로그를 깎지 않도록.
     goal = None
     if goal_grade in GRADES and GRADES.index(goal_grade) > gi:
         goal_at = GRADE_AT[GRADES.index(goal_grade)]
-        vis_w = weights.get("visitors", 0) / wsum * 100 if base.get("visitors") is not None else 0
-        goal_rows = []
-        for label, rate, new_kp in [
-            ("주 3개 · 대표 키워드 월 검색 1~3천, 10위 안", 3, kp_of(2000, 7)),
-            ("주 5개 · 대표 키워드 월 검색 1~3천, 10위 안", 5, kp_of(2000, 7)),
-            ("매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안", 7, kp_of(4000, 4)),
-        ]:
-            weeks = next((wk for wk in range(1, 53) if simulate(rate, new_kp, wk) >= goal_at), None)
-            s12 = simulate(rate, new_kp, 12)
-            visitors_needed = None
-            if vis_w and weeks is None:
-                need_v = (goal_at - (s12 - vis_w * base["visitors"])) / vis_w
-                visitors_needed = round(10 ** (4 * need_v) - 1) if need_v <= 1 else -1  # -1: 방문자만으론 불가
-            goal_rows.append({"label": label, "weeks": weeks, "score_12w": round(s12, 1),
-                              "visitors_needed": visitors_needed})
-        goal = {"grade": goal_grade, "at": goal_at, "need": round(goal_at - idx["score"], 1),
-                "visitors_now": round(vis_avg) if vis_avg else None, "scenarios": goal_rows}
+
+        def steady(rate, weeks, **extra):
+            w = min(weeks, 12)
+            v = dict(base)
+            v["pace"] = clamp((len(posts_12w) * (12 - w) / 12 + rate * w) / 12 / 7)
+            v["consistency"] = clamp((weeks_active * (12 - w) / 12 + min(1, rate) * w) / 12)
+            v.update({k: x for k, x in extra.items() if base.get(k) is not None})
+            return score(v)
+
+        def need_value(key, s_without):
+            """이 항목 하나로 나머지를 채우려면 0~1 값이 얼마여야 하는지 (못 채우면 None)."""
+            if base.get(key) is None:
+                return None
+            x = (goal_at - (s_without - weights[key] / wsum * 100 * base[key])) / (weights[key] / wsum * 100)
+            return max(x, base[key]) if x <= 1 else None
+
+        def visitors_for(x):
+            return None if x is None else round(10 ** (4 * x) - 1)
+
+        factors = [{"key": f["key"], "label": f["label"],
+                    "points": round(weights[f["key"]] / wsum * 100 * f["value"], 1),
+                    "max": round(weights[f["key"]] / wsum * 100, 1)}
+                   for f in idx["factors"] if f["value"] is not None]
+
+        rows = []
+        for label, rate in [("주 3개", 3), ("주 5개", 5), ("매일 1개", 7)]:
+            weeks = next((wk for wk in range(1, 13) if steady(rate, wk) >= goal_at), None)
+            rows.append({"label": label, "weeks": weeks, "score_12w": round(steady(rate, 12), 1)})
+
+        daily = [{"weeks": wk, "score": round(steady(7, wk), 1)} for wk in (2, 4, 6, 8, 10, 12)]
+        s12 = steady(7, 12)
+        finish = []
+        if s12 < goal_at:
+            v_need = visitors_for(need_value("visitors", s12))
+            if v_need:
+                finish.append({"how": f"하루 방문 {round(vis_avg or 0)}명 → 약 {v_need}명"})
+            t_need = need_value("total", s12)
+            if t_need is not None:
+                finish.append({"how": f"통합검색 노출 {round(base['total'] * 100)}% → {math.ceil(t_need * 100)}%"})
+            if base.get("total") is not None and base["total"] < 0.5:
+                v_mix = visitors_for(need_value("visitors", steady(7, 12, total=0.5)))
+                if v_mix:
+                    finish.append({"how": f"하루 방문 약 {v_mix}명 + 통합검색 노출 50%", "best": True})
+        goal = {"grade": goal_grade, "at": goal_at, "score": idx["score"], "need": round(goal_at - idx["score"], 1),
+                "progress": round(idx["score"] / goal_at * 100), "visitors_now": round(vis_avg) if vis_avg else None,
+                "factors": factors, "scenarios": rows, "daily": daily, "after_daily": round(s12, 1),
+                "remain_after_daily": round(max(0, goal_at - s12), 1), "finish": finish}
 
     return {
         "next_grade": GRADES[gi + 1],
