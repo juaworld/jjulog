@@ -1,31 +1,31 @@
 {
  "서울웨딩홀투어": {
-  "pc": null,
-  "mobile": null,
-  "total": 60,
-  "competition": "높음",
-  "date": "2026-10-23"
+  "pc": 40,
+  "mobile": 40,
+  "total": 80,
+  "competition": "중간",
+  "date": "2026-10-31"
  },
  "서울웨딩홀견적비교": {
-  "pc": null,
-  "mobile": null,
+  "pc": 5,
+  "mobile": 5,
   "total": 10,
   "competition": "높음",
-  "date": "2026-10-23"
+  "date": "2026-10-31"
  },
  "서울웨딩홀추천": {
-  "pc": null,
-  "mobile": null,
-  "total": 820,
+  "pc": 320,
+  "mobile": 580,
+  "total": 900,
   "competition": "높음",
-  "date": "2026-10-23"
+  "date": "2026-10-31"
  },
  "아그작케이크": {
-  "pc": null,
-  "mobile": null,
-  "total": 8510,
-  "competition": "높음",
-  "date": "2026-10-23"
+  "pc": 810,
+  "mobile": 6450,
+  "total": 7260,
+  "competition": "중간",
+  "date": "2026-10-31"
  },
  "뚜레쥬르아그작케이크": {
   "pc": null,
@@ -42,11 +42,11 @@
   "date": "2026-10-23"
  },
  "베르사유궁전후기": {
-  "pc": null,
-  "mobile": null,
-  "total": 10,
+  "pc": 10,
+  "mobile": 10,
+  "total": 20,
   "competition": "높음",
-  "date": "2026-10-23"
+  "date": "2026-10-31"
  },
  "베르사유궁전": {
   "pc": null,
@@ -63,11 +63,11 @@
   "date": "2026-10-23"
  },
  "루브르박물관줄없이입장": {
-  "pc": null,
-  "mobile": null,
+  "pc": 5,
+  "mobile": 5,
   "total": 10,
   "competition": "낮음",
-  "date": "2026-10-23"
+  "date": "2026-10-31"
  },
  "루브르박물관": {
   "pc": null,
@@ -84,11 +84,11 @@
   "date": "2026-10-23"
  },
  "상견례선물추천": {
-  "pc": null,
-  "mobile": null,
-  "total": 2980,
+  "pc": 820,
+  "mobile": 2030,
+  "total": 2850,
   "competition": "높음",
-  "date": "2026-10-23"
+  "date": "2026-10-31"
  },
  "상견례선물고르는법": {
   "pc": null,
@@ -105,11 +105,11 @@
   "date": "2026-10-23"
  },
  "아이슬란드기념품": {
-  "pc": null,
-  "mobile": null,
-  "total": 460,
+  "pc": 80,
+  "mobile": 370,
+  "total": 450,
   "competition": "중간",
-  "date": "2026-10-23"
+  "date": "2026-10-31"
  },
  "아이슬란드기념품추천": {
   "pc": null,
@@ -411,5 +411,26 @@
   "total": 960,
   "competition": "높음",
   "date": "2026-10-30"
+ },
+ "파리개선문전망대": {
+  "pc": 50,
+  "mobile": 150,
+  "total": 200,
+  "competition": "중간",
+  "date": "2026-10-31"
+ },
+ "파리개선문": {
+  "pc": 240,
+  "mobile": 1670,
+  "total": 1910,
+  "competition": "중간",
+  "date": "2026-10-31"
+ },
+ "에투알개선문": {
+  "pc": 90,
+  "mobile": 270,
+  "total": 360,
+  "competition": "높음",
+  "date": "2026-10-31"
  }
 }
