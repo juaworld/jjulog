@@ -253,6 +253,25 @@ a{color:inherit}
 .setup ol{text-align:left;background:var(--card);border-radius:20px;padding:20px 20px 20px 40px}
 .setup code{background:var(--card-2);padding:1px 6px;border-radius:5px}
 
+/* 다른 블로그 찾기 */
+.find{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:-12px 0 22px}
+.find form{display:flex;gap:6px;flex:1 1 260px;min-width:0}
+.find input,.ask input{flex:1;min-width:0;padding:9px 14px;border-radius:999px;border:1.5px solid var(--rule);background:var(--card);color:var(--ink);font:inherit;font-size:14px}
+.btn{padding:9px 16px;border-radius:999px;border:0;background:var(--coral);color:#fff;font:inherit;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
+.btn.ghost{background:var(--card);color:var(--ink-2);border:1.5px solid var(--rule)}
+.btn:disabled{opacity:.5;cursor:default}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips a{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--card);color:var(--ink-2);text-decoration:none;border:1px solid var(--rule)}
+.chips a b{color:var(--coral);font-weight:500;margin-left:4px}
+.chips a.on{border-color:var(--coral)}
+.today a{color:var(--coral)}
+.ask{max-width:560px;margin:40px auto;text-align:center}
+.ask .box{background:var(--card);border-radius:20px;padding:20px;text-align:left;margin-top:18px;font-size:14px;color:var(--ink-2)}
+.ask .box ol{margin:8px 0;padding-left:20px;line-height:1.7}
+.ask .row{display:flex;gap:6px;margin-top:10px}
+.ask .msg{margin-top:14px;font-size:14px;color:var(--ink-2)}
+.ask .msg.bad{color:var(--plum)}
+
 /* 잠금 화면 */
 .gate{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center;z-index:10;padding:16px}
 .gate form{width:100%;max-width:260px}
@@ -299,11 +318,112 @@ function toggleTheme() {
   try { localStorage.setItem("jjulog-theme", next); } catch (e) {}
 }
 
+// ---- 다른 블로그: ?blog=아이디 로 보고, 없으면 GitHub Actions 수집을 요청한다
+const REPO = "juaworld/jjulog";
+const VIEW = (new URLSearchParams(location.search).get("blog") || "").toLowerCase().replace(/[^a-z0-9_-]/g, "");
+let BLOGS = [], MAIN_ID = "";
+
 async function load() {
   const get = p => fetch(p + "?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
-  const [latest, history, visitors] = await Promise.all([get("data/latest.json"), get("data/history.json"), get("data/visitors.json")]);
+  const base = VIEW ? `data/blogs/${VIEW}/` : "data/";
+  const [latest, history, visitors, blogs, mine] = await Promise.all([get(base + "latest.json"), get(base + "history.json"),
+    get(base + "visitors.json"), get("data/blogs/index.json"), VIEW ? get("data/latest.json") : null]);
+  BLOGS = blogs || [];
+  MAIN_ID = ((VIEW ? mine : latest) || {}).blog_id || "";
+  if (VIEW && VIEW === MAIN_ID) return location.replace(location.pathname);
+  if (VIEW && (!latest || !latest.configured)) return renderAsk(VIEW, latest && latest.error);
   if (!latest || !latest.configured) return renderSetup(latest);
   render(latest, history || [], (visitors || []).filter(v => !v.blog_id || v.blog_id === latest.blog_id));
+}
+
+function parseBlogId(s) {
+  s = (s || "").trim();
+  const m = s.match(/blog\.naver\.com\/(?:PostList\.naver\?blogId=)?([A-Za-z0-9_-]+)/);
+  return (m ? m[1] : s.replace(/^@/, "")).toLowerCase().replace(/[^a-z0-9_-]/g, "");
+}
+
+function goBlog(id) {
+  if (!id) return;
+  location.href = id === MAIN_ID ? location.pathname : "?blog=" + encodeURIComponent(id);
+}
+
+function findBar() {
+  return `<div class="find">
+    <form onsubmit="event.preventDefault(); goBlog(parseBlogId(this.q.value))">
+      <input name="q" placeholder="다른 블로그 아이디 또는 주소" aria-label="블로그 아이디" autocomplete="off">
+      <button class="btn">보기</button></form>
+    ${VIEW ? `<button class="btn ghost" onclick="renderAsk(VIEW, null, true)">다시 분석</button>` : ""}
+    ${BLOGS.length ? `<div class="chips">${BLOGS.slice(0, 8).map(b => `<a href="?blog=${encodeURIComponent(b.blog_id)}" class="${b.blog_id === VIEW ? "on" : ""}">${esc(b.name || b.blog_id)}<b>${esc(b.grade)}</b></a>`).join("")}</div>` : ""}
+  </div>`;
+}
+
+const TOKEN_KEY = "jjulog-gh-token";
+function getToken() { try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; } }
+function setToken(t) { try { t ? localStorage.setItem(TOKEN_KEY, t) : localStorage.removeItem(TOKEN_KEY); } catch (e) {} }
+
+function renderAsk(id, error, again) {
+  const tok = getToken();
+  $("#app").innerHTML = `<div class="ask">
+    <div class="logo hand">쭈로그<span>.</span></div>
+    <p class="today">@${esc(id)} · <a href="./">← 내 블로그</a></p>
+    <p>${error ? `<b>${esc(error)}</b><br>아이디를 확인해 주세요.` : again ? "지금 데이터로 다시 분석할까요?" : "아직 분석한 적 없는 블로그예요."}</p>
+    ${tok ? `<button class="btn" id="askGo">분석 요청 (2~5분)</button>
+      <p class="note">GitHub에서 수집이 돌아요. 네이버 검색이 막히지 않게 하루 몇 번만 써 주세요. <a href="#" id="tokOff">토큰 지우기</a></p>`
+    : `<div class="box"><b>처음 한 번만: GitHub 토큰 넣기</b>
+      <ol>
+        <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub 토큰 만들기</a> 열기 (juaworld 계정)</li>
+        <li>Token name 아무거나 · Expiration 원하는 기간</li>
+        <li>Repository access → <b>Only select repositories</b> → <b>jjulog</b></li>
+        <li>Permissions → Repository permissions → <b>Actions: Read and write</b>, <b>Contents: Read-only</b></li>
+        <li>Generate token → 나온 값을 아래에 붙여넣기</li>
+      </ol>
+      <div class="row"><input id="tokIn" type="password" placeholder="github_pat_…" autocomplete="off"><button class="btn" id="tokSave">저장</button></div>
+      <p class="note">토큰은 이 기기 브라우저에만 저장되고, GitHub에 분석을 요청할 때만 쓰여요.</p></div>`}
+    <div class="msg" id="askMsg"></div>
+  </div>`;
+  if (!tok) {
+    $("#tokSave").onclick = () => { const t = $("#tokIn").value.trim(); if (t) { setToken(t); renderAsk(id, error, again); } };
+    return;
+  }
+  $("#tokOff").onclick = e => { e.preventDefault(); setToken(""); renderAsk(id, error, again); };
+  $("#askGo").onclick = () => requestAnalysis(id);
+}
+
+function gh(path, opts = {}) {
+  return fetch("https://api.github.com/repos/" + REPO + path, {cache: "no-store", ...opts,
+    headers: {Authorization: "Bearer " + getToken(), Accept: "application/vnd.github+json", ...(opts.headers || {})}});
+}
+
+async function requestAnalysis(id) {
+  const msg = $("#askMsg"), go = $("#askGo");
+  go.disabled = true;
+  msg.className = "msg"; msg.textContent = "요청 보내는 중…";
+  let r;
+  try {
+    r = await gh("/actions/workflows/collect.yml/dispatches", {method: "POST", body: JSON.stringify({ref: "main", inputs: {blog_id: id}})});
+  } catch (e) { r = null; }
+  if (!r || !r.ok) {
+    go.disabled = false; msg.className = "msg bad";
+    msg.textContent = r && (r.status === 401 || r.status === 403 || r.status === 404)
+      ? "토큰이 맞지 않거나 권한이 부족해요 (Actions: Read and write). 토큰을 지우고 다시 넣어 주세요."
+      : "요청을 보내지 못했어요. 잠시 뒤 다시 해 주세요.";
+    return;
+  }
+  const since = Date.now() - 60000, raw = {headers: {Accept: "application/vnd.github.raw+json"}};
+  const read = p => gh(`/contents/data/blogs/${id}/${p}?ref=main&t=${Date.now()}`, raw).then(x => x.ok ? x.json() : null).catch(() => null);
+  for (let n = 1; n <= 45; n++) {  // 20초씩 최대 15분
+    msg.textContent = `분석 중… ${Math.floor(n / 3)}분 지남 (보통 2~5분)`;
+    await new Promise(res => setTimeout(res, 20000));
+    const latest = await read("latest.json");
+    if (!latest || new Date(latest.updated_at).getTime() < since) continue;
+    if (!latest.configured) return renderAsk(id, latest.error || "분석하지 못했어요");
+    const [hist, vis] = await Promise.all([read("history.json"), read("visitors.json")]);
+    BLOGS = [{blog_id: id, name: (latest.info || {}).name || latest.profile.title, grade: latest.index.grade},
+             ...BLOGS.filter(b => b.blog_id !== id)];
+    return render(latest, hist || [], vis || []);
+  }
+  go.disabled = false; msg.className = "msg bad";
+  msg.innerHTML = `오래 걸리네요. <a href="https://github.com/${REPO}/actions" target="_blank" rel="noopener">GitHub Actions</a>에서 진행 상황을 확인해 주세요.`;
 }
 
 function renderSetup(latest) {
@@ -340,10 +460,12 @@ function render(d, history, vseries) {
   $("#app").innerHTML = `
   <div class="top">
     <div><div class="logo hand">쭈로그<span>.</span></div>
-      <div class="today">${new Date().toLocaleDateString("ko-KR", {month: "long", day: "numeric", weekday: "long"})}의 내 블로그</div></div>
+      <div class="today">${VIEW ? `@${esc(VIEW)} 블로그 · <a href="./">← 내 블로그</a>`
+        : `${new Date().toLocaleDateString("ko-KR", {month: "long", day: "numeric", weekday: "long"})}의 내 블로그`}</div></div>
     <div class="top-r"><span>${esc(ago(d.updated_at))} 확인<br>${d.search_mode === "api" ? "검색 API" : "기본 모드"}${d.keyword_tool ? " · 검색량 API" : ""}</span>
       <button class="round-btn" onclick="toggleTheme()" aria-label="밝기 전환">☾</button></div>
   </div>
+  ${findBar()}
 
   <section class="hero">
     <div class="ring">

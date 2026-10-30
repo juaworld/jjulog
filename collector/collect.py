@@ -4,7 +4,7 @@
 data/latest.json, data/history.json, data/visitors.json 을 만든다. 표준 라이브러리만 쓴다.
 
 환경변수 (모두 선택)
-  BLOG_ID                       config.json 의 blog_id 대신 쓸 블로그 아이디
+  BLOG_ID                       다른 블로그 아이디 — 결과는 data/blogs/<아이디>/ 에 따로 저장
   NAVER_CLIENT_ID / SECRET      NAVER API HUB 검색 API — 블로그탭 순위 100위까지, 문서 수
   NAVER_AD_CUSTOMER_ID / API_KEY / SECRET
                                 네이버 검색광고 API — 키워드 월간 검색량·경쟁도
@@ -781,13 +781,40 @@ def build_competitors(me, seen, limit=20):
 
 def main():
     cfg = load_json(os.path.join(ROOT, "config.json"), {})
-    blog_id = (os.environ.get("BLOG_ID") or cfg.get("blog_id") or "").strip()
+    main_id = (cfg.get("blog_id") or "").strip().lower()
+    blog_id = (os.environ.get("BLOG_ID") or main_id).strip().lower()
     stamp = now_kst()
     if not blog_id:
         save_json(os.path.join(DATA_DIR, "latest.json"), {"configured": False, "updated_at": stamp.isoformat()})
         print("config.json 의 blog_id 가 비어 있습니다. 아이디를 넣고 다시 실행하세요.")
         return 0
+    if blog_id == main_id:
+        return collect_blog(blog_id, DATA_DIR, cfg, stamp)
 
+    # 다른 블로그 요청 분석: data/blogs/<아이디>/ 에 따로 저장 (내 블로그 기록은 건드리지 않음)
+    if not re.fullmatch(r"[a-z0-9_-]{1,40}", blog_id):
+        print(f"잘못된 블로그 아이디: {blog_id!r}")
+        return 1
+    out = os.path.join(DATA_DIR, "blogs", blog_id)
+    os.makedirs(out, exist_ok=True)
+    try:
+        collect_blog(blog_id, out, cfg, stamp)
+        d = load_json(os.path.join(out, "latest.json"), {})
+        entry = {"blog_id": blog_id, "name": (d.get("info") or {}).get("name") or d["profile"]["title"],
+                 "grade": d["index"]["grade"], "score": d["index"]["score"], "updated_at": d["updated_at"]}
+    except Exception as e:  # 없는 아이디 등 — 사이트가 기다리다 멈추도록 실패도 기록
+        print(f"분석 실패: {e}")
+        save_json(os.path.join(out, "latest.json"), {"configured": False, "blog_id": blog_id,
+                                                     "error": "블로그를 찾을 수 없거나 비공개예요",
+                                                     "updated_at": stamp.isoformat()})
+        entry = None
+    ipath = os.path.join(DATA_DIR, "blogs", "index.json")
+    blogs = [b for b in load_json(ipath, []) if b["blog_id"] != blog_id]
+    save_json(ipath, ([entry] if entry else []) + blogs)
+    return 0
+
+
+def collect_blog(blog_id, out, cfg, stamp):
     max_check = int(cfg.get("max_check_posts", 15))
     kw_posts = int(cfg.get("keyword_check_posts", 10))
     print(f"[{blog_id}] 수집 시작")
@@ -802,7 +829,7 @@ def main():
 
     search = Search(blog_id)
     print(f"검색 모드: {search.mode}")
-    prev = load_json(os.path.join(DATA_DIR, "latest.json"), {})
+    prev = load_json(os.path.join(out, "latest.json"), {})
     prev_posts = {p["logNo"]: p for p in prev.get("posts", [])} if prev.get("blog_id") == blog_id else {}
     checked = []
     for n, p in enumerate(plist[:max_check]):
@@ -863,7 +890,7 @@ def main():
         k["docs"] = search.doc_counts.get(k["keyword"])
 
     # 방문자: 매 수집의 5일치를 합쳐 긴 기록으로
-    vpath = os.path.join(DATA_DIR, "visitors.json")
+    vpath = os.path.join(out, "visitors.json")
     vmap = {v["date"]: v["count"] for v in load_json(vpath, []) if v.get("blog_id", blog_id) == blog_id}
     for v in visitors or []:
         vmap[v["date"]] = v["count"]
@@ -890,7 +917,7 @@ def main():
     idx["low_quality_risk"] = risk
     idx["plan"] = level_plan(idx, checked, posts_12w, avg_visitors(visitors), cfg.get("goal_grade", "최적1"))
 
-    save_json(os.path.join(DATA_DIR, "latest.json"), {
+    save_json(os.path.join(out, "latest.json"), {
         "configured": True,
         "blog_id": blog_id,
         "updated_at": stamp.isoformat(),
@@ -913,7 +940,7 @@ def main():
         "competitors": competitors,
     })
 
-    hist_path = os.path.join(DATA_DIR, "history.json")
+    hist_path = os.path.join(out, "history.json")
     today = stamp.strftime("%Y-%m-%d")
     history = [h for h in load_json(hist_path, []) if h.get("blog_id") == blog_id and h["date"] != today]
     history.append({

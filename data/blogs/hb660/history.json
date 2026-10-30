@@ -1,0 +1,86 @@
+[
+ {
+  "date": "2026-10-30",
+  "blog_id": "hb660",
+  "score": 46.2,
+  "grade": "준최2",
+  "exposure_rate": 1.0,
+  "total_exposure_rate": 0.933,
+  "visitors_today": 10,
+  "subscribers": 13032,
+  "total_posts": 315,
+  "keywords": {},
+  "competitor_rank": 8,
+  "competitor_count": 21,
+  "factors": {
+   "visitors": 13.68,
+   "keyword": 1.8,
+   "exposure": 10.0,
+   "total": 9.33,
+   "pace": 1.67,
+   "consistency": 5.0,
+   "engagement": 4.72
+  },
+  "stats": {
+   "visitors_avg": 65.5,
+   "weekly_posts": 1.2,
+   "weeks_active": 12,
+   "avg_comments": 18.1,
+   "top10_keywords": 2
+  },
+  "kw": {
+   "공장설계": [
+    null,
+    null
+   ],
+   "공장건축": [
+    null,
+    null
+   ],
+   "한백건축사사무소": [
+    null,
+    null
+   ],
+   "건축소식": [
+    null,
+    null
+   ],
+   "한백건축": [
+    null,
+    null
+   ],
+   "신축공장": [
+    null,
+    null
+   ],
+   "산업시설설계": [
+    6,
+    null
+   ],
+   "산업시설": [
+    null,
+    null
+   ],
+   "덕린재": [
+    null,
+    null
+   ],
+   "industrialdesign": [
+    null,
+    null
+   ],
+   "industrialarchitecture": [
+    null,
+    null
+   ],
+   "건축사": [
+    21,
+    null
+   ],
+   "공장증축설계": [
+    9,
+    null
+   ]
+  }
+ }
+]

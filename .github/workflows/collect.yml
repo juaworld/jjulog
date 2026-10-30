@@ -1,9 +1,15 @@
 name: 쭈로그 수집
+run-name: ${{ inputs.blog_id && format('쭈로그 수집 · {0}', inputs.blog_id) || '쭈로그 수집' }}
 
 on:
   schedule:
     - cron: "0 22 * * *"   # 매일 07:00 (KST)
-  workflow_dispatch:        # Actions 탭에서 수동 실행
+  workflow_dispatch:        # Actions 탭에서 수동 실행 (또는 사이트에서 다른 블로그 분석 요청)
+    inputs:
+      blog_id:
+        description: "다른 블로그 아이디 (비우면 내 블로그)"
+        required: false
+        default: ""
   push:
     paths: ["config.json"]  # 설정 바꾸면 바로 다시 수집
 
@@ -32,6 +38,7 @@ jobs:
           NAVER_AD_CUSTOMER_ID: ${{ secrets.NAVER_AD_CUSTOMER_ID }}
           NAVER_AD_API_KEY: ${{ secrets.NAVER_AD_API_KEY }}
           NAVER_AD_SECRET: ${{ secrets.NAVER_AD_SECRET }}
+          BLOG_ID: ${{ inputs.blog_id }}
         run: python -u collector/collect.py
 
       - name: 결과 커밋
