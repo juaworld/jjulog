@@ -245,46 +245,46 @@
   "date": "2026-10-23"
  },
  "웨딩홀투어체크리스트": {
-  "pc": 300,
-  "mobile": 440,
-  "total": 740,
-  "competition": "높음",
-  "date": "2026-10-24"
+  "pc": 330,
+  "mobile": 520,
+  "total": 850,
+  "competition": "중간",
+  "date": "2026-11-01"
  },
  "웨딩홀체크리스트": {
-  "pc": 260,
-  "mobile": 390,
-  "total": 650,
+  "pc": 280,
+  "mobile": 430,
+  "total": 710,
   "competition": "높음",
-  "date": "2026-10-24"
+  "date": "2026-11-01"
  },
  "웨딩홀투어질문": {
   "pc": 5,
   "mobile": 10,
   "total": 15,
-  "competition": "낮음",
-  "date": "2026-10-24"
+  "competition": "높음",
+  "date": "2026-11-01"
  },
  "디즈니랜드파리": {
-  "pc": 110,
-  "mobile": 480,
-  "total": 590,
+  "pc": 100,
+  "mobile": 440,
+  "total": 540,
   "competition": "높음",
-  "date": "2026-10-24"
+  "date": "2026-11-01"
  },
  "디즈니랜드파리후기": {
   "pc": 5,
   "mobile": 5,
   "total": 10,
-  "competition": "낮음",
-  "date": "2026-10-24"
+  "competition": "높음",
+  "date": "2026-11-01"
  },
  "디즈니랜드파리꿀팁": {
   "pc": 5,
-  "mobile": 30,
-  "total": 35,
+  "mobile": 20,
+  "total": 25,
   "competition": "중간",
-  "date": "2026-10-24"
+  "date": "2026-11-01"
  },
  "생트샤펠": {
   "pc": 580,
@@ -432,5 +432,26 @@
   "total": 360,
   "competition": "높음",
   "date": "2026-10-31"
+ },
+ "파리노트르담대성당": {
+  "pc": 90,
+  "mobile": 330,
+  "total": 420,
+  "competition": "높음",
+  "date": "2026-11-01"
+ },
+ "노트르담대성당": {
+  "pc": 1020,
+  "mobile": 6430,
+  "total": 7450,
+  "competition": "높음",
+  "date": "2026-11-01"
+ },
+ "노트르담대성당예약": {
+  "pc": 280,
+  "mobile": 930,
+  "total": 1210,
+  "competition": "중간",
+  "date": "2026-11-01"
  }
 }
