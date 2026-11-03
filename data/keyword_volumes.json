@@ -495,5 +495,26 @@
   "total": 450,
   "competition": "높음",
   "date": "2026-11-02"
+ },
+ "사당곱창": {
+  "pc": 210,
+  "mobile": 1130,
+  "total": 1340,
+  "competition": "높음",
+  "date": "2026-11-03"
+ },
+ "사당역곱창": {
+  "pc": 190,
+  "mobile": 970,
+  "total": 1160,
+  "competition": "높음",
+  "date": "2026-11-03"
+ },
+ "사당곱창맛집": {
+  "pc": 70,
+  "mobile": 340,
+  "total": 410,
+  "competition": "중간",
+  "date": "2026-11-03"
  }
 }
