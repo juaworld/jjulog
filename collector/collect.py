@@ -545,6 +545,40 @@ def diagnose(idx, checked, plist, visitor_series):
 
 # ---------------------------------------------------------------- 다음 등급 로드맵
 
+def reflect_estimate(plist, history, idx, stamp):
+    """네이버 쪽 반영 예상. 네이버는 반영 주기를 공개하지 않아서, 쭈로그가 아는 것만 쓴다:
+    지금 등급을 며칠째 유지 중인지, 마지막 긴 공백이 12주 평균에서 빠지는 날이 언제인지."""
+    today = stamp.date()
+    grade = idx["grade"]
+    gi = GRADES.index(grade)
+    days, since = 1, today.isoformat()
+    for h in sorted((h for h in history if h["date"] != since), key=lambda h: h["date"], reverse=True):
+        if h.get("grade") in GRADES and GRADES.index(h["grade"]) >= gi:
+            days += 1
+            since = h["date"]
+        else:
+            break
+    dates = sorted({datetime.fromisoformat(p["date"]).date() for p in plist})
+    gap = None
+    for a, b in zip(dates, dates[1:]):
+        if (b - a).days >= 14:
+            gap = {"from": a.isoformat(), "to": b.isoformat(), "days": (b - a).days}
+    clean_on = weeks_left = then = None
+    if gap:
+        end = datetime.fromisoformat(gap["to"]).date() + timedelta(weeks=12)
+        if end > today:
+            clean_on = end.isoformat()
+            weeks_left = -(-(end - today).days // 7)
+            daily = (idx.get("plan") or {}).get("goal", {}).get("daily") or []
+            pick = [d for d in daily if d["weeks"] <= weeks_left] or daily[:1]
+            if pick:
+                sc = pick[-1]["score"]
+                then = {"weeks": pick[-1]["weeks"], "score": sc,
+                        "grade": GRADES[max(i for i, at in enumerate(GRADE_AT) if sc >= at)]}
+    return {"grade": grade, "since": since, "days": days, "gap": gap,
+            "clean_on": clean_on, "weeks_left": weeks_left, "daily_then": then}
+
+
 def level_plan(idx, checked, posts_12w, vis_avg, goal_grade="최적1"):
     """다음 등급까지 몇 점이 필요한지, 무엇을 하면 몇 주 걸리는지 시뮬레이션.
     방문자·노출률·소통은 지금 그대로 둔다(보수적) — 발행과 키워드만 바꿔 본다."""
@@ -919,6 +953,7 @@ def collect_blog(blog_id, out, cfg, stamp):
     diag, risk = diagnose(idx, checked, posts_12w, vseries)
     idx["low_quality_risk"] = risk
     idx["plan"] = level_plan(idx, checked, posts_12w, avg_visitors(visitors), cfg.get("goal_grade", "최적1"))
+    idx["reflect"] = reflect_estimate(plist, load_json(os.path.join(out, "history.json"), []), idx, stamp)
 
     save_json(os.path.join(out, "latest.json"), {
         "configured": True,

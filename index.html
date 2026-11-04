@@ -658,9 +658,30 @@ function roadmap(idx) {
       <div class="after">4주 뒤 <b>${s.after_4w}점 · ${esc(gradeAt(idx, s.after_4w))}</b><br>12주 뒤 <b>${s.after_12w}점 · ${esc(gradeAt(idx, s.after_12w))}</b></div>
     </div>`).join("")}</div>
     ${p.levers.length ? `<div class="levers">${p.levers.map(l => `<div><b>+${l.gain}점</b><span>${esc(l.how)} <small style="color:var(--ink-3)">(${esc(l.label)})</small></span></div>`).join("")}</div>` : ""}
-    <p class="note">매일 아침 오늘 데이터로 다시 계산해요. 방문자·노출률은 지금 그대로라고 보고 발행과 키워드만 바꿔 본 쭈로그 기준 예상이에요. 실제 네이버 반영은 보통 2~4주 늦게 따라와요.</p>
+    <p class="note">매일 아침 오늘 데이터로 다시 계산해요. 방문자·노출률은 지금 그대로라고 보고 발행과 키워드만 바꿔 본 쭈로그 기준 예상이에요.</p>
+    ${idx.reflect ? reflectBox(idx.reflect) : ""}
     ${p.goal ? goalBox(idx, p.goal) : ""}
   </section>`;
+}
+
+// 네이버(와 다른 등급 도구)에 언제쯤 반영될지: 공식 주기가 없어서 유지 기간과 공백이 빠지는 날로 본다
+function reflectBox(r) {
+  const md = d => { const [, m, day] = d.split("-"); return `${+m}월 ${+day}일`; };
+  const steady = r.days >= 28 ? "4주 넘게 유지 중이라 바깥에서도 보일 만한 단계예요"
+    : `${28 - r.days}일 더 유지하면 4주를 채워요`;
+  return `<div class="goal">
+    <h3>네이버 반영은 언제쯤?</h3>
+    <p class="note" style="margin-top:0">네이버는 블로그 등급 반영 주기를 공개하지 않아요. 다른 등급 도구도 각자 자기 주기로 다시 계산해서, 쭈로그 점수가 먼저 오르고 바깥 등급은 늦게 따라오는 게 보통이에요. 그래서 쭈로그가 아는 두 가지로 가늠해요.</p>
+    <div class="gtime" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <div><b>${r.days}일째</b>${esc(r.grade)} 이상 유지 (${md(r.since)}부터)</div>
+      ${r.clean_on ? `<div class="up"><b>${md(r.clean_on)}</b>${r.gap.days}일 공백이 12주 평균에서 빠지는 날 (${r.weeks_left}주 뒤)</div>` : `<div><b>깨끗해요</b>최근 12주 안에 2주 넘는 공백이 없어요</div>`}
+      ${r.daily_then ? `<div><b>${r.daily_then.score}점</b>그때까지 매일 쓰면 ${esc(r.daily_then.grade)}</div>` : ""}
+    </div>
+    <div class="gfin" style="margin-top:8px">
+      <div>등급을 오래 유지할수록 바깥에서도 같은 등급으로 보일 가능성이 커요. ${steady}.</div>
+      ${r.clean_on ? `<div class="best">${md(r.clean_on)}까지 매주 빠짐없이 쓰면 ${md(r.gap.from)}~${md(r.gap.to)} 공백이 계산에서 완전히 빠져요. 바깥 등급이 따라오길 기대할 만한 시점이에요.</div>` : ""}
+    </div>
+  </div>`;
 }
 
 // 장기 목표(기본 최적1): 항목별 달성도 → 매일 쓰면 어디까지 → 남은 점수 채우는 법

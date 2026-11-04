@@ -299,6 +299,23 @@
     "remain_after_daily": 0,
     "finish": []
    }
+  },
+  "reflect": {
+   "grade": "준최6",
+   "since": "2026-11-02",
+   "days": 3,
+   "gap": {
+    "from": "2026-08-28",
+    "to": "2026-10-01",
+    "days": 34
+   },
+   "clean_on": "2026-12-24",
+   "weeks_left": 8,
+   "daily_then": {
+    "weeks": 8,
+    "score": 74.7,
+    "grade": "준최7"
+   }
   }
  },
  "diagnosis": [
