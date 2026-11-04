@@ -151,32 +151,32 @@
    "this_at": 65.9,
    "scenarios": [
     {
-     "label": "지금처럼 (발행·키워드 그대로)",
+     "label": "최근 12주 평균 속도 그대로",
      "per_week": 1.8,
      "weeks": null,
-     "after_4w": 60.6,
-     "after_12w": 58.5
+     "after_4w": 68.1,
+     "after_12w": 69.8
     },
     {
      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 3,
-     "weeks": null,
-     "after_4w": 59.9,
-     "after_12w": 63.2
+     "weeks": 10,
+     "after_4w": 68.6,
+     "after_12w": 71.5
     },
     {
      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 5,
-     "weeks": null,
-     "after_4w": 61.3,
-     "after_12w": 66.0
+     "weeks": 6,
+     "after_4w": 69.6,
+     "after_12w": 74.4
     },
     {
      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
      "per_week": 7,
-     "weeks": null,
-     "after_4w": 63.9,
-     "after_12w": 70.5
+     "weeks": 5,
+     "after_4w": 70.6,
+     "after_12w": 77.2
     }
    ],
    "levers": [
@@ -199,11 +199,6 @@
      "label": "발행 페이스",
      "how": "12주 동안 주 3개씩 쓰면",
      "gain": 1.8
-    },
-    {
-     "label": "키워드 경쟁력",
-     "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
-     "gain": -4.3
     }
    ],
    "goal": {

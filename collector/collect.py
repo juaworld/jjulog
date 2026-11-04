@@ -582,7 +582,8 @@ def level_plan(idx, checked, posts_12w, vis_avg, goal_grade="최적1"):
         v["pace"] = clamp((len(posts_12w) * (12 - w) / 12 + rate * w) / 12 / 7)
         v["consistency"] = clamp((weeks_active * (12 - w) / 12 + min(1, rate) * w) / 12)
         if v.get("keyword") is not None:
-            v["keyword"] = keyword_with(int(rate * weeks), new_kp)
+            # 이미 상위를 잘 잡는 블로그는 가정한 새 글 키워드가 오히려 평균을 깎으니 지금 실력 아래로는 안 내린다
+            v["keyword"] = max(base["keyword"], keyword_with(int(rate * weeks), new_kp))
         return score(v)
 
     def weeks_to(rate, new_kp):
@@ -593,7 +594,7 @@ def level_plan(idx, checked, posts_12w, vis_avg, goal_grade="최적1"):
 
     scenarios = []
     for label, rate, new_kp in [
-        ("지금처럼 (발행·키워드 그대로)", max(0.1, idx["stats"]["weekly_posts"]), kp_now),
+        ("최근 12주 평균 속도 그대로", max(0.1, idx["stats"]["weekly_posts"]), kp_now),
         ("주 3개 · 대표 키워드 월 검색 1~3천, 10위 안", 3, kp_of(2000, 7)),
         ("주 5개 · 대표 키워드 월 검색 1~3천, 10위 안", 5, kp_of(2000, 7)),
         ("매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안", 7, kp_of(4000, 4)),
@@ -621,8 +622,10 @@ def level_plan(idx, checked, posts_12w, vis_avg, goal_grade="최적1"):
         v[key] = value
         levers.append({"label": label, "how": how, "gain": round(score(v) - idx["score"], 1)})
     if base.get("keyword") is not None:
-        levers.append({"label": "키워드 경쟁력", "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
-                       "gain": round(score({**base, "keyword": keyword_with(5, kp_of(2000, 7))}) - idx["score"], 1)})
+        gain = round(score({**base, "keyword": keyword_with(5, kp_of(2000, 7))}) - idx["score"], 1)
+        if gain > 0:  # 지금 키워드가 더 강하면 이 조언은 빼기
+            levers.append({"label": "키워드 경쟁력", "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
+                           "gain": gain})
     levers.sort(key=lambda x: -x["gain"])
 
     # 장기 목표 등급(기본 최적1): 항목별 달성도 + 지금 키워드 실력을 유지한다고 볼 때의 길.
