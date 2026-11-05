@@ -537,5 +537,26 @@
   "total": 80,
   "competition": "중간",
   "date": "2026-11-04"
+ },
+ "아이슬란드렌트카": {
+  "pc": 220,
+  "mobile": 370,
+  "total": 590,
+  "competition": "높음",
+  "date": "2026-11-05"
+ },
+ "로투스렌트카": {
+  "pc": 120,
+  "mobile": 190,
+  "total": 310,
+  "competition": "중간",
+  "date": "2026-11-05"
+ },
+ "아이슬란드로투스": {
+  "pc": 50,
+  "mobile": 60,
+  "total": 110,
+  "competition": "중간",
+  "date": "2026-11-05"
  }
 }
