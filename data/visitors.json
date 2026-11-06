@@ -86,7 +86,12 @@
  },
  {
   "date": "2026-11-05",
-  "count": 90,
+  "count": 405,
+  "blog_id": "hbokey"
+ },
+ {
+  "date": "2026-11-06",
+  "count": 112,
   "blog_id": "hbokey"
  }
 ]
