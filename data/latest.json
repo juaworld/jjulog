@@ -1,10 +1,10 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-11-09T10:27:29.968670+09:00",
+ "updated_at": "2026-11-10T12:57:58.044700+09:00",
  "search_mode": "web",
  "keyword_tool": true,
- "search_calls": 66,
+ "search_calls": 63,
  "search_reused": 0,
  "search_blocked": false,
  "profile": {
@@ -16,23 +16,19 @@
  "info": {
   "name": "쭈아월드｜우당탕탕 신혼일기",
   "nickname": "쭈아",
-  "subscribers": 440,
-  "total_visitors": 52466,
-  "today_visitors": 105,
+  "subscribers": 462,
+  "total_visitors": 53141,
+  "today_visitors": 247,
   "topic": "세계여행",
   "power_blog": false,
   "naver_mate": false,
   "mate_citations": null,
   "official": false
  },
- "total_posts": 126,
- "last_post": "2026-11-09T08:27:32.924074+09:00",
- "posts_12w": 27,
+ "total_posts": 127,
+ "last_post": "2026-11-10T08:58:00.647488+09:00",
+ "posts_12w": 28,
  "visitors": [
-  {
-   "date": "2026-11-05",
-   "count": 405
-  },
   {
    "date": "2026-11-06",
    "count": 380
@@ -47,13 +43,17 @@
   },
   {
    "date": "2026-11-09",
-   "count": 105
+   "count": 533
+  },
+  {
+   "date": "2026-11-10",
+   "count": 247
   }
  ],
  "index": {
-  "score": 72.0,
-  "grade": "준최7",
-  "grade_index": 7,
+  "score": 69.8,
+  "grade": "준최6",
+  "grade_index": 6,
   "grades": [
    "일반",
    "준최1",
@@ -93,31 +93,31 @@
     "key": "visitors",
     "label": "방문자 규모",
     "weight": 30,
-    "value": 0.655
+    "value": 0.663
    },
    {
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.844
+    "value": 0.712
    },
    {
     "key": "exposure",
     "label": "블로그탭 노출",
     "weight": 10,
-    "value": 0.933
+    "value": 1.0
    },
    {
     "key": "total",
     "label": "통합검색 노출",
     "weight": 10,
-    "value": 0.733
+    "value": 0.8
    },
    {
     "key": "pace",
     "label": "발행 페이스",
     "weight": 10,
-    "value": 0.321
+    "value": 0.333
    },
    {
     "key": "consistency",
@@ -129,60 +129,60 @@
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.847
+    "value": 0.859
    }
   ],
   "stats": {
-   "weekly_posts": 2.2,
+   "weekly_posts": 2.3,
    "weeks_active": 7,
-   "exposure_rate": 0.933,
-   "total_exposure_rate": 0.733,
-   "avg_comments": 33.8,
+   "exposure_rate": 1.0,
+   "total_exposure_rate": 0.8,
+   "avg_comments": 35.9,
    "avg_content_score": 95,
-   "visitors_avg": 415.2,
-   "top10_keywords": 27,
-   "best_top10_volume": 6980
+   "visitors_avg": 447.2,
+   "top10_keywords": 23,
+   "best_top10_volume": 3320
   },
   "low_quality_risk": false,
   "plan": {
-   "next_grade": "최적1",
-   "next_at": 75.1,
-   "need": 3.1,
-   "this_at": 70.7,
+   "next_grade": "준최7",
+   "next_at": 70.7,
+   "need": 0.9,
+   "this_at": 65.9,
    "scenarios": [
     {
      "label": "최근 12주 평균 속도 그대로",
-     "per_week": 2.2,
-     "weeks": null,
-     "after_4w": 72.7,
-     "after_12w": 74.0
+     "per_week": 2.3,
+     "weeks": 6,
+     "after_4w": 70.5,
+     "after_12w": 71.8
     },
     {
      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 3,
-     "weeks": 12,
-     "after_4w": 73.0,
-     "after_12w": 75.2
+     "weeks": 4,
+     "after_4w": 70.8,
+     "after_12w": 72.8
     },
     {
      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 5,
-     "weeks": 7,
-     "after_4w": 74.0,
-     "after_12w": 78.0
+     "weeks": 2,
+     "after_4w": 71.8,
+     "after_12w": 75.7
     },
     {
      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
      "per_week": 7,
-     "weeks": 5,
-     "after_4w": 75.0,
-     "after_12w": 80.9
+     "weeks": 2,
+     "after_4w": 72.7,
+     "after_12w": 78.5
     }
    ],
    "levers": [
     {
      "label": "방문자 규모",
-     "how": "하루 방문이 415명 → 830명이 되면",
+     "how": "하루 방문이 447명 → 894명이 되면",
      "gain": 2.2
     },
     {
@@ -193,50 +193,45 @@
     {
      "label": "발행 페이스",
      "how": "12주 동안 주 3개씩 쓰면",
-     "gain": 1.1
-    },
-    {
-     "label": "통합검색 노출",
-     "how": "최근 글 80%가 통검에 뜨면",
-     "gain": 0.7
+     "gain": 0.9
     }
    ],
    "goal": {
     "grade": "최적1",
     "at": 75.1,
-    "score": 72.0,
-    "need": 3.1,
-    "progress": 96,
-    "visitors_now": 415,
+    "score": 69.8,
+    "need": 5.3,
+    "progress": 93,
+    "visitors_now": 447,
     "factors": [
      {
       "key": "visitors",
       "label": "방문자 규모",
-      "points": 19.7,
+      "points": 19.9,
       "max": 30.0
      },
      {
       "key": "keyword",
       "label": "키워드 경쟁력",
-      "points": 25.3,
+      "points": 21.4,
       "max": 30.0
      },
      {
       "key": "exposure",
       "label": "블로그탭 노출",
-      "points": 9.3,
+      "points": 10.0,
       "max": 10.0
      },
      {
       "key": "total",
       "label": "통합검색 노출",
-      "points": 7.3,
+      "points": 8.0,
       "max": 10.0
      },
      {
       "key": "pace",
       "label": "발행 페이스",
-      "points": 3.2,
+      "points": 3.3,
       "max": 10.0
      },
      {
@@ -248,62 +243,62 @@
      {
       "key": "engagement",
       "label": "소통·구독",
-      "points": 4.2,
+      "points": 4.3,
       "max": 5.0
      }
     ],
     "scenarios": [
      {
       "label": "주 3개",
-      "weeks": 12,
-      "score_12w": 75.2
+      "weeks": null,
+      "score_12w": 72.8
      },
      {
       "label": "주 5개",
-      "weeks": 7,
-      "score_12w": 78.0
+      "weeks": 11,
+      "score_12w": 75.7
      },
      {
       "label": "매일 1개",
-      "weeks": 5,
-      "score_12w": 80.9
+      "weeks": 8,
+      "score_12w": 78.5
      }
     ],
     "daily": [
      {
       "weeks": 2,
-      "score": 73.5
+      "score": 71.3
      },
      {
       "weeks": 4,
-      "score": 75.0
+      "score": 72.7
      },
      {
       "weeks": 6,
-      "score": 76.4
+      "score": 74.2
      },
      {
       "weeks": 8,
-      "score": 77.9
+      "score": 75.6
      },
      {
       "weeks": 10,
-      "score": 79.4
+      "score": 77.1
      },
      {
       "weeks": 12,
-      "score": 80.9
+      "score": 78.5
      }
     ],
-    "after_daily": 80.9,
+    "after_daily": 78.5,
     "remain_after_daily": 0,
     "finish": []
    }
   },
   "reflect": {
-   "grade": "준최7",
-   "since": "2026-11-06",
-   "days": 4,
+   "grade": "준최6",
+   "since": "2026-11-02",
+   "days": 9,
    "gap": {
     "from": "2026-08-28",
     "to": "2026-10-01",
@@ -313,8 +308,8 @@
    "weeks_left": 7,
    "daily_then": {
     "weeks": 6,
-    "score": 76.4,
-    "grade": "최적1"
+    "score": 74.2,
+    "grade": "준최7"
    }
   }
  },
@@ -322,17 +317,17 @@
   {
    "level": "good",
    "title": "블로그탭 노출",
-   "detail": "최근 글 93%가 블로그 검색에 보여요."
+   "detail": "최근 글 100%가 블로그 검색에 보여요."
   },
   {
    "level": "good",
    "title": "통합검색 진입",
-   "detail": "최근 글 73%가 통합검색(통검)에도 떠요."
+   "detail": "최근 글 80%가 통합검색(통검)에도 떠요."
   },
   {
    "level": "good",
    "title": "최근 7일 발행",
-   "detail": "최근 7일 동안 8개 발행. 주 3개 이상이 지수에 유리해요."
+   "detail": "최근 7일 동안 7개 발행. 주 3개 이상이 지수에 유리해요."
   },
   {
    "level": "bad",
@@ -347,17 +342,106 @@
   {
    "level": "good",
    "title": "방문자 추세",
-   "detail": "최근 5일 평균 353명, 그 전 5일 대비 +48%."
+   "detail": "최근 5일 평균 407명, 그 전 5일 대비 +42%."
   }
  ],
  "posts": [
   {
+   "logNo": "224470158067",
+   "title": "스타벅스 겨울 프리퀀시 2026 증정품｜미션음료, 북커버 예약일 총정리",
+   "url": "https://blog.naver.com/hbokey/224470158067",
+   "date": "2026-11-10T08:58:00.647488+09:00",
+   "comments": 22,
+   "likes": 19,
+   "category": "데이트 맛집·카페",
+   "tags": [
+    "스타벅스겨울프리퀀시",
+    "스타벅스프리퀀시2026",
+    "스타벅스프리퀀시",
+    "스타벅스e프리퀀시",
+    "스타벅스미션음료",
+    "스타벅스증정품",
+    "스타벅스렉슨스피커",
+    "스타벅스포터블스피커",
+    "스타벅스2027플래너",
+    "스타벅스플래너",
+    "스타벅스북커버",
+    "스타벅스미니노트키링",
+    "스타벅스코듀로이백",
+    "스타벅스토트백",
+    "몰스킨플래너",
+    "렉슨스피커",
+    "스타벅스겨울음료",
+    "토피넛라떼",
+    "스타벅스프리퀀시예약",
+    "스타벅스굿즈"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "스타벅스겨울프리퀀시",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 610,
+      "mobile": 2900,
+      "total": 3510,
+      "competition": "중간",
+      "date": "2026-11-10"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "스타벅스프리퀀시2026",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 3840,
+      "mobile": 13400,
+      "total": 17240,
+      "competition": "중간",
+      "date": "2026-11-10"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "스타벅스프리퀀시",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 23300,
+      "mobile": 95400,
+      "total": 118700,
+      "competition": "중간",
+      "date": "2026-11-10"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2090,
+    "images": 23,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 12,
+    "maps": 0,
+    "title_len": 39,
+    "kw_count": 3,
+    "score": 95,
+    "tips": [
+     "동영상이나 지도 1개 이상"
+    ]
+   }
+  },
+  {
    "logNo": "224469600688",
    "title": "케리드 분화구 입장료와 가는 법｜골든서클 화산 호수 후기",
    "url": "https://blog.naver.com/hbokey/224469600688",
-   "date": "2026-11-09T08:27:32.924074+09:00",
-   "comments": 8,
-   "likes": 14,
+   "date": "2026-11-09T12:00:00+09:00",
+   "comments": 49,
+   "likes": 44,
    "category": "해외여행·신혼여행",
    "tags": [
     "케리드분화구",
@@ -445,8 +529,8 @@
    "title": "파리 에펠탑 야경 피크닉｜화이트 에펠 시간과 샹드마르스 명당",
    "url": "https://blog.naver.com/hbokey/224468695814",
    "date": "2026-11-08T12:00:00+09:00",
-   "comments": 37,
-   "likes": 29,
+   "comments": 50,
+   "likes": 35,
    "category": "해외여행·신혼여행",
    "tags": [
     "파리에펠탑",
@@ -535,7 +619,7 @@
    "url": "https://blog.naver.com/hbokey/224467190796",
    "date": "2026-11-07T12:00:00+09:00",
    "comments": 18,
-   "likes": 26,
+   "likes": 29,
    "category": "신혼살림·생활 리뷰",
    "tags": [
     "중치마",
@@ -564,7 +648,7 @@
    "keywords": [
     {
      "keyword": "중치마",
-     "rank": 14,
+     "rank": 12,
      "of": 30,
      "volume": {
       "pc": 3220,
@@ -590,7 +674,7 @@
     },
     {
      "keyword": "중치마후기",
-     "rank": 23,
+     "rank": 30,
      "of": 30,
      "volume": {
       "pc": 210,
@@ -603,12 +687,12 @@
     }
    ],
    "content": {
-    "chars": 1945,
-    "images": 20,
+    "chars": 1981,
+    "images": 21,
     "videos": 0,
     "quotes": 10,
     "headings": 0,
-    "links": 16,
+    "links": 20,
     "maps": 0,
     "title_len": 35,
     "kw_count": 8,
@@ -624,7 +708,7 @@
    "url": "https://blog.naver.com/hbokey/224465830528",
    "date": "2026-11-06T12:00:00+09:00",
    "comments": 38,
-   "likes": 46,
+   "likes": 48,
    "category": "해외여행·신혼여행",
    "tags": [
     "아이슬란드오로라",
@@ -666,7 +750,7 @@
     },
     {
      "keyword": "아이슬란드오로라시기",
-     "rank": 3,
+     "rank": 2,
      "of": 30,
      "volume": {
       "pc": 230,
@@ -679,7 +763,7 @@
     },
     {
      "keyword": "9월오로라",
-     "rank": 2,
+     "rank": 1,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -710,8 +794,8 @@
    "title": "아이슬란드 렌트카 추천｜로투스 렌트카 픽업, 보험, 반납 후기",
    "url": "https://blog.naver.com/hbokey/224464532890",
    "date": "2026-11-05T12:00:00+09:00",
-   "comments": 50,
-   "likes": 52,
+   "comments": 52,
+   "likes": 54,
    "category": "여행 준비·꿀팁",
    "tags": [
     "아이슬란드렌트카",
@@ -797,8 +881,8 @@
    "title": "2026 크리스마스 케이크 예약｜신라호텔, 투썸, 스타벅스 라인업 총정리",
    "url": "https://blog.naver.com/hbokey/224462080024",
    "date": "2026-11-04T12:00:00+09:00",
-   "comments": 78,
-   "likes": 68,
+   "comments": 79,
+   "likes": 70,
    "category": "데이트 맛집·카페",
    "tags": [
     "2026크리스마스케이크예약",
@@ -827,7 +911,7 @@
    "keywords": [
     {
      "keyword": "2026크리스마스케이크예약",
-     "rank": 1,
+     "rank": 2,
      "of": 30,
      "volume": {
       "pc": 20,
@@ -887,8 +971,8 @@
    "title": "사당 곱창 맛집 바른황소곱창｜사당역 술집 모듬곱창 후기",
    "url": "https://blog.naver.com/hbokey/224462065946",
    "date": "2026-11-03T12:00:00+09:00",
-   "comments": 50,
-   "likes": 58,
+   "comments": 55,
+   "likes": 61,
    "category": "데이트 맛집·카페",
    "tags": [
     "사당곱창",
@@ -918,7 +1002,7 @@
     {
      "keyword": "사당곱창",
      "rank": 11,
-     "of": 30,
+     "of": 31,
      "volume": {
       "pc": 210,
       "mobile": 1130,
@@ -930,7 +1014,7 @@
     },
     {
      "keyword": "사당역곱창",
-     "rank": 14,
+     "rank": 17,
      "of": 30,
      "volume": {
       "pc": 190,
@@ -943,7 +1027,7 @@
     },
     {
      "keyword": "사당곱창맛집",
-     "rank": 7,
+     "rank": 6,
      "of": 30,
      "volume": {
       "pc": 70,
@@ -974,8 +1058,8 @@
    "title": "대만 여행 기념품 추천｜대만 간식 추천 미니슈, 설화병, 밀크티 후기",
    "url": "https://blog.naver.com/hbokey/224461342799",
    "date": "2026-11-02T12:00:00+09:00",
-   "comments": 76,
-   "likes": 67,
+   "comments": 78,
+   "likes": 68,
    "category": "여행 준비·꿀팁",
    "tags": [
     "대만여행기념품추천",
@@ -1004,27 +1088,27 @@
    "keywords": [
     {
      "keyword": "대만여행기념품추천",
-     "rank": 3,
-     "of": 31,
+     "rank": 6,
+     "of": 30,
      "volume": {
-      "pc": 30,
-      "mobile": 160,
-      "total": 190,
+      "pc": 40,
+      "mobile": 170,
+      "total": 210,
       "competition": "중간",
-      "date": "2026-11-02"
+      "date": "2026-11-10"
      },
      "docs": null
     },
     {
      "keyword": "대만여행기념품",
-     "rank": 9,
-     "of": 31,
+     "rank": null,
+     "of": 0,
      "volume": {
-      "pc": 100,
-      "mobile": 370,
-      "total": 470,
+      "pc": 110,
+      "mobile": 340,
+      "total": 450,
       "competition": "높음",
-      "date": "2026-11-02"
+      "date": "2026-11-10"
      },
      "docs": null
     },
@@ -1034,10 +1118,10 @@
      "of": 30,
      "volume": {
       "pc": 50,
-      "mobile": 340,
-      "total": 390,
+      "mobile": 330,
+      "total": 380,
       "competition": "중간",
-      "date": "2026-11-02"
+      "date": "2026-11-10"
      },
      "docs": null
     }
@@ -1063,7 +1147,7 @@
    "title": "몽마르뜨 언덕 사크레쾨르 대성당 후기｜가는법과 무료 입장 꿀팁",
    "url": "https://blog.naver.com/hbokey/224458974451",
    "date": "2026-11-01T12:00:00+09:00",
-   "comments": 42,
+   "comments": 44,
    "likes": 47,
    "category": "해외여행·신혼여행",
    "tags": [
@@ -1093,40 +1177,40 @@
    "keywords": [
     {
      "keyword": "몽마르뜨언덕",
-     "rank": 11,
+     "rank": 14,
      "of": 30,
      "volume": {
-      "pc": 460,
-      "mobile": 3460,
-      "total": 3920,
+      "pc": 450,
+      "mobile": 3060,
+      "total": 3510,
       "competition": "높음",
-      "date": "2026-11-02"
+      "date": "2026-11-10"
      },
      "docs": null
     },
     {
      "keyword": "몽마르트언덕",
-     "rank": 7,
+     "rank": 6,
      "of": 30,
      "volume": {
-      "pc": 120,
-      "mobile": 800,
-      "total": 920,
+      "pc": 110,
+      "mobile": 710,
+      "total": 820,
       "competition": "중간",
-      "date": "2026-11-02"
+      "date": "2026-11-10"
      },
      "docs": null
     },
     {
      "keyword": "사크레쾨르대성당",
-     "rank": 10,
+     "rank": 12,
      "of": 30,
      "volume": {
-      "pc": 90,
-      "mobile": 360,
-      "total": 450,
+      "pc": 80,
+      "mobile": 290,
+      "total": 370,
       "competition": "높음",
-      "date": "2026-11-02"
+      "date": "2026-11-10"
      },
      "docs": null
     }
@@ -1180,39 +1264,13 @@
    "keywords": [
     {
      "keyword": "파리노트르담대성당",
-     "rank": 2,
+     "rank": 3,
      "of": 30,
      "volume": {
       "pc": 80,
       "mobile": 310,
       "total": 390,
       "competition": "높음",
-      "date": "2026-11-09"
-     },
-     "docs": null
-    },
-    {
-     "keyword": "노트르담대성당",
-     "rank": 2,
-     "of": 30,
-     "volume": {
-      "pc": 980,
-      "mobile": 6000,
-      "total": 6980,
-      "competition": "높음",
-      "date": "2026-11-09"
-     },
-     "docs": null
-    },
-    {
-     "keyword": "노트르담대성당예약",
-     "rank": 1,
-     "of": 31,
-     "volume": {
-      "pc": 230,
-      "mobile": 770,
-      "total": 1000,
-      "competition": "중간",
       "date": "2026-11-09"
      },
      "docs": null
@@ -1332,7 +1390,7 @@
    "keywords": [
     {
      "keyword": "파리오랑주리미술관",
-     "rank": 1,
+     "rank": 3,
      "of": 30,
      "volume": {
       "pc": 30,
@@ -1390,12 +1448,12 @@
     "파리자유여행",
     "프랑스여행"
    ],
-   "status": "누락",
+   "status": "노출",
    "total_search": "미노출",
    "keywords": [
     {
      "keyword": "파리오르세미술관",
-     "rank": 5,
+     "rank": 6,
      "of": 30,
      "volume": {
       "pc": 130,
@@ -1429,7 +1487,7 @@
    "title": "파리 오페라 가르니에 예약 방법｜입장료와 공사중 내부 관람 후기",
    "url": "https://blog.naver.com/hbokey/224453974245",
    "date": "2026-10-27T12:00:00+09:00",
-   "comments": 22,
+   "comments": 24,
    "likes": 30,
    "category": "해외여행·신혼여행",
    "tags": [
@@ -1472,12 +1530,12 @@
     }
    ],
    "content": {
-    "chars": 2511,
+    "chars": 2388,
     "images": 38,
     "videos": 0,
     "quotes": 12,
     "headings": 0,
-    "links": 16,
+    "links": 12,
     "maps": 0,
     "title_len": 35,
     "kw_count": 3,
@@ -1486,80 +1544,28 @@
      "동영상이나 지도 1개 이상"
     ]
    }
-  },
-  {
-   "logNo": "224454572550",
-   "title": "용산 떡볶이 맛집 현선이네 용산본점 후기｜용리단길 맛집 현선이콤보세트 메뉴·웨이팅 정리",
-   "url": "https://blog.naver.com/hbokey/224454572550",
-   "date": "2026-10-26T12:00:00+09:00",
-   "comments": 8,
-   "likes": 17,
-   "category": "데이트 맛집·카페",
-   "tags": [
-    "용산떡볶이맛집",
-    "용산맛집",
-    "용리단길맛집",
-    "현선이네",
-    "현선이네용산본점",
-    "현선이네떡볶이",
-    "신용산역맛집",
-    "신용산맛집",
-    "삼각지맛집",
-    "용산분식",
-    "용산데이트",
-    "용리단길데이트",
-    "서울5대떡볶이",
-    "서울떡볶이맛집",
-    "현선이콤보세트",
-    "매운떡볶이맛집",
-    "용산야식",
-    "신용산역떡볶이",
-    "용산가볼만한곳",
-    "용산역맛집"
-   ],
-   "status": "노출",
-   "total_search": "미노출",
-   "keywords": [
-    {
-     "keyword": "용산떡볶이맛집",
-     "rank": 20,
-     "of": 30,
-     "volume": {
-      "pc": 20,
-      "mobile": 260,
-      "total": 280,
-      "competition": "높음",
-      "date": "2026-11-04"
-     },
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 1609,
-    "images": 18,
-    "videos": 0,
-    "quotes": 5,
-    "headings": 0,
-    "links": 8,
-    "maps": 1,
-    "title_len": 48,
-    "kw_count": 4,
-    "score": 95,
-    "tips": [
-     "제목 48자 — 15~40자 권장"
-    ]
-   }
   }
  ],
  "post_stats": [
+  {
+   "logNo": "224470158067",
+   "title": "스타벅스 겨울 프리퀀시 2026 증정품｜미션음료, 북커버 예약일 총정리",
+   "url": "https://blog.naver.com/hbokey/224470158067",
+   "date": "2026-11-10T08:20:00+09:00",
+   "category": "데이트 맛집·카페",
+   "likes": 19,
+   "comments": 22,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDlfMTI3/MDAxNzk0MTkzMjkwMjE2.UYwb5Bq5MhYmLacXhg5ypl62XxQBcOq90QN3LsaVehUg.hb-pvUwn6kQGsYycgQW6wWfSfo1wIZtC4HuzdLREjQIg.PNG/thumb_sb.png"
+  },
   {
    "logNo": "224469600688",
    "title": "케리드 분화구 입장료와 가는 법｜골든서클 화산 호수 후기",
    "url": "https://blog.naver.com/hbokey/224469600688",
    "date": "2026-11-09T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 14,
-   "comments": 8,
+   "likes": 44,
+   "comments": 49,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDhfMTE5/MDAxNzk0MDY2NTI0MDQ0.VWoJ7iroP00zI9T1sRWMYb92EucNHr-21DSK4yX8Ow4g.BVUgkXUpacqKp9y24CfSLYQSX1qtUVsLa-b5UnAwufAg.PNG/thumb_kerid.png"
   },
@@ -1569,8 +1575,8 @@
    "url": "https://blog.naver.com/hbokey/224468695814",
    "date": "2026-11-08T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 29,
-   "comments": 37,
+   "likes": 35,
+   "comments": 50,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDJfMjY4/MDAxNzkzNTg4OTc4MjI1.w1ti7-mpyIcQuCvwHs_--fi9y2MxxJKUub9V8RL32Xgg.UrDuyFvE-pR0nJD5zfL1WXjAQ9p9zwYOiotg5Ol7LTog.PNG/thumb_eiffel_picnic.png"
   },
@@ -1580,7 +1586,7 @@
    "url": "https://blog.naver.com/hbokey/224467190796",
    "date": "2026-11-07T08:20:00+09:00",
    "category": "신혼살림·생활 리뷰",
-   "likes": 26,
+   "likes": 29,
    "comments": 18,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDVfMjY5/MDAxNzkzODUxMzEyODM4.EQbXMq0W1huqAwiSVvUekAHZY6mNqcEYJIQ_Sp55-h8g.no5m6fAt876uG2LNFjcKlCVdvHb4HWb20fAzL3GBXqEg.PNG/thumb_jc.png"
@@ -1591,7 +1597,7 @@
    "url": "https://blog.naver.com/hbokey/224465830528",
    "date": "2026-11-06T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 46,
+   "likes": 48,
    "comments": 38,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDRfMTcx/MDAxNzkzNzgwODI2OTk0.o2aFKfljU-1nuM3ctpCPjRyQFrCCKvCLws_5Ksg0dsEg.pPPPyYip_DJ81suv8C8npZYNnHz2w1YPqJdmZQfZp10g.PNG/thumb_aurora.png"
@@ -1602,8 +1608,8 @@
    "url": "https://blog.naver.com/hbokey/224464532890",
    "date": "2026-11-05T08:10:00+09:00",
    "category": "여행 준비·꿀팁",
-   "likes": 52,
-   "comments": 50,
+   "likes": 54,
+   "comments": 52,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDJfMjcz/MDAxNzkzNTk2NDI1MTIw.vi03_QWOdgU0o84_z-HiRUmjmjbkKCB5cg57O4bYprwg.SRHe17tfI6-npI8tv85EXXKYVDENyIMPwGT4Di1ucUMg.PNG/thumb_iceland_lotus.png"
   },
@@ -1613,8 +1619,8 @@
    "url": "https://blog.naver.com/hbokey/224462080024",
    "date": "2026-11-04T08:30:00+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 68,
-   "comments": 78,
+   "likes": 70,
+   "comments": 79,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDJfMjU0/MDAxNzkzNTg4MDg4MzM0.qB3vG1qquXBUwsbtlbJig4jrpDNoGGyhwJJl3gi6YZQg.BHXShJmnYbvr5SNMwB19urGpuWrhCMFMWr4nJa4ob0Ag.PNG/thumb_xmascake_2026.png"
   },
@@ -1624,8 +1630,8 @@
    "url": "https://blog.naver.com/hbokey/224462065946",
    "date": "2026-11-03T08:30:00+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 58,
-   "comments": 50,
+   "likes": 61,
+   "comments": 55,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDJfMTUz/MDAxNzkzNTc4NDkyMTI1.rX21ryboQHATXJPu5nGMDq3XAEd3gWpm-c-9OT8oEe8g.kXuSWz-tUehXxR9YybBLfWihibNBCPErC8xwPmiZNdEg.PNG/thumb_barunhwangso.png"
   },
@@ -1635,8 +1641,8 @@
    "url": "https://blog.naver.com/hbokey/224461342799",
    "date": "2026-11-02T09:00:00+09:00",
    "category": "여행 준비·꿀팁",
-   "likes": 67,
-   "comments": 76,
+   "likes": 68,
+   "comments": 78,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjhfMTA5/MDAxNzkzMTg5NjI1ODM5.JdXAXCfL0vd_IbdJQpAoJpwtxwG2v952VsdhPrBUOwIg.-a3LCkRFg-sXP0DjVuIj8iC-Ze0LOQeMqXabFOW-H8cg.PNG/thumb-draft-taiwan-new.png"
   },
@@ -1647,7 +1653,7 @@
    "date": "2026-11-01T09:00:00+09:00",
    "category": "해외여행·신혼여행",
    "likes": 47,
-   "comments": 42,
+   "comments": 44,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMzBfOTAg/MDAxNzkzMzE3MDE1NTk5.Au_LTDljbmfJy5xh1PbjB8WjkoYGwHh3jG7PlbPdIiYg.ClYOWIA0iYEhD67eQwg85hY3l0jhD51PWcbYkv7TV_cg.PNG/thumb_montmartre2.png"
   },
@@ -1702,7 +1708,7 @@
    "date": "2026-10-27T08:00:00+09:00",
    "category": "해외여행·신혼여행",
    "likes": 30,
-   "comments": 22,
+   "comments": 24,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjdfMjk1/MDAxNzkzMDYyMjE4NzY5.i8dnRb6CAwvwqxHoDb2nOrTX1tBYjvCbQBCYtKIkt7Qg.YRXoVo8PJXxuDWuTvlixUZvWvHwEVkoh_VSwfdcoeSsg.PNG/thumb-224453974245-opera.png"
   },
@@ -1768,7 +1774,7 @@
    "date": "2026-10-22T11:40:11.619000+09:00",
    "category": "결혼준비",
    "likes": 30,
-   "comments": 83,
+   "comments": 85,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjVfMjM5/MDAxNzkyOTEwNjU2MzI4.FTtCVsCVchsxrPbl6iTd6iAHjMPSRYmYxakpK48NSTMg.CUf5y9CxLx0uv3w-O_TMWTPrvqnk1nA1L79OYzP8bmwg.PNG/thumb-224449951803.png"
   },
@@ -2942,21 +2948,21 @@
  "watch_keywords": [],
  "competitors": {
   "count": 21,
-  "my_rank": 14,
-  "top_percent": 67,
+  "my_rank": 11,
+  "top_percent": 52,
   "same_topic": 9,
   "my_place": {
-   "visitors_avg": 10,
-   "subscribers": 14,
-   "posts_30d": 14,
-   "total_posts": 18
+   "visitors_avg": 7,
+   "subscribers": 11,
+   "posts_30d": 11,
+   "total_posts": 16
   },
   "averages": {
-   "visitors_avg": 593.2,
-   "subscribers": 2687.7,
-   "posts_30d": 23.9,
-   "total_posts": 904.6,
-   "score": 69.3
+   "visitors_avg": 805.2,
+   "subscribers": 2398.8,
+   "posts_30d": 20.9,
+   "total_posts": 881.3,
+   "score": 64.4
   },
   "blogs": [
    {
@@ -2964,10 +2970,10 @@
     "name": "찌미의 여행을 그리다",
     "nickname": "찌미",
     "topic": "국내여행",
-    "subscribers": 15552,
-    "today_visitors": 873,
-    "visitors_avg": 4660.2,
-    "total_posts": 3713,
+    "subscribers": 15550,
+    "today_visitors": 1327,
+    "visitors_avg": 4611.2,
+    "total_posts": 3715,
     "posts_30d": 30,
     "shared": [
      {
@@ -2980,60 +2986,192 @@
      },
      {
       "keyword": "사크레쾨르대성당",
-      "rank": 3
+      "rank": 5
      }
     ],
     "influencer": false,
-    "score": 95.9,
+    "score": 95.8,
     "rank": 1
+   },
+   {
+    "blog_id": "zzzu_e",
+    "name": "10년차 승무원부부 쭈이쀼가 알려주는 여행정보✈️",
+    "nickname": "쭈이쀼",
+    "topic": "세계여행",
+    "subscribers": 4944,
+    "today_visitors": 1892,
+    "visitors_avg": 5902.0,
+    "total_posts": 1858,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "아이슬란드오로라시기",
+      "rank": 1
+     },
+     {
+      "keyword": "9월오로라",
+      "rank": 3
+     },
+     {
+      "keyword": "아이슬란드오로라",
+      "rank": 6
+     }
+    ],
+    "influencer": false,
+    "score": 95.0,
+    "rank": 2
    },
    {
     "blog_id": "pasmal_jun",
     "name": "All about Paris",
     "nickname": "Paris Traveler",
     "topic": "세계여행",
-    "subscribers": 4888,
-    "today_visitors": 441,
-    "visitors_avg": 1838.0,
-    "total_posts": 1198,
+    "subscribers": 4892,
+    "today_visitors": 673,
+    "visitors_avg": 1833.2,
+    "total_posts": 1199,
     "posts_30d": 30,
     "shared": [
      {
       "keyword": "파리오르세미술관",
-      "rank": 1
+      "rank": 2
      },
      {
       "keyword": "파리개선문전망대",
       "rank": 10
      },
      {
-      "keyword": "파리오랑주리미술관",
-      "rank": 10
-     },
-     {
       "keyword": "파리노트르담대성당",
-      "rank": 16
+      "rank": 15
      },
      {
       "keyword": "몽마르트언덕",
-      "rank": 20
+      "rank": 18
      },
      {
-      "keyword": "몽마르뜨언덕",
+      "keyword": "파리오랑주리미술관",
       "rank": 21
      },
      {
-      "keyword": "노트르담대성당",
-      "rank": 24
-     },
-     {
-      "keyword": "노트르담대성당예약",
-      "rank": 26
+      "keyword": "몽마르뜨언덕",
+      "rank": 25
      }
     ],
     "influencer": false,
     "score": 88.0,
-    "rank": 2
+    "rank": 3
+   },
+   {
+    "blog_id": "today_traveller",
+    "name": "트래블픽",
+    "nickname": "오늘여기",
+    "topic": "세계여행",
+    "subscribers": 1388,
+    "today_visitors": 1225,
+    "visitors_avg": null,
+    "total_posts": 1276,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "오페라가르니에예약",
+      "rank": 2
+     },
+     {
+      "keyword": "파리노트르담대성당",
+      "rank": 11
+     },
+     {
+      "keyword": "에펠탑",
+      "rank": 13
+     },
+     {
+      "keyword": "파리오르세미술관",
+      "rank": 15
+     },
+     {
+      "keyword": "파리개선문전망대",
+      "rank": 16
+     },
+     {
+      "keyword": "파리에펠탑",
+      "rank": 19
+     },
+     {
+      "keyword": "파리오랑주리미술관",
+      "rank": 19
+     },
+     {
+      "keyword": "에펠탑야경",
+      "rank": 20
+     }
+    ],
+    "influencer": false,
+    "score": 83.2,
+    "rank": 4
+   },
+   {
+    "blog_id": "happyjeonn",
+    "name": "하늘이의 세계 산책",
+    "nickname": "하늘",
+    "topic": "세계여행",
+    "subscribers": 3196,
+    "today_visitors": 360,
+    "visitors_avg": 831.8,
+    "total_posts": 431,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "케리드분화구입장료",
+      "rank": 12
+     },
+     {
+      "keyword": "케리드",
+      "rank": 13
+     },
+     {
+      "keyword": "아이슬란드오로라",
+      "rank": 26
+     },
+     {
+      "keyword": "케리드분화구",
+      "rank": 30
+     }
+    ],
+    "influencer": false,
+    "score": 81.6,
+    "rank": 5
+   },
+   {
+    "blog_id": "rlwnghks1477",
+    "name": "일상과 경험의 모든것",
+    "nickname": "좐의 일상",
+    "topic": "맛집",
+    "subscribers": 5956,
+    "today_visitors": 169,
+    "visitors_avg": 455.8,
+    "total_posts": 1898,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "몽마르트언덕",
+      "rank": 11
+     },
+     {
+      "keyword": "에펠탑",
+      "rank": 18
+     },
+     {
+      "keyword": "몽마르뜨언덕",
+      "rank": 23
+     },
+     {
+      "keyword": "사크레쾨르대성당",
+      "rank": 26
+     }
+    ],
+    "influencer": false,
+    "score": 81.5,
+    "rank": 6
    },
    {
     "blog_id": "gamdong_85",
@@ -3041,10 +3179,10 @@
     "nickname": "마마티라노",
     "topic": "세계여행",
     "subscribers": 7718,
-    "today_visitors": 175,
-    "visitors_avg": 715.8,
+    "today_visitors": 240,
+    "visitors_avg": 704.2,
     "total_posts": 2452,
-    "posts_30d": 27,
+    "posts_30d": 24,
     "shared": [
      {
       "keyword": "케리드분화구입장료",
@@ -3060,236 +3198,40 @@
      }
     ],
     "influencer": false,
-    "score": 82.8,
-    "rank": 3
-   },
-   {
-    "blog_id": "rlwnghks1477",
-    "name": "일상과 경험의 모든것",
-    "nickname": "좐의 일상",
-    "topic": "맛집",
-    "subscribers": 5956,
-    "today_visitors": 114,
-    "visitors_avg": 449.2,
-    "total_posts": 1897,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "몽마르트언덕",
-      "rank": 14
-     },
-     {
-      "keyword": "에펠탑",
-      "rank": 19
-     },
-     {
-      "keyword": "몽마르뜨언덕",
-      "rank": 23
-     },
-     {
-      "keyword": "사크레쾨르대성당",
-      "rank": 24
-     }
-    ],
-    "influencer": false,
-    "score": 81.4,
-    "rank": 4
-   },
-   {
-    "blog_id": "today_traveller",
-    "name": "트래블픽",
-    "nickname": "오늘여기",
-    "topic": "세계여행",
-    "subscribers": 1389,
-    "today_visitors": 835,
-    "visitors_avg": null,
-    "total_posts": 1277,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "오페라가르니에예약",
-      "rank": 2
-     },
-     {
-      "keyword": "노트르담대성당예약",
-      "rank": 5
-     },
-     {
-      "keyword": "파리오랑주리미술관",
-      "rank": 8
-     },
-     {
-      "keyword": "파리오르세미술관",
-      "rank": 9
-     },
-     {
-      "keyword": "노트르담대성당",
-      "rank": 10
-     },
-     {
-      "keyword": "파리노트르담대성당",
-      "rank": 11
-     },
-     {
-      "keyword": "에펠탑",
-      "rank": 14
-     },
-     {
-      "keyword": "파리개선문전망대",
-      "rank": 15
-     },
-     {
-      "keyword": "에펠탑야경",
-      "rank": 18
-     },
-     {
-      "keyword": "파리에펠탑",
-      "rank": 19
-     }
-    ],
-    "influencer": false,
-    "score": 81.1,
-    "rank": 5
-   },
-   {
-    "blog_id": "happyjeonn",
-    "name": "하늘이의 세계 산책",
-    "nickname": "하늘",
-    "topic": "세계여행",
-    "subscribers": 3145,
-    "today_visitors": 246,
-    "visitors_avg": 759.8,
-    "total_posts": 429,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "케리드분화구입장료",
-      "rank": 11
-     },
-     {
-      "keyword": "케리드",
-      "rank": 12
-     },
-     {
-      "keyword": "아이슬란드오로라",
-      "rank": 25
-     },
-     {
-      "keyword": "케리드분화구",
-      "rank": 29
-     }
-    ],
-    "influencer": false,
-    "score": 81.0,
-    "rank": 6
-   },
-   {
-    "blog_id": "happy_ben",
-    "name": "태국 3년 살면, 아이랑 여행은 껌이지!",
-    "nickname": "제씨",
-    "topic": "세계여행",
-    "subscribers": 4601,
-    "today_visitors": 142,
-    "visitors_avg": 477.0,
-    "total_posts": 577,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "노트르담대성당예약",
-      "rank": 7
-     },
-     {
-      "keyword": "사크레쾨르대성당",
-      "rank": 9
-     },
-     {
-      "keyword": "파리노트르담대성당",
-      "rank": 21
-     },
-     {
-      "keyword": "노트르담대성당",
-      "rank": 23
-     },
-     {
-      "keyword": "몽마르뜨언덕",
-      "rank": 28
-     }
-    ],
-    "influencer": false,
-    "score": 79.7,
+    "score": 80.7,
     "rank": 7
    },
    {
-    "blog_id": "travella_angela",
-    "name": "DAILY ANGELA",
-    "nickname": "안젤라",
-    "topic": "국내여행",
-    "subscribers": 2828,
-    "today_visitors": 102,
-    "visitors_avg": 416.8,
-    "total_posts": 1186,
-    "posts_30d": 30,
+    "blog_id": "winevling",
+    "name": "Taste the World 와인 맛집 여행 기록 @winevling",
+    "nickname": "와인블링",
+    "topic": "상품리뷰",
+    "subscribers": 1362,
+    "today_visitors": 343,
+    "visitors_avg": null,
+    "total_posts": 1118,
+    "posts_30d": 28,
     "shared": [
      {
-      "keyword": "사크레쾨르대성당",
-      "rank": 5
-     },
-     {
-      "keyword": "노트르담대성당예약",
-      "rank": 9
-     },
-     {
-      "keyword": "몽마르뜨언덕",
-      "rank": 12
-     },
-     {
-      "keyword": "파리노트르담대성당",
-      "rank": 13
-     },
-     {
-      "keyword": "노트르담대성당",
-      "rank": 13
-     }
-    ],
-    "influencer": false,
-    "score": 78.8,
-    "rank": 8
-   },
-   {
-    "blog_id": "hyearchiving",
-    "name": "Archives des voyages",
-    "nickname": "혜아",
-    "topic": "세계여행",
-    "subscribers": 1046,
-    "today_visitors": 145,
-    "visitors_avg": 557.8,
-    "total_posts": 959,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "노트르담대성당예약",
-      "rank": 12
-     },
-     {
-      "keyword": "파리오랑주리미술관",
-      "rank": 18
+      "keyword": "오페라가르니에예약",
+      "rank": 7
      },
      {
       "keyword": "에펠탑",
-      "rank": 20
+      "rank": 9
      },
      {
-      "keyword": "파리노트르담대성당",
-      "rank": 25
+      "keyword": "에펠탑야경",
+      "rank": 11
      },
      {
-      "keyword": "파리오르세미술관",
-      "rank": 29
+      "keyword": "파리에펠탑",
+      "rank": 14
      }
     ],
     "influencer": false,
-    "score": 78.0,
-    "rank": 9
+    "score": 74.8,
+    "rank": 8
    },
    {
     "blog_id": "silverlove_n",
@@ -3297,18 +3239,18 @@
     "nickname": "Holly",
     "topic": "",
     "subscribers": 651,
-    "today_visitors": 85,
-    "visitors_avg": 260.8,
-    "total_posts": 787,
+    "today_visitors": 155,
+    "visitors_avg": 272.8,
+    "total_posts": 790,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "몽마르뜨언덕",
+      "keyword": "사크레쾨르대성당",
       "rank": 2
      },
      {
-      "keyword": "사크레쾨르대성당",
-      "rank": 2
+      "keyword": "몽마르뜨언덕",
+      "rank": 3
      },
      {
       "keyword": "몽마르트언덕",
@@ -3320,59 +3262,27 @@
      }
     ],
     "influencer": false,
-    "score": 72.6,
-    "rank": 10
-   },
-   {
-    "blog_id": "winevling",
-    "name": "Taste the World 와인 맛집 여행 기록 @winevling",
-    "nickname": "와인블링",
-    "topic": "상품리뷰",
-    "subscribers": 1362,
-    "today_visitors": 147,
-    "visitors_avg": null,
-    "total_posts": 1118,
-    "posts_30d": 28,
-    "shared": [
-     {
-      "keyword": "오페라가르니에예약",
-      "rank": 7
-     },
-     {
-      "keyword": "에펠탑",
-      "rank": 10
-     },
-     {
-      "keyword": "파리에펠탑",
-      "rank": 12
-     },
-     {
-      "keyword": "에펠탑야경",
-      "rank": 12
-     }
-    ],
-    "influencer": false,
-    "score": 70.2,
-    "rank": 11
+    "score": 72.8,
+    "rank": 9
    },
    {
     "blog_id": "dailysmomo",
     "name": "모모의 일상'ᴗ'♡",
     "nickname": "모모",
     "topic": "맛집",
-    "subscribers": 298,
-    "today_visitors": 94,
-    "visitors_avg": 361.8,
-    "total_posts": 208,
+    "subscribers": 303,
+    "today_visitors": 161,
+    "visitors_avg": 373.2,
+    "total_posts": 209,
     "posts_30d": 28,
     "shared": [
      {
-      "keyword": "케리드분화구",
+      "keyword": "로투스렌트카",
       "rank": 9
      },
      {
-      "keyword": "로투스렌트카",
-      "rank": 9
+      "keyword": "케리드분화구",
+      "rank": 13
      },
      {
       "keyword": "케리드분화구입장료",
@@ -3385,117 +3295,77 @@
      {
       "keyword": "아이슬란드로투스",
       "rank": 20
-     },
-     {
-      "keyword": "케리드",
-      "rank": 23
      }
     ],
     "influencer": false,
-    "score": 69.7,
-    "rank": 12
-   },
-   {
-    "blog_id": "soomlnl",
-    "name": "☘️",
-    "nickname": "포비",
-    "topic": "육아·결혼",
-    "subscribers": 2740,
-    "today_visitors": 176,
-    "visitors_avg": 502.0,
-    "total_posts": 373,
-    "posts_30d": 14,
-    "shared": [
-     {
-      "keyword": "파리노트르담대성당",
-      "rank": 4
-     },
-     {
-      "keyword": "노트르담대성당",
-      "rank": 5
-     },
-     {
-      "keyword": "몽마르뜨언덕",
-      "rank": 8
-     },
-     {
-      "keyword": "사크레쾨르대성당",
-      "rank": 8
-     },
-     {
-      "keyword": "노트르담대성당예약",
-      "rank": 22
-     }
-    ],
-    "influencer": false,
-    "score": 67.6,
-    "rank": 13
+    "score": 69.9,
+    "rank": 10
    },
    {
     "blog_id": "hbokey",
     "name": "쭈아월드｜우당탕탕 신혼일기",
     "nickname": "쭈아",
     "topic": "세계여행",
-    "subscribers": 440,
-    "today_visitors": 105,
-    "visitors_avg": 415.2,
-    "total_posts": 126,
-    "posts_30d": 23,
+    "subscribers": 462,
+    "today_visitors": 247,
+    "visitors_avg": 447.2,
+    "total_posts": 127,
+    "posts_30d": 24,
     "shared": [],
-    "score": 67.3,
+    "score": 68.5,
     "me": true,
-    "rank": 14
+    "rank": 11
    },
    {
     "blog_id": "yr_vie",
     "name": "비행기 기차 자동차 탄당",
     "nickname": "탄당",
     "topic": "맛집",
-    "subscribers": 334,
-    "today_visitors": 82,
-    "visitors_avg": 343.0,
-    "total_posts": 760,
+    "subscribers": 335,
+    "today_visitors": 139,
+    "visitors_avg": 344.5,
+    "total_posts": 761,
     "posts_30d": 21,
     "shared": [
      {
-      "keyword": "에펠탑야경",
-      "rank": 14
+      "keyword": "몽마르트언덕",
+      "rank": 13
      },
      {
-      "keyword": "몽마르트언덕",
-      "rank": 15
+      "keyword": "에펠탑야경",
+      "rank": 19
      },
      {
       "keyword": "몽마르뜨언덕",
-      "rank": 18
+      "rank": 20
      },
      {
       "keyword": "사크레쾨르대성당",
-      "rank": 19
+      "rank": 21
      }
     ],
     "influencer": false,
     "score": 66.6,
-    "rank": 15
+    "rank": 12
    },
    {
     "blog_id": "todaymingming",
     "name": "오늘도밍밍",
     "nickname": "오늘도밍밍",
     "topic": "맛집",
-    "subscribers": 224,
-    "today_visitors": 61,
-    "visitors_avg": 263.2,
-    "total_posts": 100,
-    "posts_30d": 27,
+    "subscribers": 231,
+    "today_visitors": 99,
+    "visitors_avg": 253.0,
+    "total_posts": 101,
+    "posts_30d": 26,
     "shared": [
      {
       "keyword": "에펠탑",
-      "rank": 7
+      "rank": 6
      },
      {
       "keyword": "몽마르뜨언덕",
-      "rank": 7
+      "rank": 8
      },
      {
       "keyword": "파리에펠탑",
@@ -3503,20 +3373,16 @@
      },
      {
       "keyword": "사크레쾨르대성당",
-      "rank": 20
-     },
-     {
-      "keyword": "파리개선문전망대",
       "rank": 23
      },
      {
-      "keyword": "파리오르세미술관",
-      "rank": 30
+      "keyword": "파리개선문전망대",
+      "rank": 24
      }
     ],
     "influencer": false,
-    "score": 65.8,
-    "rank": 16
+    "score": 65.0,
+    "rank": 13
    },
    {
     "blog_id": "coth99",
@@ -3524,18 +3390,18 @@
     "nickname": "쿠드비",
     "topic": "맛집",
     "subscribers": 564,
-    "today_visitors": 32,
-    "visitors_avg": 246.5,
-    "total_posts": 587,
-    "posts_30d": 13,
+    "today_visitors": 55,
+    "visitors_avg": 233.5,
+    "total_posts": 588,
+    "posts_30d": 14,
     "shared": [
      {
       "keyword": "케리드분화구입장료",
-      "rank": 12
+      "rank": 13
      },
      {
       "keyword": "케리드분화구",
-      "rank": 14
+      "rank": 15
      },
      {
       "keyword": "아이슬란드오로라",
@@ -3547,8 +3413,8 @@
      }
     ],
     "influencer": false,
-    "score": 60.3,
-    "rank": 17
+    "score": 60.6,
+    "rank": 14
    },
    {
     "blog_id": "ollehahi",
@@ -3556,71 +3422,99 @@
     "nickname": "Ohhazl",
     "topic": "세계여행",
     "subscribers": 211,
-    "today_visitors": 62,
+    "today_visitors": 70,
     "visitors_avg": null,
-    "total_posts": 208,
-    "posts_30d": 23,
+    "total_posts": 209,
+    "posts_30d": 22,
     "shared": [
      {
-      "keyword": "파리에펠탑",
-      "rank": 1
-     },
-     {
-      "keyword": "에펠탑",
+      "keyword": "파리오랑주리미술관",
       "rank": 2
      },
      {
-      "keyword": "파리오랑주리미술관",
-      "rank": 3
+      "keyword": "에펠탑",
+      "rank": 4
      },
      {
       "keyword": "파리오르세미술관",
       "rank": 7
      },
      {
-      "keyword": "에펠탑야경",
+      "keyword": "파리에펠탑",
       "rank": 8
      },
      {
+      "keyword": "에펠탑야경",
+      "rank": 15
+     },
+     {
       "keyword": "파리개선문전망대",
-      "rank": 18
+      "rank": 20
      }
     ],
     "influencer": false,
     "score": 56.1,
-    "rank": 18
+    "rank": 15
    },
    {
-    "blog_id": "inhye_jj",
-    "name": "Bumbum",
-    "nickname": "녜용",
-    "topic": "세계여행",
-    "subscribers": 108,
-    "today_visitors": 27,
-    "visitors_avg": null,
-    "total_posts": 164,
-    "posts_30d": 15,
+    "blog_id": "sol_forest",
+    "name": "솔솔솔숲",
+    "nickname": "솔토리",
+    "topic": "취미",
+    "subscribers": 416,
+    "today_visitors": 82,
+    "visitors_avg": 278.2,
+    "total_posts": 166,
+    "posts_30d": 7,
     "shared": [
      {
-      "keyword": "노트르담대성당예약",
-      "rank": 6
+      "keyword": "중치마후기",
+      "rank": 1
      },
      {
-      "keyword": "파리개선문전망대",
-      "rank": 6
+      "keyword": "중치마",
+      "rank": 2
      },
      {
-      "keyword": "파리노트르담대성당",
-      "rank": 24
-     },
-     {
-      "keyword": "노트르담대성당",
-      "rank": 30
+      "keyword": "중치마정품",
+      "rank": 2
      }
     ],
     "influencer": false,
-    "score": 44.6,
-    "rank": 19
+    "score": 54.7,
+    "rank": 16
+   },
+   {
+    "blog_id": "kskyland",
+    "name": "우리가족 일기",
+    "nickname": "하늘땅",
+    "topic": "세계여행",
+    "subscribers": 105,
+    "today_visitors": 15,
+    "visitors_avg": null,
+    "total_posts": 712,
+    "posts_30d": 13,
+    "shared": [
+     {
+      "keyword": "케리드분화구",
+      "rank": 8
+     },
+     {
+      "keyword": "파리개선문전망대",
+      "rank": 8
+     },
+     {
+      "keyword": "케리드분화구입장료",
+      "rank": 15
+     },
+     {
+      "keyword": "케리드",
+      "rank": 15
+     }
+    ],
+    "influencer": false,
+    "score": 42.0,
+    "rank": 17
    },
    {
     "blog_id": "answer130",
@@ -3628,7 +3522,7 @@
     "nickname": "김쥬",
     "topic": "세계여행",
     "subscribers": 103,
-    "today_visitors": 23,
+    "today_visitors": 29,
     "visitors_avg": null,
     "total_posts": 59,
     "posts_30d": 9,
@@ -3647,8 +3541,8 @@
      }
     ],
     "influencer": false,
-    "score": 38.4,
-    "rank": 20
+    "score": 39.6,
+    "rank": 18
    },
    {
     "blog_id": "leepresent513",
@@ -3656,14 +3550,14 @@
     "nickname": "제제",
     "topic": "맛집",
     "subscribers": 36,
-    "today_visitors": 3,
-    "visitors_avg": 11.8,
+    "today_visitors": 7,
+    "visitors_avg": 11.2,
     "total_posts": 41,
     "posts_30d": 3,
     "shared": [
      {
       "keyword": "케리드분화구입장료",
-      "rank": 6
+      "rank": 7
      },
      {
       "keyword": "케리드",
@@ -3671,15 +3565,71 @@
      },
      {
       "keyword": "아이슬란드로투스",
-      "rank": 10
+      "rank": 11
      },
      {
       "keyword": "케리드분화구",
-      "rank": 16
+      "rank": 20
      }
     ],
     "influencer": false,
-    "score": 28.3,
+    "score": 28.1,
+    "rank": 19
+   },
+   {
+    "blog_id": "4traveler_",
+    "name": "포트래블러 | 4인 가족의 세계여행",
+    "nickname": "포트래블러",
+    "topic": "세계여행",
+    "subscribers": 5,
+    "today_visitors": 8,
+    "visitors_avg": null,
+    "total_posts": 11,
+    "posts_30d": 11,
+    "shared": [
+     {
+      "keyword": "케리드분화구입장료",
+      "rank": 5
+     },
+     {
+      "keyword": "케리드",
+      "rank": 5
+     },
+     {
+      "keyword": "케리드분화구",
+      "rank": 7
+     }
+    ],
+    "influencer": false,
+    "score": 26.2,
+    "rank": 20
+   },
+   {
+    "blog_id": "thefirstjuly",
+    "name": "잔소리와 끄덕이의 맛있는 일상",
+    "nickname": "끄덕이",
+    "topic": "맛집",
+    "subscribers": 11,
+    "today_visitors": 15,
+    "visitors_avg": null,
+    "total_posts": 32,
+    "posts_30d": 1,
+    "shared": [
+     {
+      "keyword": "로투스렌트카",
+      "rank": 2
+     },
+     {
+      "keyword": "아이슬란드로투스",
+      "rank": 5
+     },
+     {
+      "keyword": "아이슬란드렌트카",
+      "rank": 11
+     }
+    ],
+    "influencer": false,
+    "score": 25.5,
     "rank": 21
    }
   ]
