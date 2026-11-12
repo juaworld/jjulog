@@ -327,8 +327,9 @@ class Search:
         if blog_tab:
             try:
                 blog = "누락"
-                for sort in ("sim", "date"):
-                    if me in self.blog_tab(title, sort):
+                # 인기 제목은 1페이지(30개) 밖으로 밀릴 수 있어서 마지막엔 제목을 따옴표로 정확히 검색한다
+                for q, sort in ((title, "sim"), (title, "date"), (f'"{title}"', "sim")):
+                    if me in self.blog_tab(q, sort):
                         blog = "노출"
                         break
             except NET_ERRORS:
@@ -338,6 +339,8 @@ class Search:
                 tot = "노출" if me in link_keys(self._web({"query": title})) else "미노출"
             except NET_ERRORS:
                 tot = "에러"
+        if blog == "누락" and tot == "노출":
+            blog = "노출"  # 통합검색에 떴으면 검색에 들어가 있는 글이라 누락이 아니다
         return blog, tot
 
     def rank(self, keyword, log_no=None):
@@ -890,6 +893,8 @@ def collect_blog(blog_id, out, cfg, stamp):
                                         blog_tab=search.mode == "api" or web_tab, total=web_tot)
             item["status"] = blog or old["status"]
             item["total_search"] = tot or old["total_search"]
+            if item["status"] == "누락" and item["total_search"] == "노출":
+                item["status"] = "노출"
         else:
             item["status"], item["total_search"] = "검색 비허용", None
         item["keywords"] = [{"keyword": t, **search.rank(t, p["logNo"])}

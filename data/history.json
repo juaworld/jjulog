@@ -3406,20 +3406,20 @@
  {
   "date": "2026-11-12",
   "blog_id": "hbokey",
-  "score": 70.4,
-  "grade": "준최6",
-  "exposure_rate": 0.867,
+  "score": 71.8,
+  "grade": "준최7",
+  "exposure_rate": 1.0,
   "total_exposure_rate": 0.933,
-  "visitors_today": 186,
+  "visitors_today": 204,
   "subscribers": 479,
   "total_posts": 129,
   "keywords": {},
-  "competitor_rank": 7,
+  "competitor_rank": 6,
   "competitor_count": 21,
   "factors": {
    "visitors": 20.49,
    "keyword": 21.12,
-   "exposure": 8.67,
+   "exposure": 10.0,
    "total": 9.33,
    "pace": 3.57,
    "consistency": 2.92,
@@ -3429,7 +3429,7 @@
    "visitors_avg": 540.5,
    "weekly_posts": 2.5,
    "weeks_active": 7,
-   "avg_comments": 37.4,
+   "avg_comments": 37.5,
    "top10_keywords": 25
   },
   "kw": {
@@ -3442,7 +3442,7 @@
     60
    ],
    "다이아몬드해변": [
-    17,
+    13,
     25
    ],
    "요쿨살론": [
@@ -3534,7 +3534,7 @@
     600
    ],
    "크리스마스케이크예약": [
-    29,
+    28,
     3920
    ],
    "크리스마스케이크사전예약": [
