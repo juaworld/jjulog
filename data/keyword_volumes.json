@@ -196,18 +196,18 @@
   "date": "2026-10-23"
  },
  "봉천동PT": {
-  "pc": null,
-  "mobile": null,
-  "total": 50,
+  "pc": 50,
+  "mobile": 30,
+  "total": 80,
   "competition": "높음",
-  "date": "2026-10-23"
+  "date": "2026-11-13"
  },
  "봉천역헬스장": {
-  "pc": null,
-  "mobile": null,
+  "pc": 270,
+  "mobile": 380,
   "total": 650,
   "competition": "높음",
-  "date": "2026-10-23"
+  "date": "2026-11-13"
  },
  "꼬메로": {
   "pc": null,
@@ -540,24 +540,24 @@
  },
  "아이슬란드렌트카": {
   "pc": 220,
-  "mobile": 370,
-  "total": 590,
+  "mobile": 330,
+  "total": 550,
   "competition": "높음",
-  "date": "2026-11-05"
+  "date": "2026-11-13"
  },
  "로투스렌트카": {
-  "pc": 120,
-  "mobile": 190,
-  "total": 310,
+  "pc": 130,
+  "mobile": 200,
+  "total": 330,
   "competition": "중간",
-  "date": "2026-11-05"
+  "date": "2026-11-13"
  },
  "아이슬란드로투스": {
-  "pc": 50,
-  "mobile": 60,
-  "total": 110,
+  "pc": 60,
+  "mobile": 90,
+  "total": 150,
   "competition": "중간",
-  "date": "2026-11-05"
+  "date": "2026-11-13"
  },
  "아이슬란드오로라": {
   "pc": 690,
@@ -705,5 +705,12 @@
   "total": 25,
   "competition": "중간",
   "date": "2026-11-12"
+ },
+ "봉천역PT": {
+  "pc": 150,
+  "mobile": 40,
+  "total": 190,
+  "competition": "높음",
+  "date": "2026-11-13"
  }
 }
