@@ -627,21 +627,21 @@
   "mobile": 50,
   "total": 60,
   "competition": "높음",
-  "date": "2026-11-09"
+  "date": "2026-11-17"
  },
  "케리드분화구입장료": {
   "pc": 5,
   "mobile": 5,
   "total": 10,
   "competition": "중간",
-  "date": "2026-11-09"
+  "date": "2026-11-17"
  },
  "케리드": {
   "pc": 5,
   "mobile": 5,
   "total": 10,
   "competition": "낮음",
-  "date": "2026-11-09"
+  "date": "2026-11-17"
  },
  "스타벅스겨울프리퀀시": {
   "pc": 610,
@@ -775,5 +775,26 @@
   "total": 10,
   "competition": "낮음",
   "date": "2026-11-16"
+ },
+ "아이슬란드셀포스": {
+  "pc": 10,
+  "mobile": 40,
+  "total": 50,
+  "competition": "높음",
+  "date": "2026-11-17"
+ },
+ "셀포스": {
+  "pc": 30,
+  "mobile": 180,
+  "total": 210,
+  "competition": "높음",
+  "date": "2026-11-17"
+ },
+ "셀포스신시가지": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-17"
  }
 }
