@@ -1,7 +1,7 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-11-20T11:51:34.503464+09:00",
+ "updated_at": "2026-11-21T11:59:07.432201+09:00",
  "search_mode": "web",
  "keyword_tool": true,
  "search_calls": 65,
@@ -16,23 +16,19 @@
  "info": {
   "name": "쭈아월드｜우당탕탕 신혼일기",
   "nickname": "쭈아",
-  "subscribers": 617,
-  "total_visitors": 58514,
-  "today_visitors": 198,
+  "subscribers": 646,
+  "total_visitors": 59070,
+  "today_visitors": 163,
   "topic": "세계여행",
   "power_blog": false,
   "naver_mate": false,
   "mate_citations": null,
   "official": false
  },
- "total_posts": 137,
- "last_post": "2026-11-20T08:51:37.194491+09:00",
+ "total_posts": 138,
+ "last_post": "2026-11-21T08:59:10.389882+09:00",
  "posts_12w": 37,
  "visitors": [
-  {
-   "date": "2026-11-16",
-   "count": 481
-  },
   {
    "date": "2026-11-17",
    "count": 520
@@ -47,11 +43,15 @@
   },
   {
    "date": "2026-11-20",
-   "count": 198
+   "count": 591
+  },
+  {
+   "date": "2026-11-21",
+   "count": 163
   }
  ],
  "index": {
-  "score": 69.7,
+  "score": 68.9,
   "grade": "준최6",
   "grade_index": 6,
   "grades": [
@@ -93,13 +93,13 @@
     "key": "visitors",
     "label": "방문자 규모",
     "weight": 30,
-    "value": 0.69
+    "value": 0.696
    },
    {
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.603
+    "value": 0.584
    },
    {
     "key": "exposure",
@@ -123,92 +123,97 @@
     "key": "consistency",
     "label": "꾸준함",
     "weight": 5,
-    "value": 0.667
+    "value": 0.583
    },
    {
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.908
+    "value": 0.915
    }
   ],
   "stats": {
    "weekly_posts": 3.1,
-   "weeks_active": 8,
+   "weeks_active": 7,
    "exposure_rate": 1.0,
    "total_exposure_rate": 0.867,
-   "avg_comments": 45.4,
+   "avg_comments": 46.9,
    "avg_content_score": 95,
-   "visitors_avg": 577.0,
-   "top10_keywords": 25,
+   "visitors_avg": 604.5,
+   "top10_keywords": 24,
    "best_top10_volume": 3230
   },
   "low_quality_risk": false,
   "plan": {
    "next_grade": "준최7",
    "next_at": 70.7,
-   "need": 1.0,
+   "need": 1.8,
    "this_at": 65.9,
    "scenarios": [
     {
      "label": "최근 12주 평균 속도 그대로",
      "per_week": 3.1,
-     "weeks": 7,
-     "after_4w": 70.3,
-     "after_12w": 71.4
+     "weeks": 10,
+     "after_4w": 69.7,
+     "after_12w": 71.1
     },
     {
      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 3,
-     "weeks": 8,
-     "after_4w": 70.3,
-     "after_12w": 71.3
+     "weeks": 7,
+     "after_4w": 69.6,
+     "after_12w": 71.5
     },
     {
      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 5,
      "weeks": 3,
      "after_4w": 71.2,
-     "after_12w": 74.2
+     "after_12w": 74.4
     },
     {
      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
      "per_week": 7,
      "weeks": 2,
      "after_4w": 73.8,
-     "after_12w": 78.7
+     "after_12w": 78.9
     }
    ],
    "levers": [
     {
      "label": "방문자 규모",
-     "how": "하루 방문이 577명 → 1154명이 되면",
+     "how": "하루 방문이 604명 → 1209명이 되면",
      "gain": 2.3
     },
     {
      "label": "꾸준함",
      "how": "12주 동안 매주 1개 이상 쓰면",
-     "gain": 1.7
+     "gain": 2.1
+    },
+    {
+     "label": "키워드 경쟁력",
+     "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
+     "gain": 0.2
     }
    ],
    "goal": {
     "grade": "최적1",
     "at": 75.1,
-    "score": 69.7,
-    "need": 5.4,
-    "progress": 93,
-    "visitors_now": 577,
+    "score": 68.9,
+    "need": 6.2,
+    "progress": 92,
+    "visitors_now": 604,
     "factors": [
      {
       "key": "visitors",
       "label": "방문자 규모",
-      "points": 20.7,
+      "points": 20.9,
       "max": 30.0
      },
      {
       "key": "keyword",
       "label": "키워드 경쟁력",
-      "points": 18.1,
+      "points": 17.5,
       "max": 30.0
      },
      {
@@ -232,13 +237,13 @@
      {
       "key": "consistency",
       "label": "꾸준함",
-      "points": 3.3,
+      "points": 2.9,
       "max": 5.0
      },
      {
       "key": "engagement",
       "label": "소통·구독",
-      "points": 4.5,
+      "points": 4.6,
       "max": 5.0
      }
     ],
@@ -246,46 +251,46 @@
      {
       "label": "주 3개",
       "weeks": null,
-      "score_12w": 71.3
+      "score_12w": 70.9
      },
      {
       "label": "주 5개",
       "weeks": null,
-      "score_12w": 74.1
+      "score_12w": 73.8
      },
      {
       "label": "매일 1개",
-      "weeks": 9,
-      "score_12w": 77.0
+      "weeks": 10,
+      "score_12w": 76.6
      }
     ],
     "daily": [
      {
       "weeks": 2,
-      "score": 70.9
+      "score": 70.2
      },
      {
       "weeks": 4,
-      "score": 72.2
+      "score": 71.5
      },
      {
       "weeks": 6,
-      "score": 73.4
+      "score": 72.8
      },
      {
       "weeks": 8,
-      "score": 74.6
+      "score": 74.1
      },
      {
       "weeks": 10,
-      "score": 75.8
+      "score": 75.4
      },
      {
       "weeks": 12,
-      "score": 77.0
+      "score": 76.6
      }
     ],
-    "after_daily": 77.0,
+    "after_daily": 76.6,
     "remain_after_daily": 0,
     "finish": []
    }
@@ -293,7 +298,7 @@
   "reflect": {
    "grade": "준최6",
    "since": "2026-11-02",
-   "days": 19,
+   "days": 20,
    "gap": {
     "from": "2026-08-28",
     "to": "2026-10-01",
@@ -303,7 +308,7 @@
    "weeks_left": 5,
    "daily_then": {
     "weeks": 4,
-    "score": 72.2,
+    "score": 71.5,
     "grade": "준최7"
    }
   }
@@ -322,12 +327,12 @@
   {
    "level": "good",
    "title": "최근 7일 발행",
-   "detail": "최근 7일 동안 8개 발행. 주 3개 이상이 지수에 유리해요."
+   "detail": "최근 7일 동안 7개 발행. 주 3개 이상이 지수에 유리해요."
   },
   {
-   "level": "bad",
+   "level": "warn",
    "title": "발행 공백",
-   "detail": "최근 12주 중 가장 긴 공백 34일."
+   "detail": "최근 12주 중 가장 긴 공백 13일."
   },
   {
    "level": "good",
@@ -337,17 +342,104 @@
   {
    "level": "good",
    "title": "방문자 추세",
-   "detail": "최근 5일 평균 501명, 그 전 5일 대비 +0%."
+   "detail": "최근 5일 평균 516명, 그 전 5일 대비 +6%."
   }
  ],
  "posts": [
   {
+   "logNo": "224480378521",
+   "title": "아이슬란드 비크 마을 산책｜비크 교회 주차와 N1 주유소 핫도그 후기",
+   "url": "https://blog.naver.com/hbokey/224480378521",
+   "date": "2026-11-21T08:59:10.389882+09:00",
+   "comments": 6,
+   "likes": 15,
+   "category": "해외여행·신혼여행",
+   "tags": [
+    "아이슬란드비크",
+    "비크",
+    "비크마을",
+    "비크교회",
+    "비크교회주차",
+    "아이슬란드비크마을",
+    "아이슬란드핫도그",
+    "N1주유소",
+    "아이슬란드주유소",
+    "레이니스드랑가르",
+    "비크검은모래해변",
+    "아이슬란드검은모래해변",
+    "아이슬란드남부",
+    "아이슬란드남부해안",
+    "아이슬란드링로드",
+    "아이슬란드렌트카여행",
+    "아이슬란드신혼여행",
+    "아이슬란드여행",
+    "아이슬란드자유여행",
+    "유럽신혼여행"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "아이슬란드비크",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 10,
+      "mobile": 50,
+      "total": 60,
+      "competition": "낮음",
+      "date": "2026-11-21"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "비크",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 60,
+      "mobile": 490,
+      "total": 550,
+      "competition": "높음",
+      "date": "2026-11-21"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "비크마을",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-21"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 1640,
+    "images": 27,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 20,
+    "maps": 1,
+    "title_len": 38,
+    "kw_count": 4,
+    "score": 100,
+    "tips": []
+   }
+  },
+  {
    "logNo": "224483617836",
    "title": "치이카와 클리닉 예약 방법｜더현대 팝업 사전예약과 공식몰 신상 일정",
    "url": "https://blog.naver.com/hbokey/224483617836",
-   "date": "2026-11-20T08:51:37.194491+09:00",
-   "comments": 19,
-   "likes": 23,
+   "date": "2026-11-20T12:00:00+09:00",
+   "comments": 50,
+   "likes": 39,
    "category": "공연·전시·문화",
    "tags": [
     "치이카와클리닉",
@@ -377,7 +469,7 @@
     {
      "keyword": "치이카와클리닉",
      "rank": null,
-     "of": 32,
+     "of": 31,
      "volume": {
       "pc": 1580,
       "mobile": 5780,
@@ -389,7 +481,7 @@
     },
     {
      "keyword": "치이카와클리닉예약",
-     "rank": 5,
+     "rank": 7,
      "of": 31,
      "volume": {
       "pc": 240,
@@ -435,8 +527,8 @@
    "title": "아이슬란드 빙하투어 후기｜스카프타펠 빙하 하이킹 복장과 예약 꿀팁",
    "url": "https://blog.naver.com/hbokey/224478199793",
    "date": "2026-11-19T12:00:00+09:00",
-   "comments": 43,
-   "likes": 34,
+   "comments": 58,
+   "likes": 47,
    "category": "해외여행·신혼여행",
    "tags": [
     "아이슬란드빙하투어",
@@ -522,8 +614,8 @@
    "title": "스타벅스 프리퀀시 북커버 예약 방법｜11월 19일 오픈, 그린 아이보리 비교",
    "url": "https://blog.naver.com/hbokey/224478182371",
    "date": "2026-11-18T12:00:00+09:00",
-   "comments": 26,
-   "likes": 35,
+   "comments": 33,
+   "likes": 39,
    "category": "데이트 맛집·카페",
    "tags": [
     "스타벅스프리퀀시북커버",
@@ -552,7 +644,7 @@
    "keywords": [
     {
      "keyword": "스타벅스프리퀀시북커버",
-     "rank": 2,
+     "rank": 1,
      "of": 31,
      "volume": {
       "pc": 700,
@@ -565,7 +657,7 @@
     },
     {
      "keyword": "스타벅스북커버",
-     "rank": 19,
+     "rank": 11,
      "of": 30,
      "volume": {
       "pc": 2710,
@@ -578,7 +670,7 @@
     },
     {
      "keyword": "스타벅스북커버예약",
-     "rank": 2,
+     "rank": 4,
      "of": 30,
      "volume": {
       "pc": 60,
@@ -613,8 +705,8 @@
    "title": "아이슬란드 셀포스 여행｜동화 같은 신시가지 마을과 후파 아이스크림",
    "url": "https://blog.naver.com/hbokey/224478181309",
    "date": "2026-11-17T12:00:00+09:00",
-   "comments": 52,
-   "likes": 44,
+   "comments": 59,
+   "likes": 48,
    "category": "해외여행·신혼여행",
    "tags": [
     "아이슬란드셀포스",
@@ -700,8 +792,8 @@
    "title": "아이슬란드 군누베르 화산 후기｜레이캬네스 반도 지열지대와 유령 전설",
    "url": "https://blog.naver.com/hbokey/224478172738",
    "date": "2026-11-16T12:00:00+09:00",
-   "comments": 44,
-   "likes": 45,
+   "comments": 49,
+   "likes": 49,
    "category": "해외여행·신혼여행",
    "tags": [
     "군누베르",
@@ -790,7 +882,7 @@
    "url": "https://blog.naver.com/hbokey/224474961011",
    "date": "2026-11-15T12:00:00+09:00",
    "comments": 58,
-   "likes": 51,
+   "likes": 52,
    "category": "신혼살림·생활 리뷰",
    "tags": [
     "중치마",
@@ -832,7 +924,7 @@
     },
     {
      "keyword": "중치마후기",
-     "rank": 21,
+     "rank": 18,
      "of": 30,
      "volume": {
       "pc": 180,
@@ -879,7 +971,7 @@
    "url": "https://blog.naver.com/hbokey/224474946449",
    "date": "2026-11-14T12:00:00+09:00",
    "comments": 50,
-   "likes": 46,
+   "likes": 47,
    "category": "공연·전시·문화",
    "tags": [
     "서울크리스마스마켓",
@@ -966,7 +1058,7 @@
    "url": "https://blog.naver.com/hbokey/224474943274",
    "date": "2026-11-13T12:00:00+09:00",
    "comments": 53,
-   "likes": 50,
+   "likes": 51,
    "category": "신혼살림·생활 리뷰",
    "tags": [
     "봉천역PT",
@@ -998,37 +1090,37 @@
      "rank": 2,
      "of": 30,
      "volume": {
-      "pc": 150,
-      "mobile": 40,
-      "total": 190,
+      "pc": 210,
+      "mobile": 50,
+      "total": 260,
       "competition": "높음",
-      "date": "2026-11-13"
+      "date": "2026-11-21"
      },
      "docs": null
     },
     {
      "keyword": "봉천역헬스장",
-     "rank": 23,
+     "rank": 25,
      "of": 30,
      "volume": {
-      "pc": 270,
-      "mobile": 380,
-      "total": 650,
+      "pc": 290,
+      "mobile": 350,
+      "total": 640,
       "competition": "높음",
-      "date": "2026-11-13"
+      "date": "2026-11-21"
      },
      "docs": null
     },
     {
      "keyword": "봉천동PT",
-     "rank": 5,
+     "rank": 8,
      "of": 30,
      "volume": {
-      "pc": 50,
+      "pc": 60,
       "mobile": 30,
-      "total": 80,
+      "total": 90,
       "competition": "높음",
-      "date": "2026-11-13"
+      "date": "2026-11-21"
      },
      "docs": null
     }
@@ -1142,7 +1234,7 @@
    "url": "https://blog.naver.com/hbokey/224469606238",
    "date": "2026-11-11T12:00:00+09:00",
    "comments": 31,
-   "likes": 36,
+   "likes": 37,
    "category": "해외여행·신혼여행",
    "tags": [
     "요쿨살론",
@@ -1181,32 +1273,6 @@
       "date": "2026-11-19"
      },
      "docs": null
-    },
-    {
-     "keyword": "요쿨살론조디악",
-     "rank": 1,
-     "of": 30,
-     "volume": {
-      "pc": 5,
-      "mobile": 5,
-      "total": 10,
-      "competition": "낮음",
-      "date": "2026-11-19"
-     },
-     "docs": null
-    },
-    {
-     "keyword": "요쿨살론보트투어",
-     "rank": 1,
-     "of": 30,
-     "volume": {
-      "pc": 5,
-      "mobile": 20,
-      "total": 25,
-      "competition": "중간",
-      "date": "2026-11-19"
-     },
-     "docs": null
     }
    ],
    "content": {
@@ -1230,8 +1296,8 @@
    "title": "스타벅스 겨울 프리퀀시 2026 증정품｜미션음료, 북커버 예약일 총정리",
    "url": "https://blog.naver.com/hbokey/224470158067",
    "date": "2026-11-10T12:00:00+09:00",
-   "comments": 127,
-   "likes": 72,
+   "comments": 128,
+   "likes": 73,
    "category": "데이트 맛집·카페",
    "tags": [
     "스타벅스겨울프리퀀시",
@@ -1260,7 +1326,7 @@
    "keywords": [
     {
      "keyword": "스타벅스겨울프리퀀시",
-     "rank": 5,
+     "rank": 22,
      "of": 30,
      "volume": {
       "pc": 530,
@@ -1294,7 +1360,7 @@
    "url": "https://blog.naver.com/hbokey/224469600688",
    "date": "2026-11-09T12:00:00+09:00",
    "comments": 72,
-   "likes": 60,
+   "likes": 61,
    "category": "해외여행·신혼여행",
    "tags": [
     "케리드분화구",
@@ -1386,7 +1452,7 @@
    "keywords": [
     {
      "keyword": "파리에펠탑",
-     "rank": 4,
+     "rank": 5,
      "of": 30,
      "volume": {
       "pc": 390,
@@ -1476,78 +1542,28 @@
      "동영상이나 지도 1개 이상"
     ]
    }
-  },
-  {
-   "logNo": "224465830528",
-   "title": "아이슬란드 오로라 시기와 숙소 추천｜9월 남부에서 오로라 본 후기",
-   "url": "https://blog.naver.com/hbokey/224465830528",
-   "date": "2026-11-06T12:00:00+09:00",
-   "comments": 85,
-   "likes": 72,
-   "category": "해외여행·신혼여행",
-   "tags": [
-    "아이슬란드오로라",
-    "아이슬란드오로라시기",
-    "9월오로라",
-    "아이슬란드9월오로라",
-    "아이슬란드숙소",
-    "아이슬란드숙소추천",
-    "오로라숙소",
-    "오로라지수",
-    "오로라앱",
-    "오로라예보",
-    "아이슬란드에어비앤비",
-    "크볼스뵈들뤼르",
-    "보가르",
-    "레이캬네스반도",
-    "아이슬란드남부",
-    "오로라헌팅",
-    "아이슬란드신혼여행",
-    "아이슬란드여행",
-    "오로라투어",
-    "아이슬란드자유여행"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "아이슬란드오로라",
-     "rank": 2,
-     "of": 30,
-     "volume": {
-      "pc": 660,
-      "mobile": 2300,
-      "total": 2960,
-      "competition": "높음",
-      "date": "2026-11-14"
-     },
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 2420,
-    "images": 25,
-    "videos": 0,
-    "quotes": 9,
-    "headings": 0,
-    "links": 36,
-    "maps": 1,
-    "title_len": 36,
-    "kw_count": 6,
-    "score": 100,
-    "tips": []
-   }
   }
  ],
  "post_stats": [
+  {
+   "logNo": "224480378521",
+   "title": "아이슬란드 비크 마을 산책｜비크 교회 주차와 N1 주유소 핫도그 후기",
+   "url": "https://blog.naver.com/hbokey/224480378521",
+   "date": "2026-11-21T08:20:00+09:00",
+   "category": "해외여행·신혼여행",
+   "likes": 15,
+   "comments": 6,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTZfMTk0/MDAxNzk0ODA4MTU0NDE5.ukcjf162YCxeiErlK6Ut2YCTu8RHqA6VTRNvHTrxB4Ig.OuSyxFa8nxa4jJzBkrSU_EEu1aTWS64lyt6SHEVVlLcg.PNG/thumb_v.png"
+  },
   {
    "logNo": "224483617836",
    "title": "치이카와 클리닉 예약 방법｜더현대 팝업 사전예약과 공식몰 신상 일정",
    "url": "https://blog.naver.com/hbokey/224483617836",
    "date": "2026-11-20T08:20:00+09:00",
    "category": "공연·전시·문화",
-   "likes": 23,
-   "comments": 19,
+   "likes": 39,
+   "comments": 50,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTlfMzEg/MDAxNzk1MDgyNTcxMTk0.NCqNWnrEroknhhSsgeBuVFQTQMaRBp08tQgcpw6ppD0g.PQfzDPnRQDG41kDaBr2TP54emyuPqwAAykV0lVeTsBgg.PNG/thumb_clinic.png"
   },
@@ -1557,8 +1573,8 @@
    "url": "https://blog.naver.com/hbokey/224478199793",
    "date": "2026-11-19T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 34,
-   "comments": 43,
+   "likes": 47,
+   "comments": 58,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTlfOTIg/MDAxNzk1MDQ0ODgyNjg1.vPROqY-RQPeI-7uWUAHudD1zdYGWhjJFghQJ62juxWog.e9t5xLo78IW3LdaJsDkLw5G5OnxWeWaXFwspR-Tg3UYg.PNG/thumb_ic2.png"
   },
@@ -1568,8 +1584,8 @@
    "url": "https://blog.naver.com/hbokey/224478182371",
    "date": "2026-11-18T08:20:00+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 35,
-   "comments": 26,
+   "likes": 39,
+   "comments": 33,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTBfMjYy/MDAxNzk0Mjk0MDcxMTk4.Mij7PY_i9dwEb_1sNcugULuhW51qh39RtPq9fEeD_okg.Lvex-t7nkIYhbQgLqHkqAY5tUl2Mcm8cVHWewEKhvxog.PNG/thumb_bc.png"
   },
@@ -1579,8 +1595,8 @@
    "url": "https://blog.naver.com/hbokey/224478181309",
    "date": "2026-11-17T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 44,
-   "comments": 52,
+   "likes": 48,
+   "comments": 59,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTJfNjkg/MDAxNzk0NDY2MTExMzY1.mg6H7gowlQHXGP5SMMKT5oUN9Fjj7nCp8upBkiIQDzsg.Hq9S2y1V-4ZJlq8ekGqBSZqiA7qruoa2mljyN8kIHnsg.PNG/thumb_sf.png"
   },
@@ -1590,8 +1606,8 @@
    "url": "https://blog.naver.com/hbokey/224478172738",
    "date": "2026-11-16T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 45,
-   "comments": 44,
+   "likes": 49,
+   "comments": 49,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTNfMTg5/MDAxNzk0NTM4Njg4Nzcz.4XWCCUrYbaXBb1zG1IY-MkWfSZhrI05ahYqfJk4iuUgg.dtSHDTjakjfbNhgcgj2pcfYrlhYAka32z6Y5z7rsaF4g.PNG/thumb_gn.png"
   },
@@ -1601,7 +1617,7 @@
    "url": "https://blog.naver.com/hbokey/224474961011",
    "date": "2026-11-15T08:20:00+09:00",
    "category": "신혼살림·생활 리뷰",
-   "likes": 51,
+   "likes": 52,
    "comments": 58,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDhfMjQy/MDAxNzk0MDY2NTE4NjIz.1c4D3-zFbDplUXyBTqPDCC_RsHz4KRshjPKf0Pslkksg.YBqotAoXF-UXwoHHhAEhihduzpHdhmhNSPK0v6l7qg8g.PNG/thumb_jc2.png"
@@ -1612,7 +1628,7 @@
    "url": "https://blog.naver.com/hbokey/224474946449",
    "date": "2026-11-14T08:20:00+09:00",
    "category": "공연·전시·문화",
-   "likes": 46,
+   "likes": 47,
    "comments": 50,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTVfMjgg/MDAxNzk0Njk1OTM4OTYy.KYTOkTc-eeCo4E5HWKiO5118YXCTPNBoUVdK1FSkvG8g.ARQpsBBrbKJX1tqbPPhGIjvIEs5-3UREI0rRsNuOqNIg.PNG/thumb_xm.png"
@@ -1623,7 +1639,7 @@
    "url": "https://blog.naver.com/hbokey/224474943274",
    "date": "2026-11-13T08:20:00+09:00",
    "category": "신혼살림·생활 리뷰",
-   "likes": 50,
+   "likes": 51,
    "comments": 53,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTJfMTE0/MDAxNzk0NDUzMjkzNjg5.LrYQuK7wOceDsxMCVYZqBa5MUXP5Wvi1L01bUyQBSuYg.God8PXgZVI3Di1F-iE7io-AW4_68xNNwlpY732MRqGMg.PNG/thumb_bb.png"
@@ -1645,7 +1661,7 @@
    "url": "https://blog.naver.com/hbokey/224469606238",
    "date": "2026-11-11T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 36,
+   "likes": 37,
    "comments": 31,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDhfMTM1/MDAxNzk0MDY4MzIxOTc5.LnZFZosLt6tLDn8NOvjSLpyc9ftEr-j5tDxblVf3dJsg.R7IdbM5MsLzf7v8KTyknw8PwtfXw7MYKZkEXGteYBh8g.PNG/thumb_jokul.png"
@@ -1656,8 +1672,8 @@
    "url": "https://blog.naver.com/hbokey/224470158067",
    "date": "2026-11-10T08:20:00+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 72,
-   "comments": 127,
+   "likes": 73,
+   "comments": 128,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDlfMTI3/MDAxNzk0MTkzMjkwMjE2.UYwb5Bq5MhYmLacXhg5ypl62XxQBcOq90QN3LsaVehUg.hb-pvUwn6kQGsYycgQW6wWfSfo1wIZtC4HuzdLREjQIg.PNG/thumb_sb.png"
   },
@@ -1667,7 +1683,7 @@
    "url": "https://blog.naver.com/hbokey/224469600688",
    "date": "2026-11-09T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 60,
+   "likes": 61,
    "comments": 72,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDhfMTE5/MDAxNzk0MDY2NTI0MDQ0.VWoJ7iroP00zI9T1sRWMYb92EucNHr-21DSK4yX8Ow4g.BVUgkXUpacqKp9y24CfSLYQSX1qtUVsLa-b5UnAwufAg.PNG/thumb_kerid.png"
@@ -1722,8 +1738,8 @@
    "url": "https://blog.naver.com/hbokey/224462080024",
    "date": "2026-11-04T08:30:00+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 74,
-   "comments": 80,
+   "likes": 75,
+   "comments": 81,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDJfMjU0/MDAxNzkzNTg4MDg4MzM0.qB3vG1qquXBUwsbtlbJig4jrpDNoGGyhwJJl3gi6YZQg.BHXShJmnYbvr5SNMwB19urGpuWrhCMFMWr4nJa4ob0Ag.PNG/thumb_xmascake_2026.png"
   },
@@ -3051,64 +3067,32 @@
  "watch_keywords": [],
  "competitors": {
   "count": 21,
-  "my_rank": 4,
-  "top_percent": 19,
-  "same_topic": 13,
+  "my_rank": 3,
+  "top_percent": 14,
+  "same_topic": 12,
   "my_place": {
-   "visitors_avg": 2,
-   "subscribers": 10,
+   "visitors_avg": 1,
+   "subscribers": 8,
    "posts_30d": 1,
-   "total_posts": 14
+   "total_posts": 15
   },
   "averages": {
-   "visitors_avg": 131.5,
-   "subscribers": 1184.6,
-   "posts_30d": 13.4,
-   "total_posts": 441.2,
-   "score": 48.5
+   "visitors_avg": 106.2,
+   "subscribers": 795.7,
+   "posts_30d": 14.6,
+   "total_posts": 338.1,
+   "score": 48.8
   },
   "blogs": [
-   {
-    "blog_id": "gamdong_85",
-    "name": "뉴욕을 탐하다.",
-    "nickname": "마마티라노",
-    "topic": "세계여행",
-    "subscribers": 7724,
-    "today_visitors": 237,
-    "visitors_avg": 629.8,
-    "total_posts": 2458,
-    "posts_30d": 20,
-    "shared": [
-     {
-      "keyword": "요쿨살론",
-      "rank": 2
-     },
-     {
-      "keyword": "요쿨살론조디악",
-      "rank": 2
-     },
-     {
-      "keyword": "요쿨살론보트투어",
-      "rank": 2
-     },
-     {
-      "keyword": "케리드분화구",
-      "rank": 23
-     }
-    ],
-    "influencer": false,
-    "score": 77.5,
-    "rank": 1
-   },
    {
     "blog_id": "jaypol_2022",
     "name": "제이폴의 유럽 미국 살아가며 담는 여행",
     "nickname": "제이폴",
     "topic": "세계여행",
-    "subscribers": 3732,
-    "today_visitors": 164,
-    "visitors_avg": 346.0,
-    "total_posts": 375,
+    "subscribers": 3759,
+    "today_visitors": 99,
+    "visitors_avg": 365.2,
+    "total_posts": 376,
     "posts_30d": 30,
     "shared": [
      {
@@ -3117,7 +3101,7 @@
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
-      "rank": 8
+      "rank": 9
      },
      {
       "keyword": "요쿨살론",
@@ -3125,12 +3109,12 @@
      },
      {
       "keyword": "다이아몬드해변",
-      "rank": 19
+      "rank": 17
      }
     ],
     "influencer": false,
-    "score": 77.0,
-    "rank": 2
+    "score": 77.3,
+    "rank": 1
    },
    {
     "blog_id": "einsssss",
@@ -3138,9 +3122,9 @@
     "nickname": "라츠",
     "topic": "세계여행",
     "subscribers": 2669,
-    "today_visitors": 100,
-    "visitors_avg": 383.5,
-    "total_posts": 341,
+    "today_visitors": 86,
+    "visitors_avg": 339.8,
+    "total_posts": 342,
     "posts_30d": 30,
     "shared": [
      {
@@ -3148,47 +3132,47 @@
       "rank": 4
      },
      {
-      "keyword": "요쿨살론보트투어",
-      "rank": 5
+      "keyword": "비크마을",
+      "rank": 8
      },
      {
       "keyword": "다이아몬드비치",
-      "rank": 20
+      "rank": 15
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
-      "rank": 21
+      "rank": 19
      }
     ],
     "influencer": false,
-    "score": 76.7,
-    "rank": 3
+    "score": 76.0,
+    "rank": 2
    },
    {
     "blog_id": "hbokey",
     "name": "쭈아월드｜우당탕탕 신혼일기",
     "nickname": "쭈아",
     "topic": "세계여행",
-    "subscribers": 617,
-    "today_visitors": 198,
-    "visitors_avg": 577.0,
-    "total_posts": 137,
+    "subscribers": 646,
+    "today_visitors": 163,
+    "visitors_avg": 604.5,
+    "total_posts": 138,
     "posts_30d": 32,
     "shared": [],
-    "score": 74.6,
+    "score": 75.0,
     "me": true,
-    "rank": 4
+    "rank": 3
    },
    {
     "blog_id": "zeze3143",
     "name": "현이핑 블로그✈️",
     "nickname": "현이핑",
     "topic": "세계여행",
-    "subscribers": 2276,
-    "today_visitors": 89,
-    "visitors_avg": 369.8,
+    "subscribers": 2274,
+    "today_visitors": 77,
+    "visitors_avg": 353.8,
     "total_posts": 706,
-    "posts_30d": 23,
+    "posts_30d": 21,
     "shared": [
      {
       "keyword": "다이아몬드해변",
@@ -3196,43 +3180,43 @@
      },
      {
       "keyword": "케리드분화구",
-      "rank": 4
+      "rank": 6
+     },
+     {
+      "keyword": "비크마을",
+      "rank": 15
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
       "rank": 18
      },
      {
-      "keyword": "요쿨살론",
-      "rank": 29
+      "keyword": "아이슬란드비크",
+      "rank": 21
      }
     ],
     "influencer": false,
-    "score": 72.4,
-    "rank": 5
+    "score": 70.8,
+    "rank": 4
    },
    {
     "blog_id": "dailysmomo",
     "name": "모모의 일상'ᴗ'♡",
     "nickname": "모모",
     "topic": "맛집",
-    "subscribers": 364,
-    "today_visitors": 93,
-    "visitors_avg": 329.0,
+    "subscribers": 368,
+    "today_visitors": 83,
+    "visitors_avg": 308.5,
     "total_posts": 222,
     "posts_30d": 30,
     "shared": [
-     {
-      "keyword": "요쿨살론조디악",
-      "rank": 3
-     },
      {
       "keyword": "스카프타펠빙하투어",
       "rank": 6
      },
      {
-      "keyword": "요쿨살론보트투어",
-      "rank": 6
+      "keyword": "아이슬란드비크",
+      "rank": 8
      },
      {
       "keyword": "스카프타펠",
@@ -3245,22 +3229,30 @@
      {
       "keyword": "요쿨살론",
       "rank": 22
+     },
+     {
+      "keyword": "비크",
+      "rank": 25
+     },
+     {
+      "keyword": "셀포스",
+      "rank": 26
      }
     ],
     "influencer": false,
-    "score": 71.0,
-    "rank": 6
+    "score": 70.7,
+    "rank": 5
    },
    {
     "blog_id": "roadeat-",
     "name": "로드투잇",
     "nickname": "로드잇",
     "topic": "세계여행",
-    "subscribers": 808,
-    "today_visitors": 146,
-    "visitors_avg": 414.5,
-    "total_posts": 370,
-    "posts_30d": 16,
+    "subscribers": 809,
+    "today_visitors": 210,
+    "visitors_avg": 415.8,
+    "total_posts": 371,
+    "posts_30d": 15,
     "shared": [
      {
       "keyword": "다이아몬드비치",
@@ -3272,7 +3264,7 @@
      },
      {
       "keyword": "다이아몬드해변",
-      "rank": 5
+      "rank": 3
      },
      {
       "keyword": "요쿨살론",
@@ -3287,16 +3279,48 @@
       "rank": 12
      },
      {
-      "keyword": "아이슬란드오로라",
-      "rank": 22
-     },
-     {
       "keyword": "아이슬란드빙하투어",
-      "rank": 25
+      "rank": 24
      }
     ],
     "influencer": false,
-    "score": 65.3,
+    "score": 64.6,
+    "rank": 6
+   },
+   {
+    "blog_id": "onedari68",
+    "name": "펀민들레의 지구별 소풍",
+    "nickname": "펀민들레",
+    "topic": "세계여행",
+    "subscribers": 1407,
+    "today_visitors": 25,
+    "visitors_avg": null,
+    "total_posts": 1019,
+    "posts_30d": 29,
+    "shared": [
+     {
+      "keyword": "스카프타펠빙하투어",
+      "rank": 15
+     },
+     {
+      "keyword": "스카프타펠",
+      "rank": 17
+     },
+     {
+      "keyword": "아이슬란드다이아몬드비치",
+      "rank": 21
+     },
+     {
+      "keyword": "비크마을",
+      "rank": 25
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 29
+     }
+    ],
+    "influencer": false,
+    "score": 61.4,
     "rank": 7
    },
    {
@@ -3304,19 +3328,23 @@
     "name": "오늘의 아온",
     "nickname": "아온",
     "topic": "세계여행",
-    "subscribers": 1670,
-    "today_visitors": 59,
-    "visitors_avg": 158.0,
+    "subscribers": 1679,
+    "today_visitors": 29,
+    "visitors_avg": 161.8,
     "total_posts": 402,
-    "posts_30d": 16,
+    "posts_30d": 15,
     "shared": [
+     {
+      "keyword": "셀포스",
+      "rank": 7
+     },
      {
       "keyword": "다이아몬드비치",
       "rank": 7
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
-      "rank": 9
+      "rank": 8
      },
      {
       "keyword": "스카프타펠빙하투어",
@@ -3324,92 +3352,56 @@
      },
      {
       "keyword": "아이슬란드빙하투어",
-      "rank": 15
+      "rank": 14
      },
      {
       "keyword": "스카프타펠",
       "rank": 15
      },
      {
-      "keyword": "셀포스",
-      "rank": 15
+      "keyword": "다이아몬드해변",
+      "rank": 19
+     }
+    ],
+    "influencer": false,
+    "score": 61.2,
+    "rank": 8
+   },
+   {
+    "blog_id": "dazzle10_",
+    "name": "효용",
+    "nickname": "효용",
+    "topic": "일상·생각",
+    "subscribers": 136,
+    "today_visitors": 45,
+    "visitors_avg": 156.2,
+    "total_posts": 156,
+    "posts_30d": 15,
+    "shared": [
+     {
+      "keyword": "비크마을",
+      "rank": 2
      },
      {
-      "keyword": "다이아몬드해변",
+      "keyword": "비크",
+      "rank": 10
+     },
+     {
+      "keyword": "셀포스",
+      "rank": 13
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 21
+     },
+     {
+      "keyword": "아이슬란드셀포스",
       "rank": 26
      }
     ],
     "influencer": false,
-    "score": 61.7,
-    "rank": 8
-   },
-   {
-    "blog_id": "fleur_gypsophile",
-    "name": "Thursday",
-    "nickname": "Jolie",
-    "topic": "",
-    "subscribers": 750,
-    "today_visitors": 61,
-    "visitors_avg": null,
-    "total_posts": 885,
-    "posts_30d": 6,
-    "shared": [
-     {
-      "keyword": "요쿨살론조디악",
-      "rank": 4
-     },
-     {
-      "keyword": "요쿨살론보트투어",
-      "rank": 8
-     },
-     {
-      "keyword": "요쿨살론",
-      "rank": 12
-     },
-     {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 20
-     }
-    ],
-    "influencer": false,
-    "score": 49.2,
+    "score": 54.4,
     "rank": 9
-   },
-   {
-    "blog_id": "kaltourmall",
-    "name": "한진트래블 수지점",
-    "nickname": "한진트래블 수지점",
-    "topic": "세계여행",
-    "subscribers": 309,
-    "today_visitors": 17,
-    "visitors_avg": null,
-    "total_posts": 274,
-    "posts_30d": 17,
-    "shared": [
-     {
-      "keyword": "다이아몬드해변",
-      "rank": 14
-     },
-     {
-      "keyword": "요쿨살론보트투어",
-      "rank": 20
-     },
-     {
-      "keyword": "다이아몬드비치",
-      "rank": 22
-     },
-     {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 27
-     },
-     {
-      "keyword": "케리드분화구",
-      "rank": 28
-     }
-    ],
-    "influencer": false,
-    "score": 46.5,
-    "rank": 10
    },
    {
     "blog_id": "mbyongs",
@@ -3420,32 +3412,40 @@
     "today_visitors": 24,
     "visitors_avg": null,
     "total_posts": 670,
-    "posts_30d": 14,
+    "posts_30d": 12,
     "shared": [
      {
       "keyword": "다이아몬드비치",
-      "rank": 15
-     },
-     {
-      "keyword": "요쿨살론",
-      "rank": 18
+      "rank": 17
      },
      {
       "keyword": "아이슬란드셀포스",
+      "rank": 18
+     },
+     {
+      "keyword": "비크마을",
+      "rank": 19
+     },
+     {
+      "keyword": "요쿨살론",
       "rank": 20
      },
      {
-      "keyword": "아이슬란드다이아몬드비치",
-      "rank": 25
+      "keyword": "셀포스",
+      "rank": 24
      },
      {
-      "keyword": "셀포스",
+      "keyword": "아이슬란드다이아몬드비치",
+      "rank": 24
+     },
+     {
+      "keyword": "아이슬란드비크",
       "rank": 26
      }
     ],
     "influencer": false,
-    "score": 46.2,
-    "rank": 11
+    "score": 44.9,
+    "rank": 10
    },
    {
     "blog_id": "answer130",
@@ -3453,7 +3453,7 @@
     "nickname": "김쥬",
     "topic": "세계여행",
     "subscribers": 106,
-    "today_visitors": 34,
+    "today_visitors": 26,
     "visitors_avg": null,
     "total_posts": 65,
     "posts_30d": 15,
@@ -3464,7 +3464,7 @@
      },
      {
       "keyword": "셀포스",
-      "rank": 3
+      "rank": 4
      },
      {
       "keyword": "아이슬란드셀포스",
@@ -3472,28 +3472,28 @@
      },
      {
       "keyword": "스카프타펠",
-      "rank": 11
+      "rank": 16
+     },
+     {
+      "keyword": "아이슬란드비크",
+      "rank": 22
      },
      {
       "keyword": "다이아몬드비치",
-      "rank": 25
+      "rank": 23
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
       "rank": 27
      },
      {
-      "keyword": "스카프타펠빙하투어",
-      "rank": 28
-     },
-     {
       "keyword": "요쿨살론",
-      "rank": 30
+      "rank": 29
      }
     ],
     "influencer": false,
-    "score": 44.6,
-    "rank": 12
+    "score": 43.2,
+    "rank": 11
    },
    {
     "blog_id": "adpr_hwang",
@@ -3501,26 +3501,26 @@
     "nickname": "욘뜨",
     "topic": "세계여행",
     "subscribers": 1557,
-    "today_visitors": 18,
+    "today_visitors": 23,
     "visitors_avg": null,
-    "total_posts": 685,
-    "posts_30d": 1,
+    "total_posts": 686,
+    "posts_30d": 2,
     "shared": [
      {
       "keyword": "아이슬란드셀포스",
-      "rank": 13
+      "rank": 14
      },
      {
       "keyword": "다이아몬드비치",
-      "rank": 19
+      "rank": 20
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
-      "rank": 23
+      "rank": 22
      },
      {
       "keyword": "요쿨살론",
-      "rank": 27
+      "rank": 26
      },
      {
       "keyword": "셀포스",
@@ -3528,83 +3528,123 @@
      }
     ],
     "influencer": false,
-    "score": 40.7,
-    "rank": 13
+    "score": 42.7,
+    "rank": 12
    },
    {
     "blog_id": "by_lindsey",
     "name": "by Lindsey",
     "nickname": "bylindsey",
     "topic": "세계여행",
-    "subscribers": 8,
-    "today_visitors": 37,
+    "subscribers": 9,
+    "today_visitors": 51,
     "visitors_avg": null,
-    "total_posts": 17,
-    "posts_30d": 17,
+    "total_posts": 18,
+    "posts_30d": 18,
     "shared": [
      {
       "keyword": "다이아몬드비치",
       "rank": 2
      },
      {
+      "keyword": "비크",
+      "rank": 3
+     },
+     {
       "keyword": "스카프타펠빙하투어",
       "rank": 3
      },
      {
       "keyword": "스카프타펠",
       "rank": 3
+     },
+     {
+      "keyword": "아이슬란드비크",
+      "rank": 6
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
       "rank": 6
      },
      {
+      "keyword": "비크마을",
+      "rank": 11
+     },
+     {
       "keyword": "케리드분화구",
-      "rank": 29
+      "rank": 30
      }
     ],
     "influencer": false,
-    "score": 39.4,
+    "score": 42.1,
+    "rank": 13
+   },
+   {
+    "blog_id": "momentsofbeing",
+    "name": "존재의 순간들",
+    "nickname": "은유",
+    "topic": "취미",
+    "subscribers": 247,
+    "today_visitors": 15,
+    "visitors_avg": null,
+    "total_posts": 827,
+    "posts_30d": 7,
+    "shared": [
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 2
+     },
+     {
+      "keyword": "스카프타펠빙하투어",
+      "rank": 2
+     },
+     {
+      "keyword": "스카프타펠",
+      "rank": 2
+     },
+     {
+      "keyword": "비크",
+      "rank": 9
+     }
+    ],
+    "influencer": false,
+    "score": 40.0,
     "rank": 14
    },
    {
-    "blog_id": "guidetoiceland",
-    "name": "아이슬란드 여행 가이드",
-    "nickname": "아이슬란드 가이드",
-    "topic": "세계여행",
-    "subscribers": 1194,
-    "today_visitors": 15,
-    "visitors_avg": null,
-    "total_posts": 854,
-    "posts_30d": 0,
+    "blog_id": "dbtmdgml1002",
+    "name": "승승이의 돼지런한 하루",
+    "nickname": "승승",
+    "topic": "맛집",
+    "subscribers": 204,
+    "today_visitors": 3,
+    "visitors_avg": 22.2,
+    "total_posts": 211,
+    "posts_30d": 5,
     "shared": [
-     {
-      "keyword": "요쿨살론보트투어",
-      "rank": 4
-     },
-     {
-      "keyword": "군누흐베르",
-      "rank": 5
-     },
-     {
-      "keyword": "요쿨살론조디악",
-      "rank": 6
-     },
      {
       "keyword": "스카프타펠빙하투어",
       "rank": 12
      },
      {
-      "keyword": "요쿨살론",
-      "rank": 16
+      "keyword": "스카프타펠",
+      "rank": 13
      },
      {
-      "keyword": "스카프타펠",
-      "rank": 18
+      "keyword": "비크",
+      "rank": 20
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 25
+     },
+     {
+      "keyword": "다이아몬드비치",
+      "rank": 30
      }
     ],
     "influencer": false,
-    "score": 38.8,
+    "score": 38.6,
     "rank": 15
    },
    {
@@ -3613,7 +3653,7 @@
     "nickname": "하늘보리",
     "topic": "세계여행",
     "subscribers": 27,
-    "today_visitors": 23,
+    "today_visitors": 21,
     "visitors_avg": null,
     "total_posts": 63,
     "posts_30d": 12,
@@ -3623,6 +3663,14 @@
       "rank": 2
      },
      {
+      "keyword": "아이슬란드셀포스",
+      "rank": 3
+     },
+     {
+      "keyword": "비크",
+      "rank": 4
+     },
+     {
       "keyword": "스카프타펠빙하투어",
       "rank": 4
      },
@@ -3631,12 +3679,12 @@
       "rank": 4
      },
      {
-      "keyword": "아이슬란드셀포스",
+      "keyword": "다이아몬드비치",
       "rank": 4
      },
      {
-      "keyword": "다이아몬드비치",
-      "rank": 4
+      "keyword": "아이슬란드비크",
+      "rank": 5
      },
      {
       "keyword": "아이슬란드빙하투어",
@@ -3644,7 +3692,7 @@
      },
      {
       "keyword": "요쿨살론",
-      "rank": 8
+      "rank": 7
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
@@ -3652,7 +3700,7 @@
      }
     ],
     "influencer": false,
-    "score": 37.6,
+    "score": 37.2,
     "rank": 16
    },
    {
@@ -3661,78 +3709,118 @@
     "nickname": "Februar",
     "topic": "일상·생각",
     "subscribers": 145,
-    "today_visitors": 20,
+    "today_visitors": 12,
     "visitors_avg": null,
     "total_posts": 237,
     "posts_30d": 4,
     "shared": [
      {
       "keyword": "다이아몬드비치",
-      "rank": 6
+      "rank": 8
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
-      "rank": 12
-     },
-     {
-      "keyword": "스카프타펠",
-      "rank": 22
-     },
-     {
-      "keyword": "다이아몬드해변",
-      "rank": 27
-     }
-    ],
-    "influencer": false,
-    "score": 36.8,
-    "rank": 17
-   },
-   {
-    "blog_id": "climax2002",
-    "name": "또 다른 여행을 꿈꾸며",
-    "nickname": "김삐리리",
-    "topic": "세계여행",
-    "subscribers": 41,
-    "today_visitors": 6,
-    "visitors_avg": null,
-    "total_posts": 120,
-    "posts_30d": 7,
-    "shared": [
-     {
-      "keyword": "다이아몬드비치",
-      "rank": 9
-     },
-     {
-      "keyword": "다이아몬드해변",
-      "rank": 9
-     },
-     {
-      "keyword": "셀포스",
       "rank": 13
      },
      {
-      "keyword": "아이슬란드셀포스",
-      "rank": 14
+      "keyword": "스카프타펠",
+      "rank": 20
      },
      {
-      "keyword": "아이슬란드다이아몬드비치",
+      "keyword": "다이아몬드해변",
+      "rank": 23
+     },
+     {
+      "keyword": "요쿨살론",
       "rank": 30
      }
     ],
     "influencer": false,
-    "score": 29.3,
+    "score": 34.2,
+    "rank": 17
+   },
+   {
+    "blog_id": "jklan38",
+    "name": "라니의 소소한 일상",
+    "nickname": "JANG언니",
+    "topic": "일상·생각",
+    "subscribers": 162,
+    "today_visitors": 4,
+    "visitors_avg": null,
+    "total_posts": 239,
+    "posts_30d": 11,
+    "shared": [
+     {
+      "keyword": "아이슬란드비크",
+      "rank": 3
+     },
+     {
+      "keyword": "비크마을",
+      "rank": 3
+     },
+     {
+      "keyword": "비크",
+      "rank": 5
+     },
+     {
+      "keyword": "아이슬란드셀포스",
+      "rank": 13
+     },
+     {
+      "keyword": "셀포스",
+      "rank": 23
+     }
+    ],
+    "influencer": false,
+    "score": 33.9,
     "rank": 18
+   },
+   {
+    "blog_id": "siwol__day",
+    "name": "어제는 끝났고, 내일은 멀었고, 오늘은 모른다.",
+    "nickname": "시월",
+    "topic": "세계여행",
+    "subscribers": 35,
+    "today_visitors": 17,
+    "visitors_avg": null,
+    "total_posts": 25,
+    "posts_30d": 8,
+    "shared": [
+     {
+      "keyword": "케리드분화구",
+      "rank": 3
+     },
+     {
+      "keyword": "비크마을",
+      "rank": 6
+     },
+     {
+      "keyword": "아이슬란드비크",
+      "rank": 10
+     },
+     {
+      "keyword": "비크",
+      "rank": 11
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 16
+     }
+    ],
+    "influencer": false,
+    "score": 32.8,
+    "rank": 19
    },
    {
     "blog_id": "yhy0481",
     "name": "편집샵",
     "nickname": "사고감",
     "topic": "",
-    "subscribers": 86,
-    "today_visitors": 3,
+    "subscribers": 95,
+    "today_visitors": 4,
     "visitors_avg": null,
-    "total_posts": 6,
-    "posts_30d": 6,
+    "total_posts": 7,
+    "posts_30d": 7,
     "shared": [
      {
       "keyword": "스카프타펠빙하투어",
@@ -3744,79 +3832,43 @@
      },
      {
       "keyword": "요쿨살론",
-      "rank": 7
+      "rank": 9
      },
      {
       "keyword": "아이슬란드빙하투어",
-      "rank": 14
+      "rank": 11
      }
     ],
     "influencer": false,
-    "score": 23.6,
-    "rank": 19
-   },
-   {
-    "blog_id": "mignon5678",
-    "name": "mignon’s vlog",
-    "nickname": "",
-    "topic": "",
-    "subscribers": 8,
-    "today_visitors": 10,
-    "visitors_avg": null,
-    "total_posts": 11,
-    "posts_30d": 3,
-    "shared": [
-     {
-      "keyword": "스카프타펠",
-      "rank": 10
-     },
-     {
-      "keyword": "요쿨살론조디악",
-      "rank": 10
-     },
-     {
-      "keyword": "스카프타펠빙하투어",
-      "rank": 16
-     },
-     {
-      "keyword": "요쿨살론보트투어",
-      "rank": 17
-     },
-     {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 29
-     }
-    ],
-    "influencer": false,
-    "score": 22.9,
+    "score": 25.9,
     "rank": 20
    },
    {
-    "blog_id": "zoomanji-",
-    "name": "맛따라 멋따라 (๑❛ڡ❛๑)☆",
-    "nickname": "쥬만지",
-    "topic": "일상·생각",
-    "subscribers": 33,
-    "today_visitors": 0,
+    "blog_id": "climax2002",
+    "name": "또 다른 여행을 꿈꾸며",
+    "nickname": "김삐리리",
+    "topic": "세계여행",
+    "subscribers": 41,
+    "today_visitors": 2,
     "visitors_avg": null,
-    "total_posts": 64,
-    "posts_30d": 1,
+    "total_posts": 120,
+    "posts_30d": 6,
     "shared": [
      {
+      "keyword": "다이아몬드해변",
+      "rank": 7
+     },
+     {
       "keyword": "다이아몬드비치",
-      "rank": 16
+      "rank": 9
      },
      {
       "keyword": "아이슬란드셀포스",
-      "rank": 17
+      "rank": 12
      },
      {
-      "keyword": "스카프타펠빙하투어",
-      "rank": 18
-     },
-     {
-      "keyword": "스카프타펠",
-      "rank": 21
+      "keyword": "셀포스",
+      "rank": 12
      },
      {
       "keyword": "아이슬란드다이아몬드비치",
@@ -3824,7 +3876,7 @@
      }
     ],
     "influencer": false,
-    "score": 13.5,
+    "score": 24.0,
     "rank": 21
    }
   ]
