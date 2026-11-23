@@ -171,7 +171,12 @@
  },
  {
   "date": "2026-11-22",
-  "count": 158,
+  "count": 522,
+  "blog_id": "hbokey"
+ },
+ {
+  "date": "2026-11-23",
+  "count": 206,
   "blog_id": "hbokey"
  }
 ]
