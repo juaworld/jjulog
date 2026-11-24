@@ -760,21 +760,21 @@
   "mobile": 5,
   "total": 10,
   "competition": "낮음",
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "군누베르화산": {
   "pc": 5,
   "mobile": 5,
   "total": 10,
   "competition": "낮음",
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "군누흐베르": {
   "pc": 5,
   "mobile": 5,
   "total": 10,
   "competition": "낮음",
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "아이슬란드셀포스": {
   "pc": 10,
@@ -922,5 +922,26 @@
   "total": 10,
   "competition": "낮음",
   "date": "2026-11-23"
+ },
+ "레이캬비크맛집": {
+  "pc": 20,
+  "mobile": 150,
+  "total": 170,
+  "competition": "높음",
+  "date": "2026-11-24"
+ },
+ "레이캬비크맛집추천": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-24"
+ },
+ "아이슬란드맛집": {
+  "pc": 30,
+  "mobile": 80,
+  "total": 110,
+  "competition": "중간",
+  "date": "2026-11-24"
  }
 }
