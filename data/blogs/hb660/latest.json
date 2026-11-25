@@ -1,10 +1,10 @@
 {
  "configured": true,
  "blog_id": "hb660",
- "updated_at": "2026-10-30T09:41:05.523970+09:00",
+ "updated_at": "2026-11-25T10:45:24.164727+09:00",
  "search_mode": "web",
- "keyword_tool": false,
- "search_calls": 65,
+ "keyword_tool": true,
+ "search_calls": 51,
  "search_reused": 0,
  "search_blocked": false,
  "profile": {
@@ -16,42 +16,42 @@
  "info": {
   "name": "㈜한백건축사사무소",
   "nickname": "주 한백건축사사무소",
-  "subscribers": 13032,
-  "total_visitors": 181306,
-  "today_visitors": 10,
+  "subscribers": 13115,
+  "total_visitors": 182777,
+  "today_visitors": 24,
   "topic": "비즈니스·경제",
   "power_blog": false,
   "naver_mate": false,
   "mate_citations": null,
   "official": true
  },
- "total_posts": 315,
- "last_post": "2026-10-29T12:00:00+09:00",
- "posts_12w": 14,
+ "total_posts": 305,
+ "last_post": "2026-11-23T12:00:00+09:00",
+ "posts_12w": 17,
  "visitors": [
   {
-   "date": "2026-10-26",
-   "count": 61
+   "date": "2026-11-21",
+   "count": 20
   },
   {
-   "date": "2026-10-27",
-   "count": 61
+   "date": "2026-11-22",
+   "count": 25
   },
   {
-   "date": "2026-10-28",
-   "count": 72
+   "date": "2026-11-23",
+   "count": 96
   },
   {
-   "date": "2026-10-29",
-   "count": 68
+   "date": "2026-11-24",
+   "count": 77
   },
   {
-   "date": "2026-10-30",
-   "count": 10
+   "date": "2026-11-25",
+   "count": 24
   }
  ],
  "index": {
-  "score": 46.2,
+  "score": 47.7,
   "grade": "준최2",
   "grade_index": 2,
   "grades": [
@@ -93,13 +93,13 @@
     "key": "visitors",
     "label": "방문자 규모",
     "weight": 30,
-    "value": 0.456
+    "value": 0.436
    },
    {
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.06
+    "value": 0.123
    },
    {
     "key": "exposure",
@@ -117,7 +117,7 @@
     "key": "pace",
     "label": "발행 페이스",
     "weight": 10,
-    "value": 0.167
+    "value": 0.202
    },
    {
     "key": "consistency",
@@ -129,91 +129,91 @@
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.944
+    "value": 0.923
    }
   ],
   "stats": {
-   "weekly_posts": 1.2,
+   "weekly_posts": 1.4,
    "weeks_active": 12,
    "exposure_rate": 1.0,
    "total_exposure_rate": 0.933,
-   "avg_comments": 18.1,
-   "avg_content_score": 91,
-   "visitors_avg": 65.5,
-   "top10_keywords": 2,
-   "best_top10_volume": 0
+   "avg_comments": 15.5,
+   "avg_content_score": 92,
+   "visitors_avg": 54.5,
+   "top10_keywords": 8,
+   "best_top10_volume": 550
   },
   "low_quality_risk": false,
   "plan": {
    "next_grade": "준최3",
    "next_at": 48.1,
-   "need": 1.9,
+   "need": 0.4,
    "this_at": 40.0,
    "scenarios": [
     {
-     "label": "지금처럼 (발행·키워드 그대로)",
-     "per_week": 1.2,
-     "weeks": null,
-     "after_4w": 44.7,
-     "after_12w": 45.4
+     "label": "최근 12주 평균 속도 그대로",
+     "per_week": 1.4,
+     "weeks": 3,
+     "after_4w": 47.8,
+     "after_12w": 47.7
     },
     {
      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 3,
      "weeks": 1,
-     "after_4w": 60.7,
-     "after_12w": 65.1
+     "after_4w": 61.2,
+     "after_12w": 64.4
     },
     {
      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 5,
      "weeks": 1,
-     "after_4w": 64.3,
-     "after_12w": 68.0
+     "after_4w": 63.9,
+     "after_12w": 67.3
     },
     {
      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
      "per_week": 7,
      "weeks": 1,
-     "after_4w": 66.9,
-     "after_12w": 72.5
+     "after_4w": 66.5,
+     "after_12w": 71.8
     }
    ],
    "levers": [
     {
      "label": "키워드 경쟁력",
      "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
-     "gain": 5.0
+     "gain": 6.1
     },
     {
      "label": "발행 페이스",
      "how": "12주 동안 주 3개씩 쓰면",
-     "gain": 2.6
+     "gain": 2.3
     },
     {
      "label": "방문자 규모",
-     "how": "하루 방문이 66명 → 131명이 되면",
-     "gain": 2.2
+     "how": "하루 방문이 54명 → 109명이 되면",
+     "gain": 2.3
     }
    ],
    "goal": {
     "grade": "최적1",
     "at": 75.1,
-    "score": 46.2,
-    "need": 28.9,
-    "progress": 62,
-    "visitors_now": 66,
+    "score": 47.7,
+    "need": 27.4,
+    "progress": 64,
+    "visitors_now": 54,
     "factors": [
      {
       "key": "visitors",
       "label": "방문자 규모",
-      "points": 13.7,
+      "points": 13.1,
       "max": 30.0
      },
      {
       "key": "keyword",
       "label": "키워드 경쟁력",
-      "points": 1.8,
+      "points": 3.7,
       "max": 30.0
      },
      {
@@ -231,7 +231,7 @@
      {
       "key": "pace",
       "label": "발행 페이스",
-      "points": 1.7,
+      "points": 2.0,
       "max": 10.0
      },
      {
@@ -243,7 +243,7 @@
      {
       "key": "engagement",
       "label": "소통·구독",
-      "points": 4.7,
+      "points": 4.6,
       "max": 5.0
      }
     ],
@@ -251,49 +251,58 @@
      {
       "label": "주 3개",
       "weeks": null,
-      "score_12w": 48.8
+      "score_12w": 50.0
      },
      {
       "label": "주 5개",
       "weeks": null,
-      "score_12w": 51.7
+      "score_12w": 52.9
      },
      {
       "label": "매일 1개",
       "weeks": null,
-      "score_12w": 54.5
+      "score_12w": 55.7
      }
     ],
     "daily": [
      {
       "weeks": 2,
-      "score": 47.6
+      "score": 49.1
      },
      {
       "weeks": 4,
-      "score": 49.0
-     },
-     {
-      "weeks": 6,
       "score": 50.4
      },
      {
-      "weeks": 8,
-      "score": 51.8
+      "weeks": 6,
+      "score": 51.7
      },
      {
-      "weeks": 10,
+      "weeks": 8,
       "score": 53.1
      },
      {
+      "weeks": 10,
+      "score": 54.4
+     },
+     {
       "weeks": 12,
-      "score": 54.5
+      "score": 55.7
      }
     ],
-    "after_daily": 54.5,
-    "remain_after_daily": 20.6,
+    "after_daily": 55.7,
+    "remain_after_daily": 19.4,
     "finish": []
    }
+  },
+  "reflect": {
+   "grade": "준최2",
+   "since": "2026-10-30",
+   "days": 2,
+   "gap": null,
+   "clean_on": null,
+   "weeks_left": null,
+   "daily_then": null
   }
  },
  "diagnosis": [
@@ -320,17 +329,599 @@
   {
    "level": "good",
    "title": "글 최적화",
-   "detail": "최근 글 평균 91점. 글자 수·사진·키워드 반복을 맞추면 올라가요."
+   "detail": "최근 글 평균 92점. 글자 수·사진·키워드 반복을 맞추면 올라가요."
+  },
+  {
+   "level": "warn",
+   "title": "방문자 추세",
+   "detail": "최근 5일 평균 48명, 그 전 5일 대비 -11%."
   }
  ],
  "posts": [
+  {
+   "logNo": "224483026425",
+   "title": "일조권 사선제한 완화 시행, 변경허가도 새 기준｜국토부 안내",
+   "url": "https://blog.naver.com/hb660/224483026425",
+   "date": "2026-11-23T12:00:00+09:00",
+   "comments": 6,
+   "likes": 86,
+   "category": "건축 소식",
+   "tags": [
+    "일조권사선제한",
+    "일조권사선제한완화",
+    "일조사선완화",
+    "정북일조",
+    "일조권",
+    "건축법시행령개정",
+    "건축법개정",
+    "다가구4층",
+    "건축허가",
+    "공장인허가",
+    "공장설계",
+    "한백건축사사무소",
+    "한백건축"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "일조권사선제한",
+     "rank": 6,
+     "of": 30,
+     "volume": {
+      "pc": 290,
+      "mobile": 260,
+      "total": 550,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "일조권사선제한완화",
+     "rank": 4,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "일조사선완화",
+     "rank": 21,
+     "of": 30,
+     "volume": {
+      "pc": 40,
+      "mobile": 5,
+      "total": 45,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 3478,
+    "images": 17,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 12,
+    "maps": 1,
+    "title_len": 33,
+    "kw_count": 5,
+    "score": 100,
+    "tips": []
+   }
+  },
+  {
+   "logNo": "224471600104",
+   "title": "공장외관, 쇼룸과 루버로 보여줄 곳만 여는 전면부｜이노베이트 본사",
+   "url": "https://blog.naver.com/hb660/224471600104",
+   "date": "2026-11-19T12:00:00+09:00",
+   "comments": 7,
+   "likes": 112,
+   "category": "건축 칼럼",
+   "tags": [
+    "공장쇼룸",
+    "외관파사드",
+    "사옥형공장",
+    "공장인허가",
+    "공장건축",
+    "한백건축사사무소",
+    "한백건축",
+    "전면사무동",
+    "공장외관",
+    "알루미늄루버",
+    "노출콘크리트",
+    "중정설계",
+    "이노베이트본사",
+    "공장디자인"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "공장쇼룸",
+     "rank": 7,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "외관파사드",
+     "rank": 17,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "사옥형공장",
+     "rank": 28,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2718,
+    "images": 15,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 12,
+    "maps": 1,
+    "title_len": 36,
+    "kw_count": 5,
+    "score": 100,
+    "tips": []
+   }
+  },
+  {
+   "logNo": "224471585162",
+   "title": "건축물 해체 허가, 여러 동 한 번에 신청 추진｜시행규칙 개정안",
+   "url": "https://blog.naver.com/hb660/224471585162",
+   "date": "2026-11-16T12:00:00+09:00",
+   "comments": 7,
+   "likes": 109,
+   "category": "건축 소식",
+   "tags": [
+    "공장해체허가",
+    "건축물해체",
+    "해체계획서",
+    "건축물관리법",
+    "건축물관리법시행규칙",
+    "공장철거",
+    "공장인허가",
+    "공장신축",
+    "공장설계",
+    "한백건축사사무소",
+    "한백건축",
+    "건축물해체허가",
+    "건축물해체신고대상"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "공장해체허가",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "건축물해체",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 40,
+      "mobile": 10,
+      "total": 50,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "해체계획서",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 250,
+      "mobile": 80,
+      "total": 330,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 3736,
+    "images": 15,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 12,
+    "maps": 1,
+    "title_len": 35,
+    "kw_count": 0,
+    "score": 80,
+    "tips": [
+     "대표 키워드 '공장해체허가' 본문 0회 — 3~10회 권장"
+    ]
+   }
+  },
+  {
+   "logNo": "224465690056",
+   "title": "공장 조경면적 고민, 좁은 도로변 녹지를 계단 위로 올리다｜유모토 일렉트릭 공장",
+   "url": "https://blog.naver.com/hb660/224465690056",
+   "date": "2026-11-12T12:00:00+09:00",
+   "comments": 13,
+   "likes": 115,
+   "category": "건축 칼럼",
+   "tags": [
+    "사옥형공장신축",
+    "사옥형공장",
+    "공장인허가",
+    "공장외관디자인",
+    "공장설계",
+    "소부장공장",
+    "정밀가공공장",
+    "공장조경",
+    "한백건축사사무소",
+    "한백건축",
+    "유모토일렉트릭",
+    "YKAD",
+    "공장조경면적",
+    "조경면적기준"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "사옥형공장신축",
+     "rank": 6,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "사옥형공장",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "공장인허가",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 20,
+      "mobile": 10,
+      "total": 30,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 3993,
+    "images": 19,
+    "videos": 0,
+    "quotes": 8,
+    "headings": 0,
+    "links": 12,
+    "maps": 1,
+    "title_len": 44,
+    "kw_count": 4,
+    "score": 95,
+    "tips": [
+     "제목 44자 — 15~40자 권장"
+    ]
+   }
+  },
+  {
+   "logNo": "224463407933",
+   "title": "구조안전확인대상 확대 추진, 200㎡ 이상 창고도 착공 전 서류 제출｜건축법 시행령 개정안",
+   "url": "https://blog.naver.com/hb660/224463407933",
+   "date": "2026-11-09T12:00:00+09:00",
+   "comments": 16,
+   "likes": 111,
+   "category": "건축 소식",
+   "tags": [
+    "창고구조안전확인",
+    "구조안전확인",
+    "가설건축물구조안전",
+    "가설건축물",
+    "건축법시행령개정안",
+    "폭설대비",
+    "설하중",
+    "착공신고",
+    "공장인허가",
+    "공장설계",
+    "한백건축사사무소",
+    "한백건축",
+    "구조안전확인대상",
+    "구조안전확인서",
+    "가설건축물존치기간"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "창고구조안전확인",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "구조안전확인",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 10,
+      "mobile": 5,
+      "total": 15,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "가설건축물구조안전",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 4156,
+    "images": 16,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 12,
+    "maps": 1,
+    "title_len": 50,
+    "kw_count": 2,
+    "score": 87,
+    "tips": [
+     "제목 50자 — 15~40자 권장",
+     "대표 키워드 '창고구조안전확인' 본문 2회 — 3~10회 권장"
+    ]
+   }
+  },
+  {
+   "logNo": "224459100939",
+   "title": "공장 채광과 자연환기 설계, 통로 천창과 벽돌 루버로 열기를 낮추는 법｜ASA STEAM",
+   "url": "https://blog.naver.com/hb660/224459100939",
+   "date": "2026-11-05T12:00:00+09:00",
+   "comments": 9,
+   "likes": 121,
+   "category": "건축 칼럼",
+   "tags": [
+    "공장채광",
+    "자연환기설계",
+    "공장천창",
+    "벽돌루버",
+    "차양루버",
+    "공장인허가",
+    "공장설계",
+    "한백건축사사무소",
+    "한백건축",
+    "공장환기",
+    "공장단열",
+    "빛공해저감",
+    "사옥형공장",
+    "ASASTEAM"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "공장채광",
+     "rank": 3,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "자연환기설계",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "공장천창",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2853,
+    "images": 17,
+    "videos": 0,
+    "quotes": 8,
+    "headings": 0,
+    "links": 8,
+    "maps": 1,
+    "title_len": 49,
+    "kw_count": 5,
+    "score": 95,
+    "tips": [
+     "제목 49자 — 15~40자 권장"
+    ]
+   }
+  },
+  {
+   "logNo": "224458698650",
+   "title": "공장 외벽 마감재 기준, 위험물시설 불연재 의무화와 방화셔터 완화｜건축법 시행령·방화규칙 개정",
+   "url": "https://blog.naver.com/hb660/224458698650",
+   "date": "2026-11-02T12:00:00+09:00",
+   "comments": 14,
+   "likes": 124,
+   "category": "건축 소식",
+   "tags": [
+    "공장외벽마감재기준",
+    "공장인허가",
+    "공장건축",
+    "복합방화셔터",
+    "불연재료",
+    "위험물저장및처리시설",
+    "건축법시행령개정",
+    "피난방화구조규칙",
+    "방화구획",
+    "건축자재품질인정",
+    "공장신축",
+    "산업시설설계",
+    "한백건축사사무소",
+    "한백건축"
+   ],
+   "status": "노출",
+   "total_search": "미노출",
+   "keywords": [
+    {
+     "keyword": "공장외벽마감재기준",
+     "rank": 2,
+     "of": 31,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "공장인허가",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 20,
+      "mobile": 10,
+      "total": 30,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "공장건축",
+     "rank": null,
+     "of": 30,
+     "volume": {
+      "pc": 70,
+      "mobile": 30,
+      "total": 100,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 3841,
+    "images": 19,
+    "videos": 0,
+    "quotes": 9,
+    "headings": 0,
+    "links": 12,
+    "maps": 1,
+    "title_len": 52,
+    "kw_count": 4,
+    "score": 95,
+    "tips": [
+     "제목 52자 — 15~40자 권장"
+    ]
+   }
+  },
   {
    "logNo": "224453942052",
    "title": "감추지 않은 설비가 얼굴이 되다｜캄포아모르 사회공간 사례에서 다시 보는 공장설계",
    "url": "https://blog.naver.com/hb660/224453942052",
    "date": "2026-10-29T12:00:00+09:00",
-   "comments": 10,
-   "likes": 78,
+   "comments": 12,
+   "likes": 116,
    "category": "건축 칼럼",
    "tags": [
     "공장설계",
@@ -366,21 +957,39 @@
      "keyword": "공장설계",
      "rank": null,
      "of": 32,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 50,
+      "total": 140,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
      "docs": null
     },
     {
      "keyword": "공장건축",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 70,
+      "mobile": 30,
+      "total": 100,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
      "docs": null
     },
     {
      "keyword": "한백건축사사무소",
      "rank": null,
-     "of": 28,
-     "volume": null,
+     "of": 29,
+     "volume": {
+      "pc": 50,
+      "mobile": 30,
+      "total": 80,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -406,7 +1015,7 @@
    "url": "https://blog.naver.com/hb660/224450014074",
    "date": "2026-10-26T12:00:00+09:00",
    "comments": 9,
-   "likes": 103,
+   "likes": 121,
    "category": "건축 칼럼",
    "tags": [
     "공장설계",
@@ -442,21 +1051,39 @@
      "keyword": "공장설계",
      "rank": null,
      "of": 32,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 50,
+      "total": 140,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
      "docs": null
     },
     {
      "keyword": "공장건축",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 70,
+      "mobile": 30,
+      "total": 100,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
      "docs": null
     },
     {
      "keyword": "한백건축사사무소",
      "rank": null,
-     "of": 28,
-     "volume": null,
+     "of": 29,
+     "volume": {
+      "pc": 50,
+      "mobile": 30,
+      "total": 80,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -479,8 +1106,8 @@
    "title": "배관 수직통로 층간 방화구획 완화｜반도체공장 시행령 개정으로 보는 공장설계",
    "url": "https://blog.naver.com/hb660/224447395798",
    "date": "2026-10-22T12:00:00+09:00",
-   "comments": 9,
-   "likes": 118,
+   "comments": 10,
+   "likes": 129,
    "category": "건축 소식",
    "tags": [
     "건축소식",
@@ -515,22 +1142,40 @@
     {
      "keyword": "건축소식",
      "rank": null,
-     "of": 30,
-     "volume": null,
+     "of": 31,
+     "volume": {
+      "pc": 5,
+      "mobile": 5,
+      "total": 10,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
      "docs": null
     },
     {
      "keyword": "공장설계",
      "rank": null,
      "of": 32,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 50,
+      "total": 140,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
      "docs": null
     },
     {
      "keyword": "공장건축",
      "rank": null,
      "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 70,
+      "mobile": 30,
+      "total": 100,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -557,7 +1202,7 @@
    "url": "https://blog.naver.com/hb660/224442573068",
    "date": "2026-10-19T12:00:00+09:00",
    "comments": 13,
-   "likes": 139,
+   "likes": 142,
    "category": "건축 칼럼",
    "tags": [
     "한백건축",
@@ -593,21 +1238,13 @@
      "keyword": "한백건축",
      "rank": null,
      "of": 30,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "한백건축사사무소",
-     "rank": null,
-     "of": 28,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "공장건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 30,
+      "mobile": 40,
+      "total": 70,
+      "competition": "낮음",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -634,7 +1271,7 @@
    "url": "https://blog.naver.com/hb660/224435238496",
    "date": "2026-10-12T12:00:00+09:00",
    "comments": 17,
-   "likes": 163,
+   "likes": 198,
    "category": "건축 칼럼",
    "tags": [
     "공장설계",
@@ -670,21 +1307,13 @@
      "keyword": "공장설계",
      "rank": null,
      "of": 32,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "공장건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "한백건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 50,
+      "total": 140,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -712,7 +1341,7 @@
    "url": "https://blog.naver.com/hb660/224429102362",
    "date": "2026-10-06T12:00:00+09:00",
    "comments": 18,
-   "likes": 160,
+   "likes": 162,
    "category": "건축 칼럼",
    "tags": [
     "공장건축",
@@ -742,21 +1371,13 @@
      "keyword": "공장건축",
      "rank": null,
      "of": 30,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "신축공장",
-     "rank": null,
-     "of": 32,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "산업시설설계",
-     "rank": null,
-     "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 70,
+      "mobile": 30,
+      "total": 100,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -766,7 +1387,7 @@
     "videos": 0,
     "quotes": 6,
     "headings": 0,
-    "links": 12,
+    "links": 8,
     "maps": 1,
     "title_len": 37,
     "kw_count": 8,
@@ -780,7 +1401,7 @@
    "url": "https://blog.naver.com/hb660/224420697524",
    "date": "2026-09-28T12:00:00+09:00",
    "comments": 21,
-   "likes": 176,
+   "likes": 177,
    "category": "건축 칼럼",
    "tags": [
     "공장설계",
@@ -816,21 +1437,13 @@
      "keyword": "공장설계",
      "rank": null,
      "of": 32,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "공장건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "산업시설설계",
-     "rank": 6,
-     "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 90,
+      "mobile": 50,
+      "total": 140,
+      "competition": "중간",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -857,7 +1470,7 @@
    "url": "https://blog.naver.com/hb660/224415741493",
    "date": "2026-09-21T12:00:00+09:00",
    "comments": 22,
-   "likes": 170,
+   "likes": 173,
    "category": "건축 칼럼",
    "tags": [
     "공장건축",
@@ -898,21 +1511,13 @@
      "keyword": "공장건축",
      "rank": null,
      "of": 30,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "공장설계",
-     "rank": null,
-     "of": 32,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "산업시설",
-     "rank": null,
-     "of": 30,
-     "volume": null,
+     "volume": {
+      "pc": 70,
+      "mobile": 30,
+      "total": 100,
+      "competition": "높음",
+      "date": "2026-11-25"
+     },
      "docs": null
     }
    ],
@@ -929,476 +1534,94 @@
     "score": 100,
     "tips": []
    }
-  },
-  {
-   "logNo": "224408059602",
-   "title": "덕이 머물고, 사람이 모이는 공간 '덕린재'",
-   "url": "https://blog.naver.com/hb660/224408059602",
-   "date": "2026-09-14T12:00:00+09:00",
-   "comments": 38,
-   "likes": 221,
-   "category": "일반건축",
-   "tags": [
-    "한백건축사사무소",
-    "한백건축",
-    "덕린재",
-    "파주건축",
-    "파주건축물",
-    "파주사무실",
-    "파주사무공간",
-    "사무공간",
-    "사무실건축",
-    "건축사사무소",
-    "건축설계",
-    "건축디자인",
-    "건축물디자인",
-    "공간디자인",
-    "건축이야기",
-    "건축프로젝트",
-    "건축공간",
-    "건축가",
-    "건축재료",
-    "노출콘크리트",
-    "송판노출콘크리트",
-    "콘크리트건축",
-    "자연과건축",
-    "자연을담은건축",
-    "선큰",
-    "선큰가든",
-    "중정",
-    "주거공간",
-    "파주주택",
-    "건축블로그"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "한백건축사사무소",
-     "rank": null,
-     "of": 28,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "한백건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "덕린재",
-     "rank": null,
-     "of": 4,
-     "volume": null,
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 3115,
-    "images": 13,
-    "videos": 0,
-    "quotes": 11,
-    "headings": 0,
-    "links": 12,
-    "maps": 1,
-    "title_len": 24,
-    "kw_count": 5,
-    "score": 100,
-    "tips": []
-   }
-  },
-  {
-   "logNo": "224400988380",
-   "title": "지형을 활용한 효율적 동선 설계, Quinta de Adorigo Winery 사례로 보는 공장설계",
-   "url": "https://blog.naver.com/hb660/224400988380",
-   "date": "2026-09-07T12:00:00+09:00",
-   "comments": 24,
-   "likes": 184,
-   "category": "건축 칼럼",
-   "tags": [
-    "industrialdesign",
-    "industrialarchitecture",
-    "공장설계",
-    "산업건축",
-    "건축설계",
-    "한백건축",
-    "한백건축사사무소",
-    "와이너리건축",
-    "건축디자인",
-    "공장건축",
-    "스마트팩토리",
-    "친환경건축",
-    "지속가능한건축",
-    "공정디자인",
-    "공간기획",
-    "공장설계사례",
-    "산업시설",
-    "건축가",
-    "프로젝트디자인",
-    "건축이야기",
-    "건축기행",
-    "해외건축",
-    "건축재료",
-    "목구조건축",
-    "클린룸설계",
-    "물류동선",
-    "건축단면",
-    "지형활용",
-    "건축디자인트렌드",
-    "생산시설디자인"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "industrialdesign",
-     "rank": null,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "industrialarchitecture",
-     "rank": null,
-     "of": 4,
-     "volume": null,
-     "docs": null
-    },
-    {
-     "keyword": "공장설계",
-     "rank": null,
-     "of": 32,
-     "volume": null,
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 2252,
-    "images": 15,
-    "videos": 0,
-    "quotes": 6,
-    "headings": 0,
-    "links": 12,
-    "maps": 0,
-    "title_len": 55,
-    "kw_count": 0,
-    "score": 70,
-    "tips": [
-     "제목 55자 — 15~40자 권장",
-     "대표 키워드 'industrialdesign' 본문 0회 — 3~10회 권장",
-     "동영상이나 지도 1개 이상"
-    ]
-   }
-  },
-  {
-   "logNo": "224389286624",
-   "title": "사람을 담는 공간으로 진화한 공장건축, 울산 KPX케미칼 사례",
-   "url": "https://blog.naver.com/hb660/224389286624",
-   "date": "2026-08-31T12:00:00+09:00",
-   "comments": 22,
-   "likes": 166,
-   "category": "건축 칼럼",
-   "tags": [
-    "공장건축",
-    "신축공장",
-    "산업시설설계",
-    "공장신축",
-    "공장설계사례",
-    "공장건축사례",
-    "화성공장",
-    "동탄공장",
-    "제조공장",
-    "원료의약품공장",
-    "산업시설",
-    "건축설계",
-    "건축사사무소",
-    "기업건축",
-    "생산시설",
-    "물류동선설계",
-    "파사드디자인",
-    "한백건축",
-    "한백건축사사무소"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "공장건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 2857,
-    "images": 14,
-    "videos": 0,
-    "quotes": 5,
-    "headings": 0,
-    "links": 12,
-    "maps": 1,
-    "title_len": 34,
-    "kw_count": 4,
-    "score": 100,
-    "tips": []
-   }
-  },
-  {
-   "logNo": "224388087013",
-   "title": "건축사 자격제도 개편, 2027년 새롭게 바뀝니다",
-   "url": "https://blog.naver.com/hb660/224388087013",
-   "date": "2026-08-24T12:00:00+09:00",
-   "comments": 14,
-   "likes": 179,
-   "category": "건축 칼럼",
-   "tags": [
-    "건축사",
-    "건축",
-    "건축사시험",
-    "건축학과",
-    "공장",
-    "공장설계",
-    "공장건물",
-    "공장건축",
-    "시험",
-    "시험개편",
-    "건축사사무소",
-    "한백건축사사무소"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "건축사",
-     "rank": 21,
-     "of": 31,
-     "volume": null,
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 3830,
-    "images": 9,
-    "videos": 0,
-    "quotes": 5,
-    "headings": 0,
-    "links": 11,
-    "maps": 0,
-    "title_len": 27,
-    "kw_count": 18,
-    "score": 87,
-    "tips": [
-     "대표 키워드 '건축사' 본문 18회 — 3~10회 권장",
-     "동영상이나 지도 1개 이상"
-    ]
-   }
-  },
-  {
-   "logNo": "224378161643",
-   "title": "공장은 어떻게 연결되어야 할까? OMA Hangzhou Prism에서 찾은 공간 전략",
-   "url": "https://blog.naver.com/hb660/224378161643",
-   "date": "2026-08-17T12:00:00+09:00",
-   "comments": 16,
-   "likes": 160,
-   "category": "건축 칼럼",
-   "tags": [
-    "한백건축",
-    "한백건축사사무소",
-    "건축사사무소",
-    "건축설계",
-    "공장건축",
-    "공장설계",
-    "산업시설",
-    "산업건축",
-    "산업시설설계",
-    "공장디자인",
-    "스마트팩토리",
-    "첨단산업시설",
-    "복합용도건축",
-    "복합건축",
-    "입체적공간구성",
-    "공간계획",
-    "공간구성",
-    "건축사례",
-    "해외건축사례",
-    "OMA",
-    "HangzhouPrism",
-    "항저우프리즘",
-    "중국건축",
-    "아트리움",
-    "중정계획",
-    "업무공간",
-    "연구시설",
-    "복지시설",
-    "기업건축",
-    "건축디자인"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "한백건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 3082,
-    "images": 24,
-    "videos": 0,
-    "quotes": 13,
-    "headings": 0,
-    "links": 8,
-    "maps": 0,
-    "title_len": 47,
-    "kw_count": 3,
-    "score": 90,
-    "tips": [
-     "제목 47자 — 15~40자 권장",
-     "동영상이나 지도 1개 이상"
-    ]
-   }
-  },
-  {
-   "logNo": "224367820134",
-   "title": "샤를 아즈나부르 콘서바토리의 “입체적 조닝” 설계 노하우로 배우는 공장건축 효율 UP! 전략",
-   "url": "https://blog.naver.com/hb660/224367820134",
-   "date": "2026-08-10T12:00:00+09:00",
-   "comments": 21,
-   "likes": 158,
-   "category": "건축 칼럼",
-   "tags": [
-    "공장건축",
-    "공장설계",
-    "공장건축설계",
-    "공장건축사사무소",
-    "산업시설설계",
-    "산업건축",
-    "산업시설건축",
-    "공장증축",
-    "공장리모델링",
-    "공장배치계획",
-    "공장동선계획",
-    "공장조닝",
-    "공간조닝",
-    "입체적조닝",
-    "복합기능공간",
-    "복합시설설계",
-    "생산시설설계",
-    "사무동설계",
-    "물류동선",
-    "부정형대지",
-    "부정형대지설계",
-    "건축설계",
-    "건축디자인",
-    "건축사사무소",
-    "해외건축사례",
-    "프랑스건축",
-    "도미니크쿨롱",
-    "샤를아즈나부르콘서바토리",
-    "콘서바토리건축",
-    "한백건축사사무소"
-   ],
-   "status": "노출",
-   "total_search": "미노출",
-   "keywords": [
-    {
-     "keyword": "공장건축",
-     "rank": null,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 3165,
-    "images": 22,
-    "videos": 0,
-    "quotes": 13,
-    "headings": 0,
-    "links": 9,
-    "maps": 1,
-    "title_len": 51,
-    "kw_count": 5,
-    "score": 95,
-    "tips": [
-     "제목 51자 — 15~40자 권장"
-    ]
-   }
-  },
-  {
-   "logNo": "224361727272",
-   "title": "Floating Ground에서 배우는 증축 설계, 기존의 흐름을 지키는 공장건축",
-   "url": "https://blog.naver.com/hb660/224361727272",
-   "date": "2026-08-03T12:00:00+09:00",
-   "comments": 22,
-   "likes": 187,
-   "category": "건축 칼럼",
-   "tags": [
-    "공장증축설계",
-    "공장증축",
-    "공장건축",
-    "공장설계",
-    "공장리모델링",
-    "산업시설설계",
-    "산업건축",
-    "건축설계",
-    "건축사사무소",
-    "공장동선계획",
-    "생산동선",
-    "물류동선",
-    "장스팬구조",
-    "공장입면디자인",
-    "공장증축공사",
-    "기존공장증축",
-    "플로팅그라운드",
-    "FloatingGround",
-    "잠실역사공원",
-    "한백건축사사무소"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "공장증축설계",
-     "rank": 9,
-     "of": 30,
-     "volume": null,
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 3079,
-    "images": 15,
-    "videos": 0,
-    "quotes": 10,
-    "headings": 0,
-    "links": 12,
-    "maps": 0,
-    "title_len": 45,
-    "kw_count": 3,
-    "score": 90,
-    "tips": [
-     "제목 45자 — 15~40자 권장",
-     "동영상이나 지도 1개 이상"
-    ]
-   }
   }
  ],
  "post_stats": [
+  {
+   "logNo": "224483026425",
+   "title": "일조권 사선제한 완화 시행, 변경허가도 새 기준｜국토부 안내",
+   "url": "https://blog.naver.com/hb660/224483026425",
+   "date": "2026-11-23T08:20:00+09:00",
+   "category": "건축 소식",
+   "likes": 86,
+   "comments": 6,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTlfMTAx/MDAxNzk1MDQ1OTc4MDg0.u0jmphO4-qJGhdna4VLK3FGhU2xYB0Kh9n1Vro4qLjEg.8CRkI6rlJvBOlG8ZVbrRcbfWPoR8EUx8DBE6MohAjmYg.PNG/c_thumb.png"
+  },
+  {
+   "logNo": "224471600104",
+   "title": "공장외관, 쇼룸과 루버로 보여줄 곳만 여는 전면부｜이노베이트 본사",
+   "url": "https://blog.naver.com/hb660/224471600104",
+   "date": "2026-11-19T08:27:47.820000+09:00",
+   "category": "건축 칼럼",
+   "likes": 112,
+   "comments": 7,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTRfMzAg/MDAxNzkxOTQyNTczMzc3.Ws1ZPk7Y_ENjT5l7NL8BP_V1USOZPDT6dDtqz28aK24g.O5GvwBRIcQD-vICJ9_1iicbSAD44Nelk5zLGSCIpKoAg.PNG/main-image-v2.png"
+  },
+  {
+   "logNo": "224471585162",
+   "title": "건축물 해체 허가, 여러 동 한 번에 신청 추진｜시행규칙 개정안",
+   "url": "https://blog.naver.com/hb660/224471585162",
+   "date": "2026-11-16T08:20:00+09:00",
+   "category": "건축 소식",
+   "likes": 109,
+   "comments": 7,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMzBfMjAw/MDAxNzkzMzQ0NTMxNDkz.tz2eRZVii8JtGuGNrlD631amx2ONuYQVS9TSGOcORH4g.2Vvl75ZtPACtMTX7PZrIciHDBey7YLKnRhQm3Sy_JWIg.PNG/n_thumb.png"
+  },
+  {
+   "logNo": "224465690056",
+   "title": "공장 조경면적 고민, 좁은 도로변 녹지를 계단 위로 올리다｜유모토 일렉트릭 공장",
+   "url": "https://blog.naver.com/hb660/224465690056",
+   "date": "2026-11-12T08:50:00+09:00",
+   "category": "건축 칼럼",
+   "likes": 115,
+   "comments": 13,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjlfMTAx/MDAxNzkzMjMwNjczNzIz.JDtKllh_BAcoIinXu7ftQjNqOJw4igPjam0-0aNpQxsg.7YtaAVAv4iAmK41eDA_wzTCc6FJAiRUC1u_xUkj2Q1gg.PNG/00_thumbnail.png"
+  },
+  {
+   "logNo": "224463407933",
+   "title": "구조안전확인대상 확대 추진, 200㎡ 이상 창고도 착공 전 서류 제출｜건축법 시행령 개정안",
+   "url": "https://blog.naver.com/hb660/224463407933",
+   "date": "2026-11-09T09:00:00+09:00",
+   "category": "건축 소식",
+   "likes": 111,
+   "comments": 16,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMzBfMjM3/MDAxNzkzMzQyOTg4MzI3.ZsKYP78ui3LmetcgO732_le81IOZpDXq1iPAa1YP9X0g.mZOzUILC3QbuSJ3O7ILlU0L2gu8KUztvUr9XenyogHUg.PNG/thumb2.png"
+  },
+  {
+   "logNo": "224459100939",
+   "title": "공장 채광과 자연환기 설계, 통로 천창과 벽돌 루버로 열기를 낮추는 법｜ASA STEAM",
+   "url": "https://blog.naver.com/hb660/224459100939",
+   "date": "2026-11-05T09:00:00+09:00",
+   "category": "건축 칼럼",
+   "likes": 121,
+   "comments": 9,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTRfMzEg/MDAxNzkxOTM4ODc0ODE0.M_ECjQS5nqOBR__7ICNNXBgOy2ZB1t7E5SVTpLmq2fsg.E5l-GuXEGGHArlW7rugjquir3Rswp0X75ep3Kuyk5w4g.PNG/main-image.png"
+  },
+  {
+   "logNo": "224458698650",
+   "title": "공장 외벽 마감재 기준, 위험물시설 불연재 의무화와 방화셔터 완화｜건축법 시행령·방화규칙 개정",
+   "url": "https://blog.naver.com/hb660/224458698650",
+   "date": "2026-11-02T09:00:00+09:00",
+   "category": "건축 소식",
+   "likes": 124,
+   "comments": 14,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMjlfMjQg/MDAxNzkzMjQ3NTczMzE0.p5XbOxBjMFRj2WtmnxzIcgXh3yHaI1k-3zLLfbHzc_Eg.raZmyIgm3h_N79e2TQi8m4wtPtWriUYcSo-YhhYDhrog.PNG/00_thumbnail.png"
+  },
   {
    "logNo": "224453942052",
    "title": "감추지 않은 설비가 얼굴이 되다｜캄포아모르 사회공간 사례에서 다시 보는 공장설계",
    "url": "https://blog.naver.com/hb660/224453942052",
    "date": "2026-10-29T09:30:00+09:00",
    "category": "건축 칼럼",
-   "likes": 78,
-   "comments": 10,
+   "likes": 116,
+   "comments": 12,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTVfMjIz/MDAxNzkyMDIwMjI1NDU5.cvxg9ATVpgQXQmeU_Rihv55aHykf9_qoeZ5JBX0xWt4g.iZSLWRwpSzKrC6N7tTi1BSBZCv6MId_EscV3wsuJgRQg.PNG/main-image.png"
   },
@@ -1408,7 +1631,7 @@
    "url": "https://blog.naver.com/hb660/224450014074",
    "date": "2026-10-26T09:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 103,
+   "likes": 121,
    "comments": 9,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTlfMjE5/MDAxNzkyMzc2Mjk0NTcy.lSbt9jwMA0iv6IqwqzVx32ojpejSes9abeSzFxwOtJ4g.v6yXtK_83YE8yVsKwm2T1-VEx7DRPM6N0GHWJwYRG_Eg.PNG/main-image.png"
@@ -1419,8 +1642,8 @@
    "url": "https://blog.naver.com/hb660/224447395798",
    "date": "2026-10-22T09:00:00+09:00",
    "category": "건축 소식",
-   "likes": 118,
-   "comments": 9,
+   "likes": 129,
+   "comments": 10,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMTlfMTkw/MDAxNzkyMzkzMDk4MTYx.IfiezXX_Fb-8fMaJSzw2K4qQv-sxsTGq8HUIHuHQxTMg.bl0bh2ogho9hszUSrTII9kutPu1zxdAg3Xz8O98KfXMg.PNG/00_thumbnail.png"
   },
@@ -1430,7 +1653,7 @@
    "url": "https://blog.naver.com/hb660/224442573068",
    "date": "2026-10-19T09:03:30.849000+09:00",
    "category": "건축 칼럼",
-   "likes": 139,
+   "likes": 142,
    "comments": 13,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMDJfMjY1/MDAxNzkwOTE0MzU4OTA2.GS5KYQdfA4n7iLRKZ1WNyZB4kJ3OL1kgD6bQx08bDewg.3HKfbhRg6cfQIz7ggL4BetDLaFgCtdmQJRCw-kIPWI0g.PNG/thumbnail_%289%29.png"
@@ -1441,7 +1664,7 @@
    "url": "https://blog.naver.com/hb660/224435238496",
    "date": "2026-10-12T09:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 163,
+   "likes": 198,
    "comments": 17,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjEwMDhfMjcg/MDAxNzkxNDM3NTk4ODAx.B0w6CgNqKawcoAz45urzpmEpzIiQK7colj3AO_q6QbUg.QkWjA0EIYbGrm0aUAEb2EDpZnw6agd6yIehpELUk9w8g.PNG/%BC%B1%C0%FC_%C0%DA%BF%AC%BB%E7_%B9%DA%B9%B0%B0%FC_%281%29.png"
@@ -1452,7 +1675,7 @@
    "url": "https://blog.naver.com/hb660/224429102362",
    "date": "2026-10-06T11:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 160,
+   "likes": 162,
    "comments": 18,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MzBfMjUz/MDAxNzkwNzYxNDQ1MjM0.u4_zL0ifdxNA9viLPCvU7mI9g6SahcPB49ZfrEkn0-Eg.bshpyd79aiJsuybkJ8vfXyg44CFZBHV_d69fynHWw4sg.PNG/thumbnail.png"
@@ -1463,7 +1686,7 @@
    "url": "https://blog.naver.com/hb660/224420697524",
    "date": "2026-09-28T08:45:54.930000+09:00",
    "category": "건축 칼럼",
-   "likes": 176,
+   "likes": 177,
    "comments": 21,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MjJfMjYx/MDAxNzkwMDYwMzk0MTU3.KFAkIUiV1EYcffKSoG_Lf0mM4p9nJYDdzwYReM08uWkg.AGxZaEtZMHJ145VKmJcGYxu8sIb3kykJGm69-aXuT80g.PNG/thumbnail.png"
@@ -1474,7 +1697,7 @@
    "url": "https://blog.naver.com/hb660/224415741493",
    "date": "2026-09-21T11:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 170,
+   "likes": 173,
    "comments": 22,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MTFfMjI4/MDAxNzg5MDkxNjA0MTc4.Ww5ifnKwH4k0fho1lMyeTr7lOARakmoIyfIz0j_hIaIg.VEVfKUrIl3qVrcjqFlCC1v0Sbl3fNLAw2jZLWP0HaiEg.PNG/thumbnail_%289%29.png"
@@ -1485,8 +1708,8 @@
    "url": "https://blog.naver.com/hb660/224408059602",
    "date": "2026-09-14T09:30:00+09:00",
    "category": "일반건축",
-   "likes": 221,
-   "comments": 38,
+   "likes": 232,
+   "comments": 45,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MDFfMjA1/MDAxNzg4MjI3NzI1OTM0.F1pwXY7kMuh5GBXaLNngOSCg59xZCzXvb-TqIm_10hgg.KPO3GGXT6SAkhoFEsj3cw3HriFrDviquAwMt07eEuLcg.JPEG/%C5%F5%BD%C3%B5%B5-1%28%B8%AE%C5%CD%C4%A1260813%29.jpg"
   },
@@ -1496,7 +1719,7 @@
    "url": "https://blog.naver.com/hb660/224400988380",
    "date": "2026-09-07T09:30:00+09:00",
    "category": "건축 칼럼",
-   "likes": 184,
+   "likes": 186,
    "comments": 24,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MDRfMjYy/MDAxNzg4NDgxMTExMTMw.ytRyUSYWCrVgxtFOyUC1fapOOTPM2gQxn2Y7HqI5hvQg.7i2bjEud7o3C4PCC-gG4WO2aDw9AQloQHlJivXe0ck0g.PNG/thumbnail.png"
@@ -1507,7 +1730,7 @@
    "url": "https://blog.naver.com/hb660/224389286624",
    "date": "2026-08-31T09:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 166,
+   "likes": 168,
    "comments": 22,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA5MDNfMTE2/MDAxNzg4NDE0MjM3OTAw.GMbjwu3n0-M4ZBYSjWOwreO01TlIypp9Zxib6V3KOdog.k38VqmhfUI40iHkb69LClVlIVlQd9UL5hjM9-5meVDsg.PNG/thumbnail_%281%29.png"
@@ -1518,7 +1741,7 @@
    "url": "https://blog.naver.com/hb660/224388087013",
    "date": "2026-08-24T09:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 179,
+   "likes": 184,
    "comments": 14,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MjRfMjIz/MDAxNzg3NTQyOTcyNDMx.uOgV-cukXQDS25ojyBOx4UN_z_6Unnn2lKI9EzHShfIg.U7uzpAvjiVFDHR-cX3AkNpnQ88mxyON-7yEbFC_L9hUg.PNG/thumbnail_%282%29.png"
@@ -1529,7 +1752,7 @@
    "url": "https://blog.naver.com/hb660/224378161643",
    "date": "2026-08-17T09:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 160,
+   "likes": 161,
    "comments": 16,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MTRfMjEz/MDAxNzg2NjYzODY3ODI2.sMZEFEtrHfuxBnuy1sOrCerl0omKcY4xp0XNZqWNCFQg.DcSD4Qs3S6LhYLAzW_uWV_vzet6VvmM9bX_R1EeM9j0g.PNG/thumbnail_%281%29.png"
@@ -1540,7 +1763,7 @@
    "url": "https://blog.naver.com/hb660/224367820134",
    "date": "2026-08-10T08:50:00+09:00",
    "category": "건축 칼럼",
-   "likes": 158,
+   "likes": 159,
    "comments": 21,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MDdfMjQy/MDAxNzg2MDc2NTk2NDQ2.4pJ4uvNndo6IJj5b_kdzP1kfKlbsS6JGJBzRguUsppAg.2dKRAvdKh-SJYzc3G4BiWLHxjczsB24DNvO47Gwg7Pwg.PNG/thumbnail_%286%29.png"
@@ -1551,7 +1774,7 @@
    "url": "https://blog.naver.com/hb660/224361727272",
    "date": "2026-08-03T10:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 187,
+   "likes": 188,
    "comments": 22,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MjRfMTIz/MDAxNzg3NTQzMzcwMzk5.vyvT5utZu0Li6O0pc3UjzP5OjgnQAtdCGAl0khT-IAog.8EGyrolHi206lSOaiolYC09o4rtLysrKL0eAIv01BeIg.PNG/thumbnail_%283%29.png"
@@ -1562,7 +1785,7 @@
    "url": "https://blog.naver.com/hb660/224355419633",
    "date": "2026-07-27T08:39:07.151000+09:00",
    "category": "제약",
-   "likes": 153,
+   "likes": 154,
    "comments": 12,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MjNfMTUw/MDAxNzg0Nzc4NDQxMDM5.2Ges8ZRbyq9iFhyF-SNJGh9tyQb5MRWLaHh-9yUfsyAg.24ONnIts2EkZ9YhS7nj-X38B3qq9iXyOI-QWYxEH0CUg.PNG/gmp%C1%BE%B7%F9%BF%CD_%C6%AF%C2%A1.png"
@@ -1573,7 +1796,7 @@
    "url": "https://blog.naver.com/hb660/224351709957",
    "date": "2026-07-20T11:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 159,
+   "likes": 161,
    "comments": 23,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MTRfMjI3/MDAxNzg0MDE3ODQzMzc0.thol5mTIfuiNAnmyFAJKIrE6wbgwEJpAeDPLPsnwKCUg.ER-Em9n42A4RIYK_zgaCon6_HqBqB1c0_Dx8Mqb7HwIg.PNG/CTA_%B9%E8%B3%CA.png"
@@ -1584,7 +1807,7 @@
    "url": "https://blog.naver.com/hb660/224342516785",
    "date": "2026-07-13T11:00:00+09:00",
    "category": "반도체",
-   "likes": 203,
+   "likes": 206,
    "comments": 32,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MTVfMTAx/MDAxNzg0MDc5MjQ1NzQ1.q9ZMT-VH2zb0HMfb2Yq-sdMoBlfW770e-23bjIzndwsg.DSpUoDpCKLS4uFPoq-SrPn_8wKfKZ6bn201K-D_Vp8Yg.PNG/%C5%F5%BD%C3%B5%B5-1.png"
@@ -1595,7 +1818,7 @@
    "url": "https://blog.naver.com/hb660/224334340555",
    "date": "2026-07-06T08:41:29.890000+09:00",
    "category": "건축 칼럼",
-   "likes": 221,
+   "likes": 223,
    "comments": 23,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA3MDFfMTEg/MDAxNzgyOTAwMDc5Njcw.h_dEBBFrRWthDlOfEmSUHBl0ydAzWVXCqn_ApyA58uUg.ofnepHAVZ6MtwW9bIBuGe0LSpoMFd2p7DeAihCWQmTwg.JPEG/Gap_store_%B9%E8%B3%CA.jpg"
@@ -1606,7 +1829,7 @@
    "url": "https://blog.naver.com/hb660/224323327462",
    "date": "2026-06-29T08:50:00+09:00",
    "category": "건축 칼럼",
-   "likes": 157,
+   "likes": 158,
    "comments": 11,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MDhfMTM3/MDAxNzgwODgyMTI1MDU2.FLFRX3SxK4ffBZbITTu4cvTR-5IUinhKwejurVWKGfwg.vdIOTYgND5gfPrEcOnmUU2tOLKFZC1inlY2m-f_gh2Ig.PNG/BIG_GOE.png"
@@ -1617,7 +1840,7 @@
    "url": "https://blog.naver.com/hb660/224318391077",
    "date": "2026-06-22T08:30:00+09:00",
    "category": "일반건축",
-   "likes": 188,
+   "likes": 189,
    "comments": 26,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDhfMjAw/MDAxNzc4MjIyOTcxMjI1.43lEV5vIrycWLQryX2aiu39NXzJji97NYRNao93DZ2Ig._5TyCMIF5FK4RzfQqP90by0ISYaoNEwtAKiWr5GxYUcg.PNG/%BB%E7%C0%CC%C6%C7__%C5%F5%BD%C3%B5%B52.png"
@@ -1628,10 +1851,21 @@
    "url": "https://blog.naver.com/hb660/224310234611",
    "date": "2026-06-15T08:40:00+09:00",
    "category": "반도체",
-   "likes": 180,
+   "likes": 183,
    "comments": 20,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA2MDJfMTY4/MDAxNzgwMzgxMjQ0Nzg5.QC4D3D0oLOsgsGblhp1zPajrAo_PhzQMj63FoJ8TW6cg.4tHxYSMyzkoj1kuxVhRlCuKWJ-DAbVW5dGdfEFey1Rsg.PNG/251127_%C5%F5%BD%C3%B5%B5%C0%DB%BE%F7_%C1%F6%B8%ED%BF%F8%BF%EB.png"
+  },
+  {
+   "logNo": "224303521638",
+   "title": "공장설계 바이오 연구시설 | 첨단 연구시설의 입면디자인과 건축계획",
+   "url": "https://blog.naver.com/hb660/224303521638",
+   "date": "2026-06-08T08:37:18.159000+09:00",
+   "category": "GMP(제약)",
+   "likes": 178,
+   "comments": 20,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MTJfMTU5/MDAxNzg2NDkyMTk1Nzgx.xxCnfjALxj3_gN9gAddBDsyJLZN9DK8hG4BGJGEgpUYg.XTlXBhy58nB8fJrMAoqa_dFMbDgHxbndy1Nhyd0OHc8g.JPEG/5._%C1%B6%B0%A8%B5%B5_CI%C1%A6%B0%C5.jpg"
   },
   {
    "logNo": "224296686389",
@@ -1639,7 +1873,7 @@
    "url": "https://blog.naver.com/hb660/224296686389",
    "date": "2026-05-26T12:16:17.955000+09:00",
    "category": "GMP(제약)",
-   "likes": 190,
+   "likes": 191,
    "comments": 19,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA4MTJfOTcg/MDAxNzg2NTE3NDM5MDI2.HaMJi2E44WfQS3aZ9gffHBfMFYzNwFod6k0m7gRe6RUg.FG-NGdSVs-3kyTATRARpR3JVGQwihuIG8ti_4GYCYZEg.PNG/%C5%F5%BD%C3%B5%B51.png"
@@ -1650,7 +1884,7 @@
    "url": "https://blog.naver.com/hb660/224281831860",
    "date": "2026-05-18T09:00:00+09:00",
    "category": "반도체",
-   "likes": 184,
+   "likes": 185,
    "comments": 21,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MTFfNDYg/MDAxNzc4NDU2MzcwNzI1.mw_l2lq5WtScnKVBdSPioDAkc5mIG7Ku_PE4AH18-8Yg.gwtUNsKi7t3JpwVkPTZpKS6lcO8IEV-jZnrRkPhcyg0g.PNG/%C5%F5%BD%C3%B5%B522.png"
@@ -1661,7 +1895,7 @@
    "url": "https://blog.naver.com/hb660/224278540822",
    "date": "2026-05-11T10:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 181,
+   "likes": 182,
    "comments": 22,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MjFfMjcx/MDAxNzc2NzI2ODMwMDQ3.OGbTFtfPvEnLsB7sThMrH8rXcA-Sb6zIMJrkUIjAGs8g.8nr62F90jLcOp3z5H3YPtGSM4MjrQmaG8zgRA0jb1FUg.PNG/%C5%E4%B6%F3%BA%A3%C0%CC_%BB%E7%B7%CA%28%B0%ED%29.png"
@@ -1672,7 +1906,7 @@
    "url": "https://blog.naver.com/hb660/224268148452",
    "date": "2026-05-04T09:00:00+09:00",
    "category": "건축 칼럼",
-   "likes": 171,
+   "likes": 172,
    "comments": 19,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMDNfMjU3/MDAxNzcyNTAzMDU0NzU5.fGt2nnw22D_Z1UUUpD-a4f77bf9x34197krmQpcwdj4g.0qzU-PiU6k7lIsj-tmRxrqrHZFGPapdkIMHXhy5ploAg.PNG/22.png"
@@ -1683,7 +1917,7 @@
    "url": "https://blog.naver.com/hb660/224260836778",
    "date": "2026-04-27T10:00:00+09:00",
    "category": "산업 플랜트",
-   "likes": 230,
+   "likes": 232,
    "comments": 33,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA1MDZfMjkz/MDAxNzc4MDM4Mzg0OTEx.6kIy3ZXGWKfW9-x0Nkz_UJTv-lz1v_OGLYWWCgRc7SIg.rICrYTEdMANtMRZp0c7S4aTb64Rx9CUa3vDXKLbFyzEg.JPEG/070-TPP_%BE%C6%C0%CC%B7%CE_%C7%C1%B7%CE%C1%A7%C6%AE_%BC%B3%B0%E8%BF%EB%BF%AA.jpg"
@@ -1694,7 +1928,7 @@
    "url": "https://blog.naver.com/hb660/224255428765",
    "date": "2026-04-20T09:01:37.303000+09:00",
    "category": "건축 칼럼",
-   "likes": 222,
+   "likes": 223,
    "comments": 31,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjA0MTZfMjA5/MDAxNzc2MzI4ODkzMTk4.Ltl0Gpp4iK9EqZM_1OPdR0b6RKKSDQv2y7BPnoZ-ff8g.JiG_6m4oGfnE0922LvZ0MpjoirJewsI15vDLH8iOeFAg.PNG/CTA_%B9%E8%B3%CA.png"
@@ -1705,7 +1939,7 @@
    "url": "https://blog.naver.com/hb660/224243874109",
    "date": "2026-04-13T13:40:40.018000+09:00",
    "category": "반도체",
-   "likes": 228,
+   "likes": 229,
    "comments": 29,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMjdfNDAg/MDAxNzc0NTg4ODQxMjk3.anZ7oyLRBu8Dk_Vbi2NAwEtEcatavvKQKYMrq9NGlTwg.hqRqhR4lHP7mzhO7rnpC1Iv6SBvV2qJubyi63FUqyjMg.JPEG/1_%C1%B6%B0%A8%B5%B51.jpg"
@@ -1716,7 +1950,7 @@
    "url": "https://blog.naver.com/hb660/224237883043",
    "date": "2026-04-06T09:00:00+09:00",
    "category": "반도체",
-   "likes": 220,
+   "likes": 221,
    "comments": 23,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMzFfMjcx/MDAxNzc0OTQ3NTgzNjU3.j85O2kNZnT_pQc-IlpvtkJ2t3Stx0ncJQVUgLAZAEsMg.hr83DSBYbKTB1k6yiSX-48No3fgKftifQUgyI-BdWMkg.PNG/%C5%F5%BD%C3%B5%B5111.png"
@@ -1727,7 +1961,7 @@
    "url": "https://blog.naver.com/hb660/224231536807",
    "date": "2026-03-30T09:00:00+09:00",
    "category": "반도체",
-   "likes": 212,
+   "likes": 213,
    "comments": 24,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMjZfMTc3/MDAxNzc0NDg4MjUzMjE0.2cLeLo4pIAUPJL0L0UOWPTcStsjEvqB7eLDsRwOCCLwg.36jTfsEaeMPdoYV9J6NS9m0UK1E6aDAGKyivFXxFUnYg.PNG/%C5%F5%BD%C3%B5%B53.png"
@@ -1738,7 +1972,7 @@
    "url": "https://blog.naver.com/hb660/224219505630",
    "date": "2026-03-23T08:04:32.891000+09:00",
    "category": "건축 칼럼",
-   "likes": 204,
+   "likes": 205,
    "comments": 20,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjAzMDRfNCAg/MDAxNzcyNTg3MDM2MjUy.wyp-H1Ls_JxN0Xe5aGuMeJ-t_buOiuUhdZvnb147f9Ag.Y-rErLT7SKd_eN1_JEwxy-EOKH26ZsdMZkd53UgFbAgg.PNG/%BF%C0%BC%B3%B7%CF_%C6%BC%C6%D1%C5%E4%B8%AE.png"
@@ -2232,7 +2466,7 @@
    "title": "맛, 물들이다 – 브랜드를 경험하는 공장설계의 새로운 언어",
    "url": "https://blog.naver.com/hb660/223892912232",
    "date": "2025-06-09T09:00:00+09:00",
-   "category": "식품",
+   "category": "식품ㆍ스마트팜",
    "likes": 335,
    "comments": 77,
    "views": null,
@@ -3282,641 +3516,657 @@
    "comments": 7,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzEwMTlfMjM3/MDAxNjk3Njk3OTMyMTAy.F2N6uKW7J6IYn3Xy4VIznoJ6f_YV58CU-IGf5J2luoIg.CGQ8U-WaDH_-AaL2UxU4o-NeK2ZcFrJB95-tjR7bkMgg.JPEG.hb660/IMG_1501.JPG"
-  },
-  {
-   "logNo": "223235365265",
-   "title": "[한백 이야기] 명지병원견학",
-   "url": "https://blog.naver.com/hb660/223235365265",
-   "date": "2023-10-13T08:52:39.198000+09:00",
-   "category": "답사",
-   "likes": 158,
-   "comments": 17,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzA5MjJfMjM1/MDAxNjk1MzU5Mjg3NjIy.hSjZ2zG6G_uuTAqEfycEG_sfCSXydXvrM_LnqJgwl68g.40zop1GfSg-M2XibTBCscu1x8y42cJCtBxHj3bikSBUg.PNG.hb660/%B9%E8%C4%A1%B5%B5.png"
-  },
-  {
-   "logNo": "223227757722",
-   "title": "[건축지식] 공장 같지 않은 공장 : 수퍼빈 아이엠팩토리",
-   "url": "https://blog.naver.com/hb660/223227757722",
-   "date": "2023-10-04T12:41:12.526000+09:00",
-   "category": "건축 칼럼",
-   "likes": 183,
-   "comments": 14,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzEwMDRfOTMg/MDAxNjk2MzkwODAxNzc4.4CGnqG5SMot2bR4tbxS6UpjT3858IK6ACJrXDW0IHEog.0LT_ErP4bW1__KGq1pM2XUxC3ikAxyxlbs5gE1DeZ1Qg.PNG.hb660/%BD%BA%C5%A9%B8%B0%BC%A6_2023-10-04_123825.png"
-  },
-  {
-   "logNo": "223221204832",
-   "title": "[건축지식] 인큐베이팅 용광로",
-   "url": "https://blog.naver.com/hb660/223221204832",
-   "date": "2023-09-26T09:00:00+09:00",
-   "category": "건축 칼럼",
-   "likes": 161,
-   "comments": 15,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzA5MjVfMjI2/MDAxNjk1NjAyMDQxOTgx.onXuTCUcPeAPcy8IG2N6K8EjAlVidla57bXv5QVkon8g.gcqUWTP8a0GZy0cr_9qNBTMlG3CQkgcoYM1pJkL7eVog.PNG.hb660/image.png"
-  },
-  {
-   "logNo": "223218430451",
-   "title": "[건축지식] 주변 자연을 건물 내부로 적극적으로 끌어들인 인간 중심의 공장",
-   "url": "https://blog.naver.com/hb660/223218430451",
-   "date": "2023-09-22T09:32:13.766000+09:00",
-   "category": "건축 칼럼",
-   "likes": 168,
-   "comments": 13,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzA5MjJfMTYw/MDAxNjk1MzQwNjk3NzY0.BILHdsw0ALOI-WvJIDckK2mKgd6nTBU4-2RnRE2oY7gg.UHlsMyxb0KmlShAjH3vTxWGlBzErIGbrvvfP6hvQEBgg.PNG.hb660/image.png"
-  },
-  {
-   "logNo": "223214473601",
-   "title": "[건축지식] 바위 벼랑 위 빛과 그림자의 향연",
-   "url": "https://blog.naver.com/hb660/223214473601",
-   "date": "2023-09-18T10:36:00.500000+09:00",
-   "category": "건축 칼럼",
-   "likes": 160,
-   "comments": 14,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzA5MTVfOTQg/MDAxNjk0NzQxODEyNzQ3.OFKMROmrNOK7mxg8qWxn3qM6DjW0ZnpGQ5i45qDfm88g.lXl1qnJHjYzQNX2owiVRFhmBN4niaHPnzXQRzxpSvQsg.JPEG.hb660/1.jpg"
-  },
-  {
-   "logNo": "223210033693",
-   "title": "2024 한백건축 신입사원 공개채용",
-   "url": "https://blog.naver.com/hb660/223210033693",
-   "date": "2023-09-13T09:08:23.305000+09:00",
-   "category": "사내이야기",
-   "likes": 167,
-   "comments": 16,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzA5MDRfOTMg/MDAxNjkzODAzNzE0ODU3.E_WDvPXZ9vhIeNYxB4g3cEASkoGvE1Fop33YNwNBDeMg.HF4_lXZDVKJE1AlXg3NBEMRmniO_E1jcYa_CLdUHDTMg.PNG.hb660/2024_%C7%D1%B9%E9%B0%C7%C3%E0%BB%E7%BB%E7%B9%AB%BC%D2_%BD%C5%C0%D4%BB%E7%BF%F8_%B0%F8%B0%B3%C3%A4%BF%EB%C6%F7%BD%BA%C5%CD_%C3%D6%C1%BE.png"
-  },
-  {
-   "logNo": "223209276068",
-   "title": "Main-Biz(경영혁신 중소기업) 인증을 받다",
-   "url": "https://blog.naver.com/hb660/223209276068",
-   "date": "2023-09-13T09:00:00+09:00",
-   "category": "한백건축사사무소 소개",
-   "likes": 141,
-   "comments": 10,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzA4MjlfMjUx/MDAxNjkzMjg5MjM0ODA4.qUYZgjjt-noYefSTsl678mSWNe_bdOHHJdQ17gv9CA4g.1PvlNCg4UkpP7WeKv7w6Vx1MfEQyLCLGi9IDJ1hWOGgg.JPEG.hb660/%C8%AE%C0%CE%BC%AD_%B8%DE%C0%CE%BA%F1%C1%EE-%B0%E6%BF%B5%C7%F5%BD%C5%C1%DF%BC%D2%B1%E2%BE%F7%282023.082026.08%29.jpg"
-  },
-  {
-   "logNo": "223197348066",
-   "title": "[건축지식] 다섯가지 빛이 단단하게 갈무리된",
-   "url": "https://blog.naver.com/hb660/223197348066",
-   "date": "2023-08-31T09:00:00+09:00",
-   "category": "건축 칼럼",
-   "likes": 165,
-   "comments": 15,
-   "views": null,
-   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyMzA4MzBfMyAg/MDAxNjkzMzU0Mzk0MjMz.ny-MO73wLtSo6fQ8hRsWVNpNF5zc5n0CU3e6PkeBXtUg.qrhY7Q9xSf9ZF0VDKhEEUMUnO7qF61qmSqkbv_X6wicg.PNG.hb660/image.png"
   }
  ],
  "watch_keywords": [],
  "competitors": {
   "count": 21,
-  "my_rank": 8,
-  "top_percent": 38,
-  "same_topic": 11,
+  "my_rank": 11,
+  "top_percent": 52,
+  "same_topic": 14,
   "my_place": {
-   "visitors_avg": 4,
-   "subscribers": 3,
-   "posts_30d": 14,
-   "total_posts": 13
+   "visitors_avg": 6,
+   "subscribers": 1,
+   "posts_30d": 17,
+   "total_posts": 11
   },
   "averages": {
-   "visitors_avg": 81.3,
-   "subscribers": 5301.5,
-   "posts_30d": 12.4,
-   "total_posts": 1641.3,
-   "score": 49.0
+   "visitors_avg": 103.5,
+   "subscribers": 1512.1,
+   "posts_30d": 20.9,
+   "total_posts": 554.6,
+   "score": 52.2
   },
   "blogs": [
    {
-    "blog_id": "molab_suda",
-    "name": "고용노동부 공식 블로그",
-    "nickname": "고용노동부",
-    "topic": "",
-    "subscribers": 60854,
-    "today_visitors": 704,
-    "visitors_avg": null,
-    "total_posts": 17660,
+    "blog_id": "pisak001",
+    "name": "방구석 공인중개사",
+    "nickname": "방구석 공인중개사",
+    "topic": "비즈니스·경제",
+    "subscribers": 4302,
+    "today_visitors": 187,
+    "visitors_avg": 1265.8,
+    "total_posts": 2582,
     "posts_30d": 30,
     "shared": [
      {
-      "keyword": "산업시설설계",
-      "rank": 9
+      "keyword": "일조권사선제한완화",
+      "rank": 7
      },
      {
-      "keyword": "한백건축사사무소",
+      "keyword": "일조권사선제한",
       "rank": 11
      },
      {
-      "keyword": "한백건축",
+      "keyword": "일조사선완화",
+      "rank": 16
+     }
+    ],
+    "influencer": false,
+    "score": 86.7,
+    "rank": 1
+   },
+   {
+    "blog_id": "choa3472",
+    "name": "아키파머 : 미래 공간을 경작하다",
+    "nickname": "아키파머",
+    "topic": "인테리어·DIY",
+    "subscribers": 1480,
+    "today_visitors": 171,
+    "visitors_avg": 393.5,
+    "total_posts": 509,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "창고구조안전확인",
+      "rank": 8
+     },
+     {
+      "keyword": "자연환기설계",
+      "rank": 14
+     },
+     {
+      "keyword": "일조권사선제한",
+      "rank": 16
+     },
+     {
+      "keyword": "가설건축물구조안전",
+      "rank": 25
+     }
+    ],
+    "influencer": false,
+    "score": 76.0,
+    "rank": 2
+   },
+   {
+    "blog_id": "realnote-",
+    "name": "리얼노트 _ 빌딩매매 / 사옥임대 / 사무실임대",
+    "nickname": "리얼노트",
+    "topic": "비즈니스·경제",
+    "subscribers": 2496,
+    "today_visitors": 61,
+    "visitors_avg": 185.2,
+    "total_posts": 828,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "일조권사선제한완화",
+      "rank": 1
+     },
+     {
+      "keyword": "일조권사선제한",
+      "rank": 2
+     },
+     {
+      "keyword": "일조사선완화",
+      "rank": 5
+     }
+    ],
+    "influencer": false,
+    "score": 73.7,
+    "rank": 3
+   },
+   {
+    "blog_id": "jejuland_realestate",
+    "name": "제주영어교육도시 전문 이준 부동산",
+    "nickname": "제주이준부동산",
+    "topic": "비즈니스·경제",
+    "subscribers": 3692,
+    "today_visitors": 79,
+    "visitors_avg": null,
+    "total_posts": 1370,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "일조권사선제한",
+      "rank": 1
+     },
+     {
+      "keyword": "일조권사선제한완화",
+      "rank": 2
+     },
+     {
+      "keyword": "일조사선완화",
+      "rank": 4
+     }
+    ],
+    "influencer": false,
+    "score": 70.6,
+    "rank": 4
+   },
+   {
+    "blog_id": "mc138855",
+    "name": "건설plus부동산",
+    "nickname": "360플러스",
+    "topic": "비즈니스·경제",
+    "subscribers": 1099,
+    "today_visitors": 56,
+    "visitors_avg": null,
+    "total_posts": 731,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "공장건축",
+      "rank": 7
+     },
+     {
+      "keyword": "공장외벽마감재기준",
+      "rank": 15
+     },
+     {
+      "keyword": "사옥형공장신축",
+      "rank": 20
+     },
+     {
+      "keyword": "공장해체허가",
+      "rank": 28
+     }
+    ],
+    "influencer": false,
+    "score": 65.3,
+    "rank": 5
+   },
+   {
+    "blog_id": "coreasta1",
+    "name": "어시스트 행정사사무소 | 행정법률 행정심판 인허가",
+    "nickname": "김기홍AdminLaw",
+    "topic": "비즈니스·경제",
+    "subscribers": 82,
+    "today_visitors": 69,
+    "visitors_avg": 167.8,
+    "total_posts": 505,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "가설건축물구조안전",
+      "rank": 7
+     },
+     {
+      "keyword": "창고구조안전확인",
+      "rank": 12
+     },
+     {
+      "keyword": "구조안전확인",
       "rank": 19
      }
     ],
     "influencer": false,
-    "score": 85.6,
-    "rank": 1
-   },
-   {
-    "blog_id": "chloe7513",
-    "name": "세나와 클로이의 하루",
-    "nickname": "맘클로이",
-    "topic": "맛집",
-    "subscribers": 1395,
-    "today_visitors": 330,
-    "visitors_avg": 1311.0,
-    "total_posts": 831,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "한백건축",
-      "rank": 8
-     },
-     {
-      "keyword": "한백건축사사무소",
-      "rank": 12
-     }
-    ],
-    "influencer": false,
-    "score": 83.0,
-    "rank": 2
+    "score": 65.2,
+    "rank": 6
    },
    {
     "blog_id": "hunarch2009",
     "name": "J.HUN(제이훈) 건축사사무소",
     "nickname": "제이훈 건축사사무소",
     "topic": "인테리어·DIY",
-    "subscribers": 2542,
-    "today_visitors": 70,
+    "subscribers": 2579,
+    "today_visitors": 27,
     "visitors_avg": null,
-    "total_posts": 1637,
+    "total_posts": 1678,
     "posts_30d": 30,
     "shared": [
      {
       "keyword": "공장설계",
-      "rank": 4
-     },
-     {
-      "keyword": "공장증축설계",
-      "rank": 4
-     },
-     {
-      "keyword": "산업시설설계",
-      "rank": 13
-     },
-     {
-      "keyword": "공장건축",
-      "rank": 22
-     }
-    ],
-    "influencer": false,
-    "score": 69.4,
-    "rank": 3
-   },
-   {
-    "blog_id": "itaem0122",
-    "name": "이태민 행정사",
-    "nickname": "이태민 행정사",
-    "topic": "비즈니스·경제",
-    "subscribers": 384,
-    "today_visitors": 24,
-    "visitors_avg": null,
-    "total_posts": 389,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "산업시설",
-      "rank": 7
-     },
-     {
-      "keyword": "공장건축",
-      "rank": 13
-     }
-    ],
-    "influencer": false,
-    "score": 57.8,
-    "rank": 4
-   },
-   {
-    "blog_id": "lo8255ve",
-    "name": "조립식 건축 클라스",
-    "nickname": "BON엘이비",
-    "topic": "비즈니스·경제",
-    "subscribers": 8029,
-    "today_visitors": 91,
-    "visitors_avg": null,
-    "total_posts": 455,
-    "posts_30d": 7,
-    "shared": [
-     {
-      "keyword": "공장설계",
-      "rank": 8
-     },
-     {
-      "keyword": "공장증축설계",
-      "rank": 10
-     }
-    ],
-    "influencer": false,
-    "score": 56.3,
-    "rank": 5
-   },
-   {
-    "blog_id": "choh2006",
-    "name": "해금컨설팅 - 사업자금의 새로운 시작을 함께합니다.",
-    "nickname": "해금컨설팅",
-    "topic": "비즈니스·경제",
-    "subscribers": 174,
-    "today_visitors": 21,
-    "visitors_avg": null,
-    "total_posts": 255,
-    "posts_30d": 30,
-    "shared": [
-     {
-      "keyword": "공장건축",
-      "rank": 2
-     },
-     {
-      "keyword": "공장설계",
-      "rank": 12
-     }
-    ],
-    "influencer": false,
-    "score": 54.9,
-    "rank": 6
-   },
-   {
-    "blog_id": "pdpdgnsc",
-    "name": "도리의 기록지",
-    "nickname": "강남핑크도리",
-    "topic": "비즈니스·경제",
-    "subscribers": 1605,
-    "today_visitors": 4,
-    "visitors_avg": 53.0,
-    "total_posts": 705,
-    "posts_30d": 13,
-    "shared": [
-     {
-      "keyword": "한백건축",
       "rank": 3
      },
      {
-      "keyword": "한백건축사사무소",
+      "keyword": "공장천창",
+      "rank": 5
+     },
+     {
+      "keyword": "사옥형공장신축",
+      "rank": 16
+     },
+     {
+      "keyword": "공장건축",
+      "rank": 25
+     },
+     {
+      "keyword": "일조사선완화",
+      "rank": 27
+     }
+    ],
+    "influencer": false,
+    "score": 64.4,
+    "rank": 7
+   },
+   {
+    "blog_id": "leb5000",
+    "name": "본LEB건설-창고,공장 건축",
+    "nickname": "공장 창고 건축전문",
+    "topic": "비즈니스·경제",
+    "subscribers": 6788,
+    "today_visitors": 95,
+    "visitors_avg": null,
+    "total_posts": 549,
+    "posts_30d": 13,
+    "shared": [
+     {
+      "keyword": "공장채광",
+      "rank": 1
+     },
+     {
+      "keyword": "공장외벽마감재기준",
+      "rank": 7
+     },
+     {
+      "keyword": "창고구조안전확인",
+      "rank": 29
+     }
+    ],
+    "influencer": false,
+    "score": 60.4,
+    "rank": 8
+   },
+   {
+    "blog_id": "su-jakk",
+    "name": "건축사사무소 수작의 [건축상담소]",
+    "nickname": "소장ㅣ건축사",
+    "topic": "비즈니스·경제",
+    "subscribers": 134,
+    "today_visitors": 55,
+    "visitors_avg": null,
+    "total_posts": 116,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "창고구조안전확인",
+      "rank": 4
+     },
+     {
+      "keyword": "가설건축물구조안전",
+      "rank": 4
+     },
+     {
+      "keyword": "일조사선완화",
+      "rank": 8
+     },
+     {
+      "keyword": "일조권사선제한완화",
+      "rank": 9
+     },
+     {
+      "keyword": "일조권사선제한",
+      "rank": 12
+     },
+     {
+      "keyword": "건축물해체",
+      "rank": 16
+     },
+     {
+      "keyword": "구조안전확인",
+      "rank": 18
+     },
+     {
+      "keyword": "공장외벽마감재기준",
+      "rank": 27
+     },
+     {
+      "keyword": "해체계획서",
+      "rank": 30
+     }
+    ],
+    "influencer": false,
+    "score": 58.4,
+    "rank": 9
+   },
+   {
+    "blog_id": "buildhada",
+    "name": "올인원 건축 플랫폼, 빌드하다",
+    "nickname": "빌드하다",
+    "topic": "비즈니스·경제",
+    "subscribers": 42,
+    "today_visitors": 77,
+    "visitors_avg": null,
+    "total_posts": 166,
+    "posts_30d": 26,
+    "shared": [
+     {
+      "keyword": "일조권사선제한완화",
+      "rank": 3
+     },
+     {
+      "keyword": "일조권사선제한",
+      "rank": 4
+     },
+     {
+      "keyword": "일조사선완화",
       "rank": 19
      }
     ],
     "influencer": false,
-    "score": 54.5,
-    "rank": 7
+    "score": 55.5,
+    "rank": 10
    },
    {
     "blog_id": "hb660",
     "name": "㈜한백건축사사무소",
     "nickname": "주 한백건축사사무소",
     "topic": "비즈니스·경제",
-    "subscribers": 13032,
-    "today_visitors": 10,
-    "visitors_avg": 65.5,
-    "total_posts": 315,
-    "posts_30d": 6,
+    "subscribers": 13115,
+    "today_visitors": 24,
+    "visitors_avg": 54.5,
+    "total_posts": 305,
+    "posts_30d": 9,
     "shared": [],
-    "score": 53.9,
+    "score": 54.9,
     "me": true,
-    "rank": 8
+    "rank": 11
    },
    {
-    "blog_id": "smgsmc",
-    "name": "에스엠디자인건설",
-    "nickname": "에스엠디자인건설",
-    "topic": "비즈니스·경제",
-    "subscribers": 278,
-    "today_visitors": 36,
-    "visitors_avg": 173.2,
-    "total_posts": 297,
-    "posts_30d": 7,
+    "blog_id": "matthew2615",
+    "name": "매튜건축사사무소",
+    "nickname": "매튜건축사사무소",
+    "topic": "인테리어·DIY",
+    "subscribers": 118,
+    "today_visitors": 19,
+    "visitors_avg": null,
+    "total_posts": 110,
+    "posts_30d": 30,
     "shared": [
      {
-      "keyword": "공장설계",
-      "rank": 2
+      "keyword": "일조사선완화",
+      "rank": 6
      },
      {
-      "keyword": "산업시설설계",
+      "keyword": "구조안전확인",
+      "rank": 6
+     },
+     {
+      "keyword": "공장외벽마감재기준",
+      "rank": 9
+     },
+     {
+      "keyword": "일조권사선제한완화",
       "rank": 17
+     },
+     {
+      "keyword": "일조권사선제한",
+      "rank": 22
      }
     ],
     "influencer": false,
-    "score": 52.0,
-    "rank": 9
+    "score": 52.5,
+    "rank": 12
    },
    {
     "blog_id": "grisimgroup",
     "name": "그리심디자인그룹 건축사사무소",
     "nickname": "건축설계 사무소",
     "topic": "비즈니스·경제",
-    "subscribers": 2117,
-    "today_visitors": 17,
-    "visitors_avg": 89.0,
-    "total_posts": 1241,
-    "posts_30d": 3,
+    "subscribers": 2116,
+    "today_visitors": 15,
+    "visitors_avg": 57.5,
+    "total_posts": 1244,
+    "posts_30d": 4,
     "shared": [
-     {
-      "keyword": "산업시설설계",
-      "rank": 7
-     },
      {
       "keyword": "공장설계",
-      "rank": 13
-     }
-    ],
-    "influencer": false,
-    "score": 51.9,
-    "rank": 10
-   },
-   {
-    "blog_id": "hjstyle3535",
-    "name": "부동산, 아파트, 건설, 건축, 안전",
-    "nickname": "",
-    "topic": "",
-    "subscribers": 1374,
-    "today_visitors": 81,
-    "visitors_avg": null,
-    "total_posts": 2546,
-    "posts_30d": 3,
-    "shared": [
-     {
-      "keyword": "한백건축사사무소",
-      "rank": 5
+      "rank": 1
      },
      {
-      "keyword": "한백건축",
-      "rank": 13
-     }
-    ],
-    "influencer": false,
-    "score": 51.3,
-    "rank": 11
-   },
-   {
-    "blog_id": "smallgiantk",
-    "name": "행복한중기씨",
-    "nickname": "행복한중기씨",
-    "topic": "",
-    "subscribers": 5439,
-    "today_visitors": 15,
-    "visitors_avg": null,
-    "total_posts": 4205,
-    "posts_30d": 7,
-    "shared": [
-     {
-      "keyword": "한백건축사사무소",
+      "keyword": "공장건축",
       "rank": 3
      },
      {
-      "keyword": "한백건축",
-      "rank": 7
+      "keyword": "공장인허가",
+      "rank": 20
      }
     ],
     "influencer": false,
-    "score": 48.4,
-    "rank": 12
+    "score": 50.2,
+    "rank": 13
    },
    {
-    "blog_id": "gwang1000",
-    "name": "에스앤피그룹 | 공장창고건축·산업용부동산",
-    "nickname": "시공전문가 김소장",
-    "topic": "비즈니스·경제",
-    "subscribers": 2980,
-    "today_visitors": 10,
+    "blog_id": "citent",
+    "name": "책임시공기업 대명사 - 씨아이텐트",
+    "nickname": "씨아이텐트",
+    "topic": "인테리어·DIY",
+    "subscribers": 5116,
+    "today_visitors": 15,
     "visitors_avg": null,
-    "total_posts": 700,
-    "posts_30d": 10,
+    "total_posts": 334,
+    "posts_30d": 14,
     "shared": [
      {
-      "keyword": "신축공장",
+      "keyword": "가설건축물구조안전",
       "rank": 2
      },
+     {
+      "keyword": "공장해체허가",
+      "rank": 9
+     },
+     {
+      "keyword": "창고구조안전확인",
+      "rank": 10
+     },
+     {
+      "keyword": "공장채광",
+      "rank": 27
+     }
+    ],
+    "influencer": false,
+    "score": 50.1,
+    "rank": 14
+   },
+   {
+    "blog_id": "factoryplus_",
+    "name": "공장건축PLUS",
+    "nickname": "페이지종합건설",
+    "topic": "비즈니스·경제",
+    "subscribers": 49,
+    "today_visitors": 21,
+    "visitors_avg": null,
+    "total_posts": 66,
+    "posts_30d": 17,
+    "shared": [
      {
       "keyword": "공장건축",
       "rank": 4
      },
      {
-      "keyword": "공장증축설계",
-      "rank": 16
+      "keyword": "공장외벽마감재기준",
+      "rank": 8
      },
      {
       "keyword": "공장설계",
-      "rank": 19
-     }
-    ],
-    "influencer": false,
-    "score": 45.2,
-    "rank": 13
-   },
-   {
-    "blog_id": "havesung6",
-    "name": "부동산 에비뉴 v 대구부동산 자산관리",
-    "nickname": "부동산 에비뉴",
-    "topic": "비즈니스·경제",
-    "subscribers": 2218,
-    "today_visitors": 19,
-    "visitors_avg": null,
-    "total_posts": 161,
-    "posts_30d": 8,
-    "shared": [
-     {
-      "keyword": "한백건축",
-      "rank": 5
-     },
-     {
-      "keyword": "한백건축사사무소",
-      "rank": 9
-     }
-    ],
-    "influencer": false,
-    "score": 44.6,
-    "rank": 14
-   },
-   {
-    "blog_id": "kimsojang89",
-    "name": "김소장과 함께하는 행복만들기 010.9299.8250",
-    "nickname": "눈누난나 김소장",
-    "topic": "비즈니스·경제",
-    "subscribers": 13870,
-    "today_visitors": 8,
-    "visitors_avg": null,
-    "total_posts": 236,
-    "posts_30d": 6,
-    "shared": [
-     {
-      "keyword": "한백건축",
-      "rank": 9
-     },
-     {
-      "keyword": "한백건축사사무소",
       "rank": 13
      }
     ],
     "influencer": false,
-    "score": 42.7,
+    "score": 41.8,
     "rank": 15
    },
    {
-    "blog_id": "hb_demolish",
-    "name": "21년 차 건축전문가, (주)단테종합건설",
-    "nickname": "건축마스터",
-    "topic": "비즈니스·경제",
-    "subscribers": 452,
-    "today_visitors": 8,
+    "blog_id": "areumworks",
+    "name": "건축사사무소 아름",
+    "nickname": "건축사사무소 아름",
+    "topic": "교육·학문",
+    "subscribers": 34,
+    "today_visitors": 10,
     "visitors_avg": null,
-    "total_posts": 400,
-    "posts_30d": 11,
+    "total_posts": 114,
+    "posts_30d": 22,
     "shared": [
      {
-      "keyword": "공장증축설계",
+      "keyword": "창고구조안전확인",
+      "rank": 1
+     },
+     {
+      "keyword": "구조안전확인",
+      "rank": 9
+     },
+     {
+      "keyword": "가설건축물구조안전",
+      "rank": 20
+     },
+     {
+      "keyword": "일조사선완화",
+      "rank": 25
+     }
+    ],
+    "influencer": false,
+    "score": 41.3,
+    "rank": 16
+   },
+   {
+    "blog_id": "factory_and",
+    "name": "공장앤&",
+    "nickname": "공장앤",
+    "topic": "비즈니스·경제",
+    "subscribers": 8,
+    "today_visitors": 10,
+    "visitors_avg": null,
+    "total_posts": 23,
+    "posts_30d": 21,
+    "shared": [
+     {
+      "keyword": "공장인허가",
       "rank": 3
      },
      {
       "keyword": "공장설계",
-      "rank": 10
+      "rank": 12
      },
      {
-      "keyword": "공장건축",
-      "rank": 15
+      "keyword": "공장해체허가",
+      "rank": 16
      }
     ],
     "influencer": false,
-    "score": 40.0,
-    "rank": 16
-   },
-   {
-    "blog_id": "firsteg1",
-    "name": "클린룸, 산업시설 신축 전문 종합건설사 퍼스트디앤씨",
-    "nickname": "퍼스트디앤씨",
-    "topic": "비즈니스·경제",
-    "subscribers": 758,
-    "today_visitors": 15,
-    "visitors_avg": null,
-    "total_posts": 90,
-    "posts_30d": 3,
-    "shared": [
-     {
-      "keyword": "산업시설설계",
-      "rank": 1
-     },
-     {
-      "keyword": "산업시설",
-      "rank": 1
-     }
-    ],
-    "influencer": false,
-    "score": 37.0,
+    "score": 35.7,
     "rank": 17
    },
    {
-    "blog_id": "yerinceo",
-    "name": "예린종합건설, 한번도 실패없이 건축공사할 수 있다",
-    "nickname": "건축전문가 이종열",
-    "topic": "좋은글·이미지",
-    "subscribers": 1507,
-    "today_visitors": 5,
+    "blog_id": "pe_eng",
+    "name": "구조 안전 설계 검토 연구소",
+    "nickname": "기술사 설계검토날인",
+    "topic": "",
+    "subscribers": 7,
+    "today_visitors": 10,
     "visitors_avg": null,
-    "total_posts": 834,
-    "posts_30d": 3,
+    "total_posts": 42,
+    "posts_30d": 11,
     "shared": [
      {
-      "keyword": "공장설계",
-      "rank": 5
+      "keyword": "구조안전확인",
+      "rank": 1
      },
      {
-      "keyword": "공장건축",
-      "rank": 11
+      "keyword": "창고구조안전확인",
+      "rank": 6
      },
      {
-      "keyword": "공장증축설계",
-      "rank": 28
+      "keyword": "가설건축물구조안전",
+      "rank": 24
      }
     ],
     "influencer": false,
-    "score": 36.0,
+    "score": 29.5,
     "rank": 18
    },
    {
-    "blog_id": "g-enarchitect",
-    "name": "지엔건축사사무소님의 블로그",
-    "nickname": "지엔건축사사무소",
-    "topic": "",
-    "subscribers": 26,
-    "today_visitors": 5,
+    "blog_id": "with_byulla",
+    "name": "청운부동산 유실장",
+    "nickname": "공인중개사 유실장",
+    "topic": "비즈니스·경제",
+    "subscribers": 23,
+    "today_visitors": 7,
     "visitors_avg": null,
-    "total_posts": 34,
-    "posts_30d": 14,
+    "total_posts": 29,
+    "posts_30d": 8,
     "shared": [
      {
-      "keyword": "공장설계",
-      "rank": 1
+      "keyword": "일조권사선제한",
+      "rank": 3
      },
      {
-      "keyword": "공장증축설계",
-      "rank": 1
+      "keyword": "일조권사선제한완화",
+      "rank": 6
      },
      {
-      "keyword": "공장건축",
-      "rank": 9
-     }
-    ],
-    "influencer": false,
-    "score": 30.6,
-    "rank": 19
-   },
-   {
-    "blog_id": "ksmgt_",
-    "name": "(주)국성부동산매니지먼트",
-    "nickname": "국성부동산매니지먼트",
-    "topic": "인테리어·DIY",
-    "subscribers": 24,
-    "today_visitors": 11,
-    "visitors_avg": null,
-    "total_posts": 142,
-    "posts_30d": 4,
-    "shared": [
-     {
-      "keyword": "공장증축설계",
-      "rank": 2
-     },
-     {
-      "keyword": "공장설계",
+      "keyword": "일조사선완화",
       "rank": 7
      }
     ],
     "influencer": false,
-    "score": 29.3,
-    "rank": 20
+    "score": 27.7,
+    "rank": 19
    },
    {
-    "blog_id": "jeongdo-archi",
-    "name": "정도 건축사사무소",
-    "nickname": "정도 건축사사무소",
-    "topic": "",
-    "subscribers": 4,
-    "today_visitors": 1,
+    "blog_id": "whdms--hong",
+    "name": "홍인영공인중개사010 8704 8696",
+    "nickname": "똑소리나는 홍소장",
+    "topic": "비즈니스·경제",
+    "subscribers": 72,
+    "today_visitors": 4,
     "visitors_avg": null,
-    "total_posts": 9,
-    "posts_30d": 0,
+    "total_posts": 89,
+    "posts_30d": 5,
     "shared": [
      {
-      "keyword": "한백건축사사무소",
-      "rank": 1
+      "keyword": "일조권사선제한",
+      "rank": 5
      },
      {
-      "keyword": "한백건축",
-      "rank": 1
+      "keyword": "일조권사선제한완화",
+      "rank": 5
+     },
+     {
+      "keyword": "일조사선완화",
+      "rank": 15
      }
     ],
     "influencer": false,
-    "score": 10.1,
+    "score": 27.0,
+    "rank": 20
+   },
+   {
+    "blog_id": "todam_archi",
+    "name": "건축사사무소토담",
+    "nickname": "",
+    "topic": "비즈니스·경제",
+    "subscribers": 5,
+    "today_visitors": 0,
+    "visitors_avg": null,
+    "total_posts": 7,
+    "posts_30d": 7,
+    "shared": [
+     {
+      "keyword": "건축소식",
+      "rank": 1
+     },
+     {
+      "keyword": "공장설계",
+      "rank": 4
+     },
+     {
+      "keyword": "공장건축",
+      "rank": 17
+     }
+    ],
+    "influencer": false,
+    "score": 11.1,
     "rank": 21
    }
   ]

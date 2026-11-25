@@ -943,5 +943,166 @@
   "total": 110,
   "competition": "중간",
   "date": "2026-11-24"
+ },
+ "일조권사선제한": {
+  "pc": 290,
+  "mobile": 260,
+  "total": 550,
+  "competition": "중간",
+  "date": "2026-11-25"
+ },
+ "일조권사선제한완화": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "일조사선완화": {
+  "pc": 40,
+  "mobile": 5,
+  "total": 45,
+  "competition": "중간",
+  "date": "2026-11-25"
+ },
+ "공장쇼룸": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "높음",
+  "date": "2026-11-25"
+ },
+ "외관파사드": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "높음",
+  "date": "2026-11-25"
+ },
+ "사옥형공장": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "높음",
+  "date": "2026-11-25"
+ },
+ "공장해체허가": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "건축물해체": {
+  "pc": 40,
+  "mobile": 10,
+  "total": 50,
+  "competition": "중간",
+  "date": "2026-11-25"
+ },
+ "해체계획서": {
+  "pc": 250,
+  "mobile": 80,
+  "total": 330,
+  "competition": "높음",
+  "date": "2026-11-25"
+ },
+ "사옥형공장신축": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "공장인허가": {
+  "pc": 20,
+  "mobile": 10,
+  "total": 30,
+  "competition": "중간",
+  "date": "2026-11-25"
+ },
+ "창고구조안전확인": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "구조안전확인": {
+  "pc": 10,
+  "mobile": 5,
+  "total": 15,
+  "competition": "높음",
+  "date": "2026-11-25"
+ },
+ "가설건축물구조안전": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "공장채광": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "자연환기설계": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "공장천창": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "공장외벽마감재기준": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "공장건축": {
+  "pc": 70,
+  "mobile": 30,
+  "total": 100,
+  "competition": "높음",
+  "date": "2026-11-25"
+ },
+ "공장설계": {
+  "pc": 90,
+  "mobile": 50,
+  "total": 140,
+  "competition": "중간",
+  "date": "2026-11-25"
+ },
+ "한백건축사사무소": {
+  "pc": 50,
+  "mobile": 30,
+  "total": 80,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "건축소식": {
+  "pc": 5,
+  "mobile": 5,
+  "total": 10,
+  "competition": "낮음",
+  "date": "2026-11-25"
+ },
+ "한백건축": {
+  "pc": 30,
+  "mobile": 40,
+  "total": 70,
+  "competition": "낮음",
+  "date": "2026-11-25"
  }
 }
