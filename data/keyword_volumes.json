@@ -820,24 +820,24 @@
  },
  "아이슬란드빙하투어": {
   "pc": 70,
-  "mobile": 130,
-  "total": 200,
-  "competition": "높음",
-  "date": "2026-11-19"
+  "mobile": 140,
+  "total": 210,
+  "competition": "중간",
+  "date": "2026-11-27"
  },
  "스카프타펠빙하투어": {
   "pc": 5,
   "mobile": 10,
   "total": 15,
-  "competition": "높음",
-  "date": "2026-11-19"
+  "competition": "중간",
+  "date": "2026-11-27"
  },
  "스카프타펠": {
-  "pc": 30,
-  "mobile": 80,
+  "pc": 20,
+  "mobile": 90,
   "total": 110,
   "competition": "높음",
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "치이카와클리닉": {
   "pc": 1580,
@@ -1139,5 +1139,12 @@
   "total": 170,
   "competition": "중간",
   "date": "2026-11-26"
+ },
+ "중치마직구": {
+  "pc": 240,
+  "mobile": 480,
+  "total": 720,
+  "competition": "중간",
+  "date": "2026-11-27"
  }
 }
