@@ -1,10 +1,10 @@
 {
  "configured": true,
  "blog_id": "hbokey",
- "updated_at": "2026-11-27T12:56:39.601932+09:00",
+ "updated_at": "2026-11-28T12:43:27.756550+09:00",
  "search_mode": "web",
  "keyword_tool": true,
- "search_calls": 65,
+ "search_calls": 67,
  "search_reused": 0,
  "search_blocked": false,
  "profile": {
@@ -16,23 +16,19 @@
  "info": {
   "name": "쭈아월드｜우당탕탕 신혼일기",
   "nickname": "쭈아",
-  "subscribers": 830,
-  "total_visitors": 62465,
-  "today_visitors": 144,
+  "subscribers": 858,
+  "total_visitors": 62863,
+  "today_visitors": 130,
   "topic": "세계여행",
   "power_blog": false,
   "naver_mate": false,
   "mate_citations": null,
   "official": false
  },
- "total_posts": 144,
- "last_post": "2026-11-27T08:56:42.085965+09:00",
- "posts_12w": 43,
+ "total_posts": 145,
+ "last_post": "2026-11-28T08:43:31.268646+09:00",
+ "posts_12w": 44,
  "visitors": [
-  {
-   "date": "2026-11-23",
-   "count": 660
-  },
   {
    "date": "2026-11-24",
    "count": 672
@@ -47,13 +43,17 @@
   },
   {
    "date": "2026-11-27",
-   "count": 144
+   "count": 412
+  },
+  {
+   "date": "2026-11-28",
+   "count": 130
   }
  ],
  "index": {
-  "score": 66.4,
-  "grade": "준최6",
-  "grade_index": 6,
+  "score": 65.8,
+  "grade": "준최5",
+  "grade_index": 5,
   "grades": [
    "일반",
    "준최1",
@@ -93,13 +93,13 @@
     "key": "visitors",
     "label": "방문자 규모",
     "weight": 30,
-    "value": 0.695
+    "value": 0.683
    },
    {
     "key": "keyword",
     "label": "키워드 경쟁력",
     "weight": 30,
-    "value": 0.435
+    "value": 0.469
    },
    {
     "key": "exposure",
@@ -111,13 +111,13 @@
     "key": "total",
     "label": "통합검색 노출",
     "weight": 10,
-    "value": 0.933
+    "value": 0.8
    },
    {
     "key": "pace",
     "label": "발행 페이스",
     "weight": 10,
-    "value": 0.512
+    "value": 0.524
    },
    {
     "key": "consistency",
@@ -129,60 +129,60 @@
     "key": "engagement",
     "label": "소통·구독",
     "weight": 5,
-    "value": 0.941
+    "value": 0.943
    }
   ],
   "stats": {
-   "weekly_posts": 3.6,
+   "weekly_posts": 3.7,
    "weeks_active": 8,
    "exposure_rate": 1.0,
-   "total_exposure_rate": 0.933,
-   "avg_comments": 51.3,
+   "total_exposure_rate": 0.8,
+   "avg_comments": 51.2,
    "avg_content_score": 94,
-   "visitors_avg": 602.8,
-   "top10_keywords": 18,
-   "best_top10_volume": 5190
+   "visitors_avg": 540.8,
+   "top10_keywords": 19,
+   "best_top10_volume": 6710
   },
   "low_quality_risk": false,
   "plan": {
-   "next_grade": "준최7",
-   "next_at": 70.7,
-   "need": 4.3,
-   "this_at": 65.9,
+   "next_grade": "준최6",
+   "next_at": 65.9,
+   "need": 0.1,
+   "this_at": 60.7,
    "scenarios": [
     {
      "label": "최근 12주 평균 속도 그대로",
-     "per_week": 3.6,
-     "weeks": null,
-     "after_4w": 67.0,
-     "after_12w": 68.1
+     "per_week": 3.7,
+     "weeks": 1,
+     "after_4w": 66.4,
+     "after_12w": 67.6
     },
     {
      "label": "주 3개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 3,
-     "weeks": 5,
-     "after_4w": 69.0,
-     "after_12w": 72.3
+     "weeks": 1,
+     "after_4w": 68.7,
+     "after_12w": 70.6
     },
     {
      "label": "주 5개 · 대표 키워드 월 검색 1~3천, 10위 안",
      "per_week": 5,
-     "weeks": 3,
-     "after_4w": 72.7,
-     "after_12w": 75.1
+     "weeks": 1,
+     "after_4w": 71.1,
+     "after_12w": 73.5
     },
     {
      "label": "매일 1개 · 대표 키워드 월 검색 3~5천, 5위 안",
      "per_week": 7,
-     "weeks": 2,
-     "after_4w": 75.3,
-     "after_12w": 79.6
+     "weeks": 1,
+     "after_4w": 73.7,
+     "after_12w": 78.0
     }
    ],
    "levers": [
     {
      "label": "방문자 규모",
-     "how": "하루 방문이 603명 → 1206명이 되면",
+     "how": "하루 방문이 541명 → 1082명이 되면",
      "gain": 2.3
     },
     {
@@ -193,27 +193,27 @@
     {
      "label": "키워드 경쟁력",
      "how": "새 글 5개를 월 검색 2천 키워드 10위 안에 띄우면",
-     "gain": 1.2
+     "gain": 0.8
     }
    ],
    "goal": {
     "grade": "최적1",
     "at": 75.1,
-    "score": 66.4,
-    "need": 8.7,
+    "score": 65.8,
+    "need": 9.3,
     "progress": 88,
-    "visitors_now": 603,
+    "visitors_now": 541,
     "factors": [
      {
       "key": "visitors",
       "label": "방문자 규모",
-      "points": 20.8,
+      "points": 20.5,
       "max": 30.0
      },
      {
       "key": "keyword",
       "label": "키워드 경쟁력",
-      "points": 13.1,
+      "points": 14.1,
       "max": 30.0
      },
      {
@@ -225,13 +225,13 @@
      {
       "key": "total",
       "label": "통합검색 노출",
-      "points": 9.3,
+      "points": 8.0,
       "max": 10.0
      },
      {
       "key": "pace",
       "label": "발행 페이스",
-      "points": 5.1,
+      "points": 5.2,
       "max": 10.0
      },
      {
@@ -251,58 +251,58 @@
      {
       "label": "주 3개",
       "weeks": null,
-      "score_12w": 67.2
+      "score_12w": 66.6
      },
      {
       "label": "주 5개",
       "weeks": null,
-      "score_12w": 70.1
+      "score_12w": 69.4
      },
      {
       "label": "매일 1개",
       "weeks": null,
-      "score_12w": 72.9
+      "score_12w": 72.3
      }
     ],
     "daily": [
      {
       "weeks": 2,
-      "score": 67.5
+      "score": 66.9
      },
      {
       "weeks": 4,
-      "score": 68.6
+      "score": 68.0
      },
      {
       "weeks": 6,
-      "score": 69.7
+      "score": 69.1
      },
      {
       "weeks": 8,
-      "score": 70.8
+      "score": 70.1
      },
      {
       "weeks": 10,
-      "score": 71.8
+      "score": 71.2
      },
      {
       "weeks": 12,
-      "score": 72.9
+      "score": 72.3
      }
     ],
-    "after_daily": 72.9,
-    "remain_after_daily": 2.2,
+    "after_daily": 72.3,
+    "remain_after_daily": 2.8,
     "finish": [
      {
-      "how": "하루 방문 603명 → 약 1170명"
+      "how": "하루 방문 541명 → 약 1283명"
      }
     ]
    }
   },
   "reflect": {
-   "grade": "준최6",
-   "since": "2026-11-02",
-   "days": 26,
+   "grade": "준최5",
+   "since": "2026-10-30",
+   "days": 30,
    "gap": {
     "from": "2026-08-28",
     "to": "2026-10-01",
@@ -312,7 +312,7 @@
    "weeks_left": 4,
    "daily_then": {
     "weeks": 4,
-    "score": 68.6,
+    "score": 68.0,
     "grade": "준최6"
    }
   }
@@ -326,7 +326,7 @@
   {
    "level": "good",
    "title": "통합검색 진입",
-   "detail": "최근 글 93%가 통합검색(통검)에도 떠요."
+   "detail": "최근 글 80%가 통합검색(통검)에도 떠요."
   },
   {
    "level": "good",
@@ -346,17 +346,115 @@
   {
    "level": "warn",
    "title": "방문자 추세",
-   "detail": "최근 5일 평균 511명, 그 전 5일 대비 -12%."
+   "detail": "최근 5일 평균 459명, 그 전 5일 대비 -21%."
   }
  ],
  "posts": [
   {
+   "logNo": "224485736146",
+   "title": "아이슬란드 블루라군 예약 방법과 후기｜실리카 머드팩과 인워터바 꿀팁",
+   "url": "https://blog.naver.com/hbokey/224485736146",
+   "date": "2026-11-28T08:43:31.268646+09:00",
+   "comments": 13,
+   "likes": 17,
+   "category": "해외여행·신혼여행",
+   "tags": [
+    "블루라군",
+    "아이슬란드블루라군",
+    "블루라군예약",
+    "블루라군후기",
+    "블루라군머드팩",
+    "블루라군패키지",
+    "블루라군컴포트",
+    "실리카머드마스크",
+    "인워터바",
+    "아이슬란드온천",
+    "아이슬란드온천추천",
+    "레이캬네스반도",
+    "그린다비크",
+    "케플라비크공항근처",
+    "아이슬란드여행",
+    "아이슬란드신혼여행",
+    "아이슬란드렌트카여행",
+    "아이슬란드자유여행",
+    "아이슬란드가볼만한곳",
+    "신혼여행추천",
+    "블루라군온천",
+    "아이슬란드야외온천",
+    "블루라군야외온천",
+    "아이슬란드온천후기",
+    "블루라군입장권",
+    "아이슬란드용암지대",
+    "블루라군가격",
+    "블루라군입장료",
+    "블루라군준비물"
+   ],
+   "status": "노출",
+   "total_search": "노출",
+   "keywords": [
+    {
+     "keyword": "블루라군",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 780,
+      "mobile": 5930,
+      "total": 6710,
+      "competition": "높음",
+      "date": "2026-11-28"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "아이슬란드블루라군",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 200,
+      "mobile": 670,
+      "total": 870,
+      "competition": "높음",
+      "date": "2026-11-28"
+     },
+     "docs": null
+    },
+    {
+     "keyword": "블루라군예약",
+     "rank": 1,
+     "of": 30,
+     "volume": {
+      "pc": 20,
+      "mobile": 50,
+      "total": 70,
+      "competition": "높음",
+      "date": "2026-11-28"
+     },
+     "docs": null
+    }
+   ],
+   "content": {
+    "chars": 2483,
+    "images": 34,
+    "videos": 0,
+    "quotes": 11,
+    "headings": 0,
+    "links": 28,
+    "maps": 1,
+    "title_len": 37,
+    "kw_count": 19,
+    "score": 92,
+    "tips": [
+     "대표 키워드 '블루라군' 본문 19회 — 3~10회 권장"
+    ]
+   }
+  },
+  {
    "logNo": "224485673237",
    "title": "중치마 후기 3탄｜치이카와 파자마파티즈 오르골 우사기와 카드팩 언박싱",
    "url": "https://blog.naver.com/hbokey/224485673237",
-   "date": "2026-11-27T08:56:42.085965+09:00",
-   "comments": 5,
-   "likes": 9,
+   "date": "2026-11-27T12:00:00+09:00",
+   "comments": 26,
+   "likes": 29,
    "category": "신혼살림·생활 리뷰",
    "tags": [
     "중치마",
@@ -445,7 +543,7 @@
    "url": "https://blog.naver.com/hbokey/224489752499",
    "date": "2026-11-26T12:00:00+09:00",
    "comments": 64,
-   "likes": 39,
+   "likes": 41,
    "category": "뷰티·헤어 리뷰",
    "tags": [
     "메이플자이미용실",
@@ -534,8 +632,8 @@
    "title": "유럽 크리스마스 마켓 2026 일정｜독일, 파리, 스트라스부르 도시별 기간과 휴무",
    "url": "https://blog.naver.com/hbokey/224489871476",
    "date": "2026-11-25T12:00:00+09:00",
-   "comments": 82,
-   "likes": 42,
+   "comments": 93,
+   "likes": 47,
    "category": "여행 준비·꿀팁",
    "tags": [
     "유럽크리스마스마켓",
@@ -625,7 +723,7 @@
    "url": "https://blog.naver.com/hbokey/224485722260",
    "date": "2026-11-24T12:00:00+09:00",
    "comments": 68,
-   "likes": 55,
+   "likes": 57,
    "category": "해외여행·신혼여행",
    "tags": [
     "레이캬비크맛집",
@@ -667,7 +765,7 @@
     },
     {
      "keyword": "레이캬비크맛집추천",
-     "rank": 2,
+     "rank": 1,
      "of": 30,
      "volume": {
       "pc": 5,
@@ -711,8 +809,8 @@
    "title": "스톡스네스 입장료와 주차｜베스트라호른 바이킹 마을, 검은 모래 해변 후기",
    "url": "https://blog.naver.com/hbokey/224485666184",
    "date": "2026-11-23T12:00:00+09:00",
-   "comments": 32,
-   "likes": 43,
+   "comments": 34,
+   "likes": 46,
    "category": "해외여행·신혼여행",
    "tags": [
     "스톡스네스",
@@ -737,7 +835,7 @@
     "유럽신혼여행"
    ],
    "status": "노출",
-   "total_search": "노출",
+   "total_search": "미노출",
    "keywords": [
     {
      "keyword": "스톡스네스",
@@ -892,7 +990,7 @@
    "url": "https://blog.naver.com/hbokey/224480378521",
    "date": "2026-11-21T12:00:00+09:00",
    "comments": 58,
-   "likes": 51,
+   "likes": 52,
    "category": "해외여행·신혼여행",
    "tags": [
     "아이슬란드비크",
@@ -1008,14 +1106,14 @@
    "keywords": [
     {
      "keyword": "치이카와클리닉",
-     "rank": 21,
+     "rank": null,
      "of": 30,
      "volume": {
-      "pc": 1580,
-      "mobile": 5780,
-      "total": 7360,
+      "pc": 6600,
+      "mobile": 18000,
+      "total": 24600,
       "competition": "중간",
-      "date": "2026-11-20"
+      "date": "2026-11-28"
      },
      "docs": null
     },
@@ -1024,24 +1122,24 @@
      "rank": 1,
      "of": 33,
      "volume": {
-      "pc": 240,
-      "mobile": 1060,
-      "total": 1300,
+      "pc": 1470,
+      "mobile": 5080,
+      "total": 6550,
       "competition": "낮음",
-      "date": "2026-11-20"
+      "date": "2026-11-28"
      },
      "docs": null
     },
     {
      "keyword": "치이카와클리닉팝업",
      "rank": null,
-     "of": 30,
+     "of": 31,
      "volume": {
-      "pc": 550,
-      "mobile": 2030,
-      "total": 2580,
+      "pc": 2650,
+      "mobile": 8480,
+      "total": 11130,
       "competition": "낮음",
-      "date": "2026-11-20"
+      "date": "2026-11-28"
      },
      "docs": null
     }
@@ -1154,7 +1252,7 @@
    "title": "스타벅스 프리퀀시 북커버 예약 방법｜11월 19일 오픈, 그린 아이보리 비교",
    "url": "https://blog.naver.com/hbokey/224478182371",
    "date": "2026-11-18T12:00:00+09:00",
-   "comments": 46,
+   "comments": 48,
    "likes": 45,
    "category": "데이트 맛집·카페",
    "tags": [
@@ -1180,42 +1278,16 @@
     "스타벅스겨울굿즈"
    ],
    "status": "노출",
-   "total_search": "노출",
+   "total_search": "미노출",
    "keywords": [
     {
      "keyword": "스타벅스프리퀀시북커버",
-     "rank": 8,
+     "rank": 12,
      "of": 30,
      "volume": {
       "pc": 1070,
       "mobile": 4120,
       "total": 5190,
-      "competition": "중간",
-      "date": "2026-11-26"
-     },
-     "docs": null
-    },
-    {
-     "keyword": "스타벅스북커버",
-     "rank": null,
-     "of": 30,
-     "volume": {
-      "pc": 5520,
-      "mobile": 39700,
-      "total": 45220,
-      "competition": "낮음",
-      "date": "2026-11-26"
-     },
-     "docs": null
-    },
-    {
-     "keyword": "스타벅스북커버예약",
-     "rank": 19,
-     "of": 30,
-     "volume": {
-      "pc": 110,
-      "mobile": 600,
-      "total": 710,
       "competition": "중간",
       "date": "2026-11-26"
      },
@@ -1463,7 +1535,7 @@
     {
      "keyword": "서울크리스마스마켓",
      "rank": null,
-     "of": 30,
+     "of": 33,
      "volume": {
       "pc": 1180,
       "mobile": 3920,
@@ -1487,78 +1559,28 @@
     "score": 100,
     "tips": []
    }
-  },
-  {
-   "logNo": "224474943274",
-   "title": "봉천역 PT 여성전용 비비핏 내돈내산 후기｜자세교정과 허리 통증",
-   "url": "https://blog.naver.com/hbokey/224474943274",
-   "date": "2026-11-13T12:00:00+09:00",
-   "comments": 54,
-   "likes": 52,
-   "category": "신혼살림·생활 리뷰",
-   "tags": [
-    "봉천역PT",
-    "봉천역헬스장",
-    "봉천동PT",
-    "봉천동헬스장",
-    "신림PT",
-    "신림헬스장",
-    "여성전용PT",
-    "여성전용헬스장",
-    "관악구PT",
-    "관악구여성전용PT",
-    "비비핏",
-    "여성전용PT비비핏",
-    "자세교정PT",
-    "허리통증운동",
-    "재활PT",
-    "PT후기",
-    "PT내돈내산",
-    "서울대입구PT",
-    "다이어트PT",
-    "근력운동"
-   ],
-   "status": "노출",
-   "total_search": "노출",
-   "keywords": [
-    {
-     "keyword": "봉천역PT",
-     "rank": 4,
-     "of": 30,
-     "volume": {
-      "pc": 210,
-      "mobile": 50,
-      "total": 260,
-      "competition": "높음",
-      "date": "2026-11-21"
-     },
-     "docs": null
-    }
-   ],
-   "content": {
-    "chars": 1540,
-    "images": 11,
-    "videos": 0,
-    "quotes": 9,
-    "headings": 0,
-    "links": 16,
-    "maps": 1,
-    "title_len": 35,
-    "kw_count": 5,
-    "score": 100,
-    "tips": []
-   }
   }
  ],
  "post_stats": [
+  {
+   "logNo": "224485736146",
+   "title": "아이슬란드 블루라군 예약 방법과 후기｜실리카 머드팩과 인워터바 꿀팁",
+   "url": "https://blog.naver.com/hbokey/224485736146",
+   "date": "2026-11-28T08:20:00+09:00",
+   "category": "해외여행·신혼여행",
+   "likes": 17,
+   "comments": 13,
+   "views": null,
+   "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMjFfMjU4/MDAxNzk1MjIyMDU0ODI0.iBuhBsQu2xPsuVXeKGvaZtEB21znHi3caikE_fVTI3Ig.5DR1ZgvDuDik2wir-R1gfAms-BoJdfS-H3jtgDrlZk8g.PNG/thumb_bluelagoon2.png"
+  },
   {
    "logNo": "224485673237",
    "title": "중치마 후기 3탄｜치이카와 파자마파티즈 오르골 우사기와 카드팩 언박싱",
    "url": "https://blog.naver.com/hbokey/224485673237",
    "date": "2026-11-27T08:20:00+09:00",
    "category": "신혼살림·생활 리뷰",
-   "likes": 9,
-   "comments": 5,
+   "likes": 29,
+   "comments": 26,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTZfMjMz/MDAxNzk0Nzg1MTc1NjEw.Yz1CxLe4mZEq8SRNmi_1JG8RJtYVfaNkKBxuqVuCag4g.THiuCZV8oyTjFY3pPO1yVAMJ9YRWx7er6tJlBMNZI1sg.PNG/thumb_j3b.png"
   },
@@ -1568,7 +1590,7 @@
    "url": "https://blog.naver.com/hbokey/224489752499",
    "date": "2026-11-26T08:20:00+09:00",
    "category": "뷰티·헤어 리뷰",
-   "likes": 39,
+   "likes": 41,
    "comments": 64,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMjNfMTUg/MDAxNzk1NDAzNTc3MzEx.ikGJVai2gzUj4o6vWqUp6SvFlXyti-F0vmUPKabbS8kg.pKvK7YHhxQiQfZVvgbOMNTg_Vnikbllx2kiEoxE9qTkg.PNG/thumb_h.png"
@@ -1579,8 +1601,8 @@
    "url": "https://blog.naver.com/hbokey/224489871476",
    "date": "2026-11-25T08:20:00+09:00",
    "category": "여행 준비·꿀팁",
-   "likes": 42,
-   "comments": 82,
+   "likes": 47,
+   "comments": 93,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMjFfMTUx/MDAxNzk1MjI5MDUwODY5.hWMbWv6udspKrEupWawHdXuAdKkqyoOr8umFQXh3y0Yg.FvYLbHNQ9WbNjRp3bec2Ao3zycFfBZByT3QKyEaEJSwg.PNG/thumb_xmas.png"
   },
@@ -1590,7 +1612,7 @@
    "url": "https://blog.naver.com/hbokey/224485722260",
    "date": "2026-11-24T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 55,
+   "likes": 57,
    "comments": 68,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTdfMTQ4/MDAxNzk0ODg1MDc2MTE4.8cg5ZaZ1oTINXT51s0ulQRGL7yuC9cxxfxTeI-tOP3gg.mWE4JtKrEQAFP96uOh1BJfKAqDVd28dYK581hRYKsRYg.PNG/thumb_a2.png"
@@ -1601,8 +1623,8 @@
    "url": "https://blog.naver.com/hbokey/224485666184",
    "date": "2026-11-23T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 43,
-   "comments": 32,
+   "likes": 46,
+   "comments": 34,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTZfMjIz/MDAxNzk0Nzg1OTEwNTkz.r5PUIsSPlUidCHqA4AFwOtRgqQ_AZri6wMCuEV5a2JYg.FWtA7WCuthYB-H0IE8K8U8atemyZ7704O8S1sSxTUlgg.PNG/thumb_e.png"
   },
@@ -1623,7 +1645,7 @@
    "url": "https://blog.naver.com/hbokey/224480378521",
    "date": "2026-11-21T08:20:00+09:00",
    "category": "해외여행·신혼여행",
-   "likes": 51,
+   "likes": 52,
    "comments": 58,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTZfMTk0/MDAxNzk0ODA4MTU0NDE5.ukcjf162YCxeiErlK6Ut2YCTu8RHqA6VTRNvHTrxB4Ig.OuSyxFa8nxa4jJzBkrSU_EEu1aTWS64lyt6SHEVVlLcg.PNG/thumb_v.png"
@@ -1657,7 +1679,7 @@
    "date": "2026-11-18T08:20:00+09:00",
    "category": "데이트 맛집·카페",
    "likes": 45,
-   "comments": 46,
+   "comments": 48,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMTBfMjYy/MDAxNzk0Mjk0MDcxMTk4.Mij7PY_i9dwEb_1sNcugULuhW51qh39RtPq9fEeD_okg.Lvex-t7nkIYhbQgLqHkqAY5tUl2Mcm8cVHWewEKhvxog.PNG/thumb_bc.png"
   },
@@ -1810,7 +1832,7 @@
    "url": "https://blog.naver.com/hbokey/224462080024",
    "date": "2026-11-04T08:30:00+09:00",
    "category": "데이트 맛집·카페",
-   "likes": 81,
+   "likes": 82,
    "comments": 87,
    "views": null,
    "thumb": "https://mblogthumb-phinf.pstatic.net/MjAyNjExMDJfMjU0/MDAxNzkzNTg4MDg4MzM0.qB3vG1qquXBUwsbtlbJig4jrpDNoGGyhwJJl3gi6YZQg.BHXShJmnYbvr5SNMwB19urGpuWrhCMFMWr4nJa4ob0Ag.PNG/thumb_xmascake_2026.png"
@@ -3141,19 +3163,19 @@
   "count": 21,
   "my_rank": 2,
   "top_percent": 10,
-  "same_topic": 8,
+  "same_topic": 11,
   "my_place": {
    "visitors_avg": 1,
    "subscribers": 5,
    "posts_30d": 1,
-   "total_posts": 12
+   "total_posts": 14
   },
   "averages": {
-   "visitors_avg": 93.9,
-   "subscribers": 528.9,
-   "posts_30d": 12.7,
-   "total_posts": 305.9,
-   "score": 45.8
+   "visitors_avg": 110.2,
+   "subscribers": 856.0,
+   "posts_30d": 14.6,
+   "total_posts": 377.1,
+   "score": 49.0
   },
   "blogs": [
    {
@@ -3161,27 +3183,31 @@
     "name": "제이폴의 유럽 미국 살아가며 담는 여행",
     "nickname": "제이폴",
     "topic": "세계여행",
-    "subscribers": 3905,
-    "today_visitors": 140,
-    "visitors_avg": 326.8,
-    "total_posts": 382,
+    "subscribers": 3914,
+    "today_visitors": 121,
+    "visitors_avg": 347.0,
+    "total_posts": 383,
     "posts_30d": 30,
     "shared": [
      {
       "keyword": "레이캬비크맛집추천",
-      "rank": 1
-     },
-     {
-      "keyword": "레이캬비크맛집",
       "rank": 2
      },
      {
-      "keyword": "아이슬란드맛집",
+      "keyword": "레이캬비크맛집",
       "rank": 3
+     },
+     {
+      "keyword": "아이슬란드맛집",
+      "rank": 9
+     },
+     {
+      "keyword": "블루라군예약",
+      "rank": 28
      }
     ],
     "influencer": false,
-    "score": 76.8,
+    "score": 77.1,
     "rank": 1
    },
    {
@@ -3189,13 +3215,13 @@
     "name": "쭈아월드｜우당탕탕 신혼일기",
     "nickname": "쭈아",
     "topic": "세계여행",
-    "subscribers": 830,
-    "today_visitors": 144,
-    "visitors_avg": 602.8,
-    "total_posts": 144,
+    "subscribers": 858,
+    "today_visitors": 130,
+    "visitors_avg": 540.8,
+    "total_posts": 145,
     "posts_30d": 30,
     "shared": [],
-    "score": 75.5,
+    "score": 75.0,
     "me": true,
     "rank": 2
    },
@@ -3204,42 +3230,74 @@
     "name": "eoye_",
     "nickname": "eoye",
     "topic": "맛집",
-    "subscribers": 519,
-    "today_visitors": 109,
-    "visitors_avg": 314.0,
-    "total_posts": 642,
+    "subscribers": 520,
+    "today_visitors": 110,
+    "visitors_avg": 289.2,
+    "total_posts": 643,
     "posts_30d": 29,
     "shared": [
      {
+      "keyword": "아이슬란드셀포스",
+      "rank": 7
+     },
+     {
       "keyword": "레이캬비크맛집추천",
-      "rank": 4
+      "rank": 17
      },
      {
       "keyword": "아이슬란드맛집",
-      "rank": 8
-     },
-     {
-      "keyword": "아이슬란드셀포스",
-      "rank": 8
+      "rank": 22
      },
      {
       "keyword": "레이캬비크맛집",
-      "rank": 10
+      "rank": 25
      }
     ],
     "influencer": false,
-    "score": 72.2,
+    "score": 71.7,
     "rank": 3
+   },
+   {
+    "blog_id": "thatgirldiary",
+    "name": "오늘의 지식",
+    "nickname": "플유",
+    "topic": "비즈니스·경제",
+    "subscribers": 606,
+    "today_visitors": 27,
+    "visitors_avg": 281.0,
+    "total_posts": 285,
+    "posts_30d": 30,
+    "shared": [
+     {
+      "keyword": "블랙프라이데이2026",
+      "rank": 2
+     },
+     {
+      "keyword": "치이카와클리닉팝업",
+      "rank": 2
+     },
+     {
+      "keyword": "치이카와클리닉",
+      "rank": 3
+     },
+     {
+      "keyword": "치이카와클리닉예약",
+      "rank": 27
+     }
+    ],
+    "influencer": false,
+    "score": 71.6,
+    "rank": 4
    },
    {
     "blog_id": "dailysmomo",
     "name": "모모의 일상'ᴗ'♡",
     "nickname": "모모",
     "topic": "맛집",
-    "subscribers": 411,
-    "today_visitors": 126,
-    "visitors_avg": 315.8,
-    "total_posts": 228,
+    "subscribers": 422,
+    "today_visitors": 117,
+    "visitors_avg": 312.0,
+    "total_posts": 229,
     "posts_30d": 30,
     "shared": [
      {
@@ -3248,48 +3306,92 @@
      },
      {
       "keyword": "스카프타펠빙하투어",
-      "rank": 8
-     },
-     {
-      "keyword": "아이슬란드비크",
-      "rank": 9
+      "rank": 7
      },
      {
       "keyword": "스카프타펠",
       "rank": 9
+     },
+     {
+      "keyword": "아이슬란드비크",
+      "rank": 10
      }
     ],
     "influencer": false,
     "score": 71.1,
-    "rank": 4
+    "rank": 5
    },
    {
-    "blog_id": "myeongmi0408",
-    "name": "하고 싶은거 다 해❤️‍",
-    "nickname": "명짱 일상로그",
-    "topic": "맛집",
-    "subscribers": 1119,
-    "today_visitors": 179,
-    "visitors_avg": 465.8,
-    "total_posts": 1057,
-    "posts_30d": 19,
+    "blog_id": "jma7179",
+    "name": "여행으로 크는 라니네",
+    "nickname": "나디아",
+    "topic": "세계여행",
+    "subscribers": 5136,
+    "today_visitors": 238,
+    "visitors_avg": null,
+    "total_posts": 1262,
+    "posts_30d": 16,
     "shared": [
      {
-      "keyword": "아이슬란드맛집",
-      "rank": 2
+      "keyword": "아이슬란드비크",
+      "rank": 8
      },
      {
-      "keyword": "아이슬란드비크",
-      "rank": 2
+      "keyword": "블루라군예약",
+      "rank": 14
+     },
+     {
+      "keyword": "아이슬란드블루라군",
+      "rank": 18
      },
      {
       "keyword": "비크",
-      "rank": 3
+      "rank": 28
      }
     ],
     "influencer": false,
-    "score": 69.9,
-    "rank": 5
+    "score": 67.8,
+    "rank": 6
+   },
+   {
+    "blog_id": "roadeat-",
+    "name": "로드투잇",
+    "nickname": "로드잇",
+    "topic": "세계여행",
+    "subscribers": 815,
+    "today_visitors": 141,
+    "visitors_avg": 473.5,
+    "total_posts": 373,
+    "posts_30d": 14,
+    "shared": [
+     {
+      "keyword": "블루라군예약",
+      "rank": 7
+     },
+     {
+      "keyword": "스카프타펠빙하투어",
+      "rank": 9
+     },
+     {
+      "keyword": "블루라군",
+      "rank": 12
+     },
+     {
+      "keyword": "아이슬란드블루라군",
+      "rank": 12
+     },
+     {
+      "keyword": "스카프타펠",
+      "rank": 13
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 20
+     }
+    ],
+    "influencer": false,
+    "score": 64.7,
+    "rank": 7
    },
    {
     "blog_id": "i_want_it_",
@@ -3297,8 +3399,8 @@
     "nickname": "아온",
     "topic": "세계여행",
     "subscribers": 1684,
-    "today_visitors": 73,
-    "visitors_avg": 214.8,
+    "today_visitors": 40,
+    "visitors_avg": 207.8,
     "total_posts": 405,
     "posts_30d": 18,
     "shared": [
@@ -3308,6 +3410,14 @@
      },
      {
       "keyword": "레이캬비크맛집추천",
+      "rank": 5
+     },
+     {
+      "keyword": "블루라군",
+      "rank": 6
+     },
+     {
+      "keyword": "아이슬란드블루라군",
       "rank": 6
      },
      {
@@ -3316,20 +3426,60 @@
      },
      {
       "keyword": "스카프타펠",
-      "rank": 12
-     },
-     {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 13
+      "rank": 11
      },
      {
       "keyword": "스카프타펠빙하투어",
+      "rank": 12
+     },
+     {
+      "keyword": "블루라군예약",
       "rank": 13
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 15
      }
     ],
     "influencer": false,
-    "score": 64.8,
-    "rank": 6
+    "score": 64.6,
+    "rank": 8
+   },
+   {
+    "blog_id": "lovefromlike",
+    "name": "깨의 체크포인트",
+    "nickname": "깨",
+    "topic": "세계여행",
+    "subscribers": 794,
+    "today_visitors": 35,
+    "visitors_avg": 89.0,
+    "total_posts": 979,
+    "posts_30d": 12,
+    "shared": [
+     {
+      "keyword": "블루라군",
+      "rank": 7
+     },
+     {
+      "keyword": "비크마을",
+      "rank": 12
+     },
+     {
+      "keyword": "아이슬란드블루라군",
+      "rank": 14
+     },
+     {
+      "keyword": "블루라군예약",
+      "rank": 21
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 22
+     }
+    ],
+    "influencer": false,
+    "score": 55.5,
+    "rank": 9
    },
    {
     "blog_id": "dazzle10_",
@@ -3337,8 +3487,8 @@
     "nickname": "효용",
     "topic": "일상·생각",
     "subscribers": 139,
-    "today_visitors": 53,
-    "visitors_avg": 154.0,
+    "today_visitors": 50,
+    "visitors_avg": 142.2,
     "total_posts": 158,
     "posts_30d": 17,
     "shared": [
@@ -3348,7 +3498,7 @@
      },
      {
       "keyword": "비크",
-      "rank": 6
+      "rank": 7
      },
      {
       "keyword": "스톡스네스주차",
@@ -3359,57 +3509,69 @@
       "rank": 8
      },
      {
+      "keyword": "블루라군예약",
+      "rank": 16
+     },
+     {
       "keyword": "스톡스네스",
-      "rank": 19
-     },
-     {
-      "keyword": "스톡스네스입장료",
-      "rank": 25
-     },
-     {
-      "keyword": "아이슬란드셀포스",
-      "rank": 25
+      "rank": 20
      },
      {
       "keyword": "아이슬란드빙하투어",
-      "rank": 29
+      "rank": 24
+     },
+     {
+      "keyword": "스톡스네스입장료",
+      "rank": 26
+     },
+     {
+      "keyword": "아이슬란드블루라군",
+      "rank": 28
+     },
+     {
+      "keyword": "아이슬란드셀포스",
+      "rank": 28
+     },
+     {
+      "keyword": "스카프타펠빙하투어",
+      "rank": 30
      }
     ],
     "influencer": false,
-    "score": 55.7,
-    "rank": 7
+    "score": 55.3,
+    "rank": 10
    },
    {
     "blog_id": "gmldbs8922",
     "name": "여드름신이라서 여신이에요",
     "nickname": "아라에스테틱광주점",
     "topic": "패션·미용",
-    "subscribers": 175,
-    "today_visitors": 27,
-    "visitors_avg": 68.8,
-    "total_posts": 287,
-    "posts_30d": 16,
+    "subscribers": 176,
+    "today_visitors": 21,
+    "visitors_avg": 62.0,
+    "total_posts": 288,
+    "posts_30d": 15,
     "shared": [
      {
       "keyword": "스톡스네스입장료",
-      "rank": 15
+      "rank": 14
      },
      {
       "keyword": "스톡스네스",
       "rank": 16
      },
      {
-      "keyword": "스톡스네스주차",
-      "rank": 22
+      "keyword": "아이슬란드빙하투어",
+      "rank": 18
      },
      {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 24
+      "keyword": "스톡스네스주차",
+      "rank": 20
      }
     ],
     "influencer": false,
-    "score": 52.0,
-    "rank": 8
+    "score": 50.8,
+    "rank": 11
    },
    {
     "blog_id": "px_xx",
@@ -3417,7 +3579,7 @@
     "nickname": "팡로그",
     "topic": "국내여행",
     "subscribers": 1596,
-    "today_visitors": 42,
+    "today_visitors": 36,
     "visitors_avg": null,
     "total_posts": 1157,
     "posts_30d": 4,
@@ -3428,11 +3590,11 @@
      },
      {
       "keyword": "스톡스네스",
-      "rank": 9
+      "rank": 8
      },
      {
       "keyword": "스톡스네스주차",
-      "rank": 14
+      "rank": 12
      },
      {
       "keyword": "스카프타펠",
@@ -3440,60 +3602,16 @@
      }
     ],
     "influencer": false,
-    "score": 47.9,
-    "rank": 9
-   },
-   {
-    "blog_id": "answer130",
-    "name": "쥬의 기록일지",
-    "nickname": "김쥬",
-    "topic": "세계여행",
-    "subscribers": 106,
-    "today_visitors": 31,
-    "visitors_avg": null,
-    "total_posts": 65,
-    "posts_30d": 15,
-    "shared": [
-     {
-      "keyword": "아이슬란드셀포스",
-      "rank": 7
-     },
-     {
-      "keyword": "레이캬비크맛집추천",
-      "rank": 14
-     },
-     {
-      "keyword": "레이캬비크맛집",
-      "rank": 17
-     },
-     {
-      "keyword": "스카프타펠",
-      "rank": 17
-     },
-     {
-      "keyword": "스카프타펠빙하투어",
-      "rank": 23
-     },
-     {
-      "keyword": "아이슬란드비크",
-      "rank": 27
-     },
-     {
-      "keyword": "아이슬란드맛집",
-      "rank": 28
-     }
-    ],
-    "influencer": false,
-    "score": 44.2,
-    "rank": 10
+    "score": 47.0,
+    "rank": 12
    },
    {
     "blog_id": "by_lindsey",
     "name": "by Lindsey",
     "nickname": "bylindsey",
     "topic": "세계여행",
-    "subscribers": 11,
-    "today_visitors": 41,
+    "subscribers": 12,
+    "today_visitors": 34,
     "visitors_avg": null,
     "total_posts": 21,
     "posts_30d": 21,
@@ -3504,7 +3622,7 @@
      },
      {
       "keyword": "스톡스네스",
-      "rank": 8
+      "rank": 10
      },
      {
       "keyword": "스톡스네스입장료",
@@ -3516,144 +3634,64 @@
      },
      {
       "keyword": "비크",
-      "rank": 24
+      "rank": 26
      }
     ],
     "influencer": false,
-    "score": 43.5,
-    "rank": 11
+    "score": 42.7,
+    "rank": 13
    },
    {
-    "blog_id": "momentsofbeing",
-    "name": "존재의 순간들",
-    "nickname": "은유",
-    "topic": "취미",
-    "subscribers": 247,
-    "today_visitors": 18,
+    "blog_id": "answer130",
+    "name": "쥬의 기록일지",
+    "nickname": "김쥬",
+    "topic": "세계여행",
+    "subscribers": 106,
+    "today_visitors": 15,
     "visitors_avg": null,
-    "total_posts": 827,
-    "posts_30d": 4,
+    "total_posts": 65,
+    "posts_30d": 12,
     "shared": [
      {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 2
+      "keyword": "블루라군예약",
+      "rank": 8
      },
      {
-      "keyword": "스카프타펠빙하투어",
-      "rank": 2
-     },
-     {
-      "keyword": "스카프타펠",
-      "rank": 2
-     }
-    ],
-    "influencer": false,
-    "score": 39.0,
-    "rank": 12
-   },
-   {
-    "blog_id": "dbtmdgml1002",
-    "name": "승승이의 돼지런한 하루",
-    "nickname": "승승",
-    "topic": "맛집",
-    "subscribers": 204,
-    "today_visitors": 7,
-    "visitors_avg": 17.8,
-    "total_posts": 211,
-    "posts_30d": 4,
-    "shared": [
-     {
-      "keyword": "스카프타펠빙하투어",
-      "rank": 11
-     },
-     {
-      "keyword": "스카프타펠",
-      "rank": 14
+      "keyword": "아이슬란드셀포스",
+      "rank": 8
      },
      {
       "keyword": "레이캬비크맛집추천",
+      "rank": 14
+     },
+     {
+      "keyword": "레이캬비크맛집",
+      "rank": 15
+     },
+     {
+      "keyword": "스카프타펠",
+      "rank": 17
+     },
+     {
+      "keyword": "블루라군",
+      "rank": 20
+     },
+     {
+      "keyword": "아이슬란드블루라군",
+      "rank": 20
+     },
+     {
+      "keyword": "스카프타펠빙하투어",
       "rank": 22
      },
      {
-      "keyword": "아이슬란드빙하투어",
+      "keyword": "아이슬란드비크",
       "rank": 25
      }
     ],
     "influencer": false,
-    "score": 36.8,
-    "rank": 13
-   },
-   {
-    "blog_id": "ellen040718",
-    "name": "eun_zip 모음집",
-    "nickname": "리진입니다만",
-    "topic": "",
-    "subscribers": 36,
-    "today_visitors": 61,
-    "visitors_avg": null,
-    "total_posts": 47,
-    "posts_30d": 2,
-    "shared": [
-     {
-      "keyword": "군누베르",
-      "rank": 2
-     },
-     {
-      "keyword": "아이슬란드맛집",
-      "rank": 20
-     },
-     {
-      "keyword": "레이캬비크맛집",
-      "rank": 27
-     },
-     {
-      "keyword": "레이캬비크맛집추천",
-      "rank": 29
-     }
-    ],
-    "influencer": false,
-    "score": 36.4,
+    "score": 38.4,
     "rank": 14
-   },
-   {
-    "blog_id": "yjjang608",
-    "name": "지짱로그 :)",
-    "nickname": "지짱",
-    "topic": "취미",
-    "subscribers": 138,
-    "today_visitors": 14,
-    "visitors_avg": null,
-    "total_posts": 31,
-    "posts_30d": 9,
-    "shared": [
-     {
-      "keyword": "비크마을",
-      "rank": 3
-     },
-     {
-      "keyword": "레이캬비크맛집",
-      "rank": 4
-     },
-     {
-      "keyword": "레이캬비크맛집추천",
-      "rank": 5
-     },
-     {
-      "keyword": "아이슬란드맛집",
-      "rank": 6
-     },
-     {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 12
-     },
-     {
-      "keyword": "아이슬란드셀포스",
-      "rank": 28
-     }
-    ],
-    "influencer": false,
-    "score": 35.7,
-    "rank": 15
    },
    {
     "blog_id": "februar_",
@@ -3661,22 +3699,22 @@
     "nickname": "Februar",
     "topic": "일상·생각",
     "subscribers": 145,
-    "today_visitors": 16,
+    "today_visitors": 23,
     "visitors_avg": null,
-    "total_posts": 238,
-    "posts_30d": 4,
+    "total_posts": 239,
+    "posts_30d": 5,
     "shared": [
      {
       "keyword": "레이캬비크맛집추천",
-      "rank": 3
+      "rank": 4
      },
      {
       "keyword": "레이캬비크맛집",
-      "rank": 13
+      "rank": 12
      },
      {
       "keyword": "아이슬란드맛집",
-      "rank": 19
+      "rank": 20
      },
      {
       "keyword": "스카프타펠",
@@ -3684,16 +3722,16 @@
      }
     ],
     "influencer": false,
-    "score": 35.7,
-    "rank": 16
+    "score": 38.2,
+    "rank": 15
    },
    {
     "blog_id": "attachment7",
     "name": "사랑둥이 미니메추리",
     "nickname": "하늘보리",
     "topic": "세계여행",
-    "subscribers": 28,
-    "today_visitors": 12,
+    "subscribers": 29,
+    "today_visitors": 19,
     "visitors_avg": null,
     "total_posts": 63,
     "posts_30d": 12,
@@ -3712,10 +3750,6 @@
      },
      {
       "keyword": "스카프타펠빙하투어",
-      "rank": 3
-     },
-     {
-      "keyword": "아이슬란드맛집",
       "rank": 4
      },
      {
@@ -3723,44 +3757,92 @@
       "rank": 4
      },
      {
-      "keyword": "아이슬란드빙하투어",
+      "keyword": "아이슬란드맛집",
       "rank": 5
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 6
      }
     ],
     "influencer": false,
-    "score": 34.4,
-    "rank": 17
+    "score": 36.8,
+    "rank": 16
    },
    {
-    "blog_id": "siwol__day",
-    "name": "어제는 끝났고, 내일은 멀었고, 오늘은 모른다.",
-    "nickname": "시월",
+    "blog_id": "hslovehr",
+    "name": "멀리서 보면 희극",
+    "nickname": "라넌큘리",
     "topic": "세계여행",
-    "subscribers": 35,
-    "today_visitors": 18,
+    "subscribers": 808,
+    "today_visitors": 3,
     "visitors_avg": null,
-    "total_posts": 26,
+    "total_posts": 686,
     "posts_30d": 7,
     "shared": [
      {
-      "keyword": "비크마을",
+      "keyword": "스톡스네스주차",
       "rank": 4
      },
      {
-      "keyword": "비크",
+      "keyword": "스톡스네스",
+      "rank": 5
+     },
+     {
+      "keyword": "스톡스네스입장료",
       "rank": 9
      },
      {
-      "keyword": "아이슬란드빙하투어",
-      "rank": 14
+      "keyword": "블루라군예약",
+      "rank": 12
      },
      {
-      "keyword": "아이슬란드비크",
-      "rank": 16
+      "keyword": "아이슬란드블루라군",
+      "rank": 15
      }
     ],
     "influencer": false,
-    "score": 32.5,
+    "score": 34.8,
+    "rank": 17
+   },
+   {
+    "blog_id": "yjjang608",
+    "name": "지짱로그 :)",
+    "nickname": "지짱",
+    "topic": "취미",
+    "subscribers": 138,
+    "today_visitors": 5,
+    "visitors_avg": null,
+    "total_posts": 31,
+    "posts_30d": 9,
+    "shared": [
+     {
+      "keyword": "레이캬비크맛집",
+      "rank": 2
+     },
+     {
+      "keyword": "레이캬비크맛집추천",
+      "rank": 3
+     },
+     {
+      "keyword": "아이슬란드맛집",
+      "rank": 3
+     },
+     {
+      "keyword": "비크마을",
+      "rank": 3
+     },
+     {
+      "keyword": "아이슬란드빙하투어",
+      "rank": 13
+     },
+     {
+      "keyword": "아이슬란드셀포스",
+      "rank": 29
+     }
+    ],
+    "influencer": false,
+    "score": 30.7,
     "rank": 18
    },
    {
@@ -3769,7 +3851,7 @@
     "nickname": "many",
     "topic": "세계여행",
     "subscribers": 33,
-    "today_visitors": 7,
+    "today_visitors": 3,
     "visitors_avg": null,
     "total_posts": 139,
     "posts_30d": 5,
@@ -3784,15 +3866,15 @@
      },
      {
       "keyword": "아이슬란드비크",
-      "rank": 20
+      "rank": 18
      },
      {
       "keyword": "레이캬비크맛집",
-      "rank": 21
+      "rank": 19
      }
     ],
     "influencer": false,
-    "score": 28.4,
+    "score": 24.6,
     "rank": 19
    },
    {
@@ -3801,22 +3883,22 @@
     "nickname": "김삐리리",
     "topic": "세계여행",
     "subscribers": 41,
-    "today_visitors": 5,
+    "today_visitors": 1,
     "visitors_avg": null,
     "total_posts": 121,
     "posts_30d": 4,
     "shared": [
      {
       "keyword": "스톡스네스주차",
-      "rank": 4
-     },
-     {
-      "keyword": "스톡스네스",
       "rank": 5
      },
      {
+      "keyword": "스톡스네스",
+      "rank": 6
+     },
+     {
       "keyword": "아이슬란드셀포스",
-      "rank": 10
+      "rank": 9
      },
      {
       "keyword": "스톡스네스입장료",
@@ -3828,7 +3910,7 @@
      }
     ],
     "influencer": false,
-    "score": 26.5,
+    "score": 20.5,
     "rank": 20
    },
    {
@@ -3837,10 +3919,10 @@
     "nickname": "지미",
     "topic": "일상·생각",
     "subscribers": 6,
-    "today_visitors": 1,
+    "today_visitors": 3,
     "visitors_avg": null,
     "total_posts": 14,
-    "posts_30d": 3,
+    "posts_30d": 2,
     "shared": [
      {
       "keyword": "스톡스네스주차",
@@ -3851,20 +3933,20 @@
       "rank": 4
      },
      {
-      "keyword": "스톡스네스",
-      "rank": 18
-     },
-     {
       "keyword": "스카프타펠",
       "rank": 18
      },
      {
+      "keyword": "스톡스네스",
+      "rank": 21
+     },
+     {
       "keyword": "비크마을",
-      "rank": 28
+      "rank": 29
      }
     ],
     "influencer": false,
-    "score": 13.3,
+    "score": 16.4,
     "rank": 21
    }
   ]
